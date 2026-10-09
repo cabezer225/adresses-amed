@@ -1,13 +1,15 @@
 """Build the notes spreadsheet and the site data for « Les adresses d'Amed ».
 
-  python3 scripts/construire_guide.py tableau            data/lieux.json -> data/tableau-notes.xlsx
-  python3 scripts/construire_guide.py site NOTES.xlsx    data/lieux.json + Google Sheets export -> data/guide.json
+  python3 scripts/construire_guide.py site [NOTES.xlsx]  spreadsheet -> data/lieux.json (saved) -> data/guide.json
+  python3 scripts/construire_guide.py tableau            data/lieux.json -> data/tableau-notes.xlsx (+ copy in Drive)
 
-data/lieux.json is the collected structure (places, visits, videos). The spreadsheet is where Amed adds
-scores, prices, reviews and fixes; for the dishes of a visit, the spreadsheet rows win over lieux.json.
+data/lieux.json holds places, visits and videos. The spreadsheet is where Amed adds scores, prices, reviews
+and fixes: `site` writes them back into lieux.json, so `tableau` can rebuild the spreadsheet without losing
+them. Always run `site` before `tableau`. NOTES.xlsx defaults to the copy synced by Google Drive for desktop.
 """
 import datetime as dt
 import json
+import shutil
 import sys
 import time
 import urllib.parse
@@ -22,6 +24,9 @@ LIEUX = ROOT / "data" / "lieux.json"
 GUIDE = ROOT / "data" / "guide.json"
 GEOCACHE = ROOT / "data" / "geocache.json"
 TABLEAU = ROOT / "data" / "tableau-notes.xlsx"
+# Copy synced by Google Drive for desktop (the account folder name is looked up, not hard-coded).
+_DRIVES = sorted(Path.home().glob("Library/CloudStorage/GoogleDrive-*/Mon Drive/Les adresses d'Amed"))
+DRIVE_XLSX = (_DRIVES[0] if _DRIVES else Path("/nonexistent")) / "Les adresses d'Amed – notes.xlsx"
 
 CATEGORIES = {
     "fast-food": "Fast-food & restos",
@@ -77,6 +82,9 @@ def cmd_tableau():
     feuilles.append(("Mode d'emploi", aide, [120]))
     ecrire_xlsx(TABLEAU, feuilles)
     print(f"{TABLEAU.relative_to(ROOT)} : {len(rows_l) - 1} lieux, {len(rows_p) - 1} lignes de plats")
+    if DRIVE_XLSX.parent.exists():
+        shutil.copyfile(TABLEAU, DRIVE_XLSX)
+        print("  copié dans Google Drive")
 
 
 def nombre(s):
@@ -185,6 +193,7 @@ def cmd_site(xlsx):
                 v["coords"] = geocoder(v["adresse"], cache)
         publies.append({k: val for k, val in l.items() if k != "masquer"})
     GEOCACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+    LIEUX.write_text(json.dumps(list(lieux.values()), ensure_ascii=False, indent=1), encoding="utf-8")
 
     guide = {"meta": {"maj": dt.date.today().isoformat(), "categories": CATEGORIES}, "lieux": publies}
     GUIDE.write_text(json.dumps(guide, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
@@ -195,8 +204,8 @@ def cmd_site(xlsx):
 if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "tableau":
         cmd_tableau()
-    elif len(sys.argv) >= 3 and sys.argv[1] == "site":
-        cmd_site(sys.argv[2])
+    elif len(sys.argv) >= 2 and sys.argv[1] == "site":
+        cmd_site(sys.argv[2] if len(sys.argv) >= 3 else DRIVE_XLSX)
     else:
         print(__doc__)
         sys.exit(1)
