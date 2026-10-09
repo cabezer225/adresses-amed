@@ -39,7 +39,7 @@ TYPE_BY_LABEL = {"chaîne": "chaine", "chaine": "chaine", "indépendant": "indep
 NETS = ("tiktok", "instagram", "youtube")
 
 LIEUX_COLS = ["ID", "Lieu", "Catégorie", "Spécialité", "Type", "Ville", "Adresse", "Mon avis", "Points forts", "Points faibles", "Afficher"]
-PLATS_COLS = ["ID lieu", "Lieu", "Date visite", "Visite", "Plat", "Prix (€)", "Note /10", "Vidéo"]
+PLATS_COLS = ["ID lieu", "Lieu", "Date visite", "Visite", "Plat", "Prix (€)", "Note /10", "Vidéo", "Statut"]
 
 
 def charger_lieux():
@@ -55,7 +55,9 @@ def cmd_tableau():
         ["3. Onglet « Lieux » : écris ton avis en 1 ou 2 phrases, tes points forts et faibles séparés par « ; », et l'adresse des indépendants si tu la connais."],
         ["4. Colonne « Afficher » : mets « non » pour retirer une adresse du guide (vidéo hors sujet, resto fermé…)."],
         ["5. La note d'un resto est la moyenne de ses plats notés. Un plat sans note n'est pas compté."],
-        ["6. Ne change pas la colonne ID. Quand tu as fini (même en partie), dis-le à Claude : il met le site à jour."],
+        ["6. Les nouvelles vidéos sont ajoutées automatiquement avec le statut « 🆕 à noter » : elles n'apparaissent sur le site qu'une fois au moins un de leurs plats noté."],
+        ["7. Modifie ce fichier directement dans Google Sheets. N'utilise pas « Enregistrer au format Google Sheets » : sinon la mise à jour ne voit plus tes notes."],
+        ["8. Ne change pas la colonne ID. Le site se met à jour tout seul à chaque passage automatique, ou tout de suite si tu le demandes à Claude."],
     ]
     rows_l = [LIEUX_COLS]
     rows_p = [PLATS_COLS]
@@ -70,9 +72,10 @@ def cmd_tableau():
             plats = v.get("plats") or [{"nom": "(à compléter)"}]
             for p in plats:
                 rows_p.append([l["id"], l["nom"], v.get("date") or "", v.get("titre") or "", p.get("nom") or "",
-                               p.get("prix") if p.get("prix") is not None else "", p.get("note") if p.get("note") is not None else "", url])
+                               p.get("prix") if p.get("prix") is not None else "", p.get("note") if p.get("note") is not None else "", url,
+                               "🆕 à noter" if v.get("nouveau") else ""])
     feuilles = [
-        ("Plats", rows_p, [16, 22, 12, 30, 34, 10, 10, 46]),
+        ("Plats", rows_p, [16, 22, 12, 30, 34, 10, 10, 46, 12]),
         ("Lieux", rows_l, [16, 22, 22, 18, 13, 16, 30, 50, 34, 34, 10]),
     ]
     questions = ROOT / "data" / "a-verifier.json"
@@ -181,17 +184,24 @@ def cmd_site(xlsx):
             for r in rows if r.get("Plat") and r["Plat"] != "(à compléter)"
         ]
 
+    # Visits added automatically ("nouveau") stay off the site until Amed scores one of their dishes.
+    for l in lieux.values():
+        for v in l.get("visites", []):
+            if v.get("nouveau") and any(p.get("note") is not None for p in v.get("plats", [])):
+                v.pop("nouveau")
+
     cache = json.loads(GEOCACHE.read_text(encoding="utf-8")) if GEOCACHE.exists() else {}
     publies = []
     for l in lieux.values():
-        if l.get("masquer"):
+        visibles = [v for v in l.get("visites", []) if not v.get("nouveau")]
+        if l.get("masquer") or not visibles:
             continue
         if l.get("adresse") and not l.get("coords"):
             l["coords"] = geocoder(l["adresse"], cache)
         for v in l.get("visites", []):
             if v.get("adresse") and not v.get("coords"):
                 v["coords"] = geocoder(v["adresse"], cache)
-        publies.append({k: val for k, val in l.items() if k != "masquer"})
+        publies.append({**{k: val for k, val in l.items() if k != "masquer"}, "visites": visibles})
     GEOCACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     LIEUX.write_text(json.dumps(list(lieux.values()), ensure_ascii=False, indent=1), encoding="utf-8")
 
