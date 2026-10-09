@@ -26,16 +26,11 @@
     set(k, v) { try { localStorage.setItem(k, v); } catch (_) { /* stockage indisponible */ } },
   };
 
-  function youtubeId(url) {
-    const m = String(url).match(/(?:v=|youtu\.be\/|shorts\/|embed\/)([A-Za-z0-9_-]{11})/);
-    return m ? m[1] : null;
-  }
-
   function emojiFor(l) {
     const t = norm([l.specialite, l.nom].join(" "));
     const table = [
       [/burger|smash/, "🍔"], [/poulet|chicken|crousty|tender|wing|fry|frit/, "🍗"], [/tacos/, "🌮"],
-      [/pizza|panuozzo|panzerot/, "🍕"], [/kebab|grill|libanais|turc|shawarma/, "🥙"], [/sushi|asiat|wok|thai|japon|coreen|nouille|ramen/, "🍜"],
+      [/pizza|panuozzo|panzerot|italien/, "🍕"], [/kebab|grill|libanais|turc|shawarma/, "🥙"], [/sushi|asiat|wok|thai|japon|coreen|nouille|ramen/, "🍜"],
       [/glace|gelato|sorbet/, "🍦"], [/donut|doughnut/, "🍩"], [/cookie/, "🍪"], [/patiss|boulang|viennois|croissant|gateau|cake|flan/, "🥐"],
       [/afric|ivoir|attieke|poulet braise/, "🍲"], [/crepe/, "🥞"], [/cafe|coffee|brunch/, "☕"],
     ];
@@ -51,13 +46,11 @@
     return `linear-gradient(135deg, ${a}, ${b})`;
   }
 
-  function thumbHTML(l, ytid, big = false) {
-    const id = ytid || l.ytid;
+  // Restaurant logo on a white tile; falls back to an emoji on a blue gradient when there is no logo.
+  function thumbHTML(l) {
     const nets = `<span class="thumb__net">${l.nets.map((n) => `<i title="${NETS[n]}">${NET_SHORT[n]}</i>`).join("")}</span>`;
-    if (id) {
-      return `<span class="thumb" style="background:${gradientFor(l.id)}">${big
-        ? `<img class="is-loading" src="https://i.ytimg.com/vi/${id}/maxresdefault.jpg" alt="" decoding="async" onload="this.classList.remove('is-loading')" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='https://i.ytimg.com/vi/${id}/hqdefault.jpg'}else{this.remove()}">`
-        : `<img class="is-loading" src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="" loading="lazy" decoding="async" onload="this.classList.remove('is-loading')" onerror="this.remove()">`}${nets}</span>`;
+    if (l.logo) {
+      return `<span class="thumb thumb--logo" data-emoji="${l.emoji}" style="--g:${gradientFor(l.id)}"><span class="logo-tile"><img src="${esc(l.logo)}" alt="Logo ${esc(l.nom)}" loading="lazy" decoding="async" onerror="const t=this.closest('.thumb');t.classList.replace('thumb--logo','thumb--emoji');t.style.background=t.style.getPropertyValue('--g');this.parentNode.replaceWith(t.dataset.emoji)"></span>${nets}</span>`;
     }
     return `<span class="thumb thumb--emoji" style="background:${gradientFor(l.id)}" aria-hidden="true">${l.emoji}${nets}</span>`;
   }
@@ -79,8 +72,7 @@
     const rated = [...latest.values()];
     const note = rated.length ? Math.round((rated.reduce((s, p) => s + p.note, 0) / rated.length) * 10) / 10 : null;
     const nets = [...new Set(visites.flatMap((v) => (v.videos || []).map((x) => x.platform)))].filter((n) => NETS[n]);
-    const ytid = visites.flatMap((v) => v.videos || []).map((x) => x.platform === "youtube" && youtubeId(x.url)).find(Boolean) || null;
-    const l = { ...lieu, visites, note, rated, nets, ytid, derniere: visites[0]?.date || "" };
+    const l = { ...lieu, visites, note, rated, nets, derniere: visites[0]?.date || "" };
     l.emoji = emojiFor(l);
     l.haystack = norm([l.nom, l.ville, l.specialite, l.adresse, ...visites.flatMap((v) => [v.titre, ...(v.plats || []).map((p) => p.nom)])].join(" "));
     return l;
@@ -179,10 +171,9 @@
 
   // ───────── home ─────────
   function slideHTML(l, v) {
-    const yt = (v.videos || []).map((x) => x.platform === "youtube" && youtubeId(x.url)).find(Boolean);
     const sub = [v.titre, fmtDate(v.date, true)].filter(Boolean).join(" · ");
     return `<button class="slide reveal" data-id="${esc(l.id)}">
-      ${thumbHTML(l, yt)}
+      ${thumbHTML(l)}
       ${ringHTML(l.note, "ring--sm")}
       <span class="slide__body"><span class="slide__name">${esc(l.nom)}</span><span class="slide__meta">${esc(sub)}</span></span>
     </button>`;
@@ -195,6 +186,7 @@
     if (l.visites.length > 1) tags.push(`<span class="tag">${plural(l.visites.length, "visite")}</span>`);
     if (l.derniere) tags.push(`<span class="tag">${fmtDate(l.derniere, true)}</span>`);
     if (l.visites.some((v) => v.partenariat)) tags.push(`<span class="tag tag--gift"><svg><use href="#i-gift"/></svg>Offert</span>`);
+    if (l.statut === "ferme-definitivement") tags.unshift(`<span class="tag tag--closed">Fermé</span>`);
     return `<li class="reveal"><button class="card" data-id="${esc(l.id)}" aria-label="${esc(l.nom)}, ${l.note == null ? "note à venir" : fmtNote(l.note) + " sur 10"}">
       ${thumbHTML(l)}
       <span class="card__txt"><span class="card__name">${esc(l.nom)}</span><span class="card__meta">${esc(meta)}</span><span class="card__tags">${tags.join("")}</span></span>
@@ -363,6 +355,7 @@
     if (!l) return;
     const sub = [l.specialite, l.type === "chaine" ? "Chaîne" : l.type === "independant" ? "Indépendant" : "", l.ville].filter(Boolean).join(" · ");
     const tags = [
+      l.statut === "ferme-definitivement" && `<span class="tag tag--closed">Fermé définitivement</span>`,
       state.cats[l.categorie] && `<span class="tag">${CAT_EMOJI[l.categorie] || ""} ${esc(state.cats[l.categorie])}</span>`,
       `<span class="tag">${plural(l.visites.length, "visite")}</span>`,
       ...l.nets.map((n) => `<span class="tag">${NETS[n]}</span>`),
@@ -390,7 +383,7 @@
     }).join("");
 
     $("#sheet-body").innerHTML = `
-      <div class="detail__hero">${thumbHTML(l, null, true)}<button class="icon-btn detail__close" data-close aria-label="Fermer"><svg><use href="#i-close"/></svg></button></div>
+      <div class="detail__hero">${thumbHTML(l)}<button class="icon-btn detail__close" data-close aria-label="Fermer"><svg><use href="#i-close"/></svg></button></div>
       <div class="detail__head">
         <div><h2 id="sheet-title">${esc(l.nom)}</h2>${sub ? `<p class="detail__sub">${esc(sub)}</p>` : ""}</div>
         ${ringHTML(l.note, "ring--lg")}

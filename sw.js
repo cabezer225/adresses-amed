@@ -1,5 +1,5 @@
 // Network first so a new guide.json shows up at once; the cache only serves when offline.
-const CACHE = "adresses-amed-v2";
+const CACHE = "adresses-amed-v3";
 const SHELL = ["./", "index.html", "assets/style.css", "assets/app.js", "data/guide.json", "manifest.webmanifest", "assets/icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {

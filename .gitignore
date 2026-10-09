@@ -9,3 +9,4 @@ data/SPEC-*.md
 .DS_Store
 __pycache__/
 data/a-verifier.json
+data/verif/
