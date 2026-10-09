@@ -1,0 +1,16 @@
+{
+  "name": "Les adresses d'Amed 🧢",
+  "short_name": "Adresses d'Amed",
+  "description": "Les fast-foods testés par Amed (Cabezer), notés sur 10, avec ses avis et ses vidéos.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F7FC",
+  "theme_color": "#1F5EFF",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

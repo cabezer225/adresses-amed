@@ -1,0 +1,11 @@
+# Données de travail : elles restent sur le Mac, seul le site est publié
+data/raw/
+data/lieux.json
+data/geocache.json
+data/tableau-notes.xlsx
+data/*.xlsx
+data/SPEC-*.md
+.claude/
+.DS_Store
+__pycache__/
+data/a-verifier.json

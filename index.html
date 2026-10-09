@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Les adresses d'Amed 🧢</title>
+  <meta name="description" content="Tous les fast-foods, restos, pâtisseries et street food testés par Amed (Cabezer) sur TikTok, Instagram et YouTube : notes sur 10, avis, plats goûtés, prix et vidéos.">
+  <meta name="theme-color" content="#F4F7FC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#060A14" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Les adresses d'Amed 🧢">
+  <meta property="og:description" content="Les adresses testées par Amed, notées sur 10, avec ses avis et ses vidéos.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Adresses d'Amed">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="assets/style.css?v=5">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><path d="M5 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM19 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM7 17h7a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><path d="M4 11h16v9H4zM3 7h18v4H3zM12 7v13M12 7S10.5 3 8 3.8 7.5 7 12 7zm0 0s1.5-4 4-3.2.5 3.2-4 3.2z"/></symbol>
+  </svg>
+
+  <header class="appbar" id="appbar">
+    <a class="brand" href="./" aria-label="Les adresses d'Amed, accueil">
+      <img src="assets/icons/icon-192.png" alt="" width="34" height="34">
+      <span>Les adresses d'Amed</span>
+    </a>
+    <button class="icon-btn" id="share-site" aria-label="Partager le guide"><svg><use href="#i-share"/></svg></button>
+  </header>
+
+  <main id="main">
+    <!-- Accueil -->
+    <section class="view is-active" id="view-home" aria-label="Accueil">
+      <div class="hero">
+        <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+        <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="hero__kicker"><span class="dot" aria-hidden="true"></span> Le guide food de Cabezer</p>
+          <h1 class="hero__title">Où manger ?<br><span>Je l'ai déjà testé.</span></h1>
+          <p class="hero__lead">Fast-foods, restos, pâtisseries et street food, notés sur 10 avec ce que j'ai commandé et mon avis cash.</p>
+          <ul class="stats" id="stats"></ul>
+        </div>
+      </div>
+
+      <div class="searchbar" id="searchbar">
+        <label class="search">
+          <svg aria-hidden="true"><use href="#i-search"/></svg>
+          <span class="visually-hidden">Rechercher</span>
+          <input id="q" type="search" placeholder="Un resto, une ville, un plat…" autocomplete="off" enterkeyhint="search">
+        </label>
+        <button class="filter-btn" id="open-filters" aria-label="Filtres" aria-haspopup="dialog">
+          <svg aria-hidden="true"><use href="#i-sliders"/></svg>
+          <span class="badge" id="filter-count" hidden></span>
+        </button>
+      </div>
+
+      <div class="pills" id="cats" role="tablist" aria-label="Catégories"></div>
+
+      <section class="section" id="sec-new">
+        <div class="section__head">
+          <h2>Dernières dégustations</h2>
+        </div>
+        <div class="carousel" id="latest"></div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 id="list-title">Toutes les adresses</h2>
+          <div class="segmented" role="radiogroup" aria-label="Trier par" id="sort">
+            <button role="radio" aria-checked="true" data-sort="note">Top</button>
+            <button role="radio" aria-checked="false" data-sort="recent">Récents</button>
+            <button role="radio" aria-checked="false" data-sort="nom">A–Z</button>
+          </div>
+        </div>
+        <p class="count" id="count"></p>
+        <ul class="list" id="cards"></ul>
+        <button class="more" id="more" hidden>Voir plus d'adresses</button>
+        <div class="empty" id="empty" hidden>
+          <p class="empty__emoji" aria-hidden="true">🔎</p>
+          <p><b>Aucune adresse trouvée.</b><br>Essaie un autre mot ou enlève des filtres.</p>
+          <button class="btn btn--soft" id="reset-empty">Tout réafficher</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Carte -->
+    <section class="view" id="view-map" aria-label="Carte" hidden>
+      <div class="map-wrap">
+        <div id="map" class="map"></div>
+        <div class="map-hint" id="map-note"></div>
+      </div>
+    </section>
+
+    <!-- Classement -->
+    <section class="view" id="view-top" aria-label="Classement" hidden>
+      <div class="page-head">
+        <h1>Le classement</h1>
+        <p>Les meilleures adresses, les déceptions et les plats qui m'ont marqué.</p>
+      </div>
+      <div class="podium" id="podium"></div>
+      <section class="section">
+        <div class="section__head"><h2>🔥 Mon top 10</h2></div>
+        <ol class="rank" id="top"></ol>
+      </section>
+      <section class="section">
+        <div class="section__head"><h2>🍔 Les meilleurs plats</h2></div>
+        <ol class="rank" id="top-plats"></ol>
+      </section>
+      <section class="section">
+        <div class="section__head"><h2>😬 Les déceptions</h2></div>
+        <ol class="rank" id="flop"></ol>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <div class="socials">
+        <a href="https://www.tiktok.com/@cabezer225" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.instagram.com/cabezer/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@cabezer225" target="_blank" rel="noopener">YouTube</a>
+      </div>
+      <p>Notes et avis personnels d'Amed. Les prix sont ceux payés le jour du test et peuvent avoir changé. Le badge « Offert » signale un repas offert, une invitation ou une pub.</p>
+      <p id="maj"></p>
+    </footer>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation">
+    <button class="tab is-active" data-view="home" aria-current="page"><svg aria-hidden="true"><use href="#i-home"/></svg><span>Accueil</span></button>
+    <button class="tab" data-view="map"><svg aria-hidden="true"><use href="#i-map"/></svg><span>Carte</span></button>
+    <button class="tab" data-view="top"><svg aria-hidden="true"><use href="#i-trophy"/></svg><span>Classement</span></button>
+    <span class="tabbar__glider" aria-hidden="true"></span>
+  </nav>
+
+  <div class="install" id="install" hidden>
+    <img src="assets/icons/icon-192.png" alt="" width="40" height="40">
+    <p><b>Ajoute le guide à ton écran d'accueil</b><span id="install-txt">Il s'ouvre comme une appli.</span></p>
+    <button class="btn btn--sm" id="install-go">Ajouter</button>
+    <button class="icon-btn icon-btn--sm" id="install-close" aria-label="Fermer"><svg><use href="#i-close"/></svg></button>
+  </div>
+
+  <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+    <div class="sheet__grab" aria-hidden="true"></div>
+    <div class="sheet__body" id="sheet-body"></div>
+  </dialog>
+
+  <dialog class="sheet sheet--filters" id="filters" aria-labelledby="filters-title">
+    <div class="sheet__grab" aria-hidden="true"></div>
+    <div class="sheet__body">
+      <div class="filters-head">
+        <h2 id="filters-title">Filtres</h2>
+        <button class="icon-btn" data-close aria-label="Fermer"><svg><use href="#i-close"/></svg></button>
+      </div>
+      <h3 class="label">Ville</h3>
+      <div class="chips" id="f-ville"></div>
+      <h3 class="label">Type d'adresse</h3>
+      <div class="chips" id="f-type">
+        <button class="chip-btn is-on" data-v="">Toutes</button>
+        <button class="chip-btn" data-v="chaine">Chaînes</button>
+        <button class="chip-btn" data-v="independant">Indépendants</button>
+      </div>
+      <h3 class="label">Note minimum <output id="f-note-out">toutes</output></h3>
+      <input type="range" id="f-note" min="0" max="9" step="1" value="0" aria-label="Note minimum">
+      <label class="toggle"><input type="checkbox" id="f-rated"> <span>Seulement les adresses déjà notées</span></label>
+      <div class="filters-foot">
+        <button class="btn btn--soft" id="f-reset">Réinitialiser</button>
+        <button class="btn" data-close id="f-apply">Voir les adresses</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/app.js?v=5"></script>
+</body>
+</html>
