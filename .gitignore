@@ -10,3 +10,4 @@ data/SPEC-*.md
 __pycache__/
 data/a-verifier.json
 data/verif/
+promo/

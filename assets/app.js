@@ -6,7 +6,7 @@
   const NETS = { tiktok: "TikTok", instagram: "Instagram", youtube: "YouTube" };
   const NET_SHORT = { tiktok: "TT", instagram: "IG", youtube: "YT" };
   const PARTNER = { pub: "Pub", "produits-offerts": "Produits offerts", invitation: "Invitation" };
-  const CAT_EMOJI = { "fast-food": "🍔", "patisserie-glacier": "🧁", "street-food-etranger": "🌍" };
+  const CAT_EMOJI = { tendances: "🔥", "fast-food": "🍔", "patisserie-glacier": "🧁", "street-food-etranger": "🌍" };
   const PAGE = 24;
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -142,7 +142,8 @@
 
   function renderCats() {
     const keys = Object.keys(state.cats).filter((k) => state.lieux.some((l) => l.categorie === k));
-    const all = [["", "Tout", "✨"], ...keys.map((k) => [k, state.cats[k], CAT_EMOJI[k] || "🍽️"])];
+    const tendances = state.lieux.some((l) => l.tendance) ? [["tendances", "Tendances", "🔥"]] : [];
+    const all = [["", "Tout", "✨"], ...tendances, ...keys.map((k) => [k, state.cats[k], CAT_EMOJI[k] || "🍽️"])];
     $("#cats").innerHTML = all.map(([k, label, e]) => `<button class="pill" role="tab" data-cat="${esc(k)}" aria-selected="${state.cat === k}"><span aria-hidden="true">${e}</span>${esc(label)}</button>`).join("");
     $("#cats").hidden = keys.length < 2;
   }
@@ -159,7 +160,7 @@
     const words = norm(state.q).trim().split(/\s+/).filter(Boolean);
     const list = state.lieux.filter((l) =>
       (!words.length || words.every((w) => l.haystack.includes(w))) &&
-      (ignoreCat || !state.cat || l.categorie === state.cat) &&
+      (ignoreCat || !state.cat || (state.cat === "tendances" ? !!l.tendance : l.categorie === state.cat)) &&
       (!state.ville || l.ville === state.ville) &&
       (!state.type || l.type === state.type) &&
       (!state.note || (l.note != null && l.note >= state.note)) &&
@@ -182,6 +183,14 @@
     </button>`;
   }
 
+  function hotHTML(l) {
+    return `<button class="slide slide--hot reveal" data-id="${esc(l.id)}">
+      ${thumbHTML(l)}
+      ${ringHTML(l.note, "ring--sm")}
+      <span class="slide__body"><span class="slide__name">${esc(l.nom)}</span><span class="slide__meta">🔥 ${esc(l.tendance)}</span></span>
+    </button>`;
+  }
+
   function cardHTML(l, i) {
     const meta = [l.specialite, l.type === "chaine" ? "Chaîne" : l.ville].filter(Boolean).join(" · ") || state.cats[l.categorie] || "";
     const tags = [];
@@ -189,6 +198,7 @@
     if (l.visites.length > 1) tags.push(`<span class="tag">${plural(l.visites.length, "visite")}</span>`);
     if (l.derniere) tags.push(`<span class="tag">${fmtDate(l.derniere, true)}</span>`);
     if (l.visites.some((v) => v.partenariat)) tags.push(`<span class="tag tag--gift"><svg><use href="#i-gift"/></svg>Offert</span>`);
+    if (l.tendance) tags.unshift(`<span class="tag tag--hot">🔥 Tendance</span>`);
     if (l.statut === "ferme-definitivement") tags.unshift(`<span class="tag tag--closed">Fermé</span>`);
     return `<li class="reveal"><button class="card" data-id="${esc(l.id)}" aria-label="${esc(l.nom)}, ${l.note == null ? "note à venir" : fmtNote(l.note) + " sur 10"}">
       ${thumbHTML(l)}
@@ -207,13 +217,17 @@
 
     const searching = !!state.q.trim() || n > 0;
     $("#sec-new").hidden = searching;
+    // Trending carousel: on the home page only, when no search, filter or category narrows the list.
+    const hot = !searching && !state.cat ? state.lieux.filter((l) => l.tendance).sort((a, b) => (b.note ?? -1) - (a.note ?? -1) || b.derniere.localeCompare(a.derniere)) : [];
+    $("#sec-hot").hidden = !hot.length;
+    $("#hot").innerHTML = hot.map((l) => hotHTML(l)).join("");
     if (!searching) {
       const visits = filtered({}).flatMap((l) => l.visites.map((v) => ({ l, v }))).sort((a, b) => (b.v.date || "").localeCompare(a.v.date || "")).slice(0, 10);
       $("#latest").innerHTML = visits.map(({ l, v }) => slideHTML(l, v)).join("");
       $("#sec-new").hidden = !visits.length;
     }
 
-    $("#list-title").textContent = searching ? "Résultats" : state.cat ? state.cats[state.cat] : "Toutes les adresses";
+    $("#list-title").textContent = searching ? "Résultats" : state.cat === "tendances" ? "Les adresses tendances 🔥" : state.cat ? state.cats[state.cat] : "Toutes les adresses";
     $("#count").textContent = plural(list.length, "adresse");
     $("#cards").innerHTML = list.slice(0, state.shown).map(cardHTML).join("");
     $("#more").hidden = list.length <= state.shown;
@@ -359,6 +373,7 @@
     const sub = [l.specialite, l.type === "chaine" ? "Chaîne" : l.type === "independant" ? "Indépendant" : "", l.ville].filter(Boolean).join(" · ");
     const tags = [
       l.statut === "ferme-definitivement" && `<span class="tag tag--closed">Fermé définitivement</span>`,
+      l.tendance && `<span class="tag tag--hot">🔥 Tendance</span>`,
       state.cats[l.categorie] && `<span class="tag">${CAT_EMOJI[l.categorie] || ""} ${esc(state.cats[l.categorie])}</span>`,
       `<span class="tag">${plural(l.visites.length, "visite")}</span>`,
       ...l.nets.map((n) => `<span class="tag">${NETS[n]}</span>`),
@@ -394,6 +409,7 @@
       <div class="detail__tags">${tags}</div>
       <div class="detail__pad">
         ${l.note != null ? `<p class="note-small">${l.rated.length ? `Note = moyenne de ${plural(l.rated.length, "plat")} noté${l.rated.length > 1 ? "s" : ""}.` : "Note globale donnée dans la vidéo."}</p>` : ""}
+        ${l.tendance ? `<div class="box box--hot"><h3>🔥 Pourquoi c'est tendance</h3><p class="avis">${esc(l.tendance)}</p></div>` : ""}
         ${l.avis ? `<div class="box"><h3>Mon avis</h3><p class="quote">${esc(l.avis)}</p></div>` : ""}
         ${pros}
         ${addr}
@@ -444,6 +460,12 @@
     if (!b) return;
     state.cat = b.dataset.cat; state.shown = PAGE; render();
     b.scrollIntoView({ inline: "center", block: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
+  });
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-cat-link]");
+    if (!b) return;
+    state.cat = b.dataset.catLink; state.shown = PAGE; render();
+    $("#list-title").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
   });
   $("#sort").addEventListener("click", (e) => { const b = e.target.closest("[data-sort]"); if (b) { state.sort = b.dataset.sort; render(); } });
   $("#more").addEventListener("click", () => { state.shown += PAGE; render(); });
