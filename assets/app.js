@@ -70,7 +70,10 @@
       if (typeof p.note === "number" && !latest.has(norm(p.nom))) latest.set(norm(p.nom), { ...p, date: v.date });
     }
     const rated = [...latest.values()];
-    const note = rated.length ? Math.round((rated.reduce((s, p) => s + p.note, 0) / rated.length) * 10) / 10 : null;
+    // Without any scored dish, fall back to the overall scores Amed gave in his videos.
+    const globales = visites.map((v) => v.note_globale).filter((n) => typeof n === "number");
+    const pool = rated.length ? rated.map((p) => p.note) : globales;
+    const note = pool.length ? Math.round((pool.reduce((s, n) => s + n, 0) / pool.length) * 10) / 10 : null;
     const nets = [...new Set(visites.flatMap((v) => (v.videos || []).map((x) => x.platform)))].filter((n) => NETS[n]);
     const l = { ...lieu, visites, note, rated, nets, derniere: visites[0]?.date || "" };
     l.emoji = emojiFor(l);
@@ -390,7 +393,7 @@
       </div>
       <div class="detail__tags">${tags}</div>
       <div class="detail__pad">
-        ${l.note != null ? `<p class="note-small">Note = moyenne de ${plural(l.rated.length, "plat")} noté${l.rated.length > 1 ? "s" : ""}.</p>` : ""}
+        ${l.note != null ? `<p class="note-small">${l.rated.length ? `Note = moyenne de ${plural(l.rated.length, "plat")} noté${l.rated.length > 1 ? "s" : ""}.` : "Note globale donnée dans la vidéo."}</p>` : ""}
         ${l.avis ? `<div class="box"><h3>Mon avis</h3><p class="quote">${esc(l.avis)}</p></div>` : ""}
         ${pros}
         ${addr}

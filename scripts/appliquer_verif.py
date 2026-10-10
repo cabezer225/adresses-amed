@@ -82,7 +82,8 @@ def appliquer_champs(l, r):
 
 def main():
     lieux = {l["id"]: l for l in json.loads(LIEUX.read_text(encoding="utf-8"))}
-    resultats = [r for f in sorted(VERIF.glob("resultat-*.json")) for r in json.loads(f.read_text(encoding="utf-8"))]
+    fichiers = sorted(VERIF.glob("resultat-*.json")) + sorted(VERIF.glob("passe2-resultat-*.json"))
+    resultats = [r for f in fichiers for r in json.loads(f.read_text(encoding="utf-8"))]
     absorbe_par = {}  # merged place id -> id of the place that absorbed it (to keep its logo)
     stats = {"maj": 0, "adresses": 0, "renommes": 0, "fusions": 0, "rattachements": 0, "ignores": 0}
 
@@ -140,8 +141,10 @@ def main():
 
     # Logos found by the logo agents (only when the file exists and confidence is not low).
     logos = 0
-    for f in sorted(VERIF.glob("logos-resultat-*.json")):
-        for r in json.loads(f.read_text(encoding="utf-8")):
+    sources_logos = [r for f in sorted(VERIF.glob("logos-resultat-*.json")) for r in json.loads(f.read_text(encoding="utf-8"))]
+    sources_logos += [{**r, "confiance": r.get("logo_confiance")} for r in resultats if "logo_confiance" in r]
+    for r in sources_logos:
+        if True:
             rid = r.get("id")
             l = lieux.get(rid) or lieux.get(absorbe_par.get(rid, ""))
             if not l or not r.get("logo") or r.get("confiance") not in OK or not (ROOT / r["logo"]).exists():
