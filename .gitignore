@@ -5,7 +5,11 @@ data/geocache.json
 data/tableau-notes.xlsx
 data/*.xlsx
 data/SPEC-*.md
-.claude/
+.claude/*
+!.claude/settings.json
+!.claude/hooks/
+# Résumés de conversation tenus par les agents (hook .claude/hooks/contexte.py)
+.contexte/
 .DS_Store
 __pycache__/
 data/a-verifier.json
