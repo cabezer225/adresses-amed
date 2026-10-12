@@ -182,7 +182,7 @@ Toutes appliquées dans le skill ; le détail complet, question par question, es
 ## 6. Ce que les pros font et qui manquait (ajouté dans la v3)
 
 - **Étape 0 « brief »** avant tout montage : promesse en une phrase, partenariat, personnes à protéger, niveau d'autonomie.
-- **Règle pour les montages hors familles** (vlog, pub, interview, clip) : extrait de 15 à 30 s à faire valider, fiche « adaptation et genres ».
+- **Règle pour les montages hors familles** (pub, interview d'un tiers, clip ; le vlog relève désormais de Lifestyle) : extrait de 15 à 30 s à faire valider, fiche « adaptation et genres ».
 - **Mode autonome avec défauts** : hook habituel, anglais à l'étranger, seuls les plans stock libres de droits téléchargés sans redemander.
 - **Outils IA classés** en trois statuts : autorisé comme aide, sur demande, interdit.
 - **Crête vraie ≤ −1 dBTP**, absente de la v2. L'encodage AAC fait monter les crêtes : sans cette marge, risque de saturation après publication.

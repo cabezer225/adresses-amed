@@ -250,7 +250,7 @@ Baxter : quand le personnage maîtrise, on étire ; quand il perd le contrôle, 
 ### 9.3 Tenir un plan plus longtemps que confortable
 Baxter tient certains plans un peu trop longtemps ; Scorsese : « un peu trop longtemps, puis couper si c'est justifié » (via Zhou). Deux cas :
 - **Plan sans parole** (extrait, document, lieu, carton) : durée fixée par le temps de lecture (§7 règle 3) et l'émotion. Permis en S, F, P.
-- **Visage de Cabezer après son dernier mot** (respiration) : exception du skill (§4.1) en S, aux moments d'émotion de P, au verdict de F et dans le Lifestyle posé. Ailleurs (C-Food, T, tous les courts), couper selon le skill §4.
+- **Visage de Cabezer après son dernier mot** (respiration) : exception du skill (§4) en S, aux moments d'émotion de P, au verdict de F et dans le Lifestyle posé. Ailleurs (C-Food, T, tous les courts), couper selon le skill §4.
 
 **Éviter :** D, explications tech, tout moment où Cabezer cherche ses mots.
 

@@ -340,7 +340,7 @@ v + (time < tS ? 0 : (wiggle(1.5, 1) - value) * linear(time, tS, tS + 0.5, 0, 1)
 ### 7.1 Ce que les API officielles permettent
 
 [Doc dev Adobe, lue le 12/10/2026 ; disponibilité par version à vérifier sur la sienne]
-- **Premiere (UXP)** : ouvrir, enregistrer et « Enregistrer sous » un projet ; importer des fichiers et des compositions AE ; lire les clips de timeline (nom, durée, vitesse en lecture seule) ; insérer un MOGRT ; créer et lire des images clés de paramètre d'effet ; exporter une image de séquence ; transcrire (§4.5). Les actions s'écrivent dans `project.lockedAccess(...)`.
+- **Premiere (UXP)** : ouvrir, enregistrer et « Enregistrer sous » un projet ; importer des fichiers et des compositions AE ; lire les clips de timeline (nom, durée, vitesse en lecture seule) ; insérer un MOGRT (non utilisé pour Cabezer : rendus AE ProRes 4444 alpha) ; créer et lire des images clés de paramètre d'effet ; exporter une image de séquence ; transcrire (§4.5). Les actions s'écrivent dans `project.lockedAccess(...)`.
 - **Absent de la référence** : modifier la vitesse d'un clip, créer une rampe, régler l'interpolation, créer un arrêt sur image. Les faire à la main (§4.1 à §4.3).
 - **After Effects (UXP)** : application, projet, compositions, calques, propriétés, textes, file de rendu.
 - **Position commune** : ExtendScript tant que le test de fumée le confirme sur la machine de Cabezer ; UXP préféré pour un nouvel outil dans Premiere ; FCP XML en voie de secours (`premiere-pro-avance.md §13.3`). Aucun script n'est lancé sans ce test (`pilotage-environnement-reprise.md`).

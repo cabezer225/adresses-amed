@@ -27,7 +27,7 @@ Nouvelle version du skill `cabezer-premiere-shorts` (Premiere Pro + After Effect
 7. **Étalonnage et gestion des couleurs** — Cullen Kelly, Darren Mostyn, Jason Druss : chaîne par caméra, scopes, peau, food, HDR/HLG
 8. **Documentaire, essai vidéo, archives** — Johnny Harris, Vox, Nerdwriter, Every Frame a Painting, Kurzgesagt, David Perell
 9. **Styles food et tech** — Best Ever Food Review Show, Mythical Kitchen, Epicurious, MKBHD, Mrwhosetheboss
-10. **Adaptation et genres** — analyser n'importe quelle référence (ffmpeg, PySceneDetect) ; pub, clip, vlog, interview, comédie, bande-annonce
+10. **Adaptation et genres** — analyser n'importe quelle référence (ffmpeg, PySceneDetect) ; famille Lifestyle (vlog, face caméra) ; pub, clip, interview, comédie, bande-annonce
 11. **Organisation, livraison et QC** — arborescence, sauvegardes, retours, bibliothèque ffmpeg, spécifications d'export
 12. **Pilotage, environnement et reprise** — piloter Premiere et AE sur ton Mac, exécuter des scripts, test de démarrage, reprise après plantage
 13. **Conformité, droits et accessibilité** — droit à l'image, mentions commerciales, extraits tiers, photosensibilité, typographie française

@@ -371,7 +371,7 @@ Tout élément externe (image, vidéo, son, musique, police, extrait) va dans **
 ## 13. Familles en bref
 
 Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne ses familles dans sa section.
-- **S (Story) :** partition à une ligne par idée (§2), promesse dans l'intro face caméra (§3), transcription pour repérer seulement (§4.2), désignation et collage en AE (§5.1, §6.5), mouvement sur photo pour désigner ou présenter (§6.4), nappe basse et silences (§8.1), chapitres du skill (§11.1) ; bandes sur fond uni neutre pour photos et archives en attendant l'identité (§6.3), pas de générique de fin.
+- **S (Story) :** partition à une ligne par idée (§2), promesse dans l'intro face caméra (§3), transcription pour repérer seulement (§4.2), désignation et collage en AE (§5.1, §6.5), mouvement sur photo pour désigner ou présenter (§6.4), nappe basse et silences (§8.1), chapitres (§11.1 ; skill §6 point 12) ; bandes sur fond uni neutre pour photos et archives en attendant l'identité (§6.3), pas de générique de fin.
 - **P (films/séries) :** extraits commentés et A/B de version (§10), mouvement sur photo pour désigner (§6.4), photos et archives en bandes sur le fond PRISME (§6.3), pas de passé/présent.
 - **F, T, H :** question et promesse (§2, §3), désignation (§5.1), carte (§7.1), plan vertical sur fond flou de lui-même, photos et archives en bandes (§6.3) ; mouvement sur photo rare.
 - **D :** aucune technique de cette fiche (coupes franches, pas d'archives ni d'extrait tiers).
@@ -428,7 +428,7 @@ Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne s
 | 3 | Extrait sonore étranger dans une vidéo française | Toujours sous-titré en français : mot à mot en court, 2 lignes en long (skill §9) |
 | 4 | Flux optique, changement de cadence calculé ou interpolation sur archive | Flux optique interdit ; ralenti propre sur 50/60p, sinon mélange de trames (§6.6) |
 | 5 | INA ou tout service de licences payant | Aucun achat ; signaler nom et prix avant commande (§12.2) |
-| 6 | Moment visuel sans preuve avant un chapitre (« soul moment » de Perell) | Non appliqué ; règle du skill (§11.1) |
+| 6 | Moment visuel sans preuve avant un chapitre (« soul moment » de Perell) | Non appliqué ; règle des chapitres (§11.1 ; skill §6 point 12) |
 | 7 | Identification d'une personne | À la première apparition, hors courts food (§11.3) |
 | 8 | Respirations conservées aux moments d'émotion de P | Gardées aussi en films/séries et au verdict du food long (§9) |
 

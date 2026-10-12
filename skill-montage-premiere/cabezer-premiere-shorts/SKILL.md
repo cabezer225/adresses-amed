@@ -37,7 +37,7 @@ Les deux formats se montent différemment, et dans chaque format les cinq famill
 | **Long** — 16:9, YouTube | **L-Food**, **L-Story**, **L-Tech**, **L-Films**, **L-Life** | food ; Story (société/documentaire) ; tech ; films/séries (PRISME) ; Lifestyle (vlogs et prises de parole face caméra) |
 | **Court** — 9:16, TikTok, Shorts, Reels | **C-Food**, **C-Story**, **C-Tech**, **C-Films**, **C-Life** | mêmes familles ; C-Food regroupe dégustation, duel ou classement, recette ou préparation, vlog street food ou voyage (§2.4) |
 
-Dans les fiches pro, les anciens codes correspondent ainsi : D = C-Food (dégustation), F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; Lifestyle n'a pas de code dans ces fiches (appliquer le §2 et la fiche [adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md), vlog et interview). Pour les courts autres que la dégustation : forme selon le tableau 2.3 et [formats courts](references/pro/formats-courts-verticaux.md), fond (preuves, schémas, extraits) selon la fiche de la famille longue. **Hors familles (H)** existe dans les deux formats (§1).
+Dans les fiches pro, les anciens codes correspondent ainsi : D = C-Food (dégustation), F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; Lifestyle est noté « Life » dans la fiche [adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md), qui lui consacre sa section 6.10 ; les autres fiches ne lui donnent pas de code (appliquer le §2.5). Pour les courts autres que la dégustation : forme selon le tableau 2.3 et [formats courts](references/pro/formats-courts-verticaux.md), fond (preuves, schémas, extraits) selon la fiche de la famille longue. **Hors familles (H)** existe dans les deux formats (§1).
 
 ### 2.1 Ce qui change d'un format à l'autre
 
@@ -572,7 +572,7 @@ Cabezer veut des méthodes réellement étudiées, pas des liens. Lire le conten
 | [Étalonnage et gestion des couleurs](references/pro/etalonnage-gestion-couleur.md) | Toute passe couleur : chaîne par caméra, scopes, peau, food, HDR/HLG, balises d'export |
 | [Documentaire, essai vidéo, archives](references/pro/documentaire-essai-video-archives.md) | Story et films/séries : partition, preuves, photos, cartes, extraits, cartons |
 | [Styles food et tech](references/pro/styles-food-et-tech.md) | B-roll food, rampes, duels et classements, captures d'écran et interfaces tech |
-| [Adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md) | Montage hors familles, analyse d'une référence, pub, clip, vlog, interview, comédie, bande-annonce |
+| [Adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md) | Lifestyle (vlog, face caméra : section 6.10), montage hors familles, analyse d'une référence, pub, clip, interview d'un tiers, comédie, bande-annonce |
 | [Organisation, livraison et QC](references/pro/organisation-livraison-qc.md) | Arborescence, sauvegardes, retours, bibliothèque ffmpeg et scripts de contrôle, specs d'export |
 | [Pilotage, environnement et reprise](references/pro/pilotage-environnement-reprise.md) | Première session sur une machine, exécution de scripts, pilotage de l'interface, plantage, reprise par une nouvelle session |
 | [Conformité, droits et accessibilité](references/pro/conformite-droits-accessibilite.md) | Personnes filmées, partenariats, extraits tiers, photosensibilité, typographie française à l'écran |

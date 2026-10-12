@@ -380,7 +380,7 @@ Arguments : temps en secondes, x, y, largeur, hauteur de la zone, couleur du tex
 - **Contenu identique** : en France, les vidéos longues n'ont **qu'un SRT, rien d'incrusté** (réponse de Cabezer) ; dans les courts (mot à mot) et à l'étranger, les sous-titres incrustés (composition AE, ProRes 4444 alpha) et le SRT livré portent le même texte et la même ponctuation, de sorte qu'une personne sourde ou malentendante reçoive la même information que l'écran (skill §9, voie unique).
 - **Sons significatifs** : un bruitage qui remplace un nom ou un prix ne doit pas être la seule information ; l'écrit est toujours présent (prix, note, mot de l'appel au commentaire) [Pratique].
 - **Audiodescription** : critère 1.2.5 (niveau AA) non étudié ; à signaler pour les formats longs, sans engagement.
-- **Temps de lecture** : formule du skill (§7.4) pour le format long ; dans les courts en mot à mot, rythme de la parole.
+- **Temps de lecture** : formule du skill (§6 point 9) pour le format long ; dans les courts en mot à mot, rythme de la parole.
 - **Traduction automatique** : relue (décision B.2).
 - **Vérification** : sur le MP4, jamais sur le SRT seul (`organisation-livraison-qc.md §6.4`).
 

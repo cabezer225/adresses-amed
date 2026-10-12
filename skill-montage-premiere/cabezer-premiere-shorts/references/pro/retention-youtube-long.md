@@ -399,7 +399,7 @@ Pièges : un pic n'est pas toujours un succès ; la rétention dépend aussi du 
 | Mots-clés incrustés (§6.3) | Voir skill §5.1 | Si la charte le permet | Non | Non | Si la charte le permet | Selon brief |
 | Ambiance par lieu (§7.2) | Proposée au premier usage ; sans accord, non | Oui | Oui | Oui | Oui | Oui |
 | Carton de chapitre de 3 s (§8) | Non | Non, chapitres dans la description | Oui (signature) | Non, chapitres dans la description | Non, chapitres dans la description | Non, chapitres dans la description |
-| Respiration au-delà de la coupe du skill (§4.2) | Non | Oui, au verdict | Oui (skill §6) | Oui, moments d'émotion | Non | Selon brief ; Lifestyle posé : oui |
+| Respiration au-delà de la coupe du skill (§4) | Non | Oui, au verdict | Oui (skill §6) | Oui, moments d'émotion | Non | Selon brief ; Lifestyle posé : oui |
 | Libérer les 20 dernières secondes (§9) | Non | Oui | Oui | Selon brief | Oui | Oui |
 
 ---
