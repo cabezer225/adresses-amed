@@ -1,5 +1,7 @@
 # Audio pro : montage dialogue, sound design, musique, mixage et loudness
 
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander » : SRT seul pour les vidéos longues tournées en France ; identité Story v15 et générique « Amed Story 🧢 » supprimés (à refaire) ; coupe courte de la bouchée sur tous les formats courts ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; composition musicale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; 4K pour YouTube long quand les rushs sont en 4K ; un rendu de sous-titres par passage validé ; intervenants identifiés à la première apparition (hors D) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. Liste complète : `../decisions-en-attente.md`.
+
 Fiche de référence pour piloter l'audio dans Premiere Pro et After Effects comme un monteur son, dans le cadre des règles de Cabezer. Dernière vérification : 12/10/2026. Versions de Premiere et d'After Effects : non affirmées ; elles se lisent à l'écran et se consignent avec le test de fumée de `pilotage-environnement-reprise.md`.
 
 **Niveaux de preuve** :

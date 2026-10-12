@@ -1,6 +1,6 @@
 # Décisions d'harmonisation (skill v3, 12/10/2026)
 
-Ce document a tranché les conflits relevés entre les fiches `references/pro/` et avec le skill. Le SKILL.md prime ; ce document prime sur les fiches, qui y renvoient par lettre et numéro (B4, C, D16…). Les points marqués **[Q]** attendent une décision de Cabezer : la fiche donne le **défaut** indiqué, signale la question et ne présente jamais l'alternative comme une règle.
+**Les réponses de Cabezer du 12/10/2026 (section E et `decisions-en-attente.md`) priment sur ce document.** Ce document a tranché les conflits relevés entre les fiches `references/pro/` et avec le skill. Le SKILL.md prime ; ce document prime sur les fiches, qui y renvoient par lettre et numéro (B4, C, D16…). Les points marqués **[Q]** attendent une décision de Cabezer : la fiche donne le **défaut** indiqué, signale la question et ne présente jamais l'alternative comme une règle.
 
 ## A. Emplacement final et renvois
 
@@ -50,7 +50,7 @@ Ce document a tranché les conflits relevés entre les fiches `references/pro/` 
 5. **Montage par le texte.** Sert à repérer et pré-découper ; chaque coupe est ensuite recalée à la forme d'onde et à l'énergie du son (jamais aux temps de transcription).
 6. **Respirations.** L'exception du skill concerne Story. Étendre aux moments d'émotion de films/séries et au verdict de food long = **[Q]**, défaut : règle du skill inchangée.
 7. **Corrections au dérush.** Retirer un faux départ pour garder ce que Cabezer voulait dire (ses propres exemples : « trois mozzarelles ») est permis ; jamais un collage qui crée une affirmation qu'il n'a pas faite ni ne change le sens.
-8. **Promesse.** Sujet et promesse confirmés avant la 30e seconde (avant le générique en Story) ; l'enjeu peut être rappelé ensuite.
+8. **Promesse.** Sujet et promesse confirmés avant la 30e seconde ; l'enjeu peut être rappelé ensuite.
 9. **Hook dégustation.** Noter son hook choisi avec le barème §5.2 et donner la note ; sous 8, retravailler jusqu'à 8 (consigne de Cabezer) ; si son choix l'empêche, son choix prime : livrer avec la note réelle et proposer au plus deux variantes en gardant son hook comme option ; limite de deux itérations = [Q] (défaut : pas de limite tant qu'une piste existe).
 10. **Ambiance en dégustation.** Aucune ambiance continue ni musique. Ambiance discrète du lieu sous un insert muet = méthode à proposer au premier usage (skill §5, §11) : sans accord, aucune.
 11. **Foley d'aliment.** Défaut : aucun (jamais sur une bouchée ni une réaction ; pas sur un insert muet sans accord) **[Q]**.
@@ -59,3 +59,7 @@ Ce document a tranché les conflits relevés entre les fiches `references/pro/` 
 14. **Extraits tiers (P, S).** Durée minimale nécessaire, commentés, source affichée ; un crédit n'est pas une autorisation ; signaler le risque Content ID avant publication.
 15. **Vitesse de la musique.** Un morceau fini garde sa vitesse d'origine ; un ajustement de tempo ne concerne qu'une composition faite de boucles.
 16. **Mode autonome.** Défauts : hook = son hook habituel noté ; langue à l'étranger = anglais ; téléchargement = jamais sans accord (sinon s'en passer) ; validations = consignées comme « en attente ».
+
+## E. Réponses de Cabezer du 12/10/2026 (priment sur A à D)
+
+Voir le tableau en tête de `decisions-en-attente.md`. En particulier : D6 (respirations) est étendu aux films/séries et au verdict du food long ; D9 (hook) : au plus deux passes de retravail ; D10 (ambiance en D) : proposée au premier usage ; D11 (foley) : jamais ; sous-titres longs en France : SRT seul ; un rendu de sous-titres de dégustation par passage validé ; YouTube long en 4K quand les rushs sont en 4K ; composition musicale en S, F et T ; identité Story v15 et générique supprimés ; Tesseract et Higgsfield retirés.

@@ -9,7 +9,7 @@ Ce que je te conseille de **garder**, **retirer** ou **reformuler**, et les ques
 - Un agent critique a cherché les conflits entre les fiches et ton skill, puis tout a été harmonisé sur une liste de décisions communes.
 - Un relecteur indépendant a comparé la v2 et la v3 ligne à ligne : aucune valeur chiffrée ni aucun chemin perdu ; ses 19 remarques (pertes de nuance, renvois faux, règle « minimum 8 » affaiblie) sont corrigées.
 
-**Résultat :** 23 contradictions réelles, 11 éléments périmés ou mal rangés, 3 règles perdues dans l'historique, une vingtaine d'ambiguïtés (dont 17 questions pour toi) et un problème de structure grave : les fichiers cités sont absents. Tout ce qui pouvait se trancher avec ta propre règle (« la consigne la plus récente l'emporte ») est appliqué dans la v3. Le reste est marqué **[Q]** : la v3 applique un défaut prudent en attendant ta réponse (section 4).
+**Résultat :** 23 contradictions réelles, 11 éléments périmés ou mal rangés, 3 règles perdues dans l'historique, une vingtaine d'ambiguïtés (tranchées par tes réponses, section 4) et un problème de structure grave : les fichiers cités sont absents. Tout ce qui pouvait se trancher avec ta propre règle (« la consigne la plus récente l'emporte ») est appliqué dans la v3. Le reste t'a été posé : tes 19 réponses du 12/10/2026 sont appliquées (section 4).
 
 ---
 
@@ -62,11 +62,11 @@ Gravité : 🔴 fausse un montage · 🟠 fait hésiter Claude · 🟡 mineure.
 | 2 🔴 | §9 / §1 / §16 | « Pour animer des sous-titres : Graphiques et titres > Mettre à niveau la légende » (animation dans Premiere) contre « animations uniquement dans AE » et « pas de légendes Premiere au style générique » | Sous-titres incrustés = composition AE pour toutes les familles ; la piste Premiere sert de transcription et de SRT. **« Mettre à niveau la légende » retiré** |
 | 3 🔴 | §1 / §5.1 / §7 / §16 | Le mot « animation » n'est jamais défini : punch-ins, whips, shakes, zooms Micode et speed ramps se font dans Premiere alors que « les animations se font uniquement dans AE » | Définition en §1 : **animation graphique** (texte, emoji, prix, schéma, sous-titre animé…) = AE ; **traitement d'un plan filmé** (punch-in, zoom, whip, shake, rampe, recadrage) = Premiere |
 | 4 🟠 | §6 point 2 / point 9 | Plans d'univers suivi de **1,5 à 3 s** contre « une image sans texte reste au moins **2 s** » (plus récent) | **2 à 3 s** ; les coupes rapides de 0,4 à 0,8 s restent l'exception nommée |
-| 5 🟠 | §11 Story | Composition originale = solution de repli (« si aucune musique libre ne convient ») contre « compose réellement 2 ou 3 musiques » (plus récent) ; méthode Apple Loops décrite en entier alors qu'elle est déclassée | Composition en 2–3 thèmes = **défaut en Story** ; Apple Loops = matériau possible, jamais en collage ; méthode en 4 étapes **déplacée dans l'historique**. Hors Story : **[Q]** |
+| 5 🟠 | §11 Story | Composition originale = solution de repli (« si aucune musique libre ne convient ») contre « compose réellement 2 ou 3 musiques » (plus récent) ; méthode Apple Loops décrite en entier alors qu'elle est déclassée | Composition en 2–3 thèmes = **défaut en Story** ; Apple Loops = matériau possible, jamais en collage ; méthode en 4 étapes **déplacée dans l'historique**. Étendue au food long et à la tech par ta réponse |
 | 6 🟡 | §11 | « Conserver la vitesse d'origine du morceau » contre « ramener au tempo commun avec atempo » | Vitesse d'origine pour tout morceau fini ; le tempo ne se change que dans une composition faite de boucles |
 | 7 🟠 | §5.1 / §16 | Scripts Python Milan « creer_habillage », « creer_sous_titres » contre « pas de graphisme fabriqué hors d'AE (Python) » | Précisé : ces scripts **pilotent AE** et génèrent le XML, ils ne fabriquent aucune image ; ce sont des exemples, pas des gabarits ; liste déplacée dans `projets-cabezer.md` |
 | 8 🟠 | §5 / §5.2 | « Demander le hook » (dont **ton hook habituel**) contre le barème qui donne 3 points au « produit dans la 1re seconde » : ton hook peut être recalé, et la boucle « retravailler jusqu'à 8 » n'a pas de fin | **Minimum 8 gardé** (ta consigne). Seule exception : si 8 est impossible sans contredire ton choix, ton choix prime et la note réelle est livrée avec l'explication et au plus 2 variantes. Limite à 2 itérations : question 17 |
-| 9 🟡 | §6 générique | « Décaler tout ce qui suit de **240 images** » = 8 s seulement à 30 i/s (9,6 s à 25 i/s) | Insertion avec l'outil Insérer, durée réelle du fichier convertie à la cadence de la séquence |
+| 9 🟡 | §6 générique | « Décaler tout ce qui suit de **240 images** » = 8 s seulement à 30 i/s (9,6 s à 25 i/s) | Sans objet : le générique a été supprimé (ta réponse) ; un futur générique s'insérera avec l'outil Insérer, durée convertie à la cadence de la séquence |
 | 10 🟠 | §7 / §2 / §5.1 | §7 « zoom jamais imposé, pas de zoom à chaque plan » sans exception, alors que la dégustation impose un punch-in à chaque coupe face caméra | §7 précise : zoom Micode pour F, S, P, T ; **exception dégustation** = punch-ins secs |
 | 11 🟠 | §4 / §5 / §5.2 | Trois seuils pour les blancs : aucun blanc (§4), couper > 0,25 s (§5), jusqu'à 6 blancs ≥ 0,25 s/min tolérés (§5.2) | Ligne « Blancs » ajoutée au tableau §2 par famille ; le « 6 par minute » est un **contrôle du résultat**, pas une cible de coupe |
 | 12 🟠 | §2 / §5 / §11 | Dégustation : banque Pixabay ; §11 : « bibliothèque ouverte » et autres sources, sans dire laquelle prime | Dégustation = banque Pixabay et ta **liste de référence** (autre son de la banque sur ton accord) ; bibliothèque ouverte pour les autres familles |
@@ -80,33 +80,35 @@ Gravité : 🔴 fausse un montage · 🟠 fait hésiter Claude · 🟡 mineure.
 | 20 🟡 | §3 / §11 | « Ne jamais fusionner couleur et mixage » contre « une demande de terminer… autorise ces passes ensemble » | L'autorisation supprime seulement les validations intermédiaires ; les passes restent distinctes |
 | 21 🟡 | §7 | « Transitions réservées aux changements d'argument » contre J/L-cuts et micro-fondus audio | La règle vise les transitions **visibles** ; J/L-cuts permis, jamais sur la bouchée ou la réaction en dégustation |
 | 22 🟡 | §7 / §5.1 | « Jamais linéaire » contre punch-in sec (pas d'interpolation) | Un punch-in sec est un changement instantané, pas un mouvement ; vitesse constante permise pour une rotation, un défilement ou un compteur |
-| 23 🟠 | §1 / §16 | « Animations uniquement dans AE » contre Tesseract (animations) et Higgsfield (« textes animés ») | Ils restent des exceptions **sur demande nominative** ; leur statut gratuit ou payant est à vérifier **[Q]** |
+| 23 🟠 | §1 / §16 | « Animations uniquement dans AE » contre Tesseract (animations) et Higgsfield (« textes animés ») | **Tesseract et Higgsfield retirés du skill** (ta réponse) |
 
 ---
 
-## 4. Questions pour toi (la v3 applique le défaut en attendant)
+## 4. Tes réponses du 12/10/2026 (appliquées dans la v3)
 
-| # | Question | Défaut appliqué | Mon avis |
-|---|---|---|---|
-| 1 | Food long, Story, films, tech **tournés en France** : sous-titres français incrustés, ou seulement un SRT ? | SRT livré, pas d'incrustation | Pour YouTube long, le SRT suffit souvent ; à incruster si ton public regarde sans le son |
-| 2 | **Identité food long** : il n'existe aucune charte (« Charte food » n'est définie nulle part). On en crée une ? | Faire valider un extrait | Oui : 30 s de test suffisent |
-| 3 | **Story v15 rose** et **générique Amed Story** : validés depuis le 30/09 ? | En attente | Si oui, dis-le : je retire « à valider » |
-| 4 | « Un Short/Reel **monté seul** garde la dégustation complète » : cette exception tient encore ? (le reste de la DA v2 dit « bouchée courte » partout) | Oui | Probablement à retirer : c'est un reste du 17/09 |
-| 5 | Dégustation : **ambiance du lieu** sous un insert muet ? **foley** (bruit de croustillant) sur un insert de préparation ? | Ambiance : proposée au premier usage (ta v2 la disait compatible), aucune sans accord ; foley : non | Les créateurs food utilisent le vrai son ; le faux foley est risqué pour une dégustation, qui est un avis honnête |
-| 6 | **Composition musicale** en food long et tech, ou seulement en Story ? | Story seulement | D'accord : la composition coûte cher en temps |
-| 7 | **Respirations** gardées aussi pour l'émotion en films/séries et le verdict en food long ? | Non (règle §4) | Je conseille oui : c'est ce que font tous les monteurs étudiés |
-| 8 | Fin de Story : réserver **5 à 20 s** pour l'écran de fin YouTube ? | Oui (noir et musique qui s'éteint) | Oui, sinon les éléments de fin recouvrent ton regard final |
-| 9 | Sous-titres dégustation : un **rendu d'un seul tenant**, à recouper après tes retouches, ou une piste par séquence ? | Rendu AE, recoupé | Une piste par séquence validée t'éviterait les désynchronisations |
-| 10 | Sous-titres à 72–75 % de la hauteur : exemptés de la « boîte de zones sûres » ? | Oui, contrôle sur téléphone | À vérifier sur une capture de chaque application |
-| 11 | **SCANDALE FOOD** : famille à part ou série Story ? | Règles Story | — |
-| 12 | Afficher le **nom et la fonction** d'un intervenant à sa première apparition ? | Seulement sur demande | Pratique standard en documentaire |
-| 13 | **Flouter** les inconnus identifiables (clients, employés, enfants, plaques) ? | Signaler au dérush, flouter sur ta décision | Voir la fiche conformité : le droit à l'image français est strict |
-| 14 | **Tesseract et Higgsfield** : toujours utilisés ? gratuits ? | Seulement sur demande nominative | S'ils ne servent plus, retire-les de la description |
-| 15 | Réduction de bruit **identique sur toutes les prises** (ta règle) ou adaptée prise par prise (pratique pro) ? | Ta règle | Garde ta règle pour le timbre ; adapter seulement le niveau de réduction sur une prise très bruyante |
-| 16 | **YouTube long en 4K** ? Ta v2 disait « 1920×1080 ou 3840×2160 » sans trancher | 1080p ; 4K sur demande depuis des rushs 4K | YouTube encode mieux un fichier envoyé en 4K, même pour les spectateurs en 1080p : à envisager pour tes vidéos phares |
-| 17 | Notation dégustation : limiter le retravail à **deux itérations** quand 8 n'est pas atteint ? | Pas de limite tant qu'une piste existe | Une limite évite de tourner en rond sur un détail ; à toi de voir |
+| Question | Ta réponse | Ce qui change dans le skill |
+|---|---|---|
+| Sous-titres des vidéos longues tournées en France | SRT seulement | Rien d'incrusté ; SRT livré (§2, §9) |
+| Story v15 rose et générique « Amed Story 🧢 » | Supprimés, à refaire en entier | Blocs v15 et générique retirés ; Story sans identité validée : nouvelle direction à proposer sur un extrait (§6) ; fichiers gardés en archive dans `projets-cabezer.md` |
+| Short/Reel monté seul en dégustation | Coupe courte partout | Exception du 17/09 retirée (§5) |
+| Personnes filmées | Je signale, tu décides | Liste au dérush, floutage seulement sur ta désignation (§8) |
+| Ambiance du lieu sous un insert muet (D) | À me proposer d'abord | Méthode proposée au premier usage (§5, §20) |
+| Foley d'aliment | Jamais | Aucun son ajouté, dans aucune famille (§5) |
+| Composition musicale originale | Story + food long + tech | Méthode par défaut en S, F, T ; films/séries : ta bibliothèque (§2, §11) |
+| Respirations d'émotion | Étendre | Gardées aussi en films/séries et au verdict du food long (§2, §4) |
+| Écran de fin YouTube en Story | Oui | 5 à 20 s réservées (§6) |
+| Sous-titres de dégustation | Un rendu par séquence ; gardés à 72–75 % | Un rendu AE par passage validé ; exemptés de la boîte de zones sûres, contrôle sur capture (§9) |
+| SCANDALE FOOD | N'existe plus | Mention retirée (§12) |
+| Intervenants | Oui, à la 1re apparition | Nom et fonction une fois, hors dégustation (§6 point 7) |
+| Tesseract et Higgsfield/Higgsedit | Retirer les deux | Retirés de la description, de §1 et §16 |
+| YouTube long | 4K si rushs 4K | 3840×2160 par défaut quand les rushs sont en 4K (§13) |
+| Réduction de bruit | Adapter si prise très bruyante | Chaîne identique, un peu plus de réduction seulement sur une prise très bruyante, signalée (§11) |
+| Notation sous 8 | 2 essais max puis livrer | Au plus deux passes de retravail (§5.2) |
+| Identité food long | Créer une charte sur extrait | 30 s habillées à valider, puis la fiche devient la règle (§6) |
+| Scripts de contrôle | Sans redemander | Les scripts qui ne font que lire se lancent seuls ; ceux qui modifient attendent ton accord (§3) |
+| Repas offert, invitation, produit reçu | Me demander à chaque fois | Signalé au brief, tu choisis la mention (§8) |
 
-Les questions plus techniques issues des fiches (libellés, seuils, outils) sont dans `references/decisions-en-attente.md`.
+Il reste environ 70 questions techniques (libellés, seuils, outils) dans `references/decisions-en-attente.md`. Elles ont toutes un défaut prudent et ne seront posées qu'au moment où elles bloquent un montage.
 
 ---
 

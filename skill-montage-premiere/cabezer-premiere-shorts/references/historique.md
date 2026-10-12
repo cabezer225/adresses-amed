@@ -36,3 +36,11 @@ Ordre chronologique, de la plus ancienne à la plus récente (année 2026).
   - Après sa reprise de la v05 : pas d'étiquette ajoutée pour la note ; retirer le SFX d'un élément retiré.
   - Exports TikTok en FHD 1080×1920 directement depuis Premiere.
 - **12/10 — skill v3.** Contradictions résolues (définition de l'animation, sous-titres faits dans AE pour toutes les familles, nappe Story 24 dB, durées Story, coupe des blancs par famille, sources SFX, arbitrage unique, mode autonome), règles orphelines de l'historique remontées dans le corps, 13 fiches pro ajoutées (`references/pro/`), statut des méthodes et décisions en attente (§20). Rien n'a été retiré sans être soit remplacé par une consigne plus récente, soit déplacé dans `historique.md` ou `projets-cabezer.md`.
+- **12/10 (bis) — réponses de Cabezer aux questions de la v3.**
+  - Vidéos longues tournées en France : SRT français seulement, rien d'incrusté.
+  - **Identité Story v15 rose et générique « Amed Story 🧢 » v01 : supprimés, à refaire en entier.**
+  - Dégustation : coupe courte de la bouchée sur tous les formats courts (l'exception « Short/Reel monté seul = dégustation complète » est retirée) ; ambiance du lieu sous un insert muet proposée au premier usage ; jamais de foley d'aliment ; au plus deux passes de retravail quand la note reste sous 8 ; sous-titres gardés à 72–75 % (exemptés de la boîte de zones sûres, contrôle sur capture) ; un rendu de sous-titres par passage validé.
+  - Personnes filmées : Claude les signale au dérush, Cabezer décide du floutage. Repas offert, invitation, produit reçu : signalé au brief, mention choisie par Cabezer à chaque fois.
+  - Composition musicale originale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; réservation de 5 à 20 s pour l'écran de fin YouTube en Story ; identification des intervenants à leur première apparition (hors dégustation).
+  - Charte food long à créer sur un extrait de 30 s ; YouTube long en 4K quand les rushs sont en 4K ; réduction de bruit adaptée seulement sur une prise très bruyante ; scripts de contrôle en lecture seule lancés sans redemander.
+  - SCANDALE FOOD n'existe plus ; Tesseract et Higgsfield/Higgsedit retirés du skill.

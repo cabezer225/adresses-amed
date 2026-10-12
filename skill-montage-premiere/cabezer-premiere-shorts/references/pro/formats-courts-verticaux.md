@@ -1,5 +1,7 @@
 # Formats courts verticaux (TikTok, Reels, Shorts) — fiche de référence 2025–2026
 
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander » : SRT seul pour les vidéos longues tournées en France ; identité Story v15 et générique « Amed Story 🧢 » supprimés (à refaire) ; coupe courte de la bouchée sur tous les formats courts ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; composition musicale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; 4K pour YouTube long quand les rushs sont en 4K ; un rendu de sous-titres par passage validé ; intervenants identifiés à la première apparition (hors D) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. Liste complète : `../decisions-en-attente.md`.
+
 Fiche rédigée le 12/10/2026, harmonisée avec `../decisions-harmonisation.md` de la passe 2. Elle sert à piloter Premiere et After Effects (AE) sur le Mac de Cabezer et complète le skill `cabezer-premiere-shorts` sans le modifier. Pour Premiere (proxys, multicam, export, XML), lire `premiere-pro-avance.md` ; pour le récit et le rythme, `fondamentaux-montage-narratif.md` ; pour l'environnement et les raccourcis, `pilotage-environnement-reprise.md`.
 
 ## Quand lire cette fiche

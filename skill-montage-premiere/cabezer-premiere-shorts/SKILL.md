@@ -1,11 +1,11 @@
 ---
 name: "cabezer-premiere-shorts"
-description: "Monter les vidéos de Cabezer à un niveau professionnel dans Premiere Pro et After Effects : dégustations courtes (TikTok, Shorts, Reels), food long, Cabezer Story, films/séries (PRISME), tech et tout autre format. Couvre dérush, structure et rythme, habillage par famille (animations graphiques uniquement dans After Effects), sous-titres, étalonnage, audio et mixage, déclinaisons, export, contrôle qualité et reprise de projet. À utiliser pour tout montage ou partie de montage d'une vidéo de Cabezer. Tesseract et Higgsfield/Higgsedit seulement sur demande explicite. Pas pour la génération vidéo, les miniatures ou la publication seules."
+description: "Monter les vidéos de Cabezer à un niveau professionnel dans Premiere Pro et After Effects : dégustations courtes (TikTok, Shorts, Reels), food long, Cabezer Story, films/séries (PRISME), tech et tout autre format. Couvre dérush, structure et rythme, habillage par famille (animations graphiques uniquement dans After Effects), sous-titres, étalonnage, audio et mixage, déclinaisons, export, contrôle qualité et reprise de projet. À utiliser pour tout montage ou partie de montage d'une vidéo de Cabezer. Pas pour la génération vidéo, les miniatures ou la publication seules."
 ---
 
 # Montage Cabezer — Premiere Pro et After Effects, niveau professionnel
 
-Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches pro** (§19). Version 3 du 12/10/2026 : contradictions de la v2 résolues, règles restées dans l'historique remontées dans le corps, méthodes de monteurs professionnels ajoutées. Les consignes datées et leur chronologie sont dans [l'historique](references/historique.md) ; les détails propres à des projets passés sont dans [projets Cabezer](references/projets-cabezer.md).
+Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches pro** (§19). Version 3 du 12/10/2026, réponses de Cabezer intégrées le même jour : contradictions de la v2 résolues, règles restées dans l'historique remontées dans le corps, méthodes de monteurs professionnels ajoutées. Les consignes datées et leur chronologie sont dans [l'historique](references/historique.md) ; les détails propres à des projets passés sont dans [projets Cabezer](references/projets-cabezer.md).
 
 **[Q]** marque une décision qui attend Cabezer : appliquer le défaut (écrit dans le texte ou dans le registre, §20), le noter dans `Suivi/decisions.md`, poser la question une fois, seulement quand elle bloque.
 
@@ -22,7 +22,6 @@ Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches
   - *Animation graphique* = tout élément créé : texte, pastille, prix, note, emoji, forme, schéma, carte, sous-titre animé, flash ou glitch graphique, transition graphique, parallaxe 2.5D. **Uniquement dans After Effects**, en calques natifs modifiables (« les animations se font uniquement par AE et non par génération comme avant »). Allers-retours avec Premiere sans redemander la permission. Détail §16.
   - *Traitement d'un plan filmé* = punch-in sec, zoom façon Micode, whip ou shake du cadre, speed ramp, recadrage, Auto Reframe, stabilisation, fondu, mouvement sur une photo ou un document qui désigne un détail. **Autorisé dans Premiere.**
   - Un script peut piloter AE (compositions, calques, clés) ; il ne fabrique jamais d'image hors d'AE. Les vrais emojis Apple rendus par macOS sont des sources autorisées.
-  - Tesseract et Higgsfield/Higgsedit : seulement sur demande nominative de Cabezer (§16).
 - Avant de modifier un montage existant : **Enregistrer sous** une nouvelle version. Tester d'abord sur une copie et un aperçu court quand Cabezer demande un essai sur un projet ouvert.
 - **Validations :** faire valider le dérush avant l'habillage, sauf autorisation explicite d'enchaîner (« fais ça de manière autonome », « export final direct »). Une autorisation d'enchaîner n'autorise jamais la publication.
 - **Mode autonome — défauts :** hook = son hook habituel, noté (§5.2) ; langue des sous-titres à l'étranger = anglais ; téléchargement = jamais sans accord (s'en passer) ; toute validation manquante est notée « en attente » dans `Suivi/decisions.md` et rappelée à la livraison.
@@ -33,13 +32,13 @@ Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches
 
 | Règle | D Dégustation (TikTok/Shorts/Reels) | F Food long | S Story | P Films/séries | T Tech |
 |---|---|---|---|---|---|
-| Sous-titres | Incrustés toujours ; **français** mot à mot en France et Belgique ; à l'étranger **langue locale ou anglais, à demander** (défaut anglais) ; masqués pendant les textes animés (§9) | France : SRT français livré, incrustation selon brief **[Q]** ; étranger : anglais incrusté, 2 lignes max | Idem F | Idem F | Idem F, vocabulaire accessible |
-| Musique | **Absente** (choix de Cabezer, sauf demande) | Selon émotion | Nappe continue ~24 dB sous la voix, silences de bascule (§11) | Bibliothèque perso | Selon émotion |
+| Sous-titres | Incrustés toujours ; **français** mot à mot en France et Belgique ; à l'étranger **langue locale ou anglais, à demander** (défaut anglais) ; masqués pendant les textes animés (§9) | France : SRT français seulement, rien d'incrusté (réponse du 12/10/2026) ; étranger : anglais incrusté, 2 lignes max | Idem F | Idem F | Idem F, vocabulaire accessible |
+| Musique | **Absente** (choix de Cabezer, sauf demande) | Selon émotion ; composition originale (§11) | Nappe continue ~24 dB sous la voix, silences de bascule ; composition originale (§11) | Bibliothèque perso | Selon émotion ; composition originale (§11) |
 | SFX | Banque Pixabay dédiée, liste de référence (§5), sans mèmes vocaux ni boom, audibles | Bibliothèque ouverte, audibles | Idem F ; aucun bruitage sans élément visuel correspondant | Idem F | Idem F |
 | Zoom facecam | Punch-ins secs 100/115 %, 120 % sur les bouchées ; shake + flash sur les gros moments ; whip entre deux lieux | Zoom avant/arrière façon Micode, seulement si pertinent | Idem F ; déplacements libres sur documents | Zoom Micode sur son visage seulement, jamais d'aller-retour continu (rejeté sur Dune) | Idem F |
-| Identité | DA Dégustation v2 (§5.1) | À valider sur extrait ; repère Food dégustation v1 **[Q]** | Méthode Micode/Amistory ; identité rose v15 à valider **[Q]** | PRISME v1 | Liquid Glass |
+| Identité | DA Dégustation v2 (§5.1) | Charte à créer sur un extrait de 30 s à valider (§6) | Méthode Micode/Amistory ; identité visuelle à refaire entièrement (v15 supprimée le 12/10/2026) | PRISME v1 | Liquid Glass |
 | Durée | ~3:00 max en TikTok | Selon récit | Selon récit | Selon brief | Selon brief |
-| Blancs | Coupés au-delà de 0,25 s dans les monologues (§5) | Coupe au dernier mot (§4) | Respirations qui portent gardées (§6) | Coupe au dernier mot (§4) | Coupe au dernier mot (§4) |
+| Blancs | Coupés au-delà de 0,25 s dans les monologues (§5) | Coupe au dernier mot ; respiration gardée au verdict (§4) | Respirations qui portent gardées (§6) | Coupe au dernier mot ; respirations d'émotion gardées (§4) | Coupe au dernier mot (§4) |
 | Coupe bouchée | Courte : arrivée en bouche → morsure → réaction ; hook et rétention notés /10, minimum 8 (§5.2) | Dégustation complète | — | — | — |
 
 ## 3. Flux de travail
@@ -50,7 +49,7 @@ Créer au début une liste de suivi avec ces étapes **distinctes** ; ne jamais 
 1. **Préparation.** Copier les rushs d'une carte amovible avec vérification par somme de contrôle, conserver les originaux. Arborescence : `Media/` (Rushs/<caméra>, Assets, Audio, Proxys), `Projet/` (.prproj et .aep versionnés), `Exports/` (Brouillons, Final), `Controles/`, `Suivi/`. Lire chaque rush avec ffprobe : durée, cadence (variable ?), orientation, profil couleur (D-Log M, V-Log, HLG/Apple Log, Rec.709), audio (Cabezer enregistre en 32 bits flottant). Garder une séquence source et une séquence montée. Première session sur une machine : test de fumée et `Suivi/environnement-verifie.md` ([pilotage](references/pro/pilotage-environnement-reprise.md)).
 2. **Transcription et dérush** (§4). Transcrire le rush réel ; ne jamais prendre le script comme preuve de ce qui a été dit. Vérifier les faits (§8). → **Validation du dérush.**
 3. **Format.** Ratio et résolution selon la destination ; cadence de séquence = celle de la majorité des rushs, les autres conformées. Recadrer en protégeant yeux, mains, gestes et produit ; recadrer depuis les rushs 4K, jamais depuis un export 1080p.
-4. **Structure et habillage.** Cartographier mise en place → progression → réponse. Écrire la promesse et vérifier qu'elle est montrée avant la 30e seconde (avant le générique en Story). Appliquer l'identité validée de la famille (§6) ; si elle manque, faire valider un extrait avant de généraliser. Illustrations et animations AE en une passe. Hook finalisé en dernier, une fois la structure stable.
+4. **Structure et habillage.** Cartographier mise en place → progression → réponse. Écrire la promesse et vérifier qu'elle est montrée avant la 30e seconde. Appliquer l'identité validée de la famille (§6) ; si elle manque, faire valider un extrait avant de généraliser. Illustrations et animations AE en une passe. Hook finalisé en dernier, une fois la structure stable.
 5. **Zooms et mouvements** (§7).
 6. **Colorimétrie** (§10).
 7. **Musique, SFX, ambiances, mixage** (§11).
@@ -67,6 +66,8 @@ Pour les dégustations, ranger le projet dans `/Users/cabezer225/Documents/ChatG
 
 **Pilotage de l'ordinateur** ([fiche](references/pro/pilotage-environnement-reprise.md)) : identifier la version et les panneaux réellement présents ; vérifier l'effet de chaque geste par une capture ; aucun raccourci tant qu'il n'a pas été lu dans Raccourcis clavier sur sa machine, sinon passer par le menu ; consigner libellés et raccourcis lus. Si un panneau bloque, décrire le blocage et conserver les étapes vérifiées.
 
+**Scripts de contrôle :** ceux de `references/pro/scripts/` qui ne font que lire (relevé du Mac, contrôle du MP4, coupes, sous-titres, typographie, flashs, contraste) se lancent sans redemander (réponse du 12/10/2026) ; résultats dans `Controles/`. Tout script qui modifie ou copie un fichier attend l'accord de Cabezer.
+
 **Méthode de fabrication :** interface ou UXP pour les réglages natifs ; FCP XML pour un premier assemblage (pièges §14, limites dans [Premiere avancé](references/pro/premiere-pro-avance.md)) ; ExtendScript pour piloter AE et pour les contrôles, tant qu'un test de fumée le confirme sur sa machine.
 
 **Montage long (20 à 40 min) :** une séquence par partie, imbriquées dans une séquence maîtresse ; Production Premiere si le projet devient lourd ; un point de contrôle (version enregistrée + ligne de `journal.md`) à la fin de chaque session.
@@ -75,7 +76,7 @@ Pour les dégustations, ranger le projet dans `/Users/cabezer225/Documents/ChatG
 
 - Lire d'abord toute la transcription et marquer les moments forts ; classer les prises (meilleure, deuxième) et garder deux options sur les moments émotionnels.
 - Garder sa voix orale, ses connecteurs qui portent le rythme et ses réactions. Retenir la meilleure prise complète ; couper essais abandonnés et phrases reprises sans changer le sens.
-- **Coupe par défaut :** juste après le dernier mot entièrement audible, sans blanc résiduel ; ne jamais couper le début du mot suivant (syllabe ou consonne). Un blanc reste seulement s'il est occupé par une illustration, une transition ou un effet prévu. Placer les coupes à la forme d'onde et à l'énergie du son, jamais aux seuls timecodes de transcription ni avec une marge fixe. Exceptions par famille : blancs de dégustation (§5), respirations de Story (§6). Étendre l'exception des respirations aux moments d'émotion de P et au verdict de F **[Q]** (défaut : non).
+- **Coupe par défaut :** juste après le dernier mot entièrement audible, sans blanc résiduel ; ne jamais couper le début du mot suivant (syllabe ou consonne). Un blanc reste seulement s'il est occupé par une illustration, une transition ou un effet prévu. Placer les coupes à la forme d'onde et à l'énergie du son, jamais aux seuls timecodes de transcription ni avec une marge fixe. Exceptions par famille : blancs de dégustation (§5) ; **respirations** (§6) en Story, et aussi aux moments d'émotion de films/séries et au verdict du food long (réponse du 12/10/2026) : garder le regard ou le silence qui porte l'émotion, jamais un blanc où il cherche ses mots.
 - **Montage par le texte** de Premiere : seulement pour repérer et pré-découper ; chaque coupe est ensuite recalée à la forme d'onde ([audio §3.1](references/pro/audio-dialogue-sound-design-mixage.md) donne un script d'affinage).
 - **Corrections :** retirer un faux départ pour garder ce que Cabezer voulait dire est permis (ses exemples §5) ; jamais un collage qui crée une affirmation qu'il n'a pas faite ni ne change le sens. Relire chaque phrase recollée : la reconnaîtrait-il ?
 - **Fondus audio :** seulement là où un clic est audible, 1 à 2 images dans le silence ; jamais en masse sur les coupes serrées, jamais sur l'attaque d'un mot.
@@ -119,14 +120,14 @@ Références : [techniques retenues](references/techniques-et-controles.md), [no
 - D'abord le chercher dans les rushs.
 - À défaut, une vidéo stock appétissante sous licence (Pexels, Pixabay) : téléchargée seulement après son accord (nom, source, taille) ; licence consignée ; même type de produit, sans logo ni lieu identifiable, jamais présentée comme le plat servi ; conformée à la cadence et au cadre de la séquence (§14).
 
-**Coupe de la bouchée — courte** (livrable TikTok et ses déclinaisons Shorts/Reels) :
+**Coupe de la bouchée — courte** (TikTok, Shorts, Reels) :
 1. Commencer à l'arrivée du produit en bouche ; retirer préparatifs, attente, approche.
 2. Garder la morsure entière à vitesse réelle, en plan serré.
 3. Reprendre directement à la réaction vocale utile, en protégeant le début du mot.
 4. Retirer chaque « bismillah » sans toucher la bouchée suivante.
 5. Repérer ces points à l'image et à l'écoute.
 
-Un Short ou Reel monté seul pour une autre destination garde la dégustation complète sauf demande **[Q : cette exception existe-t-elle encore ?]**.
+Coupe courte sur tous les formats courts, y compris un Short ou Reel monté seul (réponse du 12/10/2026) ; une dégustation complète seulement sur demande.
 
 **Prix :**
 - **Étiquette « produit · prix »** (petite, près du produit) à la révélation du produit, quand le prix est connu.
@@ -139,7 +140,7 @@ Un Short ou Reel monté seul pour une autre destination garde la dégustation co
 - **Sources :** vidéos originales, pas de photos ; produits et bouchées toujours visibles sous les textes.
 
 **Son :**
-- Pas de musique (noter « musique : absente par choix »). Pas d'ambiance continue ; une ambiance discrète du lieu sous un insert muet (§11, « ne contredit pas la règle dégustation ») est une méthode à proposer au premier usage : sans son accord, aucune. Aucun foley d'aliment, jamais sur une bouchée ni une réaction **[Q pour un insert muet]**.
+- Pas de musique (noter « musique : absente par choix »). Pas d'ambiance continue ; une ambiance discrète du lieu sous un insert muet (§11, « ne contredit pas la règle dégustation ») est une méthode à proposer au premier usage : sans son accord, aucune. **Jamais de foley d'aliment** (bruit ajouté de croustillant, de friture…), ni sur un insert, ni sur une bouchée, ni sur une réaction (réponse du 12/10/2026).
 - SFX tendance TikTok + touche mème, banque Pixabay `Tiktok degustation/SFX-Pixabay/` (licences dans `LICENCES-SFX.md`) ; « tendance » désigne un style de son, jamais un son prélevé :
   - liste de référence : swoosh, pop, ding, boing, scratch, caisse, photo, scintillement ; un autre son de la banque (riser, drone…) seulement avec son accord **[Q]** (défaut : non) ;
   - **pas de mèmes vocaux**, **plus de boom** (retiré le 02/10 : « tu l'utilises mal ») ;
@@ -175,7 +176,7 @@ Un Short ou Reel monté seul pour une autre destination garde la dégustation co
 
 ### 5.2 Notation obligatoire : hook et rétention sur 10 (consigne du 02/10/2026)
 
-Chaque dégustation est notée avant livraison. **Si une note est sous 8, retravailler puis renoter jusqu'à 8 minimum, et donner les deux notes à Cabezer.** Seule exception : si 8 est impossible sans contredire un choix de Cabezer (son hook, un passage qu'il a gardé, un appel non tourné), son choix prime : livrer avec la note réelle, dire ce qui bloque et proposer au plus deux variantes de hook en gardant le sien comme option. Limiter le travail à deux itérations **[Q]** (défaut : pas de limite tant qu'une piste d'amélioration existe). Les notes sont une auto-évaluation de Claude, pas une validation. Barème complet : DA v2 §5.
+Chaque dégustation est notée avant livraison. **Si une note est sous 8, retravailler puis renoter jusqu'à 8 minimum, et donner les deux notes à Cabezer.** Seule exception : si 8 est impossible sans contredire un choix de Cabezer (son hook, un passage qu'il a gardé, un appel non tourné), son choix prime : livrer avec la note réelle, dire ce qui bloque et proposer au plus deux variantes de hook en gardant le sien comme option. **Au plus deux passes de retravail** (réponse du 12/10/2026) : si la note reste sous 8, livrer avec la note réelle et ce qui bloque. Les notes sont une auto-évaluation de Claude, pas une validation. Barème complet : DA v2 §5.
 
 **Hook (0–3 s) :**
 
@@ -209,7 +210,7 @@ Chaque dégustation est notée avant livraison. **Si une note est sous 8, retrav
 Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9, quand elle est demandée, ajuste taille des textes, composition et zones sûres sans changer l'identité. Avant l'habillage, retrouver la charte et les montages validés de la famille ; ne pas recréer une direction à chaque vidéo ni transposer celle d'une autre famille. Le style par défaut d'un plugin ne définit pas l'identité.
 
 - **Dégustation :** DA Dégustation v2 (§5.1). Ni Johan Papz, ni Food dégustation v1 (Slak v27), ni les stickers et tampons du Milan v01 ne servent plus de modèle pour la dégustation.
-- **Food long :** pas de charte validée **[Q]** ; [Food dégustation v1](references/identites-visuelles/food-degustation-v1.md) reste un repère de lisibilité ; faire valider un extrait. Animations faites dans AE comme la dégustation : titres de restaurant, cartes de lieu, prix, notes et comparatifs construits en calques AE, avec ses vraies images (façades, menus, tickets) explorées en caméra 3D plutôt que des cartes génériques. Duels et classements : 3 à 5 critères, une preuve à l'image par critère, verdict en dernier.
+- **Food long :** **créer la charte** (réponse du 12/10/2026) : proposer 30 s habillées (couleurs, polices, titres de lieu, prix, notes, comparatifs) à faire valider ; la fiche validée (`references/identites-visuelles/`) devient la règle. [Food dégustation v1](references/identites-visuelles/food-degustation-v1.md) reste un repère de lisibilité, pas la charte. Animations faites dans AE comme la dégustation : titres de restaurant, cartes de lieu, prix, notes et comparatifs construits en calques AE, avec ses vraies images (façades, menus, tickets) explorées en caméra 3D plutôt que des cartes génériques. Duels et classements : 3 à 5 critères, une preuve à l'image par critère, verdict en dernier.
 - **Films/séries :** [PRISME v1](references/identites-visuelles/films-series-prisme-v1.md), validé sur Dune. Réservé à cette famille. Construit dans AE : titres, fiches de personnages et frises en calques natifs, extraits et affiches officiels explorés en caméra 3D. Pas d'affiche ni de visuel généré. Extraits : voir §8 et [documentaire et essai](references/pro/documentaire-essai-video-archives.md).
 - **Tech :** [méthode Liquid Glass](references/after-effects/tech-liquid-glass.md) ; rendre le propos accessible à un public food. Le verre, les interfaces et les schémas techniques sont faits dans AE (formes, flous, réfraction par effets natifs), avec les vraies captures d'écran et pages officielles. Pas de maquette d'interface générée ailleurs.
 - **Cabezer Story :** voir ci-dessous.
@@ -221,8 +222,9 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 - Alterner images réelles, documents explorés, schémas persistants et retours au visage. Titres réservés aux concepts et articulations.
 - **Respirations :** garder les pauses qui portent un regard, une émotion, une attente construite ; couper celles où Cabezer cherche ses mots. Cette règle prime sur la coupe au dernier mot.
 - Déplacements explicatifs libres sur documents, cartes, objets ; zooms facecam = zooms avant/arrière façon Micode (§7), seulement quand ils servent le propos.
-- Ne jamais écrire le nom de chaîne (« Cabezer Story ») dans les animations, titres ou cartes (consigne du 29/09/2026). Seule exception : le générique « Amed Story 🧢 » ci-dessous, nom choisi par Cabezer le 30/09/2026.
-- **Refusés :** habillage v08 à grands bandeaux ; Dossiers v0.2 n'est plus la direction par défaut (inventaire d'assets seulement).
+- Ne jamais écrire le nom de chaîne (« Cabezer Story ») dans les animations, titres ou cartes (consigne du 29/09/2026). Le générique « Amed Story 🧢 » (nom choisi le 30/09/2026) a été **supprimé le 12/10/2026, à refaire en entier** ; seul un nouveau générique validé par Cabezer pourra porter un nom.
+- **Refusés :** habillage v08 à grands bandeaux ; identité rose v15 et générique v01 (supprimés le 12/10/2026, à refaire en entier) ; Dossiers v0.2 n'est plus la direction par défaut (inventaire d'assets seulement).
+- **Identité Story :** aucune identité visuelle validée. Une nouvelle direction se propose sur un extrait concret (règle ci-dessous) ; ne réutiliser ni la palette rose, ni ses polices, ni le générique v01.
 - Toute nouvelle direction se valide sur un extrait concret (vraies images, preuve ou mécanisme, visage, raccords), pas sur une série titre/carte.
 
 **Une image par idée, jamais par mot — méthode validée par Cabezer le 29/09/2026** (démo partie 3 de « Comment les fast-foods ont changé notre génération » ; étude image + transcription + son de 9 passages de Micode, Amistory et Liv). Consigne : « tu devrais utiliser un b-roll pour faire comprendre ce que je veux dire », pas « un b-roll pour chaque mot » ; une succession d'images inutiles « fait perdre la tête aux viewers ».
@@ -237,7 +239,7 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 4. **Ne pas illustrer littéralement une comparaison ou une métaphore :** « comme un distributeur de tickets » ne devient pas une machine à tickets. Montrer ce que la comparaison veut dire, ou rester sur le visage.
 5. **Rappels :** faire revenir un visuel déjà vu quand l'idée revient. Exemples : le souvenir de famille de la partie 2 sur « on n'est plus avec ses parents » ; la cuisine rapide de la partie 1 sur « servir vite ».
 6. **Comparaisons :** deux fenêtres dans un même cadre, avec un repère stable.
-7. **Titres et cartons :** seulement pour un concept, une date ou un chapitre. Pas de texte qui double chaque nom. Identifier un intervenant (nom, fonction) à sa première apparition **[Q]** (défaut : seulement si Cabezer le demande).
+7. **Titres et cartons :** seulement pour un concept, une date ou un chapitre. Pas de texte qui double chaque nom. Exception : **identifier un intervenant** (nom et fonction) à sa première apparition, une seule fois, ligne faite dans AE à l'identité de la famille, hors visage, durée selon le point 9 (réponse du 12/10/2026) ; jamais en dégustation.
 8. **Coupes rapides** (0,4 à 0,8 s) seulement quand la vitesse est le sens : accumulation, « on est envahi de… ». Exception nommée aux durées minimales du point 9.
 9. **Temps de lecture (30/09/2026)** — « certaines informations viennent et partent trop vite ». Pour les familles longues (S, F, P, T), toute information écrite (texte, traduction, date, tampon, ligne de liste, bloc de sous-titres) reste entièrement lisible au moins **max(1,5 s ; 1 s + caractères/15)**. Une image sans texte reste au moins 2 s, une preuve au moins 3 s. Ne s'applique pas aux sous-titres mot à mot de dégustation.
    - Entrées et sorties en 8 à 15 images.
@@ -249,26 +251,15 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 
 **Famille sans identité validée :** proposer un court extrait représentatif et le faire valider avant de décliner. Ne pas attribuer arbitrairement couleurs ou polices définitives.
 
-**Story v15 — identité rose pâle `#F2C6C2` (30/09/2026, en attente de validation sur l'aperçu complet [Q]).**
-- Encre `#2B1B18`, crème `#FFF6EC`, accent rouge tampon `#B8323A`.
-- Polices : Hoefler Text Black pour les titres, Futura Bold pour les rubriques, PT Mono pour le ticket.
-- Grammaire : papier rose fait dans AE, bords déchirés, tampons, étiquettes de prix, traits à la main, vraies photos en tirages 3D.
-- Fichiers : voir [projets Cabezer](references/projets-cabezer.md).
-
 **Passages en langue étrangère (30/09/2026, toutes familles) :** chaque surlignage, entourage ou soulignement sur un texte non français affiche, pendant le coup de feutre, la traduction française fidèle et courte du passage marqué, sans le cacher. **On ne traduit pas les dates** (le surlignage reste) et on n'écrit jamais « traduit de l'anglais » ni de mention de langue.
 
 **Ses propres images (30/09/2026) :** puiser dans toute sa chaîne et ses rushs, pas dans 2 vidéos. Aucun plan en double ; aucune source qui domine. Toute vidéo à télécharger demande son accord, avec la taille.
-
-**Générique réutilisable « Amed Story 🧢 » (30/09/2026, v01 à valider sur l'aperçu [Q]) :**
-- **Placement :** juste après son intro face caméra, avant le premier sujet, dans le silence après sa dernière phrase d'intro. Dupliquer d'abord la séquence maîtresse (garder la version sans générique), puis l'insérer avec l'outil Insérer de Premiere (toutes les pistes ciblées) pour décaler tout ce qui suit de la durée réelle du fichier, arrondie à l'image (8 s = 240 images à 30 i/s, 200 à 25 i/s) ; la montée musicale d'avant débouche sur l'impact du générique ; le premier carton de partie arrive juste après.
-- **Principe :** repris de son générique « HISTOIRE DE FOOD / BY AHMED » et refait dans l'identité rose. En 8 s : coupe franche sur papier rose déchiré ; lettres découpées (ticket, étiquette, tampon, papiers) qui tombent sur les notes ; glitch dans les couleurs de l'identité ; replacement sur le motif musical ; casquette de son logo en autocollant ; fondu au noir.
-- **Fichier prêt à poser :** `Fast-food-generation-2026-09-21/Habillage-Story-v01/Rendus/Generique/GENERIQUE_Amed_Story_v01_4K.mov` (4K avec son), plus une variante sans impact initial. Projet AE et musique : [projets Cabezer](references/projets-cabezer.md).
 
 **Fin d'une vidéo Story (30/09/2026, « la fin est trop fin cutter ») :** ne jamais couper juste après le dernier mot.
 - Garder son regard silencieux à la caméra quelques secondes, en le vérifiant à l'image dans le rush : fondre au noir **avant** qu'il bouge ou se lève.
 - Laisser la musique conclure sur un vrai accord qui s'éteint sur le noir.
 - Aucun bruitage sur le fondu, pas de carton d'abonnement.
-- Prévoir la place de l'écran de fin YouTube (5 à 20 s de noir et de musique qui s'éteint, sans information utile) **[Q]** (défaut : oui).
+- Prévoir la place de l'écran de fin YouTube (5 à 20 s de noir et de musique qui s'éteint, sans information utile) (réponse du 12/10/2026).
 
 **Après validation :** une fiche par famille dans `references/identites-visuelles/` : couleurs exactes, polices et graisses, hiérarchie, marges et zones sûres, styles de texte, règles d'animation, MOGRT/presets réellement disponibles, projet modèle, aperçu approuvé, version et preuve de validation. Une refonte devient une nouvelle version.
 
@@ -299,7 +290,7 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 - **Vérification factuelle :** partir de ce qui est prononcé. Vérifier chiffres, prix, dates, caractéristiques incertains ou susceptibles d'avoir changé ; privilégier la source primaire, contrôler date, territoire, version, unité. Consigner affirmation, passage, lien, date de consultation, résultat (confirmé / nuancé / non confirmé) dans `Suivi/verifications.md`. En cas d'erreur, proposer une correction visible ou une reprise, jamais une recomposition des paroles. Une recherche ne valide pas une dégustation ou un avis.
 - **Illustrations :** d'abord les rushs et médias personnels, puis les compléments qui montrent précisément ce qui est évoqué. Conserver auteur, URL, crédits, conditions d'usage, fichier (`Suivi/licences.csv`). Une image illustre, elle ne prouve pas et ne doit pas suggérer une expérience que Cabezer n'a pas vécue. Ne pas couvrir chaque phrase de B-roll. En Story, une image par idée, jamais par mot (§6). Préférer visuels officiels de marque et sources tierces aux habillages génériques. Extraits YouTube crédités à l'écran selon [la méthode du 13/09](references/zooms-broll-et-respirations.md).
 - **Extraits tiers (films, séries, vidéos) :** durée minimale nécessaire, commentés ou analysés, source affichée pendant l'extrait. Un crédit n'est pas une autorisation : signaler à Cabezer le risque Content ID avant publication.
-- **Personnes, données, partenariats, photosensibilité, typographie** : [conformité](references/pro/conformite-droits-accessibilite.md). Repérer au dérush les tiers identifiables, mineurs, plaques, écrans et documents personnels, et demander à Cabezer s'il faut flouter. Partenariat, produit offert ou invitation : appliquer la mention prévue par la fiche et la faire valider.
+- **Personnes, données, partenariats, photosensibilité, typographie** : [conformité](references/pro/conformite-droits-accessibilite.md). **Personnes filmées** (réponse du 12/10/2026) : repérer au dérush les tiers identifiables (clients, employés), les mineurs en priorité, les plaques, écrans et documents personnels, et les lister à Cabezer ; flouter seulement ce qu'il désigne. **Repas offert, invitation, produit reçu ou partenariat** (réponse du 12/10/2026) : le signaler au brief et poser la mention que Cabezer choisit, à chaque fois ; rien n'est ajouté sans sa validation.
 - **Inspiration actuelle :** avant l'habillage d'une vidéo courte, étudier des références récentes de la même famille pour le hook, le rythme, les cadrages, la hiérarchie des textes et les relances, jamais pour changer l'identité validée. Consigner liens, dates, passages, métriques visibles. Ne pas affirmer une tendance « virale en ce moment » sans données ; ne pas copier un montage ni récupérer ses sons. Méthode d'analyse : [adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md).
 
 ## 9. Sous-titres
@@ -308,7 +299,7 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 
 | Lieu de tournage | Dégustation | Autres familles |
 |---|---|---|
-| France, Belgique francophone | Français mot à mot, incrustés | SRT français livré ; incrustation selon brief **[Q]** |
+| France, Belgique francophone | Français mot à mot, incrustés | SRT français seulement, rien d'incrusté (réponse du 12/10/2026) |
 | Étranger | Langue locale ou anglais, **à demander à chaque vidéo** (défaut : anglais ; Milan : anglais) | Anglais incrusté, toujours (consigne du 28/09/2026, Maritozzo) |
 | Passages non français dans une vidéo française | Idem (§6) | Traduction française sur les passages surlignés (§6) |
 
@@ -316,11 +307,11 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 - La piste de légendes Premiere sert de transcription, de calage et d'export SRT. Les sous-titres incrustés finaux sont une **composition After Effects** à l'identité de la famille, entrée animée, texte resté éditable (un calque de texte, un mot ou un paquet par clé de Texte source), rendue en ProRes 4444 alpha. Livrer la composition, le rendu et le SRT. Plus de légendes Premiere au style générique (retour sur Maritozzo v09, 28/09/2026).
 - **Jamais affichés pendant qu'un mot ou une phrase est animé à l'écran** (titre, tampon, prix, note, repère, pop-up, appel au commentaire) : couper ou raccourcir le bloc pour laisser l'animation seule, puis reprendre.
 - Les paquets sont répartis seulement sur le temps conservé au dérush ; la traduction est réécrite sans les phrases coupées.
-- **Si Cabezer retouche ensuite la timeline :** un rendu d'un seul tenant ne suit pas ses coupes. Le recouper aux mêmes images, puis vérifier la synchro dans l'export. Une piste éditable par séquence validée éviterait ce travail **[Q]**.
+- **Un rendu par passage validé** (réponse du 12/10/2026) : une composition AE et un rendu ProRes 4444 par séquence (passage) validée, calés sur ses coupes. Si Cabezer retouche une coupe, refaire seulement le rendu du passage touché, puis vérifier la synchro dans l'export.
 - Typographie française (espaces insécables, guillemets, nombres, prix, heures) : [conformité](references/pro/conformite-droits-accessibilite.md).
 
 **Dégustation — consigne du 02/10/2026 :**
-- **Style DA v2 :** Avenir Next Heavy en capitales, blanc, ombre courte et nette, sans contour épais ; vers 72–75 % de la hauteur, exemptés de la boîte de zones sûres **[Q]** (défaut : oui ; contrôler sur téléphone qu'ils ne sont pas masqués par l'interface) ; mots clés (produit, prix, note, lieu) dans la couleur d'accent.
+- **Style DA v2 :** Avenir Next Heavy en capitales, blanc, ombre courte et nette, sans contour épais ; vers 72–75 % de la hauteur, exemptés de la boîte de zones sûres (réponse du 12/10/2026) ; contrôler sur une capture de chaque application qu'ils ne sont pas masqués et signaler tout conflit ; mots clés (produit, prix, note, lieu) dans la couleur d'accent.
 - **Découpage :** en français, un mot à la fois ; en traduction, paquets de 1 à 3 mots, 18 caractères au plus, les petits mots collés au mot qui suit.
 - **Entrée :** pop en 4 images ; sortie sèche au paquet suivant.
 - Un paquet qui tombe sous un pop-up, un prix, la note ou l'appel au commentaire attend la fin de l'animation, sinon il est retiré.
@@ -389,7 +380,7 @@ Provenance et empreintes : [manifeste](assets/sfx-cabezer/manifest.json) (pas un
 - **Montée ou impact** juste avant un concept clé ou une preuve.
 - Cette règle remplace l'ancienne consigne « silence pendant les explications face caméra ».
 - **Sources :** musiques et bruitages libres de droits possibles en plus des nasheeds et bibliothèques locales (téléchargement après accord, licence consignée). Inspiration : Micode (nappes et pulsations électroniques, tension), Amistory (rythmes légers et documentaires).
-- **Composition originale (30/09/2026 :** « compose réellement 2 ou 3 musiques avec une ambiance pour la vidéo en général et 2-3 ambiances max par émotion ») : méthode par défaut en Story ; en F et T, bibliothèque ou musique libre d'abord **[Q]**.
+- **Composition originale (30/09/2026 :** « compose réellement 2 ou 3 musiques avec une ambiance pour la vidéo en général et 2-3 ambiances max par émotion ») : méthode par défaut en **Story, food long et tech** (réponse du 12/10/2026) ; films/séries : bibliothèque perso.
   - Composer **2 ou 3 thèmes par vidéo**, chacun avec mélodie, harmonie, basse, rythme et forme (intro, thème, développement, reprise, fin) : par exemple un thème principal chaleureux qui revient en conclusion, un thème « explication », un thème « tension/écran ».
   - Au plus **2 à 3 ambiances par émotion**, déclinées de ces thèmes (orchestration, densité). Les changements se font aux articulations (chapitres, silences, montées). La musique est calée sur le montage : temps forts sur les coupes, impacts sur les titres et les chapitres.
   - Jouer les notes avec de **vrais instruments échantillonnés** d'Apple installés (pianos, guitares, Drum Kit Designer de `/Library/Application Support/Logic/EXS Factory Samples/` ; cordes, cuivres, bois, contrebasse de `/Library/Application Support/GarageBand/Instrument Library/Sampler/Sampler Files/`). Jamais de synthèse note à note (numpy). Humaniser et ajouter de la réverbération. Les Apple Loops (`/Library/Audio/Apple Loops/Apple`) peuvent servir de matériau dans une composition, jamais seules ni en collage zone par zone (méthode abandonnée le 30/09, voir historique). Usage selon la licence du logiciel Apple installé : consigner version et clause. La bibliothèque complète de GarageBand (25 Go) n'est téléchargée qu'avec son accord.
@@ -398,7 +389,7 @@ Provenance et empreintes : [manifeste](assets/sfx-cabezer/manifest.json) (pas un
   - Premier exemple : [projets Cabezer](references/projets-cabezer.md).
 
 **Mixage — passe distincte et obligatoire :**
-- **Traitement voix uniforme** sur toute la séquence : mêmes réglages fixes sur tous les clips (réduction de bruit, EQ de présence, compression douce) + un limiteur unique sur la piste. Valeurs de départ dans la fiche audio (passe-haut vers 70–90 Hz, compression douce, gain réglé avant les effets). Interdits : « Correspondance automatique », le curseur « Dynamique » d'Essential Sound et « Améliorer la parole » (Enhance Speech, que le skill appelait « Améliorer le dialogue » ; libellé à confirmer) qui change le timbre. L'effet manuel Dynamique (Amplitude et compression) reste permis.
+- **Traitement voix uniforme** sur toute la séquence : mêmes réglages fixes sur tous les clips (réduction de bruit, EQ de présence, compression douce) + un limiteur unique sur la piste. Seule exception : une prise très bruyante reçoit un peu plus de réduction de bruit, signalée dans le suivi (réponse du 12/10/2026). Valeurs de départ dans la fiche audio (passe-haut vers 70–90 Hz, compression douce, gain réglé avant les effets). Interdits : « Correspondance automatique », le curseur « Dynamique » d'Essential Sound et « Améliorer la parole » (Enhance Speech, que le skill appelait « Améliorer le dialogue » ; libellé à confirmer) qui change le timbre. L'effet manuel Dynamique (Amplitude et compression) reste permis.
 - Régulariser la voix entre prises au gain de clip après mesure, puis doser SFX, ambiances et musique dessous ; soigner fondus et crêtes ; jamais d'écrêtage.
 - Contrôler les raccords en contexte ; mesurer le MP4 (ebur128, crête vraie, repliement mono) ; demander à Cabezer l'écoute à volume normal, sur petit haut-parleur et en mono. Les valeurs de tutoriels et les mesures complètent l'écoute sans la remplacer : ne jamais déclarer le mix validé sans sa validation auditive.
 
@@ -406,7 +397,7 @@ Une demande de terminer musique, SFX, mixage et couleur supprime seulement les v
 
 ## 12. Déclinaisons et tournages multi-caméras
 
-**Du format long aux Shorts** *(méthode du 28/09/2026, à proposer au premier usage, §20)* — pour SCANDALE FOOD **[Q : famille ou série Story ?]**, Story, food long :
+**Du format long aux Shorts** *(méthode du 28/09/2026, à proposer au premier usage, §20)* — pour Story et food long :
 1. Repérer les passages **autonomes** : une idée complète, compréhensible sans le reste, avec une chute ou un verdict.
 2. Écrire un nouveau hook à partir des paroles existantes (réordonner des prises, jamais recomposer une phrase pour changer son sens).
 3. Recadrer 16:9 → 9:16 depuis les rushs 4K : Auto Reframe comme point de départ, puis correction manuelle des images clés pour garder visage, produit ou document lisibles. Refaire les textes à l'échelle verticale selon l'identité de la famille.
@@ -428,7 +419,7 @@ Exporter en MP4 H.264 (ou H.265 si demandé) au ratio, à la résolution et à l
 | Destination | Format de base | Repères à vérifier |
 |---|---|---|
 | TikTok / Reels / Shorts | **FHD 1080×1920 exporté directement de Premiere** (consigne du 02/10/2026) : taille d'image personnalisée 1080 × 1920, « Utiliser la qualité de rendu maximale » coché (utile pour la réduction 4K → 1080), « Rendu à la profondeur maximale » selon les effets (libellés à confirmer ; le skill écrivait « Rendu à la résolution maximale »), H.264 VBR 1 passage environ 20 Mbit/s, AAC 320 ; cadence de la séquence ; master 4K seulement sur demande | Zones sûres : textes hors du bas (légende, boutons) et du bord droit ; texte clé dans le tiers central et dans la boîte de test de [formats courts](references/pro/formats-courts-verticaux.md) ; contrôle sur capture réelle des applications |
-| YouTube long | 1920×1080 par défaut ; 3840×2160 sur demande et seulement depuis des rushs 4K **[Q]** ; cadence de la séquence ; H.264 VBR 2 passages, débit de départ dans la fiche (repères YouTube à vérifier), AAC 48 kHz 320 kbit/s | Chapitres ; 5 à 20 s de fin compatibles avec l'écran de fin |
+| YouTube long | **3840×2160 quand les rushs sont en 4K** (YouTube encode mieux un fichier 4K) (réponse du 12/10/2026), sinon 1920×1080 ; cadence de la séquence ; H.264 VBR 2 passages, débit de départ dans la fiche (repères YouTube à vérifier), AAC 48 kHz 320 kbit/s | Chapitres ; 5 à 20 s de fin compatibles avec l'écran de fin |
 
 **Loudness :** les plateformes normalisent le volume ; YouTube est généralement cité autour de −14 LUFS intégrés. C'est un **repère de contrôle (±1), pas une cible imposée** : le mix se valide à l'écoute de Cabezer, puis se mesure sur le MP4 exporté. **Crête vraie du MP4 ≤ −1 dBTP** (l'encodage AAC relève les crêtes) ; si elle dépasse, baisser d'abord la source fautive. Consigner les mesures réelles.
 
@@ -467,7 +458,7 @@ Exporter en MP4 H.264 (ou H.265 si demandé) au ratio, à la résolution et à l
 
 Ne jamais présenter une hypothèse comme une cause prouvée ; la rétention dépend aussi du sujet, de la miniature et de la diffusion. Ne jamais supprimer un passage seulement parce que la courbe baisse : mieux le raconter. Méthode : [rétention YouTube](references/pro/retention-youtube-long.md).
 
-## 16. After Effects, outils IA et outils tiers
+## 16. After Effects et outils IA
 
 - **Toutes les animations graphiques se font dans After Effects (30/09/2026), quelle que soit la famille** (définition §1). Elles sont construites en calques AE natifs et modifiables : animateurs de texte, effets et préréglages d'AE, Trim Paths, caches par approche, caméra 3D et profondeur de champ ; courbes d'accélération travaillées ; une composition par scène, nommée, que Cabezer peut ouvrir et retoucher ; taille et cadence de chaque composition = celles de la séquence de destination.
 
@@ -481,8 +472,7 @@ Ne jamais présenter une hypothèse comme une cause prouvée ; la rétention dé
 | Seulement sur demande explicite de Cabezer | Morph Cut, flux optique sur un plan clé, Remplissage d'après le contenu, Generative Extend et tout outil de génération ou de reconstruction de pixels ; voix ou musique produites par un modèle génératif (la composition jouée avec les instruments échantillonnés d'Apple, §11, reste la méthode Story) |
 | Interdits (règles de Cabezer) | « Améliorer la parole », Correspondance automatique et curseur « Dynamique » d'Essential Sound ; images ou animations générées par IA ; musique synthétisée note à note |
 
-- **Tesseract :** animations ou transitions demandées nommément seulement ; jamais dérush ni montage final. Rendre, importer, vérifier dans Premiere ; conserver le `.tsrct` et son rendu à part. [Échange Premiere ↔ Tesseract](references/premiere-tesseract.md). Statut gratuit/payant à vérifier.
-- **Higgsfield/Higgsedit :** comme moteur de montage seulement sur demande nominative, avec les mêmes règles éditoriales ; [méthode intégrée](references/montage-higgsfield.md) (entrée/maintien/sortie, textes animés, synchronisation, coupes ciblées, contrôle du rendu). Pas de génération IA, d'abonnement ou de transfert de rushs imposés.
+- **Tesseract et Higgsfield/Higgsedit :** retirés du skill (réponse du 12/10/2026) ; ne plus les proposer.
 - Techniques Premiere utiles : imbriquer un élément réinitialise recadrage et point d'ancrage avant un effet ; modes de fusion (écran, incrustation) pour les textures. Plus dans [Premiere avancé](references/pro/premiere-pro-avance.md).
 
 ## 17. Plugins
@@ -531,12 +521,14 @@ Une méthode « à proposer au premier usage » est présentée à Cabezer avant
 |---|---|---|
 | Speed ramps et raccords de mouvement (§7) | 28/09/2026 | À proposer au premier usage |
 | Correction secondaire food (§10) | 28/09/2026 | À proposer au premier usage |
-| Ambiances (§11) | 28/09/2026 | À proposer au premier usage ; dégustation **[Q]** |
+| Ambiances (§11) | 28/09/2026 | À proposer au premier usage, dégustation comprise (réponse du 12/10/2026) |
 | Long → Shorts (§12) | 28/09/2026 | À proposer au premier usage |
 | Multicam (§12) | 28/09/2026 | À proposer au premier usage |
 | Contrôles automatisables (§14) | 28/09/2026 | Appliqués comme signaux ; outils à tester sur sa machine |
 | Boucle rétention (§15) | 28/09/2026 | À proposer au premier usage |
-| Identité Story v15 rose (§6) | 30/09/2026 | En attente de validation **[Q]** |
-| Générique « Amed Story 🧢 » v01 (§6) | 30/09/2026 | En attente de validation **[Q]** |
+| Identité Story v15 rose et générique « Amed Story 🧢 » v01 (§6) | 30/09/2026 | **Supprimés le 12/10/2026, à refaire en entier** |
+| Charte food long (§6) | 12/10/2026 | À créer sur un extrait de 30 s à valider |
+
+**Réponses de Cabezer du 12/10/2026 :** appliquées dans ce texte (mention « réponse du 12/10/2026 ») ; elles priment sur les sections « Décisions à demander » des fiches. Tableau récapitulatif en tête du registre ci-dessous.
 
 **Décisions en attente :** chaque **[Q]** donne son défaut dans le texte ou dans le registre. Registre complet, dédupliqué et classé par thème (les questions prioritaires marquées ★) : [décisions en attente](references/decisions-en-attente.md). Poser une question seulement quand elle bloque, une fois, avec le défaut proposé ; une réponse de Cabezer devient une règle datée de ce skill.

@@ -1,5 +1,7 @@
 # Montage food et tech : ce que font les meilleurs créateurs
 
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander » : SRT seul pour les vidéos longues tournées en France ; identité Story v15 et générique « Amed Story 🧢 » supprimés (à refaire) ; coupe courte de la bouchée sur tous les formats courts ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; composition musicale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; 4K pour YouTube long quand les rushs sont en 4K ; un rendu de sous-titres par passage validé ; intervenants identifiés à la première apparition (hors D) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. Liste complète : `../decisions-en-attente.md`.
+
 Fiche de référence pour monter des vidéos food et tech comme un professionnel, dans le cadre des règles de Cabezer. Dernière vérification : 12/10/2026. La version de Premiere ou d'After Effects lue dans l'application fait foi (table des versions et test de fumée : `pilotage-environnement-reprise.md`).
 
 ## Quand lire cette fiche
@@ -284,7 +286,7 @@ Un produit net, un fond simple, une source de contraste dominante [S2 39:20 ; M�
 3. Décaler l'entrée des éléments d'un groupe de 2 à 4 images (`after-effects-motion-design.md §9.4`).
 4. Revoir à vitesse réelle : si l'animation se remarque, la réduire. « Un bon design est invisible » [S1 22:59].
 
-**Aspect dessiné à la main.** MKBHD combine Turbulent Displace (libellé français à vérifier) et une expression Wiggle (toutes les 3 s, amplitude 150) [S1 21:56–22:59] ; le paramètre qui reçoit l'expression n'est pas indiqué : [À vérifier]. **Pas en D** (« pictos dessinés » n'est pas clean : skill §5.1) ni en T Liquid Glass. Possible en S si l'identité v15 le prévoit (skill §6), après validation d'un extrait.
+**Aspect dessiné à la main.** MKBHD combine Turbulent Displace (libellé français à vérifier) et une expression Wiggle (toutes les 3 s, amplitude 150) [S1 21:56–22:59] ; le paramètre qui reçoit l'expression n'est pas indiqué : [À vérifier]. **Pas en D** (« pictos dessinés » n'est pas clean : skill §5.1) ni en T Liquid Glass. Possible en S seulement si la future identité Story le prévoit (v15 supprimée le 12/10/2026), après validation d'un extrait.
 
 **Critère de réussite** : en couvrant le texte, on comprend encore quel élément compte.
 
@@ -381,7 +383,7 @@ Consigner chaque sortie dans le suivi ; aucun résultat n'est présenté comme �
 | Arrêt sur image (§4.3) | Non (défaut) | Oui | Oui | Oui | Oui | Oui |
 | Sous-titres natifs de plateforme (§4.5) | Non | Non | Non | Non | Non | Non |
 | Zoom guidé de capture (§5.3) | Non | Non | Non | Non | À valider | Oui |
-| Tremblement de trait (§5.4) | Non | Non | Si v15 | Non | Non | Non |
+| Tremblement de trait (§5.4) | Non | Non | Si la future identité S le prévoit | Non | Non | Non |
 | Jauges, barres (§6.1) | Note déjà définie | Si validé | Si schéma | Selon identité | Oui | Oui |
 | Compteur (§6.2) | Non pour prix payé | Rare | Si chiffre | Rare | Oui | Oui |
 

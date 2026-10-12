@@ -1,5 +1,7 @@
 # Fondamentaux du montage narratif — penser comme un monteur de cinéma
 
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander » : SRT seul pour les vidéos longues tournées en France ; identité Story v15 et générique « Amed Story 🧢 » supprimés (à refaire) ; coupe courte de la bouchée sur tous les formats courts ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; composition musicale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; 4K pour YouTube long quand les rushs sont en 4K ; un rendu de sous-titres par passage validé ; intervenants identifiés à la première apparition (hors D) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. Liste complète : `../decisions-en-attente.md`.
+
 Fiche de référence du skill `cabezer-premiere-shorts` (publiée dans `references/pro/`). Elle apprend à décider où couper, quoi garder, quoi montrer, quelle transition poser et dans quel ordre travailler. Elle ne remplace aucune règle du skill.
 
 ## Quand lire cette fiche
@@ -67,7 +69,7 @@ Retrouvés chez au moins trois monteurs lus en transcription intégrale :
 Aucun montage ne commence sans brief écrit. Lire `Suivi/brief.md`, ou le créer : les douze champs et la méthode (remplissage à partir du dossier, questions seulement sur les champs bloquants) sont définis dans **skill §3, étape 0**. Six champs pèsent sur le montage narratif :
 
 1. **Famille** (ou « hors famille ») : elle donne les exceptions du skill et la colonne du §19. Famille sans identité validée : prévoir l'extrait de 15 à 30 s à faire valider (skill §6).
-2. **Promesse en une phrase** : « le spectateur a cliqué pour voir ___ ». Elle sert de critère « histoire » (§2). Sujet et promesse sont confirmés avant la 30e seconde (avant le générique en Story) ; l'enjeu peut être rappelé ensuite (`retention-youtube-long.md` §2).
+2. **Promesse en une phrase** : « le spectateur a cliqué pour voir ___ ». Elle sert de critère « histoire » (§2). Sujet et promesse sont confirmés avant la 30e seconde (dans l'intro face caméra en Story) ; l'enjeu peut être rappelé ensuite (`retention-youtube-long.md` §2).
 3. **Durée cible et plateformes.**
 4. **Hook (D)** : le demander à chaque vidéo. Noter le hook choisi avec le barème du skill §5.2 et donner la note ; sous 8, retravailler jusqu'à 8 ; si son hook l'empêche, son choix prime : note réelle livrée et au plus deux variantes proposées, son hook restant une option.
 5. **Niveau d'autonomie** : valider le dérush avant l'habillage, sauf autorisation d'enchaîner ; elle n'autorise jamais la publication (skill §1).
@@ -157,7 +159,7 @@ Pas de Morph Cut par défaut (§16.3), pas de texte ajouté seulement pour relan
 | **J-cut / L-cut** | Décalage de départ 6 à 15 images | Voir §6 | Voir §6 | Voir §6 |
 | **Fondu audio de raccord** | 1 à 2 images dans le silence, ou deux clés de volume | Seulement où un clic ou un saut de fond est audible (§13.3) | En masse ; coupes serrées de D ; attaque d'un mot | Toutes, avec ces limites |
 
-**Spécifiés ailleurs :** flash blanc, shake et whip de 4 à 6 images (D, skill §5.1) ; carton de chapitre et générique « Amed Story » (S, skill §6) ; match cut (§5.2).
+**Spécifiés ailleurs :** flash blanc, shake et whip de 4 à 6 images (D, skill §5.1) ; carton de chapitre (S, skill §6 point 12 ; générique « Amed Story » supprimé le 12/10/2026) ; match cut (§5.2).
 
 **Transitions graphiques.** Iris, glissement, zoom, volet, flash, glitch, déchirure : ce sont des animations graphiques, donc construites dans After Effects en calques natifs (skill §1, §16). Aucune transition intégrée générique de Premiere de ce type. Les fondus sont un traitement du plan : ils se posent dans Premiere.
 

@@ -1,5 +1,7 @@
 # Workflow pro de bout en bout : organisation, retours, contrôle qualité et livraison
 
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander » : SRT seul pour les vidéos longues tournées en France ; identité Story v15 et générique « Amed Story 🧢 » supprimés (à refaire) ; coupe courte de la bouchée sur tous les formats courts ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; composition musicale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; 4K pour YouTube long quand les rushs sont en 4K ; un rendu de sous-titres par passage validé ; intervenants identifiés à la première apparition (hors D) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. Liste complète : `../decisions-en-attente.md`.
+
 Fiche de référence pour mener un montage de l'ingestion à la livraison comme un monteur professionnel, dans le cadre des règles de Cabezer. Dernière vérification : 12/10/2026. Versions, test de fumée des scripts et libellés lus à l'écran : `pilotage-environnement-reprise.md` et `Suivi/environnement-verifie.md` ; cette fiche ne répète pas de numéro de version.
 
 ## Quand lire cette fiche
@@ -279,9 +281,9 @@ H.265 : sur demande seulement (skill §13) ; tester la lecture sur téléphone e
 
 ### 8.2 YouTube long (F, S, P, T)
 
-**Quand** : toute vidéo longue horizontale. **Éviter** : 4K sans source 4K ou sans demande (skill §13).
+**Quand** : toute vidéo longue horizontale. **Éviter** : 4K sans source 4K. Rushs en 4K : export 4K par défaut (réponse du 12/10/2026, skill §13).
 
-Base (skill §13) : 1920×1080 par défaut, 3840×2160 sur demande depuis des rushs 4K [Q], cadence de la séquence, SDR Rec.709. Pour les envois SDR, YouTube recommande [Extrait de sa page d'aide, non ouverte] H.264 profil High, progressif, 4:2:0, audio AAC-LC 48 kHz ; aucune limite de débit imposée, seulement des repères :
+Base (skill §13) : 3840×2160 quand les rushs sont en 4K (réponse du 12/10/2026), sinon 1920×1080 ; cadence de la séquence, SDR Rec.709. Pour les envois SDR, YouTube recommande [Extrait de sa page d'aide, non ouverte] H.264 profil High, progressif, 4:2:0, audio AAC-LC 48 kHz ; aucune limite de débit imposée, seulement des repères :
 
 | Résolution | 24, 25, 30 i/s : repère YouTube | départ de la fiche | 48, 50, 60 i/s : repère YouTube | départ de la fiche |
 |---|---|---|---|---|
@@ -464,7 +466,7 @@ Défaut appliqué en attendant la réponse ; une réponse consignée dans `Suivi
 | Sous-titres de D à 72–75 % de la hauteur : exemptés de la boîte de zones sûres ? | Exemptés ; test sur téléphone ; pas déplacés seul |
 | Proxys : ProRes Proxy convient-il après essai sur un de tes rushs ? | ProRes Proxy ; H.264 seulement si l'espace manque |
 | Encodage matériel ou logiciel pour les livrables, après l'essai du §8.4 ? | Logiciel pour le livrable ; matériel permis pour les brouillons |
-| Débits de départ YouTube long du §8.2 : OK ? De la 4K ? | 1080p à 16 Mbit/s en cadence standard ; 4K sur demande |
+| Débits de départ YouTube long du §8.2 : OK ? (4K quand les rushs sont en 4K : réponse du 12/10/2026) | Valeurs du §8.2, testées sur 60 s |
 | Audio YouTube long : 320 kbit/s (skill) ou 384 ? | 320 kbit/s |
 | Carré et 4:5 : quelles plateformes, quelle zone sûre ? | Seulement si demandé ; texte clé dans le tiers central |
 | Dossier des scripts : `references/pro/scripts/` du skill ? | Oui, un seul jeu |

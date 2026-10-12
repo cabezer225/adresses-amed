@@ -1,5 +1,7 @@
 # Documentaire, essai vidéo et montage d'archives (familles Story et films/séries)
 
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander » : SRT seul pour les vidéos longues tournées en France ; identité Story v15 et générique « Amed Story 🧢 » supprimés (à refaire) ; coupe courte de la bouchée sur tous les formats courts ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; composition musicale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; 4K pour YouTube long quand les rushs sont en 4K ; un rendu de sous-titres par passage validé ; intervenants identifiés à la première apparition (hors D) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. Liste complète : `../decisions-en-attente.md`.
+
 Fiche de référence du skill `cabezer-premiere-shorts`, publiée dans `references/pro/`. Elle apprend à monter un récit documentaire ou un essai : partition, preuve, photo, archive, carte, voix, extrait de film, crédits. Dernière révision : 12/10/2026, harmonisée avec `../decisions-harmonisation.md` de la passe 2. Versions visées : Premiere et After Effects 25.x–26.x, à confirmer sur la machine de Cabezer (`pilotage-environnement-reprise.md`).
 
 **Légende des preuves :** **[T]** transcription lue en entier (sous-titres automatiques de YouTube, non relus ; minutes de la transcription) · **[Lu]** fichier ouvert et lu le 12/10/2026 (dépôts GitHub publics) · **[Testé ici]** commande exécutée sur fichiers synthétiques (ffmpeg 6.1.1) · **[K]** connaissance générale, à vérifier sur sa version · **[X]** extrait de résultat de recherche, page non ouverte · **[Choix]** décision de cette fiche, sans valeur de règle.
@@ -64,7 +66,7 @@ Ne pas la lire pour : l'identité visuelle (skill §6), le dérush technique (`p
 **Quand :** S, P, F long, H. **Éviter :** D (hook : skill §5, barème du §5.2). Détail : `retention-youtube-long.md` §2.
 
 **Deux obligations distinctes.**
-1. **Confirmer le sujet et la promesse avant la 30e seconde**, montrés ou dits. En Story, cette confirmation tombe dans l'intro face caméra, **avant le générique « Amed Story »** ; le générique de 8 s (240 images à 30 i/s, environ 239 à 29,97 i/s) n'est ni déplacé ni raccourci (skill §6, Story ; `retention-youtube-long.md` §2.1).
+1. **Confirmer le sujet et la promesse avant la 30e seconde**, montrés ou dits. En Story, cette confirmation tombe dans l'intro face caméra (le générique « Amed Story » a été supprimé le 12/10/2026 ; un futur générique validé se placerait après cette intro) (`retention-youtube-long.md` §2.1).
 2. **Rappeler l'enjeu ensuite, sous forme de question, dans la première minute, sans y répondre ; répondre à la fin.** C'est la position de Perell [T, 12:54] ; Bolanos ne paie pas non plus le titre tout de suite [T, 4:36]. Elle ne retarde pas l'obligation 1.
 
 **Quatre entrées observées** (Perell [T, 18:36–19:38]) : par l'action, par l'objet à regarder, par le ton, par la question.
@@ -165,7 +167,7 @@ Procédure (Raymond [T, wTr6df0H5Po 0:38–3:39], complétée par le skill §8).
 
 ### 6.3 Remplir le cadre sans barres noires
 
-Traitements de plan (Premiere), d'après Raymond [T, 5:12–7:15] : **fond flou** (copie du clip sur la piste du dessus, copie du bas à l'échelle de remplissage avec **Flou gaussien**, Effets vidéo > Flou et netteté ; libellés et geste à confirmer), **fond texture** (bois, pierre) ou **recadrage**. Fond flou : H, F, T, photo isolée ; éviter pour un portrait ou un document à lire. **Story :** la grammaire v15 (papier rose fait dans AE, vraies photos en tirages 3D, skill §6) répond mieux, donc pas de fond flou. **P :** identité validée ; fond flou avec l'accord de Cabezer.
+Traitements de plan (Premiere), d'après Raymond [T, 5:12–7:15] : **fond flou** (copie du clip sur la piste du dessus, copie du bas à l'échelle de remplissage avec **Flou gaussien**, Effets vidéo > Flou et netteté ; libellés et geste à confirmer), **fond texture** (bois, pierre) ou **recadrage**. Fond flou : H, F, T, photo isolée ; éviter pour un portrait ou un document à lire. **Story :** fond flou en attendant la nouvelle identité (la grammaire v15, papier rose et tirages 3D, a été supprimée le 12/10/2026). **P :** identité validée ; fond flou avec l'accord de Cabezer.
 
 ### 6.4 Mouvement sur une image fixe (« Ken Burns », photomation)
 
@@ -318,7 +320,7 @@ Règle d’harmonisation : **durée minimale nécessaire, extrait commenté, sou
 
 ### 11.1 Chapitres, direction artistique, générique
 
-**Chapitres de Story : skill §6, Story, point 12** (silence, carton seul d'environ 3 s, signature musicale, déchirure à la reprise de la voix) ; construction : `retention-youtube-long.md` §8.1. Le moment « soul » sans preuve de Perell avant les titres de chapitre [T, 44:46–45:17] n'est pas appliqué : il ajoute un plan que la règle ne prévoit pas (§16). Générique : aucune source lue ; seul « Amed Story » (skill §6) fait référence.
+**Chapitres de Story : skill §6, Story, point 12** (silence, carton seul d'environ 3 s, signature musicale, déchirure à la reprise de la voix) ; construction : `retention-youtube-long.md` §8.1. Le moment « soul » sans preuve de Perell avant les titres de chapitre [T, 44:46–45:17] n'est pas appliqué : il ajoute un plan que la règle ne prévoit pas (§16). Générique : aucune source lue ; « Amed Story » a été supprimé le 12/10/2026, un nouveau générique sera à créer et faire valider.
 
 **Direction artistique par vidéo.** Perell tient une page « ingrédients artistiques » par vidéo et refait la direction artistique à chaque fois [T, 37:38–42:12]. **Le skill l'interdit pour l'identité** (§6). Reprise compatible [Choix] : une fiche de vidéo qui liste les *objets et matières* du sujet (documents, symboles, textures de papier) dans l'identité validée, sans toucher à la palette, aux polices ni à la grammaire.
 
@@ -367,7 +369,7 @@ Tout élément externe (image, vidéo, son, musique, police, extrait) va dans **
 ## 13. Familles en bref
 
 Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne ses familles dans sa section.
-- **S (Story) :** partition à une ligne par idée (§2), promesse avant le générique (§3), transcription pour repérer seulement (§4.2), désignation et collage en AE (§5.1, §6.5), mouvement sur photo pour désigner ou présenter (§6.4), nappe basse et silences (§8.1), chapitres du skill (§11.1) ; ni fond flou ni générique de fin.
+- **S (Story) :** partition à une ligne par idée (§2), promesse dans l'intro face caméra (§3), transcription pour repérer seulement (§4.2), désignation et collage en AE (§5.1, §6.5), mouvement sur photo pour désigner ou présenter (§6.4), nappe basse et silences (§8.1), chapitres du skill (§11.1) ; ni fond flou ni générique de fin.
 - **P (films/séries) :** extraits commentés et A/B de version (§10), mouvement sur photo pour désigner (§6.4), fond flou avec accord, pas de passé/présent.
 - **F, T, H :** question et promesse (§2, §3), désignation (§5.1), carte (§7.1), fond flou (§6.3) ; mouvement sur photo rare.
 - **D :** aucune technique de cette fiche (coupes franches, pas d'archives ni d'extrait tiers).
@@ -397,7 +399,7 @@ Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne s
 ## 15. Liste de contrôle
 
 À relire point par point (skill §14).
-- [ ] Question centrale écrite ; sujet et promesse prononcés avant la 30e seconde (avant le générique en Story) ; enjeu rappelé en question dans la première minute ; scènes reliées par « donc » ou « mais ».
+- [ ] Question centrale écrite ; sujet et promesse prononcés avant la 30e seconde (dans l'intro face caméra en Story) ; enjeu rappelé en question dans la première minute ; scènes reliées par « donc » ou « mais ».
 - [ ] Une ligne de partition par idée, un support par idée, aucun B-roll qui répète une animation ; désignations, collages et cartes faits dans AE, une seule désignation à la fois.
 - [ ] Textes à l'écran conformes au §5.3 ; preuve 3 s au moins ; image sans texte 2 s au moins.
 - [ ] Photos en « Définir à la taille du cadre » si elles bougent ; mouvement sur image fixe : désigne ou présente, temps fixe avant et après, courbe douce, aucun texte à lire dessous ; rien de pixellisé à 100 % d'aperçu.
@@ -417,7 +419,7 @@ Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne s
 
 | # | Question | Défaut en attendant |
 |---|---|---|
-| 1 | Photo ou archive isolée en Story : tirage sur papier rose (identité v15), fond noir ou fond flou ? | Tirage sur papier rose (v15 en attente de validation sur l'aperçu complet) |
+| 1 | Photo ou archive isolée en Story : fond noir, fond flou ou traitement de la future identité ? (v15 supprimée le 12/10/2026) | Fond flou du même plan, en attendant la nouvelle identité Story |
 | 2 | Archive en 4:3 : bandes, fond ou recadrage ? | Bandes sur le fond de l'identité ; jamais d'étirement |
 | 3 | Extrait sonore étranger dans une vidéo française : sous-titres en français ? (le skill règle les vidéos tournées à l'étranger par Cabezer, pas les archives insérées) | Sous-titres français relus, 2 lignes, 24 caractères par ligne en 9:16, 42 en 16:9 |
 | 4 | Flux optique, changement de cadence calculé ou interpolation sur archive | Non utilisés (question commune avec `premiere-pro-avance.md`) |

@@ -1,5 +1,7 @@
 # Rétention et rythme des vidéos YouTube longues
 
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander » : SRT seul pour les vidéos longues tournées en France ; identité Story v15 et générique « Amed Story 🧢 » supprimés (à refaire) ; coupe courte de la bouchée sur tous les formats courts ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; composition musicale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; 4K pour YouTube long quand les rushs sont en 4K ; un rendu de sous-titres par passage validé ; intervenants identifiés à la première apparition (hors D) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. Liste complète : `../decisions-en-attente.md`.
+
 Fiche de référence du skill `cabezer-premiere-shorts`. Elle apprend à tenir la promesse d'une vidéo longue du premier plan jusqu'à la fin : ouverture, boucles, rythme, B-roll, son, chapitres, fin, lecture de la courbe. Elle ne remplace aucune règle du skill. Elle renvoie aux autres fiches de `references/pro/` par nom de fichier et numéro de section, et au skill par « skill §N » (numérotation v3).
 
 ## Quand lire cette fiche
@@ -67,7 +69,7 @@ Un spectateur de YouTube part d'un clic. Il reste tant que trois choses tiennent
 
 Ne pas confondre confirmer et payer.
 
-1. **Confirmer le sujet et la promesse avant la 30e seconde.** Le spectateur doit savoir de quoi parle la vidéo et ce qu'il va obtenir, montré ou dit, pas seulement suggéré. En Story, cette confirmation tombe dans l'intro face caméra, avant le générique « Amed Story » (skill §6, Story).
+1. **Confirmer le sujet et la promesse avant la 30e seconde.** Le spectateur doit savoir de quoi parle la vidéo et ce qu'il va obtenir, montré ou dit, pas seulement suggéré. En Story, cette confirmation tombe dans l'intro face caméra (skill §6, Story).
 2. **Rappeler l'enjeu ensuite, répondre à la fin.** L'enjeu peut revenir sous forme de question dans la première minute, sans y répondre ; la réponse arrive à la fin (S, P, F long : `documentaire-essai-video-archives.md` §3). Cela ne retarde pas la confirmation de l'obligation 1.
 
 **Test de promesse** (à faire avant de monter l'ouverture) :
@@ -101,9 +103,9 @@ Paddy remplace une intro faible par un passage plus fort pris plus loin et le re
 - **30-60 s :** preuve, première relance, première boucle ouverte.
 
 **Contraintes de Cabezer prioritaires :**
-- Story : l'intro face caméra précède le générique « Amed Story » (skill §6, Story). La promesse est donc dite dans cette intro. Ne pas déplacer ni raccourcir le générique pour gagner des secondes.
+- Story : la promesse est dite dans l'intro face caméra (skill §6, Story). Le générique « Amed Story » a été supprimé le 12/10/2026 ; un futur générique validé viendrait après cette intro.
 - Hook finalisé en dernier, une fois la structure stable (skill §3, étape Structure et habillage).
-- Ne jamais écrire « Cabezer Story » dans un titre ou une carte (skill §6, Story). Seule exception : le générique « Amed Story ».
+- Ne jamais écrire « Cabezer Story » dans un titre ou une carte (skill §6, Story). (Le générique « Amed Story » a été supprimé le 12/10/2026.)
 - Demander le hook à Cabezer quand le brief ne le donne pas. En mode autonome : écrire le hook du test de promesse et le consigner « en attente ».
 
 ### 2.4 Pièges
@@ -388,7 +390,7 @@ Pièges : un pic n'est pas toujours un succès ; la rétention dépend aussi du 
 
 | Technique | Dégustation courte (D) | Food long (F) | Story (S) | Films/séries PRISME (P) | Tech (T) | Hors familles (H) |
 |---|---|---|---|---|---|---|
-| Confirmer sujet et promesse avant 30 s (§2.1) | Non (skill §5.2) | Oui | Oui, avant le générique | Oui | Oui | Oui |
+| Confirmer sujet et promesse avant 30 s (§2.1) | Non (skill §5.2) | Oui | Oui, dans l'intro | Oui | Oui | Oui |
 | Rappel de l'enjeu en question, réponse à la fin (§2.1) | Non | Oui | Oui | Oui | Selon brief | Selon brief |
 | Remonter un passage fort (§2.2) | Non | Oui, avec accord | Si Cabezer le valide | Selon brief | Selon brief | Selon brief |
 | Boucles, re-hooks, squelette (§3, §4.1) | Non | Oui | Oui | Oui | Oui | Oui |
@@ -440,7 +442,7 @@ Ne pas reprendre sans nouvelle vérification :
 - [ ] Squelette rempli ; famille identifiée ; règles du skill relues pour elle.
 
 **Ouverture et structure**
-- [ ] Sujet et promesse confirmés avant la 30e seconde (avant le générique en Story) ; son dès la première image ; hook finalisé en dernier.
+- [ ] Sujet et promesse confirmés avant la 30e seconde (dans l'intro face caméra en Story) ; son dès la première image ; hook finalisé en dernier.
 - [ ] Marqueurs `BOUCLE`/`PAYOFF` audités (§3.1) : aucune boucle ouverte, aucun payoff orphelin ; chaque fin de sujet donne une raison d'attendre la suite.
 - [ ] Chapitres posés selon la famille (carton de 3 s en Story seulement), marqueurs nommés.
 

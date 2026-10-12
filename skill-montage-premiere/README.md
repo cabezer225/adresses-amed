@@ -6,7 +6,7 @@ Nouvelle version du skill `cabezer-premiere-shorts` (Premiere Pro + After Effect
 
 | Élément | Rôle |
 |---|---|
-| [`ANALYSE-CONTRADICTIONS.md`](ANALYSE-CONTRADICTIONS.md) | **À lire en premier.** Ce qu'il faut garder, ce qui a été retiré ou reformulé, les 23 contradictions tranchées et les 17 questions qui t'appartiennent |
+| [`ANALYSE-CONTRADICTIONS.md`](ANALYSE-CONTRADICTIONS.md) | **À lire en premier.** Ce qu'il faut garder, ce qui a été retiré ou reformulé, les 23 contradictions tranchées et tes réponses du 12/10/2026, appliquées |
 | [`cabezer-premiere-shorts/SKILL.md`](cabezer-premiere-shorts/SKILL.md) | Le skill v3 : toutes tes règles, sans contradiction, avec la définition de l'animation, le mode autonome, les outils IA classés, le statut des méthodes et l'index des fiches pro |
 | [`cabezer-premiere-shorts/references/pro/`](cabezer-premiere-shorts/references/pro/) | 13 fiches de monteur professionnel (environ 7 000 à 9 000 mots chacune), harmonisées avec tes règles |
 | [`cabezer-premiere-shorts/references/pro/scripts/`](cabezer-premiere-shorts/references/pro/scripts/) | 10 scripts de contrôle en lecture seule : MP4, coupes du XML, sous-titres, typographie, photosensibilité, contraste, environnement du Mac, reprise après plantage |

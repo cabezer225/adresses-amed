@@ -1,25 +1,44 @@
 # Décisions en attente de Cabezer
 
-Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2026), dédupliquées. **Tant que Cabezer n'a pas répondu, Claude applique le défaut**, le note dans `Suivi/decisions.md` et ne pose la question qu'une fois, au moment où elle bloque. Une réponse de Cabezer devient une règle du SKILL.md (avec sa date) ; retirer alors la ligne d'ici.
+Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2026), dédupliquées. Les 20 questions prioritaires ont reçu une réponse le 12/10/2026 (tableau ci-dessous) ; elles priment sur les sections « Décisions à demander » des fiches. **Tant que Cabezer n'a pas répondu, Claude applique le défaut**, le note dans `Suivi/decisions.md` et ne pose la question qu'une fois, au moment où elle bloque. Une réponse de Cabezer devient une règle du SKILL.md (avec sa date) ; retirer alors la ligne d'ici.
 
-★ = question prioritaire (à poser en premier).
+## Réponses de Cabezer du 12/10/2026 (appliquées dans le SKILL.md)
+
+| Question | Réponse |
+|---|---|
+| Sous-titres des vidéos longues tournées en France | SRT seulement, rien d'incrusté |
+| Identité Story v15 et générique « Amed Story 🧢 » | Supprimés, à refaire en entier |
+| Short/Reel monté seul en dégustation | Coupe courte partout |
+| Personnes filmées | Claude signale au dérush, Cabezer décide du floutage |
+| Ambiance du lieu sous un insert muet (dégustation) | À proposer au premier usage |
+| Foley d'aliment | Jamais |
+| Composition musicale originale | Story, food long et tech |
+| Respirations d'émotion | Aussi en films/séries et au verdict du food long |
+| Écran de fin YouTube en Story | 5 à 20 s réservées |
+| Sous-titres de dégustation | Un rendu par passage validé ; gardés à 72–75 % (exemptés de la boîte, contrôle sur capture) |
+| SCANDALE FOOD | N'existe plus |
+| Intervenants | Nom et fonction à la première apparition (hors dégustation) |
+| Tesseract et Higgsfield/Higgsedit | Retirés |
+| YouTube long | 4K quand les rushs sont en 4K |
+| Réduction de bruit | Identique partout, un peu plus seulement sur une prise très bruyante |
+| Notation hook/rétention sous 8 | Au plus deux passes de retravail, puis livrer avec la note réelle |
+| Identité food long | Charte à créer sur un extrait de 30 s |
+| Scripts de contrôle en lecture seule | Lancés sans redemander |
+| Repas offert, invitation, produit reçu | Signalé au brief, mention choisie par Cabezer à chaque fois |
+
+## Questions encore ouvertes
 
 ## A. Familles et identités
 
 | Question | Défaut en attendant |
 |---|---|
-| ★ Identité food long : créer une charte (couleurs, polices, marges) ? | Faire valider un extrait de 30 s ; Food dégustation v1 comme repère de lisibilité |
-| ★ Story v15 rose et générique « Amed Story 🧢 » v01 : validés ? | En attente ; utilisables en aperçu, pas en livrable final sans accord |
-| ★ SCANDALE FOOD : famille à part ou série Story ? | Règles Story |
 | Fiche Liquid Glass (tech) : peux-tu la fournir ? | Aucune animation tech tant qu'elle manque |
-| ★ Tesseract et Higgsfield/Higgsedit : toujours utilisés ? gratuits ? | Seulement sur demande nominative |
-| ★ Fin de Story : réserver 5 à 20 s pour l'écran de fin YouTube ? Qui pose les éléments ? | Oui (noir et musique qui s'éteint, sans information) ; les éléments sont posés par Cabezer ou par `youtube-publication-package` |
+| Fin de Story : qui pose les éléments de l'écran de fin YouTube (les 5 à 20 s sont réservées, réponse du 12/10) ? | Cabezer ou `youtube-publication-package` |
 
 ## B. Dérush, structure et rythme
 
 | Question | Défaut |
 |---|---|
-| ★ Garder les respirations d'émotion aussi en films/séries et au verdict du food long ? | Non : exception réservée à Story (skill §4) |
 | Teaser « passage fort remonté en ouverture » en food long et en Story ? | Proposé avec le passage candidat, jamais appliqué sans accord |
 | Carton de chapitre visible hors Story ? | Marqueurs de chapitre seulement |
 | Durées de transitions (fondu enchaîné 12–24 images, fondu final 12–24 images hors Story, 30–60 en Story) : à valider sur un extrait ? | Coupe franche partout ; fondus en fin de Story ou sur demande |
@@ -31,13 +50,9 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 
 | Question | Défaut |
 |---|---|
-| ★ « Short/Reel monté seul = dégustation complète » : l'exception existe-t-elle encore ? | Oui |
-| ★ Ambiance discrète du lieu sous un insert muet ? | Méthode à proposer au premier usage ; sans ton accord, aucune (ni ambiance continue ni musique) |
-| ★ Foley d'aliment (craquement, friture) sur un insert muet de préparation ? | Non, dans toutes les familles ; jamais sur une bouchée ni une réaction |
 | Plan stock de préparation : accord général pour Pexels/Pixabay, ou à chaque vidéo ? | À chaque vidéo ; sans accord, s'en passer |
 | Essai A/B du calage des SFX (−1, 0, +1 image) ? | Non : attaque, swoosh sur son pic |
 | Riser ou drone hors de la liste de référence de SFX ? | Non |
-| Notation : limiter le travail à deux itérations quand 8 n'est pas atteint ? | Pas de limite tant qu'une piste d'amélioration existe ; si ton choix empêche 8, livrer avec la note réelle |
 | Arrêt sur image pour montrer un ticket ou un prix ? | Non : punch-in sec et pop |
 | Long → Shorts en S et F : sous-titres de la famille adaptés au 9:16 (2 lignes, ≤ 24 caractères) ? | Oui |
 | Durée minimale d'un paquet de sous-titres traduits ? | Rythme de la parole, plancher 0,25 s, vérifié sur téléphone |
@@ -46,14 +61,10 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 
 | Question | Défaut |
 |---|---|
-| ★ Vidéos longues tournées en France : sous-titres français incrustés, ou SRT seulement ? | SRT livré, pas d'incrustation |
-| ★ Rendu d'un seul tenant (recoupé après tes retouches) ou piste éditable par séquence validée ? | Rendu AE d'un seul tenant, recoupé |
-| ★ Sous-titres de dégustation à 72–75 % de la hauteur : exemptés de la boîte de zones sûres ? | Oui ; contrôle sur ton téléphone qu'ils ne sont pas masqués |
 | Peux-tu envoyer des captures de TikTok, Reels et Shorts (interface visible) pour mesurer les vraies zones ? | Boîte de test provisoire (`formats-courts-verticaux.md §6.2`) |
 | « Repli non animé » (légendes Premiere au style de la famille) si After Effects est indisponible ? | Non : décrire le blocage et attendre |
 | Extrait sonore étranger dans une vidéo française : sous-titres français ? | Oui, relus, 2 lignes max (24 car. en 9:16, 42 en 16:9) |
 | Heures et prix : ton usage « 19h30 », « 12€ », ou « 19 h 30 », « 12,50 € » avec espaces insécables ? | Ton usage s'il est connu, cohérent dans la vidéo ; sinon forme normative |
-| ★ Nom et fonction d'un intervenant à sa première apparition ? | Seulement sur demande |
 
 ## E. Image, After Effects et effets
 
@@ -70,7 +81,6 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 | Paquets tiers (papier plié, fichiers d'expressions téléchargeables) à licence non lue ? | Non utilisés |
 | Plan vertical dans une séquence horizontale : fond uni de l'identité ou flou du même plan ? | Fond uni de l'identité ; jamais d'étirement |
 | Archive 4:3 en 16:9 : bandes, fond ou recadrage ? | Bandes sur le fond de l'identité |
-| Photo isolée en Story : tirage papier rose (v15), fond noir ou flou ? | Tirage papier rose (sous réserve de validation de v15) |
 | « Synthétiser les bords » de la stabilisation ? | Non : « Stabiliser, rogner, adapter » ou refus du plan |
 | Compteur animé pour un prix en food long ? | Non : pop + petit shake + caisse comme en D ; compteur réservé à T |
 | Zoom guidé sur capture d'écran en tech ? | À tester sur un extrait avant tout usage |
@@ -96,20 +106,18 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 | Question | Défaut |
 |---|---|
 | Nappe Story à environ 24 dB sous la voix : confirmée à ton prochain aperçu ? | 24 dB mesurés, réglage final à ton écoute |
-| Réduction de bruit identique sur toutes les prises (ta règle) ou adaptée à une prise très bruyante ? | Ta règle ; signaler une prise qui en demanderait plus |
 | Limiteur de sécurité sur le bus maître en plus de celui de la voix ? | Non : baisser d'abord la source fautive |
 | Auto Match pour égaliser des morceaux de musique entre eux ? | Non : à la main |
 | Voix de dégustation qui exigerait plus de 3 dB de limitation pour atteindre −14 LUFS : tolérer un niveau plus bas ? | Oui : ne pas écraser la voix, mesure signalée |
 | Remplacer le repère −14 LUFS par la base mesurée de tes reels ? | Non : −14 (±1), ta base à titre d'information |
 | Alignement forcé (WhisperX, stable-ts) pour resserrer les temps de mots ? | Non : Whisper local et script d'affinage des bords |
 | À quel moment fais-tu la validation auditive ? | Sur l'aperçu, puis sur l'export final |
-| ★ Composition musicale hors Story (food long, tech) ? | Non : bibliothèque ou musique libre |
 
 ## H. Export, organisation et livraison
 
 | Question | Défaut |
 |---|---|
-| YouTube long en 4K ? Débits de départ (1080p 16/24 Mbit/s, 4K 50/75) ? | 1080p à 16 Mbit/s en cadence standard ; 4K sur demande, depuis des rushs 4K (YouTube encode mieux les fichiers 4K : à envisager pour les vidéos phares) |
+| Débits de départ YouTube long (1080p 16/24 Mbit/s, 4K 50/75 selon la cadence) ? La 4K est la règle quand les rushs sont en 4K (réponse du 12/10) | Ces valeurs, testées sur 60 s avant le premier export |
 | Audio YouTube long : 320 kbit/s (skill) ou 384 kbit/s ? | 320 kbit/s |
 | Carré et 4:5 : pour quelles plateformes, quelle zone sûre ? | Sur demande ; texte clé dans le tiers central |
 | Encodage matériel ou logiciel ? | Logiciel pour le livrable, matériel permis pour les brouillons |
@@ -126,7 +134,6 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 
 | Question | Défaut |
 |---|---|
-| Lancer `envcheck-mac.sh` et `reprise-candidats.py` (lecture seule, copie sans écrasement) ? | Demandé une fois ; sinon relevé par captures |
 | AE : activer « Autoriser les scripts à écrire des fichiers et à accéder au réseau » ? | Demandé au test de fumée ; jamais activé seul |
 | Autoriser le Terminal à piloter AE (Automatisation macOS), Accessibilité, Enregistrement d'écran ? | Non ; scripts AE lancés par Fichier > Scripts |
 | Voie de script Premiere : UXP pour le neuf, ExtendScript pour l'existant après test, FCP XML en secours ? | Oui ; aucun script avant le test de fumée |
@@ -139,9 +146,7 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 
 | Question | Défaut |
 |---|---|
-| ★ Inconnus identifiables, employés, mineurs : flou par défaut sans accord écrit ? | Signaler au dérush ; flou ou exclusion sans accord ; enfants jamais identifiables sans accord des parents |
 | Où consigner accords et masquages ? | Section « Personnes et données » de `Suivi/decisions.md` |
-| Mention commerciale : « Collaboration commerciale » ou « Publicité », et pendant combien de temps ? | Voir `conformite-droits-accessibilite.md §3` ; affichée dès le début, validée par toi |
-| Repas offerts, invitations, produits reçus : traités comme collaboration avec mention ? | Oui si l'avantage est lié à la vidéo ; Claude le signale |
+| Durée d'affichage de la mention commerciale (tu choisis la formule à chaque vidéo, réponse du 12/10) ? | Dès le début, maintenue selon `conformite-droits-accessibilite.md §3`, validée par toi |
 | Test de photosensibilité avant chaque export, avec les limites maison (2 événements lumineux par seconde) ? | Oui ; échec WCAG (plus de 3) bloquant, alerte à 2 |
 | Extraits de films : durée maximale, durée d'affichage de la source, exploration en caméra 3D ? | Durée strictement utile ; source ≥ 3 s ; 3D sans déformation ; risque Content ID signalé |

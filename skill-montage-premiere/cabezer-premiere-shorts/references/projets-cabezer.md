@@ -32,8 +32,8 @@ Détails propres à des montages passés, déplacés du SKILL.md en v3 pour gard
 ## Story — « Comment les fast-foods ont changé notre génération » (`Fast-food-generation-2026-09-21/`)
 
 - **Étude B-roll / animations / son** de 9 passages de Micode, Amistory et Liv : `Coordination/ANALYSE-BROLL-ANIMATIONS-SON-MICODE-AMISTORY-LIV.md` (base de la méthode « une image par idée », validée le 29/09 sur la démo partie 3).
-- **Identité v15 rose :** fiche `Coordination/v15/IDENTITE-ROSE-v15.md` ; bibliothèque ExtendScript `Habillage-Story-v01/Scripts/v15/lib_rose_v15.jsx`.
-- **Générique « Amed Story 🧢 » v01 :**
+- **Identité v15 rose — supprimée le 12/10/2026, à refaire en entier (archive, ne plus utiliser) :** fiche `Coordination/v15/IDENTITE-ROSE-v15.md` ; bibliothèque ExtendScript `Habillage-Story-v01/Scripts/v15/lib_rose_v15.jsx`.
+- **Générique « Amed Story 🧢 » v01 — supprimé le 12/10/2026, à refaire en entier (archive, ne plus utiliser) :**
   - rendu : `Habillage-Story-v01/Rendus/Generique/GENERIQUE_Amed_Story_v01_4K.mov` (4K avec son) et une variante sans impact initial ;
   - projet AE : `AE/Generique-Amed-Story-v01.aep`, une précomposition par lettre ;
   - musique : `Audio/Generique/` ;
