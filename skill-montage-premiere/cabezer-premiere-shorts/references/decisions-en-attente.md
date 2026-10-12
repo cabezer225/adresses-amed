@@ -1,6 +1,6 @@
 # Décisions de Cabezer
 
-Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2026), dédupliquées. Les questions prioritaires ont reçu une réponse le 12/10/2026 (deux séries) (tableau ci-dessous) ; elles priment sur les sections « Décisions à demander » des fiches. **Tant que Cabezer n'a pas répondu, Claude applique le défaut**, le note dans `Suivi/decisions.md` et ne pose la question qu'une fois, au moment où elle bloque. Une réponse de Cabezer devient une règle du SKILL.md (avec sa date) ; retirer alors la ligne d'ici.
+Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2026), dédupliquées. Les questions prioritaires ont reçu une réponse le 12/10/2026 (trois séries) (tableau ci-dessous) ; elles priment sur les sections « Décisions à demander » des fiches. **Tant que Cabezer n'a pas répondu, Claude applique le défaut**, le note dans `Suivi/decisions.md` et ne pose la question qu'une fois, au moment où elle bloque. Une réponse de Cabezer devient une règle du SKILL.md (avec sa date) ; retirer alors la ligne d'ici.
 
 ## Séries 1 et 2 — choix éditoriaux et formats
 

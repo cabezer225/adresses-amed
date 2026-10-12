@@ -9,7 +9,7 @@ Ce que je te conseille de **garder**, **retirer** ou **reformuler**, et les ques
 - Un agent critique a cherché les conflits entre les fiches et ton skill, puis tout a été harmonisé sur une liste de décisions communes.
 - Un relecteur indépendant a comparé la v2 et la v3 ligne à ligne : aucune valeur chiffrée ni aucun chemin perdu ; ses 19 remarques (pertes de nuance, renvois faux, règle « minimum 8 » affaiblie) sont corrigées.
 
-**Résultat :** 23 contradictions réelles, 11 éléments périmés ou mal rangés, 3 règles perdues dans l'historique, une vingtaine d'ambiguïtés (tranchées par tes réponses, section 4) et un problème de structure grave : les fichiers cités sont absents. Tout ce qui pouvait se trancher avec ta propre règle (« la consigne la plus récente l'emporte ») est appliqué dans la v3. Le reste t'a été posé : tes 19 réponses du 12/10/2026 sont appliquées (section 4).
+**Résultat :** 23 contradictions réelles, 11 éléments périmés ou mal rangés, 3 règles perdues dans l'historique, une vingtaine d'ambiguïtés (toutes tranchées par tes réponses, sections 4, 4 bis et 4 ter) et un problème de structure grave : les fichiers cités sont absents. Tout ce qui pouvait se trancher avec ta propre règle (« la consigne la plus récente l'emporte ») est appliqué dans la v3. Le reste t'a été posé : tes 19 réponses du 12/10/2026 sont appliquées (section 4).
 
 ---
 
@@ -23,9 +23,9 @@ La version de ton skill installée sur claude.ai ne contient **que SKILL.md**. C
   - `after-effects/` : `premiere-after-effects.md`, `tech-liquid-glass.md`, `tutoriels-2026-09-16.md`.
 - **5 fichiers `assets/sfx-cabezer/`** : les 4 SFX de base et `manifest.json`.
 
-Depuis tes réponses, `premiere-tesseract.md`, `montage-higgsfield.md` (outils retirés) et `after-effects/tech-liquid-glass.md` (méthode abandonnée) ne servent plus : il en reste 15 à rapatrier, plus les 5 SFX.
+Depuis tes réponses, `premiere-tesseract.md`, `montage-higgsfield.md` (outils retirés) et `after-effects/tech-liquid-glass.md` (méthode abandonnée) ne servent plus : il en reste 15 à rapatrier, plus les 5 SFX et le dossier de LUT `assets/luts/dji-osmo-pocket-3/` (tes LUT Exterior).
 
-**Conséquence :** quand Claude lit ton skill depuis claude.ai, il ne peut ouvrir ni PRISME, ni Liquid Glass, ni la chaîne couleur Pocket 3, ni la méthode Micode/Amistory. Il devine ou il saute.
+**Conséquence :** quand Claude lit ton skill depuis claude.ai, il ne peut ouvrir ni PRISME, ni la chaîne couleur Pocket 3 et ses LUT, ni la méthode Micode/Amistory. Il devine ou il saute.
 
 **À faire (toi) :** ces fichiers existent sans doute dans ton dossier de skill sur le Mac. Au moment d'installer la v3, fusionne les dossiers (section 7) pour que tout parte ensemble. En attendant, la v3 dit à Claude de signaler un fichier manquant et de ne jamais en deviner le contenu.
 
@@ -71,10 +71,10 @@ Gravité : 🔴 fausse un montage · 🟠 fait hésiter Claude · 🟡 mineure.
 | 9 🟡 | §6 générique | « Décaler tout ce qui suit de **240 images** » = 8 s seulement à 30 i/s (9,6 s à 25 i/s) | Sans objet : le générique a été supprimé (ta réponse) ; un futur générique s'insérera avec l'outil Insérer, durée convertie à la cadence de la séquence |
 | 10 🟠 | §7 / §2 / §5.1 | §7 « zoom jamais imposé, pas de zoom à chaque plan » sans exception, alors que la dégustation impose un punch-in à chaque coupe face caméra | §7 précise : zoom Micode pour F, S, P, T ; **exception dégustation** = punch-ins secs |
 | 11 🟠 | §4 / §5 / §5.2 | Trois seuils pour les blancs : aucun blanc (§4), couper > 0,25 s (§5), jusqu'à 6 blancs ≥ 0,25 s/min tolérés (§5.2) | Ligne « Blancs » ajoutée au tableau §2 par famille ; le « 6 par minute » est un **contrôle du résultat**, pas une cible de coupe |
-| 12 🟠 | §2 / §5 / §11 | Dégustation : banque Pixabay ; §11 : « bibliothèque ouverte » et autres sources, sans dire laquelle prime | Dégustation = banque Pixabay et ta **liste de référence** (autre son de la banque sur ton accord) ; bibliothèque ouverte pour les autres familles |
+| 12 🟠 | §2 / §5 / §11 | Dégustation : banque Pixabay ; §11 : « bibliothèque ouverte » et autres sources, sans dire laquelle prime | Dégustation = banque Pixabay et ta **liste de référence** (tout son de la banque permis, ta réponse de la série 3) ; bibliothèque ouverte pour les autres familles |
 | 13 🔴 | §6 point 9 | Le temps de lecture vise « toute information écrite (… légende) » : appliqué aux sous-titres mot à mot de dégustation (≈ 0,25 s/mot), il est impossible | Portée précisée : familles longues ; **ne s'applique pas** aux sous-titres mot à mot de dégustation |
 | 14 🟠 | §5 / §5.1 | Le prix apparaît de trois façons, et « pas de cartouche descriptif » contredit la pastille « produit · prix » | Deux cas : petite étiquette « produit · prix » à la révélation ; **montant seul en grand** animé seulement à une vraie annonce |
-| 15 🟠 | §5 / §8 | Un plan stock de préparation « appétissant » contre « une image ne doit pas suggérer une expérience que Cabezer n'a pas vécue » | Stock gardé (avec ton accord) mais du même type de produit, sans logo ni lieu identifiable, **jamais présenté comme le plat servi** |
+| 15 🟠 | §5 / §8 | Un plan stock de préparation « appétissant » contre « une image ne doit pas suggérer une expérience que Cabezer n'a pas vécue » | Stock gardé (accord général depuis ta réponse de la série 3) mais du même type de produit, sans logo ni lieu identifiable, **jamais présenté comme le plat servi** |
 | 16 🟠 | §5 / §8 / §12 | Tes exemples de corrections (« deux mozzarelles… trois » → « trois mozzarelles ») recollent des morceaux de prises, alors que §8 et §12 interdisent de « recomposer les paroles » | Règle précise : retirer un faux départ pour garder **ce que tu voulais dire** est permis ; un collage qui crée une affirmation jamais faite est interdit |
 | 17 🟡 | §4 / §5.2 / §14 | Appel au commentaire « présent » obligatoire (§14) et noté (§5.2), mais interdit de l'inventer s'il n'a pas été tourné | S'il n'a pas été tourné : le signaler, accepter le point en moins, ne pas bloquer la livraison |
 | 18 🔴 | §3 / §11 / §14 | « Visionnage et écoute intégraux », « mixage écouté » : **Claude n'entend pas** | Partout : « mesuré (LUFS, crêtes, mono, transcription) », et ton écoute est demandée, notée « faite » ou « en attente » |
@@ -110,7 +110,7 @@ Gravité : 🔴 fausse un montage · 🟠 fait hésiter Claude · 🟡 mineure.
 | Scripts de contrôle | Sans redemander | Les scripts qui ne font que lire se lancent seuls ; ceux qui modifient attendent ton accord (§3) |
 | Repas offert, invitation, produit reçu | Me demander à chaque fois | Signalé au brief, tu choisis la mention (§8) |
 
-Il reste environ 70 questions techniques (libellés, seuils, outils) dans `references/decisions-en-attente.md`. Elles ont toutes un défaut prudent et ne seront posées qu'au moment où elles bloquent un montage.
+Les 72 questions techniques (libellés, seuils, outils) ont ensuite reçu une réponse : voir la section 4 ter et `references/decisions-en-attente.md`.
 
 ---
 
@@ -183,7 +183,7 @@ Toutes appliquées dans le skill ; le détail complet, question par question, es
 
 - **Étape 0 « brief »** avant tout montage : promesse en une phrase, partenariat, personnes à protéger, niveau d'autonomie.
 - **Règle pour les montages hors familles** (vlog, pub, interview, clip) : extrait de 15 à 30 s à faire valider, fiche « adaptation et genres ».
-- **Mode autonome avec défauts** : hook habituel, anglais à l'étranger, rien de téléchargé sans accord.
+- **Mode autonome avec défauts** : hook habituel, anglais à l'étranger, seuls les plans stock libres de droits téléchargés sans redemander.
 - **Outils IA classés** en trois statuts : autorisé comme aide, sur demande, interdit.
 - **Crête vraie ≤ −1 dBTP**, absente de la v2. L'encodage AAC fait monter les crêtes : sans cette marge, risque de saturation après publication.
 - **iPhone HLG / Apple Log**, absent de la chaîne couleur, alors que l'iPhone est cité en multicam.
@@ -205,4 +205,4 @@ Ce que j'ai **refusé** parmi les suggestions des agents :
 4. Copie dedans le dossier `references/pro/` (13 fiches et 10 scripts) et les fichiers `references/historique.md`, `projets-cabezer.md`, `decisions-en-attente.md` et `decisions-harmonisation.md`.
 5. Vérifie que les 15 fiches encore utiles et les 5 SFX de la section 1 sont bien présents, puis compresse le dossier et téléverse-le là où tu gères ce skill sur claude.ai (le dossier entier, pas seulement SKILL.md).
 
-L'archive `cabezer-premiere-shorts-v3.zip` de ce dépôt contient déjà tout ce que j'ai produit. Il ne lui manque que tes 20 fichiers d'origine encore utiles (15 fiches et 5 SFX).
+L'archive `cabezer-premiere-shorts-v3.zip` de ce dépôt contient déjà tout ce que j'ai produit. Il ne lui manque que tes fichiers d'origine encore utiles : 15 fiches, 5 SFX et le dossier de LUT du Pocket 3.

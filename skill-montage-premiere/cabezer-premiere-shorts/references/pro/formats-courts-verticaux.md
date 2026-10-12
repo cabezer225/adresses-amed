@@ -6,9 +6,9 @@ Fiche rédigée le 12/10/2026, harmonisée avec `../decisions-harmonisation.md` 
 
 ## Quand lire cette fiche
 
-Lire cette fiche avant tout montage ou toute déclinaison **vertical 9:16 de moins de 3 minutes** : dégustation TikTok/Reels/Shorts, Short tiré d'une vidéo longue (food long, Story, tech, films/séries), hook, sous-titres animés, recadrage 16:9 → 9:16, zones sûres, export vertical, contrôle du MP4. Ne pas la lire pour une vidéo longue horizontale (voir `retention-youtube-long.md`).
+Lire cette fiche avant tout montage ou toute déclinaison **vertical 9:16 jusqu'à 3 minutes**, quelle que soit la famille : C-Food (dégustation, duel ou classement, recette, vlog street food), C-Story, C-Tech, C-Films, C-Life, qu'ils soient tirés d'une vidéo longue ou tournés exprès. Elle couvre le hook, les sous-titres animés, le recadrage 16:9 → 9:16, les zones sûres, l'export vertical et le contrôle du MP4. Ne pas la lire pour une vidéo longue horizontale (voir `retention-youtube-long.md`).
 
-**Hiérarchie (skill §1) : brief de Cabezer → règles du skill → fiches → tutoriels.** Cette fiche est au troisième niveau ; `../decisions-harmonisation.md` priment sur elle. Un chiffre de tutoriel est une **valeur de départ**, jamais une règle. Chaque technique dit quand l'utiliser, quand l'éviter et pour quelles familles : **D** dégustation · **F** food long · **S** Cabezer Story · **P** films/séries (PRISME) · **T** tech · **H** hors familles.
+**Hiérarchie (skill §1) : brief de Cabezer → règles du skill → fiches → tutoriels.** Cette fiche est au troisième niveau ; `../decisions-harmonisation.md` priment sur elle. Un chiffre de tutoriel est une **valeur de départ**, jamais une règle. Chaque technique dit quand l'utiliser, quand l'éviter et pour quelles familles : **D** dégustation (C-Food) · **F** food long · **S** Cabezer Story · **P** films/séries (PRISME) · **T** tech · **H** hors familles. **Les règles des courts (hook, sous-titres, son, mouvements, fin, notation) valent pour toutes les familles** ; les codes F, S, T, P ne désignent ici que le format long ou le fond d'un sujet.
 
 ## Statut de vérification (à lire avant d'appliquer un chiffre)
 
@@ -33,15 +33,15 @@ Le hook est le premier plan qui annonce un enjeu, une question ou une promesse, 
 **Trois tests avant de valider un hook (toute famille) :**
 
 1. **Son coupé.** Regarder les 3 premières secondes sans le son. Critère : une phrase décrit ce qu'on a compris (sujet et enjeu).
-2. **Titre-miniature** (Jenny Hoyos) : l'image seule avec son texte pourrait-elle être la miniature d'une vidéo longue qui donne envie de cliquer ? Pour **F, S, T, P**. En **D** : « on voit le produit et on veut le goûter ».
+2. **Titre-miniature** (Jenny Hoyos) : l'image seule avec son texte pourrait-elle être la miniature d'une vidéo longue qui donne envie de cliquer ? Pour tous les courts hors dégustation. En **D** : « on voit le produit et on veut le goûter ».
 3. **Lisibilité orale** : la phrase d'accroche se comprend à la première écoute, courte, un seul concept.
 
-### 1.2 Hook d'une dégustation : le sien d'abord, noté ensuite
+### 1.2 Hook d'un court : le sien d'abord, noté ensuite
 
-Le skill demande son hook à Cabezer à chaque dégustation (§5). Séquence qui prime sur toute grammaire de genre :
+Le skill demande son hook à Cabezer à chaque vidéo courte, toutes familles (§2.1, §5) : son hook habituel, un hook agressif d'extraits rapides ou un teaser du moment fort. Séquence qui prime sur toute grammaire de genre :
 
-1. Noter **son hook choisi** avec le barème du skill §5.2 et donner la note.
-2. Note **sous 8** : retravailler jusqu'à 8 (consigne de Cabezer). Si son hook l'empêche, **son choix prime** : livrer avec la note réelle et proposer **au plus deux variantes**, son hook restant une option. Limite de deux itérations : question ouverte (défaut : pas de limite).
+1. Noter **son hook choisi** avec le barème du skill §5.2 (adapté à la famille) et donner la note sur 10.
+2. Note **sous 8** : retravailler puis renoter jusqu'à 8, **au plus deux passes de retravail** (réponse de Cabezer). Si son hook l'empêche, **son choix prime** : livrer avec la note réelle, dire ce qui bloque et proposer **au plus deux variantes**, son hook restant une option. Si la note reste sous 8 après deux passes, livrer avec la note réelle.
 3. Les idées d'autres grammaires (un seul axe, boucle ouverte, écart de curiosité) ne s'appliquent qu'après validation par le barème.
 4. Mode autonome (skill §1) : hook = son hook habituel, noté ; validation consignée « en attente ».
 
@@ -49,7 +49,7 @@ Le skill demande son hook à Cabezer à chaque dégustation (§5). Séquence qui
 
 Poser une question et ne pas la fermer trop vite (heyDominik, 1:00–1:31 ; Hoyos, 8:39–9:09 [Tuto]). Le texte d'accroche **apporte** une question ou une tension ; il ne répète pas la voix.
 
-- **Quand** : F, S, T, P, déclinaisons en Short ; hook agressif de D fait d'extraits de rushs.
+- **Quand** : tous les courts, déclinaisons en Short comprises ; hook agressif fait d'extraits de rushs.
 - **Éviter** : masquer ou flouter le produit ou la bouchée en D (skill : produit ou bouchée dès la 1re seconde, pas de bouchée tronquée). Un texte vague (« Qui se reconnaît ? ») ou qui double la parole (skill §6, Story).
 
 ### 1.4 Contexte dès la première image
@@ -58,9 +58,9 @@ Une phrase qui démarre sans contexte laisse le spectateur sans repère (heyDomi
 
 ### 1.5 Recette AE d'un hook texte + image (sans IA, sans gabarit générique)
 
-**Quand** : hook de F, S, T, P ou H qui met un texte en avant sur un plan existant. **Éviter** en D si le texte cache la bouchée ou le produit : utiliser l'étiquette du skill (§5.1). Procédure déduite des gestes de Joseph (8:08–9:10), **[À vérifier] dans AE** :
+**Quand** : hook d'un court (C-Story, C-Tech, C-Films, C-Life, H) qui met un texte en avant sur un plan existant. **Éviter** en D si le texte cache la bouchée ou le produit : utiliser l'étiquette du skill (§5.1). Procédure déduite des gestes de Joseph (8:08–9:10), **[À vérifier] dans AE** :
 
-1. Composition 1080 × 1920, cadence de la séquence Premiere (la lire).
+1. Composition à la taille de la séquence Premiere (1080 × 1920, ou 2160 × 3840 si les rushs sont en 4K) et à sa cadence (les lire).
 2. Importer le vrai plan ou la vraie capture : aucune image générée, aucun détourage en ligne.
 3. Pour isoler le texte sans cacher le sujet : calque de réglage sous le texte, Luminosité/Contraste (baisser) et Flou gaussien (départ : 20 à 30), masque ellipse inversé à plume large. **Jamais de flou sur le visage ni le produit.**
 4. Entrée du texte : glissement court + opacité 0 → 100 en 4 à 6 images, courbes de facilité Bézier (skill §7). Ombre courte et nette (skill §5.1).
@@ -74,7 +74,7 @@ Compter les changements de plan ou de cadre dans les 3 premières secondes **sur
 
 ### 1.7 Photosensibilité du hook
 
-Un hook agressif enchaîne extraits rapides, flashs blancs et whips. Avant de le valider, appliquer `conformite-droits-accessibilite.md §6` (seuil, décompte, contrôle, procédure) ; cette fiche ne répète pas le seuil. Geste propre au hook : compter dans la même seconde les flashs de l'étiquette « intérieur » ou de la note et les coupes très contrastées ; espacer ou retirer le flash plutôt que baisser son opacité sans retester.
+Un hook agressif enchaîne extraits rapides, flashs blancs et whips. Cabezer a répondu **non** à un test de photosensibilité : aucun test ni décompte automatique, `flash-check.py` seulement s'il le demande. Les repères de `conformite-droits-accessibilite.md §6` restent une information facultative. Geste propre au hook : éviter d'empiler dans la même seconde les flashs de l'étiquette « intérieur » ou de la note et des coupes très contrastées ; espacer ou retirer le flash plutôt que baisser son opacité.
 
 ### 1.8 Ce qu'il ne faut pas reprendre
 
@@ -85,11 +85,11 @@ Un hook agressif enchaîne extraits rapides, flashs blancs et whips. Avant de le
 
 ## 2. Structure, boucle et fin
 
-### 2.1 Schéma court (F, S, T, P et leurs Shorts)
+### 2.1 Schéma court (courts hors dégustation)
 
-D'après Jenny Hoyos (20:25–25:33) [Tuto] : hook (≤ 3 s) → amorce de ce que la vidéo tient (≤ 3 s) → relance sans « on commence » → développement par changements de situation (« mais » / « donc ») → chute ou verdict, puis fermeture de la boucle.
+D'après Jenny Hoyos (20:25–25:33) [Tuto] : hook (≤ 3 s) → amorce de ce que la vidéo tient (≤ 3 s) → relance sans « on commence » → développement par changements de situation (« mais » / « donc ») → chute ou verdict, puis fermeture de la boucle et appel au commentaire (§2.3).
 
-**Quand** : récit court, Short tiré d'une Story ou d'un food long. **Éviter en D** : la dégustation a sa structure validée (arrivée, commande, produit, bouchée, verdict, appel au commentaire, skill §5) ; ne pas imposer d'amorce.
+**Quand** : C-Story, C-Tech, C-Films, C-Life, Short tiré d'une Story ou d'un food long, selon le brief. **Éviter en D** : la dégustation a sa structure validée (arrivée, commande, produit, bouchée, verdict, appel au commentaire, skill §5) ; ne pas imposer d'amorce.
 
 ### 2.2 Écrire la fin en premier
 
@@ -99,9 +99,10 @@ Hoyos écrit la dernière phrase avant de tourner (24:31–25:33), ce qui rejoin
 
 Retirer la dernière seconde d'un Short est passé de 83 % à 88 % de rétention chez Hoyos (7:08–7:38) : anecdote isolée de 2023, non généralisable [Tuto]. À retenir : une seconde morte coûte cher en format court.
 
-- **D** : skill §4, coupe juste après le dernier mot entièrement audible. Garder l'appel au commentaire entier, avec le mot prononcé, et couper après l'extinction réelle de la voix. Aucun fondu au noir ni carton sans demande.
-- **S** : « la fin est trop fin cutter » (skill §6) : regard silencieux, fondu au noir avant qu'il bouge, accord qui s'éteint. Un Short tiré d'une Story **boucle ou renvoie à la vidéo longue** (skill §12) ; la fin Story ne s'applique que si le Short est un extrait complet qui se termine comme la vidéo.
-- **F, T, P, H** : suivre le brief ; défaut : coupe après le dernier mot utile.
+- **Tous les courts** : appel au commentaire dans les 5 dernières secondes, gardé entier avec le mot prononcé, puis **coupe à l'extinction réelle de la voix** (skill §2.1). Aucun fondu au noir ni carton sans demande.
+- **Appel non tourné** (par exemple extrait d'une Story ou d'un film) : le signaler à Cabezer, ne jamais l'inventer, proposer un renvoi vers la vidéo longue.
+- **C-Story** : le regard silencieux, le fondu au noir et l'accord final sont la fin de la vidéo longue (L-Story), pas celle du court. Un Short tiré d'une Story **renvoie à la vidéo longue** (skill §12) et se termine comme tout court.
+- **H** : suivre le brief ; défaut : même règle que les courts.
 
 ---
 
@@ -118,14 +119,15 @@ Un script peut piloter AE ; il ne fabrique jamais d'image hors d'AE. Les emojis 
 
 ### 3.2 Variété visuelle sans « bouillie »
 
-Learn By Leo (2:36–5:42) [Tuto] : alterner face caméra, B-roll et motion graphics ; un plan de 10 s intéressant vaut mieux qu'une coupe systématique. Pour Cabezer, le rythme vient du discours et des valeurs de plan, pas d'effets à chaque mot (skill §4) ; en D, pas plus de 6 s sans élément visuel nouveau (§5.2) ; en S, une image par idée, jamais par mot (skill §6).
+Learn By Leo (2:36–5:42) [Tuto] : alterner face caméra, B-roll et motion graphics ; un plan de 10 s intéressant vaut mieux qu'une coupe systématique. Pour Cabezer, le rythme vient du discours et des valeurs de plan, pas d'effets à chaque mot (skill §4) ; dans tous les courts, au moins un élément visuel nouveau toutes les 6 s (§5.2) ; en C-Story, une image par idée, jamais par mot (skill §6).
 
 ### 3.3 Mouvement sur un plan filmé ou fixe
 
-- **F, S, T, P** : zoom lent façon Micode **seulement si le moment le demande** (skill §7) : Bézier, maintien, retour au cadre de base avant la coupe. Éviter un zoom à chaque plan.
-- **Photo, document, capture** : le mouvement désigne un détail ou présente un visage, avec un temps avant et après et une courbe douce ; jamais de dérive décorative, jamais sur un plan qui porte un texte à lire (skill §6).
-- **D** : punch-ins secs en alternance 100 / 115 %, 120 % sur les bouchées ; shake + flash seulement sur les gros moments (prix, intérieur, verdict) ; ailleurs coupes franches (skill §5.1, valeurs de Cabezer).
-- **Whip entre deux lieux (D, T, F)** : 4 à 6 images, 130 %, glissement de 12 %, flou de mouvement, swoosh (skill §5.1). Mécanique : calque de réglage, effet Transformation (Transform), échelle + position avec facilités, angle d'obturateur élevé, sujet déplacé pendant le zoom (Premiere Gal, 7:40–8:44 [Tuto]). Transition marquée, donc sonorisée (§5).
+- **Longs (L-Food, L-Story, L-Tech, L-Films ; L-Life selon le sujet)** : zoom lent façon Micode **seulement si le moment le demande** (skill §7) : Bézier, maintien, retour au cadre de base avant la coupe. Éviter un zoom à chaque plan. **Aucun zoom progressif dans un court** : punch-ins secs seulement.
+- **Photo, document, capture** : le mouvement désigne un détail ou présente un visage, avec un temps avant et après et une courbe douce ; jamais de dérive décorative, jamais sur un plan qui porte un texte à lire (skill §6). L'**arrêt sur image** est permis dans tous les formats pour désigner un détail (ticket, prix, document).
+- **C-Food (D)** : punch-ins secs en alternance 100 / 115 %, 120 % sur les bouchées ; shake + flash seulement sur les gros moments (prix, intérieur, verdict) ; ailleurs coupes franches (skill §5.1, valeurs de Cabezer).
+- **C-Story, C-Tech, C-Films, C-Life** : punch-ins secs seulement, **sans shake ni flash** ; coupes franches ailleurs (skill §2.3). Le vlog C-Life ajoute speed ramps et transitions entre les lieux.
+- **Whip entre deux lieux (C-Food et vlog C-Life seulement)** : 4 à 6 images, 130 %, glissement de 12 %, flou de mouvement, swoosh (skill §5.1). Mécanique : calque de réglage, effet Transformation (Transform), échelle + position avec facilités, angle d'obturateur élevé, sujet déplacé pendant le zoom (Premiere Gal, 7:40–8:44 [Tuto]). Transition marquée, donc sonorisée (§5).
 - Éviter les « wiggle keyframes » en Premiere.
 
 **Interpolation (décision D.1).** « Jamais linéaire » vise les mouvements progressifs (Bézier). Un punch-in sec est un changement instantané (clé maintenue ou deux clips), hors de cette règle. La vitesse constante est permise pour une rotation continue, un défilement, un compteur ou une boucle.
@@ -136,11 +138,11 @@ Learn By Leo (2:36–5:42) [Tuto] : alterner face caméra, B-roll et motion grap
 2. Sur le clip suivant : Contrôles d'effets (Effect Controls) > Mouvement (Motion) > Échelle (Scale) : 115 (120 sur la bouchée), sans image clé.
 3. Vérifier que le point d'ancrage reste sur le visage et les yeux dans le tiers central.
 
-Un punch-in de 115–120 % reste net sur un 4K et se voit sur un 1080p [Calcul/Tuto : Premiere Gal, 1:00] : en D, privilégier les rushs 4K de la Pocket 3 dans une séquence 1080 × 1920.
+Un punch-in de 115–120 % reste net sur un 4K et se voit sur un 1080p [Calcul/Tuto : Premiere Gal, 1:00] : dans un court, privilégier les rushs 4K de la Pocket 3 (séquence 2160 × 3840 quand les rushs sont en 4K, skill §2.1).
 
 ### 3.4 Coupe en J et coupe en L
 
-J-cut : l'audio du plan suivant commence **avant** l'image ; L-cut : l'audio du précédent déborde (Joseph, 5:05 [Tuto]). **Quand** : S, F, T, P, discours enchaînant plusieurs plans, lien entre propos et B-roll.
+J-cut : l'audio du plan suivant commence **avant** l'image ; L-cut : l'audio du précédent déborde (Joseph, 5:05 [Tuto]). **Quand** : discours enchaînant plusieurs plans, lien entre propos et B-roll, dans tous les formats.
 
 - **D** : coupes franches par défaut. J/L permis sur un enchaînement parlé s'il ne mord pas l'attaque d'un mot ; **jamais sur la bouchée ni la réaction** (décision D.4).
 - **Procédure** : sélectionner **uniquement l'audio** du clip lié (dissocier par le menu Clip, libellé à confirmer, ou touche lue dans Raccourcis clavier), déplacer le bord de coupe, vérifier que la vidéo n'a pas bougé, relier. **[À vérifier]** : Joseph décrit « Alt + glisser » ; sur Mac, Option + glisser **duplique** un clip.
@@ -169,28 +171,29 @@ Source : Premiere Gal, 0:00–11:50 [Tuto]. En D, un jump cut visible est accept
 
 ### 4.1 Voie unique
 
-Les **sous-titres finaux sont une composition AE** : un calque de texte éditable, un mot ou un paquet par clé de Texte source (Source Text), à l'identité de la famille, entrée animée, rendue en **ProRes 4444 alpha**, plus un **SRT livré**. Les légendes natives de Premiere servent seulement de **piste de travail** (transcription, relecture, calage, source du SRT) et ne partent jamais à l'export final. La commande « Mettre à niveau la légende » n'est plus utilisée. Un repli sans AE s'appellerait « repli non animé » et serait consigné dans `Suivi/decisions.md` (question §14).
+Les **sous-titres finaux sont une composition AE** : un calque de texte éditable, un mot ou un paquet par clé de Texte source (Source Text), à l'identité de la famille, entrée animée, rendue en **ProRes 4444 alpha**, plus un **SRT livré**. Un seul rendu par passage validé (une composition AE et un rendu par séquence, calés sur ses coupes) : si Cabezer retouche une coupe, refaire seulement le rendu du passage touché. **Tous les courts sont incrustés. En format long tourné en France, SRT seul, rien d'incrusté** ; l'incrustation AE ne sert en long qu'à l'étranger et pour les passages ou extraits traduits. Les légendes natives de Premiere servent seulement de **piste de travail** (transcription, relecture, calage, source du SRT) et ne partent jamais à l'export final. La commande « Mettre à niveau la légende » n'est plus utilisée. **Si AE est indisponible : pas de sous-titres de secours dans Premiere** ; décrire le blocage et attendre.
 
-### 4.2 Limites par famille et langue
+### 4.2 Limites par format et langue
 
 Le skill prime (§9) ; les tutoriels apportent des méthodes, pas des seuils.
 
-- **D, France et Belgique** : français, **un mot à la fois**.
-- **D, tourné à l'étranger** : langue locale ou anglais, **à demander à chaque vidéo** (mode autonome : anglais). Traduction : paquets de **1 à 3 mots, ≤ 18 caractères**, petits mots collés au mot qui suit.
-- **Autres familles et étranger** : **2 lignes maximum**, ≤ 24 caractères par ligne en 9:16, coupures de ligne explicites, pas de mot isolé ; anglais si tourné à l'étranger. En 16:9 : viser ≤ 42 caractères par ligne.
+- **Tous les courts, tournés en France ou en Belgique** : français, **un mot à la fois**, comme la dégustation.
+- **Tous les courts, tournés à l'étranger** : langue locale ou anglais, **à demander à chaque vidéo** (mode autonome : anglais). Traduction : paquets de **1 à 3 mots, ≤ 18 caractères**, petits mots collés au mot qui suit.
+- **Extrait sonore étranger** (archive, interview, vendeur) dans une vidéo française : toujours sous-titré en français, mot à mot en court.
+- **Format long incrusté** (tournage à l'étranger, passages et extraits traduits ; jamais en France hors passages traduits) : **2 lignes maximum**, en 16:9 viser ≤ 42 caractères par ligne, coupures de ligne explicites, pas de mot isolé ; anglais si tourné à l'étranger. Cette règle de deux lignes ne vaut **pas** pour les courts.
 - Traduire le sens oral (ton naturel), garder les noms propres et le mot exact de l'appel au commentaire. Une traduction automatique n'est utilisée que relue (§11.1).
 
-**Valeurs de tutoriel, non retenues par défaut :** Adobe Video (0:31) 20 caractères, 1,2 s minimum, une ligne ; Anthony Mediaz (0:00) 17 caractères ; Joseph (5:35) 15 caractères, 2 s ; Learn By Leo (7:13) 3 mots maximum, compatible avec la traduction D. Le skill autorise 2 lignes (question §14).
+**Valeurs de tutoriel, non retenues par défaut :** Adobe Video (0:31) 20 caractères, 1,2 s minimum, une ligne ; Anthony Mediaz (0:00) 17 caractères ; Joseph (5:35) 15 caractères, 2 s ; Learn By Leo (7:13) 3 mots maximum, proche des paquets de traduction des courts.
 
-**Temps de lecture.** La formule `max(1,5 s ; 1 s + caractères/15)` du skill s'applique aux textes d'habillage, cartons, traductions de passages étrangers et blocs de sous-titres des familles longues. Elle ne s'applique **ni** aux sous-titres mot à mot de D **ni** aux coupes rapides nommées (0,4–0,8 s). Un paquet de traduction D suit le rythme de la parole (3,6 à 4,2 mots par seconde dans ses reels, skill §5) ; le plancher de 0,25 s du script est une valeur de départ à valider sur téléphone.
+**Temps de lecture.** La formule `max(1,5 s ; 1 s + caractères/15)` du skill s'applique aux blocs de sous-titres incrustés du format long et, en court, aux textes d'habillage qui portent une information (étiquette de lieu, prix, carte, date). Elle ne s'applique **ni** aux sous-titres mot à mot des courts (traductions comprises) **ni** aux coupes rapides nommées (0,4–0,8 s). Un paquet de traduction d'un court suit le rythme de la parole (3,6 à 4,2 mots par seconde dans ses reels, skill §5), avec un plancher de 0,25 s, vérifié sur téléphone (réponse de Cabezer).
 
 ### 4.3 Typographie française et découpage
 
-**Typographie à l'écran** (espaces insécables, ponctuation, guillemets, nombres, majuscules accentuées, ligature œ, heures) : `conformite-droits-accessibilite.md §7`, non répétée ici. Son usage propre prime (« 19h30 »). Vérifier que la police d'identité contient les glyphes des espaces insécables. En D mot à mot, seules la casse, les accents et l'orthographe s'appliquent. Relever noms propres et marques sur le menu ou le ticket.
+**Typographie à l'écran** (espaces insécables, ponctuation, guillemets, nombres, majuscules accentuées, ligature œ, heures) : `conformite-droits-accessibilite.md §7`, non répétée ici. Son usage propre prime (« 19h30 »). Vérifier que la police d'identité contient les glyphes des espaces insécables. En court (mot à mot), seules la casse, les accents et l'orthographe s'appliquent. Relever noms propres et marques sur le menu ou le ticket.
 
-**Découpage par groupes de sens (familles à 2 lignes).** Ne jamais séparer l'article et le nom, l'adjectif et le nom, le prénom et le nom, la préposition et son complément, l'auxiliaire et le participe, le pronom et le verbe (négation incluse), le nombre et son unité. Couper de préférence après une ponctuation forte ou avant une conjonction ; aucun mot isolé ; deux lignes de longueur proches. Ces principes reprennent les règles de coupe de ligne du guide Netflix [Extrait : page non lue]. Corriger par des sous-titres successifs, jamais en réduisant la police ponctuellement.
+**Découpage par groupes de sens (format long incrusté, 2 lignes).** Ne jamais séparer l'article et le nom, l'adjectif et le nom, le prénom et le nom, la préposition et son complément, l'auxiliaire et le participe, le pronom et le verbe (négation incluse), le nombre et son unité. Couper de préférence après une ponctuation forte ou avant une conjonction ; aucun mot isolé ; deux lignes de longueur proches. Ces principes reprennent les règles de coupe de ligne du guide Netflix [Extrait : page non lue]. Corriger par des sous-titres successifs, jamais en réduisant la police ponctuellement.
 
-**Contrôle** : `lint-srt.py` (`organisation-livraison-qc.md §6.4`) applique ces seuils par famille et signale aussi l'espace simple avant `; : ! ?` et l'apostrophe droite.
+**Contrôle** : `lint-srt.py` (`organisation-livraison-qc.md §6.4`) applique ces seuils (`D-fr` : court en français, un mot ; `D-trad` : court traduit, 3 mots et 18 caractères ; `autre` : long incrusté, 2 lignes) et signale aussi l'espace simple avant `; : ! ?` et l'apostrophe droite.
 
 ### 4.4 Piste de travail dans Premiere (transcription et SRT)
 
@@ -198,17 +201,17 @@ D'après Adobe Video (0:00–1:01) et Anthony Mediaz [Tuto] ; libellés à confi
 
 1. Fenêtre > Texte (Window > Text) ; onglet Transcription ; Transcrire (Transcribe).
 2. Relire mots, noms propres, chiffres, ponctuation (marques et mots étrangers souvent mal transcrits ; les temps de mot sont étirés, skill §5).
-3. Créer les légendes à partir de la transcription avec les limites de la famille (§4.2) : hors D, deux lignes et 24 caractères par ligne.
-4. Contrôler chaque bloc : aucune 3e ligne (Premiere peut en ajouter une, skill §9), aucun mot coupé.
+3. Créer les légendes à partir de la transcription avec les limites du format (§4.2) : court, un mot à la fois ou paquets de 1 à 3 mots ≤ 18 caractères ; long incrusté, deux lignes.
+4. Contrôler chaque bloc : en long, aucune 3e ligne (Premiere peut en ajouter une, skill §9) ; dans tous les cas, aucun mot coupé.
 5. Exporter le SRT depuis le panneau Légendes.
 
 Le style de légende Premiere par défaut est refusé par Cabezer (Maritozzo v09).
 
 ### 4.5 Animation d'entrée : valeurs de départ
 
-Tutoriels : Adobe Video (1:31) échelle 95 → 105 → 100 % sur 5 images avec facilités ; Joseph (7:06) 80 → 100 % sur 1 s, trop lent pour des paquets d'un mot ; Anthony Mediaz (2:05–3:38) flou 35 → 0 + opacité + léger glissement. **Skill :** D, pop en 4 images, sortie sèche au paquet suivant ; autres familles, pop léger, mots révélés un à un, sortie courte.
+Tutoriels : Adobe Video (1:31) échelle 95 → 105 → 100 % sur 5 images avec facilités ; Joseph (7:06) 80 → 100 % sur 1 s, trop lent pour des paquets d'un mot ; Anthony Mediaz (2:05–3:38) flou 35 → 0 + opacité + léger glissement. **Skill :** tous les courts, pop en 4 images, sortie sèche au paquet suivant ; format long incrusté, pop léger, mots révélés un à un, sortie courte.
 
-**Pop de D en AE** : un seul calque de texte, une clé de Texte source par mot (méthode et script de pose des clés : `after-effects-motion-design.md §7.2` et `§15.2`). Expression d'échelle qui redémarre à chaque clé ; syntaxe relue dans docsforadobe (`ease`, `framesToTime`, `nearestKey`) [Doc lue], **non exécutée dans AE** :
+**Pop des courts en AE** : un seul calque de texte, une clé de Texte source par mot (méthode et script de pose des clés : `after-effects-motion-design.md §16.3`). Expression d'échelle qui redémarre à chaque clé ; syntaxe relue dans docsforadobe (`ease`, `framesToTime`, `nearestKey`) [Doc lue], **non exécutée dans AE** :
 
 ```
 // Pop 85 -> 108 -> 100 sur 4 images depuis la dernière clé de Texte source
@@ -224,14 +227,14 @@ if (tx.numKeys > 0) {
 [s, s]
 ```
 
-Opacité : `ease(t, 0, framesToTime(2), 0, 100)` avec le même `t`. Centrer le point d'ancrage sur le texte (commande de centrage du point d'ancrage, libellé à confirmer), sinon le pop part d'un coin. **Mot clé** (produit, prix, note, lieu) en couleur d'accent (rouge tomate `#E63946` en France, skill §5.1) : couleur de la clé en D à un mot ; animateur « Couleur de remplissage » à sélecteur de plage en paquets. **Critère** : chaque paquet est lisible entier avant le suivant ; le mot en couleur est exact.
+Opacité : `ease(t, 0, framesToTime(2), 0, 100)` avec le même `t`. Centrer le point d'ancrage sur le texte (commande de centrage du point d'ancrage, libellé à confirmer), sinon le pop part d'un coin. **Mot clé** (produit, prix, note, lieu) en couleur d'accent de l'identité courte (C-Food : rouge tomate `#E63946` en France, skill §5.1 ; autres familles : blanc seul tant que leur identité courte n'est pas validée, skill §9) : couleur de la clé en mot à mot ; animateur « Couleur de remplissage » à sélecteur de plage en paquets. **Critère** : chaque paquet est lisible entier avant le suivant ; le mot en couleur est exact.
 
-### 4.6 Préparer les paquets avec un script (traduction D, ou Shorts hors D)
+### 4.6 Préparer les paquets avec un script (traduction des courts)
 
-Entrée : mots horodatés (TSV `début<TAB>fin<TAB>mot`). Le script `paquets.py` (à ranger dans le dossier de scripts de `organisation-livraison-qc.md`) forme des paquets de 1 à 3 mots et 18 caractères au plus et **décale ou retire** un paquet qui tombe sous une animation (skill §9). [Test] sur données de test ; à étalonner sur un vrai rush.
+Entrée : mots horodatés (TSV `début<TAB>fin<TAB>mot`). Le script `paquets.py` (dans `references/pro/scripts/`, listé dans `organisation-livraison-qc.md`) forme des paquets de 1 à 3 mots et 18 caractères au plus et **décale ou retire** un paquet qui tombe sous une animation (skill §9). [Test] sur données de test ; à étalonner sur un vrai rush.
 
 ```
-python3 -I paquets.py mots.tsv fenetres_animations.tsv > paquets.tsv
+python3 -I references/pro/scripts/paquets.py mots.tsv fenetres_animations.tsv > paquets.tsv
 ```
 
 ```python
@@ -264,11 +267,11 @@ for d, f, t in paquets(mots):
 
 - Fin de phrase : ferme le paquet. Un paquet ne se ferme pas sur un petit mot sauf si la limite de 18 caractères ou de 3 mots l'impose : relire ces cas.
 - **Après la coupe de Cabezer** : les temps viennent du son conservé, pas de la transcription du rush brut ; la traduction est réécrite sans les phrases coupées (skill §9).
-- Les paquets alimentent les clés de Texte source (`after-effects-motion-design.md §15.2`). Aucun gabarit générique : police, couleurs et position viennent de la fiche d'identité de la famille.
+- Les paquets alimentent les clés de Texte source (`after-effects-motion-design.md §16.3`). Aucun gabarit générique : police, couleurs et position viennent de la fiche d'identité de la famille.
 
 ### 4.7 Position et pièges
 
-Position des sous-titres de D (72–75 % de la hauteur) et statut par rapport à la boîte : §6.2. Les autres familles restent dans la zone autorisée de la boîte (skill §9 : éviter l'interface mobile et le visage).
+Position des sous-titres de tous les courts (72–75 % de la hauteur, exemptés de la boîte) : §6.2. Contrôler sur capture de chaque application qu'ils ne sont pas masqués par l'interface mobile ni sur le visage (skill §9).
 
 - Sous-titre resté sous une animation (prix, pop-up, note, appel au commentaire) : le masquer.
 - Rendu d'un seul tenant qui ne suit plus les coupes après une retouche de Cabezer : recouper aux mêmes images, vérifier la synchro dans l'export.
@@ -278,15 +281,15 @@ Position des sous-titres de D (72–75 % de la hauteur) et statut par rapport à
 
 ## 5. Son : SFX, silences, musique
 
-Learn By Leo (10:18–13:54) [Tuto] : whoosh sur un mouvement, riser avant une information, hit après le moment, drone pour un climat sombre, pause brutale de la musique ; « ne pas en abuser ».
+Learn By Leo (10:18–13:54) [Tuto] : whoosh sur un mouvement, riser avant une information, hit après le moment, drone pour un climat sombre, pause brutale de la musique (sans objet en court, qui n'a aucune musique) ; « ne pas en abuser ».
 
-**Application par famille :**
+**Application :**
 
-- **D** : banque Pixabay dédiée et **liste de référence** du skill (swoosh, pop, ding, boing, scratch, caisse, photo, scintillement), chacun lié à un élément, aucune musique. Pas de mème vocal ni de boom (retiré le 02/10). Riser et drone sont hors liste (question §14).
-- **F, S, T, P** : bibliothèque ouverte, licence dans `Suivi/licences.csv`, audible sous la voix. Whoosh sur mouvement rapide ou transition marquée ; riser seulement si un vrai enjeu suit. **S** : nappe basse continue (environ 24 dB sous la voix, `audio-dialogue-sound-design-mixage.md §5.5`), silence de 1 à 2 s avant une bascule, pas de hit ni de bruitage d'objet gratuit. **P** : musique de la bibliothèque personnelle, pas de musique tendance.
-- **D, par défaut** : aucune ambiance continue, aucun bruitage d'aliment sur une bouchée ou une réaction ; ambiance sous insert muet et foley sont des questions ouvertes portées par `audio-dialogue-sound-design-mixage.md` (défaut : non).
+- **Tous les courts, toutes familles** : **aucune musique** (ni nappe, ni composition, ni musique du long conservée) ; le son d'origine d'un extrait reste sous la voix, baissé : ce n'est pas une musique ajoutée. SFX **comme la dégustation** : **toute la banque Pixabay** de Cabezer, la liste de référence du skill en tête (swoosh, pop, ding, boing, scratch, caisse, photo, scintillement), touche mème, chacun lié à un élément, clairement audible sous la voix. Jamais de mème vocal ni de boom (retiré le 02/10). Riser et drone sont permis comme tout son de la banque, seulement si un vrai enjeu suit.
+- **Format long (pour mémoire)** : L-Food, L-Tech et L-Films, bibliothèque ouverte, licence dans `Suivi/licences.csv`, audible sous la voix ; L-Story, nappe basse continue (environ 24 dB sous la voix, `audio-dialogue-sound-design-mixage.md §5.5`), silence de 1 à 2 s avant une bascule, aucun bruitage d'objet gratuit ; L-Films, musique de la bibliothèque personnelle ; L-Life, aucune musique et SFX comme la dégustation.
+- **Bruitage d'aliment (foley) : jamais.** En dégustation, aucune ambiance continue ; l'ambiance du lieu sous un insert muet est à proposer à Cabezer au premier usage, et sans son accord, aucune.
 
-**Calage.** À l'attaque du son (swoosh sur son pic) ; un essai A/B de ±1 image n'est adopté que s'il gagne à l'écoute de Cabezer. Chaque SFX appartient à un élément : élément retiré, SFX retiré (skill §5).
+**Calage.** À l'attaque du son, swoosh sur son pic, sans essai A/B. Chaque SFX appartient à un élément : élément retiré, SFX retiré (skill §5).
 
 **Contrôle.** Chaque SFX est audible sous une voix intelligible sans écraser une bouchée ni une réaction (skill §11). Claude n'entend pas : il contrôle par mesures, transcription et forme d'onde ; l'écoute (volume normal, petit haut-parleur, mono) revient à Cabezer. Ne jamais écrire « écouté » pour une mesure.
 
@@ -304,12 +307,12 @@ Learn By Leo (10:18–13:54) [Tuto] : whoosh sur un mouvement, riser avant une i
 
 **Valeurs (1080 × 1920)** : zone **interdite** au texte clé = **270 px en haut** (14 %), **670 px en bas** (y ≥ 1250, 35 %), **132 px à droite** (x ≥ 948, 12 %). Enveloppe prudente des valeurs rapportées pour Reels et Shorts, plus étroite que les valeurs publicitaires les plus larges de TikTok. Boîte de test, non officielle.
 
-**Portée** : le **texte clé** — étiquettes, prix, pop-ups, note, texte d'accroche, pastille de l'appel au commentaire. Visage et produit en gros plan restent au centre. Les sous-titres des autres familles s'y conforment (§4.7).
+**Portée** : le **texte clé** — étiquettes, prix, pop-ups, note, texte d'accroche, pastille de l'appel au commentaire. Visage et produit en gros plan restent au centre. Les sous-titres des courts en sont exemptés (ci-dessous).
 
-**Statut pour les sous-titres de dégustation.** Ils restent à **72–75 % de la hauteur** (y ≈ 1382 à 1440), base validée de Cabezer ; cette bande tombe dans la zone interdite basse. Défaut en attendant sa réponse (question §14) :
+**Statut pour les sous-titres des courts.** Ils restent à **72–75 % de la hauteur** (y ≈ 1382 à 1440), base validée de Cabezer pour tous les courts ; cette bande tombe dans la zone interdite basse. Réponse de Cabezer (12/10/2026) :
 
-- les sous-titres de D sont **exemptés** de la boîte : le contrôle automatique ne les signale pas, mais signale tout autre texte ;
-- le test sur téléphone (§6.3) vérifie qu'ils ne sont **pas masqués** par la légende, les boutons ou la barre de progression ; s'ils le sont, le dire à Cabezer sans les déplacer seul ;
+- les sous-titres sont **exemptés** de la boîte : le contrôle automatique ne les signale pas, mais signale tout autre texte ;
+- le contrôle sur capture de chaque application (§6.3) vérifie qu'ils ne sont **pas masqués** par la légende, les boutons ou la barre de progression ; s'ils le sont, le dire à Cabezer sans les déplacer seul ;
 - la pastille de l'appel au commentaire se place au-dessus de y = 1250.
 
 **Remplacement.** Dès réception des captures d'écran (§6.3), remplacer la boîte par les mesures réelles, les consigner dans la fiche d'identité de la famille et dans `Suivi/verifications.md` ; le script de `organisation-livraison-qc.md §9.1` lit ces valeurs.
@@ -325,7 +328,7 @@ ffmpeg -f lavfi -i "color=c=black@0.0:s=1080x1920,format=rgba" -frames:v 1 \
 
 Le skill interdit toute publication sans accord. Méthode :
 
-1. Demander **une capture d'écran de chaque application** (TikTok, Reels, Shorts) pendant la lecture, interface visible (légende, boutons, barre de progression).
+1. **Cabezer enverra une capture d'écran de chaque application** (TikTok, Reels, Shorts) pendant la lecture, interface visible (légende, boutons, barre de progression) ; la boîte provisoire sert en attendant.
 2. L'importer comme calque repère dans AE, à 50 %, et mesurer les zones couvertes.
 3. Noter si l'application **recadre les côtés** ou laisse des bandes (non vérifié).
 4. Remplacer la boîte par ces mesures (§6.2).
@@ -359,7 +362,7 @@ D'après Shawn Dolinski (3:02–6:07 [Tuto]) :
 - Un réglage modifié bascule le préréglage en « Personnalisé » : normal ; enregistrer le préréglage utilisateur.
 - Ouvrir l'export par le menu (Fichier > Exporter > Médias, libellé à confirmer), pas par un raccourci non lu.
 
-**Loudness** (`audio-dialogue-sound-design-mixage.md §9`) : −14 LUFS intégrés = **repère de contrôle (±1)**, pas une cible ; crête vraie du MP4 ≤ −1 dBTP. Si elle dépasse, baisser d'abord la source fautive (SFX, musique) ; pas de limiteur de bus maître sans accord. Le mix se valide à l'écoute de Cabezer.
+**Loudness** (`audio-dialogue-sound-design-mixage.md §9`) : −14 LUFS intégrés = **repère de contrôle (±1)**, pas une cible ; crête vraie du MP4 ≤ −1 dBTP. Si elle dépasse, baisser la source fautive (SFX, voix) ; pas de limiteur sur la sortie générale. Le mix se valide à l'écoute de Cabezer.
 
 ### 7.2 Contrôles du MP4 exporté
 
@@ -368,7 +371,7 @@ Ils **signalent** des cas à revoir, sans remplacer visionnage ni écoute (skill
 - **Taille et codec** : `organisation-livraison-qc.md §6.2` ; 1080 × 1920 exact, pas de bandes noires.
 - **Zones** : `organisation-livraison-qc.md §9.1` lit les valeurs du §6.2 ; aucun texte clé dans les zones rouges, aucun repère rouge dans l'export.
 - **Niveaux** : repère −14 LUFS ±1 consigné, crête ≤ −1 dBTP.
-- **Flashs** : `conformite-droits-accessibilite.md §6`.
+- **Flashs** : pas de test automatique (réponse de Cabezer) ; `flash-check.py` seulement sur demande.
 - **Hook** : planche des premières images, ci-dessous.
 
 ```
@@ -376,14 +379,14 @@ Ils **signalent** des cas à revoir, sans remplacer visionnage ni écoute (skill
 ffmpeg -i f.mp4 -vf "select='eq(n,0)+eq(n,6)+eq(n,30)+eq(n,90)',scale=270:480,tile=4x1" -frames:v 1 planche.png
 ```
 
-**Critère** : planche relue par Claude (lecture des images) ; accroche lisible dès la première image ; sous-titres sur deux lignes au plus, lisibles à 270 × 480.
+**Critère** : planche relue par Claude (lecture des images) ; accroche lisible dès la première image ; sous-titres mot à mot, lisibles à 270 × 480.
 
 ---
 
 ## 8. Plateformes : durées et formats
 
 - **YouTube Shorts** : jusqu'à 3 minutes pour les vidéos carrées ou verticales importées à partir du 15 octobre 2024 (aide YouTube, Engadget, Tubefilter) [Extrait].
-- **TikTok** : au moins 10 minutes selon la presse (2022) ; limite actuelle non confirmée [Extrait]. La limite **éditoriale** de D est ~3:00 (skill).
+- **TikTok** : au moins 10 minutes selon la presse (2022) ; limite actuelle non confirmée [Extrait]. La limite **éditoriale** de tous les courts est 3:00 (skill).
 - **Reels** : 3 minutes annoncées en janvier 2025 d'après la presse (Storyboard18, Social Samosa) [Extrait].
 
 La durée optimale est un choix éditorial : les 34 s de Hoyos (2023) ne s'appliquent pas à la dégustation de Cabezer (jusqu'à 3:00). Pas de master 4K sans demande (skill §13). Relire la fenêtre d'envoi avant une série de vidéos et consigner valeur et date dans `Suivi/verifications.md`.
@@ -396,7 +399,7 @@ Les tutoriels n'étudient pas la dégustation. Le format de Keith Lee, décrit p
 
 **Applicable à D :** test du son coupé ; boucle ouverte par l'enjeu (« Luini ferme à 20h ») plutôt que par un texte qui répète la voix ; punch-in sec pour le jump cut (§3.5) ; hook noté selon le §1.2 ; fin après l'extinction de l'appel au commentaire (§2.3) ; contrôles du §7.2.
 
-**Non applicable :** structure « amorce » de Hoyos, musique tendance, riser/drone sans accord, flou du produit, texte qui double la parole.
+**Non applicable :** structure « amorce » de Hoyos, toute musique, flou du produit, texte qui double la parole.
 
 Aucun critique français de vidéos courtes sur des restaurants n'est documenté ici : avant l'habillage, étudier des références récentes (skill §8), consigner liens, dates, passages, métriques visibles, sans copier un montage ni récupérer les sons.
 
@@ -418,7 +421,7 @@ Boucle du skill (§15) : repérer la chute sur la courbe (YouTube Studio, statis
 - **Seulement sur demande explicite de Cabezer** : Morph Cut ; Remplissage d'après le contenu (Content-Aware Fill) ; Generative Extend ; tout outil Firefly ou de génération/reconstruction de pixels (dont le remplissage génératif pour effacer un texte).
 - **Interdits par défaut (règle de Cabezer)** : « Améliorer la parole » (Enhance Speech) ; Correspondance automatique et « Dynamique » d'Essential Sound ; images ou animations générées par IA (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16).
 
-Hors tableau : la **suppression d'arrière-plan par un service en ligne** n'est pas utilisée (rushs hors de la machine, offre souvent payante, détourage proche des stickers refusés en DA v2) ; détourer ou suivre sur le vrai plan dans AE ou Premiere. **Object Mask** de Premiere n'est pas nommé dans les décisions : défaut, masques manuels (question §14).
+Hors tableau : la **suppression d'arrière-plan par un service en ligne** n'est pas utilisée (rushs hors de la machine, offre souvent payante, détourage proche des stickers refusés en DA v2) ; détourer ou suivre sur le vrai plan dans AE ou Premiere. Les masques assistés (**Object Mask**, **Object Matte**) sont refusés par Cabezer : masques manuels et suivi ; Roto Brush et suivi restent autorisés, résultat vérifié.
 
 ### 11.2 Plugins payants à signaler (aucun installé)
 
@@ -426,7 +429,7 @@ Captioneer (« payant, parfois cher », Adobe Video), SubMachine, Spotlight FX C
 
 ### 11.3 Gratuit
 
-Pixabay (SFX de D, licences dans `LICENCES-SFX.md`), Freesound (lire chaque licence), bibliothèque audio YouTube (idem), outils natifs de Premiere et d'AE. Les emojis Apple sont rendus par macOS (skill §5.1) ; aucun emoji pris sur Internet. Toute licence d'image, vidéo, son ou police est consignée dans `Suivi/licences.csv`.
+Pixabay (SFX de tous les courts, licences dans `LICENCES-SFX.md`), Freesound (lire chaque licence), bibliothèque audio YouTube (idem), outils natifs de Premiere et d'AE. Les emojis Apple sont rendus par macOS (skill §5.1) ; aucun emoji pris sur Internet. Toute licence d'image, vidéo, son ou police est consignée dans `Suivi/licences.csv`.
 
 ---
 
@@ -439,7 +442,7 @@ Pixabay (SFX de D, licences dans `LICENCES-SFX.md`), Freesound (lire chaque lice
 | Hook qui cache le produit (D) | Produit ou bouchée dans la 1re seconde |
 | Hook de Cabezer écarté car sous 8 | Le noter, proposer au plus deux variantes, son choix prime |
 | Sous-titres posés sans tester l'interface | Boîte du §6.2, puis captures des applications |
-| Sous-titres de D déplacés seul | Garder 72–75 %, tester sur téléphone, demander |
+| Sous-titres de court déplacés seul | Garder 72–75 %, contrôler sur capture, demander |
 | Export « YouTube 1080p » qui repasse en horizontal | Contrôler la taille de sortie après tout changement de préréglage |
 | Recadrage d'un 1080p à 9:16 | Recadrer depuis les rushs 4K |
 | Animation ajoutée pour cacher une coupe | Punch-in sec ou plan de coupe ; animation seulement si un titre était prévu |
@@ -447,7 +450,7 @@ Pixabay (SFX de D, licences dans `LICENCES-SFX.md`), Freesound (lire chaque lice
 | Fondu audio de 2 images partout | Seulement où un clic s'entend ; jamais sur un mot protégé |
 | Sous-titres sous un prix ou un pop-up | Masquer ; le paquet attend la fin de l'animation |
 | Légende Premiere « mise à niveau » pour animer | Composition AE ProRes 4444 alpha + SRT |
-| Flashs enchaînés dans un hook agressif | Décompte de `conformite-droits-accessibilite.md §6` |
+| Flashs enchaînés dans un hook agressif | Espacer ou retirer le flash ; pas de test automatique |
 | Valeur de tutoriel appliquée à toutes les familles | Famille, puis skill, puis tutoriel |
 
 ---
@@ -455,25 +458,26 @@ Pixabay (SFX de D, licences dans `LICENCES-SFX.md`), Freesound (lire chaque lice
 ## 13. Liste de contrôle
 
 **Avant l'habillage**
-- [ ] Famille identifiée ; identité retrouvée ; hook demandé (D).
+- [ ] Format et famille identifiés ; identité du court retrouvée ; hook demandé à Cabezer (tous les courts).
 - [ ] Versions Premiere/AE lues ; libellés et raccourcis consignés dans `Suivi/environnement-verifie.md`.
 - [ ] Rushs 4K si recadrage depuis une vidéo longue, sinon limite signalée.
 - [ ] Animations graphiques dans AE, plans filmés traités dans Premiere (§3.1).
 
 **Hook**
-- [ ] Test du son coupé réussi ; D : hook de Cabezer noté, deux notes données si variante.
-- [ ] Produit ou bouchée dans la 1re seconde (D) ; texte lisible dès 0,2 s ; 2 changements de plan ou de cadre comptés sur la timeline.
-- [ ] Aucun flou ni texte sur le visage ou le produit ; flashs du hook comptés.
+- [ ] Test du son coupé réussi ; hook de Cabezer noté sur 10 (minimum 8, au plus deux passes de retravail, deux notes données si retravail).
+- [ ] Sujet fort dans la 1re seconde (C-Food : produit ou bouchée) ; texte lisible dès 0,2 s ; 2 changements de plan ou de cadre comptés sur la timeline.
+- [ ] Aucun flou ni texte sur le visage ou le produit ; flashs du hook espacés.
+- [ ] Fin : appel au commentaire dans les 5 dernières secondes, coupe à l'extinction de la voix ; s'il n'a pas été tourné, signalé.
 
 **Sous-titres**
 - [ ] Composition AE (ProRes 4444 alpha) + SRT ; légendes Premiere non exportées.
-- [ ] D : un mot à la fois, ou 1 à 3 mots ≤ 18 caractères en traduction ; langue demandée à l'étranger (autonome : anglais).
-- [ ] Autres familles : 2 lignes, ≤ 24 caractères par ligne, groupes de sens, aucun mot isolé.
+- [ ] Tous les courts : un mot à la fois, ou 1 à 3 mots ≤ 18 caractères en traduction ; langue demandée à l'étranger (autonome : anglais) ; un rendu par passage validé.
+- [ ] Extrait sonore étranger sous-titré en français ; format long incrusté seulement : 2 lignes, groupes de sens, aucun mot isolé.
 - [ ] Masqués pendant prix, pop-up, note, appel au commentaire ; noms, chiffres, typographie relus ; linter passé.
 
 **Zones sûres**
 - [ ] Texte clé hors zone interdite (§6.2) ; repères désactivés dans l'export.
-- [ ] Sous-titres de D vérifiés sur téléphone, ou « non fait » ; boîte provisoire signalée tant que les captures manquent.
+- [ ] Sous-titres vérifiés sur capture de chaque application, ou « non fait » ; boîte provisoire signalée tant que les captures manquent.
 
 **Export**
 - [ ] 1080 × 1920 ; cadence source ; VBR 1 passage ~20 Mbit/s ; AAC 48 kHz 320 kbit/s.
@@ -486,18 +490,19 @@ Pixabay (SFX de D, licences dans `LICENCES-SFX.md`), Freesound (lire chaque lice
 
 ## 14. Décisions à demander à Cabezer
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur cette fiche.
 
-Chaque question donne le **défaut appliqué en attendant** ; l'alternative n'est jamais présentée comme une règle.
+Réponses appliquées dans cette fiche :
 
-1. **Sous-titres de D et boîte de zones sûres.** Garder 72–75 % de la hauteur (sa base), bien que cette bande tombe dans la zone interdite basse ? *Défaut :* oui, exemptés de la boîte, test sur son téléphone pour vérifier qu'ils ne sont pas masqués.
-2. **Captures d'écran des applications** (TikTok, Reels, Shorts, interface visible). *Défaut :* boîte provisoire du §6.2.
-3. **Object Mask de Premiere** (masque assisté) accepté ? *Défaut :* non, masques manuels et suivi ; Roto Brush et suivi restent autorisés, résultat vérifié.
-4. **Riser et drone en dégustation**, hors de la liste de référence : les essayer sur un Short ? *Défaut :* non.
-5. **Sous-titres hors D** : une ligne de 20 à 24 caractères ou deux lignes ? *Défaut :* deux lignes, ≤ 24 caractères par ligne en 9:16 (skill).
-6. **Fin de dégustation** : couper juste après l'appel au commentaire ou garder une courte image finale ? *Défaut :* coupe après l'extinction réelle de la voix (skill §4).
-7. **Repli non animé des sous-titres** (légendes Premiere au style de la famille) si AE est indisponible ? *Défaut :* non ; décrire le blocage et attendre.
-8. **Paquets de traduction en dégustation** : durée minimale. *Défaut :* rythme de la parole, plancher de 0,25 s du script, à valider sur téléphone.
+1. **Sous-titres et boîte de zones sûres** : 72–75 % de la hauteur pour tous les courts, exemptés de la boîte, contrôle sur capture de chaque application (§6.2).
+2. **Captures d'écran des applications** : Cabezer les enverra ; boîte provisoire du §6.2 en attendant.
+3. **Masques assistés (Object Mask, Object Matte)** : non ; masques manuels et suivi, Roto Brush vérifié (§11.1).
+4. **Riser et drone** : permis, comme tout son de la banque Pixabay (§5).
+5. **Sous-titres des courts hors dégustation** : mot à mot comme la dégustation ; deux lignes seulement pour le format long incrusté (§4.2).
+6. **Fin des courts** : appel au commentaire, puis coupe à l'extinction de la voix (§2.3).
+7. **Repli des sous-titres sans AE** : non ; décrire le blocage et attendre (§4.1).
+8. **Paquets de traduction** : au rythme de la parole, plancher de 0,25 s, vérifié sur téléphone (§4.2).
+9. **Notation sous 8** : au plus deux passes de retravail, puis livrer avec la note réelle (§1.2).
 
 ---
 

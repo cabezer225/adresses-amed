@@ -37,7 +37,7 @@ Familles : dégustation (D), food long (F), Story (S), films/séries PRISME (P),
 - **[Doc lue]** : documentation ou code source lu en entier. **[Mesuré]** : commande exécutée sur un fichier de test synthétique (ffmpeg et ffprobe 6.1.1), jamais sur un rush de Cabezer.
 - **[Métier]** : pratique standard, non recoupée en ligne. **[S]** : extrait de recherche, page non lue ; ne fonde jamais une règle seul. **[I]** : déduit par le rédacteur. **[À vérifier]** : à tester sur la version installée.
 
-**Limites.** Aucune documentation Adobe n'a pu être lue : helpx.adobe.com, community.adobe.com, gamut.io, support.apple.com, colour-science.org, docsforadobe.dev et les sites de tutoriels sont refusés par le proxy. Tout chemin de menu est donc « à confirmer à l'écran » ; les libellés français suivis d'un astérisque (*) sont probables, pas relevés ; rien de ce qui dépend d'une bêta n'est écrit comme procédure.
+**Limites.** Aucune documentation Adobe n'a pu être lue : helpx.adobe.com, community.adobe.com, gamut.io, support.apple.com, colour-science.org, docsforadobe.dev et les sites de tutoriels sont refusés par le proxy. Tout chemin de menu est donc « à confirmer à l'écran ». Premiere et After Effects sont utilisés **en anglais** (réponse du 12/10/2026) : le libellé anglais affiché à l'écran fait foi, et les libellés français de cette fiche, suivis d'un astérisque (*) quand ils sont seulement probables, ne sont qu'un repère ; rien de ce qui dépend d'une bêta n'est écrit comme procédure.
 
 ---
 
@@ -81,7 +81,7 @@ Selon Druss, le pipeline couleur de Premiere a été réécrit dans la série 25
 - **Gamut large (Wide gamut)** place le log dans un conteneur plus vaste, ACEScct, puis fait le mappage de tons vers Rec.709 à la sortie. Druss précise que c'est un conteneur intermédiaire, pas un pipeline ACES complet.
 - Lumetri et plusieurs effets Adobe deviennent « conscients de l'espace couleur » : ils agissent sur les données log d'origine.
 
-**Pourquoi le gamut large aide** : Druss descend l'exposition de 3 valeurs : en Direct Rec.709 l'image devient pâteuse, en gamut large le dégradé de la lampe reste intact [Tuto Adobe : 20:32 à 22:39] ; Mario So obtient la même chose sur un clip S-Log3 à ±2 EV [Tuto : 9:10 à 10:44]. Raison : en Rec.709, le log est compressé à l'import avant tout réglage.
+**Pourquoi le gamut large aide** (pour information : Cabezer travaille en Direct Rec.709, le gamut large n'est ni utilisé ni à tester) : Druss descend l'exposition de 3 valeurs : en Direct Rec.709 l'image devient pâteuse, en gamut large le dégradé de la lampe reste intact [Tuto Adobe : 20:32 à 22:39] ; Mario So obtient la même chose sur un clip S-Log3 à ±2 EV [Tuto : 9:10 à 10:44]. Raison : en Rec.709, le log est compressé à l'import avant tout réglage.
 
 ### 3.2 Réglages à vérifier, dans l'ordre
 
@@ -91,27 +91,22 @@ Selon Druss, le pipeline couleur de Premiere a été réécrit dans la série 25
 4. **Réglages de séquence > onglet Gestion des couleurs***, ou onglet Réglages du panneau Lumetri : choisir le Color Setup.
 5. **Gamma de visionnage** : voir §4.
 6. **HDR Graphics White** : laisser la valeur par défaut (Mario So garde 203 nits). Ne pas toucher en SDR.
-7. **Sortie** : Rec.709 et, en gamut large, laisser les mappages de tons de sortie par défaut. Mario So recommande le mappage de tons et la compression de gamma **en sortie** (appliqués après les effets, une fois pour toute la séquence) plutôt qu'en entrée, pour préserver les hautes lumières, et conclut que les défauts donnent de bons résultats dans la plupart des cas [Tuto : 11:16 à 12:48]. Garder les défauts, puis tester sur le plan le plus difficile.
+7. **Sortie** : Rec.709 ; laisser les mappages de tons de sortie par défaut. Mario So recommande le mappage de tons et la compression de gamma **en sortie** (appliqués après les effets, une fois pour toute la séquence) plutôt qu'en entrée, pour préserver les hautes lumières, et conclut que les défauts donnent de bons résultats dans la plupart des cas [Tuto : 11:16 à 12:48]. Garder les défauts, puis tester sur le plan le plus difficile.
 
 **Critère de réussite** : le panneau Lumetri > Réglages ou la fiche « clip de séquence » indique pour un clip log : « converti de [espace d'origine] vers l'espace de travail, puis vers Rec.709 » [Tuto : Mario So 12:48 à 13:19].
 
 ### 3.3 Choisir le preset de séquence
 
-**Défaut : Direct Rec.709**, avec la conversion unique par clip décrite en 3.4 et 3.5. C'est la chaîne actuelle de Cabezer (skill §10) ; le gamut large est un **essai à valider** (question 2, §18), jamais un changement fait d'office.
+**Preset retenu : Direct Rec.709** (réponse du 12/10/2026, skill §10), avec la conversion unique par clip décrite en 3.4 et 3.5. Il n'y a **pas de gamut large à tester** et aucune bascule à proposer : le gamut large (3.1) n'est décrit que pour comprendre les sources.
 
 | Cas | Choix | Pourquoi |
 |---|---|---|
-| Rushs déjà Rec.709 (iPhone SDR, captures d'écran, stock) | Direct Rec.709 | Rien à gagner en gamut large [Tuto Adobe, Tuto : Mario So 7:38] |
-| Rushs log (Pocket 3 D-Log M, Panasonic V-Log) | Direct Rec.709 (défaut) ; gamut large à tester contre lui | Plus de marge à l'exposition en gamut large ; les LUT créatives de Cabezer sont peut-être calibrées pour l'autre flux [À vérifier] |
-| Séquence mixte log et SDR ou HLG | Direct Rec.709 (défaut) ; gamut large cité par Druss pour ce cas, à tester | Tous les clips arrivent dans un même espace avant comparaison [Tuto Adobe : Druss 14:53 ; Mario So 2:31] |
-| Tout HLG uniquement | Direct HLG possible [Tuto Adobe : Druss 14:23], mais livrable SDR : voir §12 | Évite une conversion inutile seulement si la livraison est HDR |
+| Rushs déjà Rec.709 (iPhone SDR, captures d'écran, stock) | Direct Rec.709 | Rien à convertir [Tuto Adobe, Tuto : Mario So 7:38] |
+| Rushs log (Pocket 3 D-Log M, Panasonic V-Log) | Direct Rec.709 | Conversion unique par clip (3.4, 3.5) ; la marge à l'exposition se règle dans Lumetri après la conversion (§5) |
+| Séquence mixte log et SDR ou HLG | Direct Rec.709 | Chaque clip passe par sa conversion unique avant comparaison [Tuto Adobe : Druss 14:53 ; Mario So 2:31] |
+| Tout HLG uniquement | Direct Rec.709, conversion par clip (§12) | La livraison est toujours en SDR Rec.709 ; jamais de séquence Direct HLG |
 
 **Règle** : ne jamais changer le preset d'une séquence déjà étalonnée sans refaire le contrôle de tous les plans. Les effets et LUT réagissent différemment selon l'espace de travail [fiche `premiere-pro-avance.md` ; une seule source].
-
-**Test à faire une fois par type de caméra** (skill §10 : « dosé sur les plans réels »). Quand : avant d'adopter le gamut large. Éviter : en plein montage d'une vidéo urgente. Familles : D, F, S, T.
-1. Choisir trois plans (sombre, lumineux, peau) et les étalonner avec la chaîne actuelle (conversion + LUT Exterior).
-2. Dupliquer la séquence, la basculer en gamut large, ré-appliquer la conversion automatique et le LUT créatif à son espace déclaré (§3.6).
-3. Comparer au waveform et au Moniteur Programme ; garder le flux qui conserve le plus de détail dans les hautes lumières sans casser la peau. Consigner et faire valider.
 
 ### 3.4 Réglage par clip
 
@@ -129,8 +124,8 @@ Le skill (§10) donne la chaîne. La fiche précise le mécanisme, sans le contr
 
 | Source | Procédure | Preuve |
 |---|---|---|
-| **DJI Pocket 3, D-Log M** | Skill §10 : conversion DJI D-Log M → Rec.709 **une seule fois**, puis Exterior Cinema ou Doux dosé. Tester si Premiere reconnaît le clip (Modifier > Couleur > espace du média) : si oui, pas de conversion DJI en plus ; sinon, la conversion DJI **une fois** (LUT d'entrée). Ordre exposition/conversion : §5 | Druss cite DJI parmi les fabricants gérés, sans nommer le D-Log M [Tuto Adobe 11:18] ; Mostyn préconise le LUT officiel DJI [Tuto] ; **détection à vérifier** |
-| **Pocket 3, HLG** | Clip HLG (§12). **Jamais de LUT D-Log M sur du HLG** (skill §10) | Druss préfère le HLG, avis qu'il qualifie de « hot take » [Tuto Adobe 14:23 à 14:53] |
+| **DJI Pocket 3, D-Log M** (tournage en D-Log M) | Skill §10 : diagnostic, conversion DJI D-Log M → Rec.709 **une seule fois**, exposition et blancs dans Lumetri, puis Exterior Cinema ou Doux dosé. Tester si Premiere reconnaît le clip (Modifier > Couleur > espace du média) : si oui, pas de conversion DJI en plus ; sinon, la conversion DJI **une fois** (LUT d'entrée). Ordre exposition/conversion : §5 | Druss cite DJI parmi les fabricants gérés, sans nommer le D-Log M [Tuto Adobe 11:18] ; Mostyn préconise le LUT officiel DJI [Tuto] ; **détection à vérifier** |
+| **Pocket 3, HLG** (cas exceptionnel : Cabezer tourne en D-Log M) | Clip HLG (§12). **Jamais de LUT D-Log M sur du HLG** (skill §10) | Druss préfère le HLG, avis qu'il qualifie de « hot take » [Tuto Adobe 14:23 à 14:53] |
 | **Panasonic V-Log/V-Gamut** | Skill §10 : conversion Panasonic → Rec.709, **jamais le LUT DJI**. Par défaut, conversion native de Premiere (Remplacer l'espace → Panasonic V-Log / V-Gamut) ; LUT Panasonic officiel seulement si elle est absente ; jamais les deux | Panasonic figure dans la liste de Druss [Tuto Adobe 11:18] ; un forum juge la conversion native meilleure qu'un LUT en gamut large [S] ; **à vérifier** |
 | **iPhone HLG, Apple Log** | Voir §12 | Druss 11:18 à 11:49 ; Apple (Doc lue) |
 | **Stock, captures d'écran, graphiques** | Direct Rec.709 sans look ni conversion. Voir §8 et §13 | skill §10 |
@@ -151,9 +146,9 @@ Un LUT de conversion remplace la conversion automatique : il vient du fabricant.
 1. Étalonner en **2.4** dans une pièce contrôlée (Mostyn grade en 2.4 et admet 2.2 [Tuto : 896vcqJijtQ 2:02]).
 2. Pour contrôler un MP4 lu dans QuickTime, passer ponctuellement à **1.96**, comparer, revenir à 2.4.
 3. Ne jamais étalonner un livrable en 1.96 : il paraîtrait plus sombre sur YouTube et sur un téléphone [Tuto : Mario So 5:06 ; I].
-4. Certains font suivre le gamma à la pièce (2.4 sombre, 2.2 claire) [S : Mixing Light ; **à vérifier**].
+4. Certains font suivre le gamma à la pièce (2.4 sombre, 2.2 claire) [S : Mixing Light] : pratique non retenue.
 
-**Désaccord non tranché** : 2.4 partout (Mostyn), selon la destination (Druss, Mario So), selon la pièce (Mixing Light). **Défaut : 2.4 de travail**, validation sur téléphone (§15), aucune correction globale qui compense un affichage. Question 1 (§18).
+**Tranché (réponse du 12/10/2026)** : les sources divergent (2.4 partout chez Mostyn, selon la destination chez Druss et Mario So, selon la pièce chez Mixing Light), mais Cabezer a choisi **2.4 de travail**, avec validation sur téléphone (§15), et aucune correction globale qui compense un affichage. Le plan test sur téléphone est proposé, jamais bloquant.
 
 **Écran de destination.** Un UHD, un 1080p et une tablette n'affichent pas la même image [Tuto : Levine 37:32]. Cabezer publie surtout sur téléphone : voir §15.
 
@@ -173,12 +168,12 @@ Fixer un arbre d'opérations évite de se perdre. Mostyn le défend avec un arbr
 | F. Look | LUT créatif dosé, courbes, vignette | Créatif (Creative)* | Image, puis scopes |
 | G. Secondaires | Couleurs ciblées, masques | Courbes teinte/saturation ; TSL secondaire | Image |
 
-**Lecture de l'ordre du skill pour le Pocket 3.** Le skill (§10) écrit : « exposition/blancs → conversion → Rec.709 une seule fois → Exterior ». Les sources lues placent la conversion d'entrée avant les curseurs de Lumetri (normaliser, puis exposer), car Lumetri agit après la conversion d'entrée en Direct Rec.709. Ordre appliqué par défaut :
-1. **Diagnostiquer** l'exposition du rush au waveform, sans rien régler (le « exposition/blancs » du skill sert alors de contrôle d'entrée).
+**Ordre du skill pour le Pocket 3 (skill §10, réponse du 12/10/2026).** Les sources lues placent la conversion d'entrée avant les curseurs de Lumetri (normaliser, puis exposer), car Lumetri agit après la conversion d'entrée en Direct Rec.709. Ordre appliqué :
+1. **Diagnostiquer** l'exposition du rush au waveform, sans rien régler.
 2. **Convertir une seule fois** (étape A).
 3. **Ajuster** exposition et blancs dans Lumetri Basique (étapes B et C), avant le LUT Exterior.
 4. **Poser Exterior** en Créatif, dosé sur les plans réels (étape F).
-Seul le gamut large rend l'ordre « exposition avant conversion » littéral : Lumetri y agit sur les données d'origine [Tuto Adobe : Druss 20:32]. Cabezer tranche l'intention (question 4, §18) ; en attendant, appliquer l'ordre ci-dessus, qui ne présente aucune alternative comme règle.
+Il n'y a pas d'ordre alternatif : régler l'exposition « avant la conversion » ne vaudrait qu'en gamut large, qui n'est pas utilisé [Tuto Adobe : Druss 20:32].
 
 **Option de rangement** : une instance de Lumetri par étape (« 1 Normalisation », « 2 Balance », « 3 Look ») pour désactiver un étage et juger. Quand : plan difficile. Éviter : séquence longue (plus de rendu). Procédure Adobe non lue [À vérifier].
 
@@ -232,7 +227,7 @@ Les valeurs ci-dessous sont des **points de départ à régler à l'œil**, jama
 - Régler d'abord le sujet principal, en général la peau. Il n'existe pas de valeur unique : cela dépend de la pièce et de l'expérience [Tuto : Mostyn « 5 PRO Fundamentals » 4:34 à 6:07].
 - Procédure Lumetri : Basique > Exposition, en lisant le waveform. Ensuite Hautes lumières, Ombres, Blancs, Noirs.
 - **Repère de départ [I]** : si l'exposition de la peau est bonne et que les hautes lumières dépassent, baisser **Hautes lumières** et **Blancs** avant de toucher l'exposition. Garder un peu de marge sous le plafond.
-- **Éviter** : « récupérer » un plan sous-exposé en Direct Rec.709 ; le gamut large corrige plus proprement [Tuto Adobe : Druss 20:32].
+- **Éviter** : « récupérer » un plan très sous-exposé en Direct Rec.709 (l'image devient pâteuse [Tuto Adobe : Druss 20:32]) ; le signaler à Cabezer et corriger l'exposition modérément, sans basculer en gamut large.
 
 ### 7.2 Contraste
 
@@ -249,7 +244,7 @@ Les valeurs ci-dessous sont des **points de départ à régler à l'œil**, jama
 
 - Mostyn : noirs sous 0 acceptables si c'est voulu [Tuto : 5:34]. Levine : garder le détail, même pour YouTube [Tuto : 15:23, contexte broadcast]. Qazi : un pro pousse noirs et hautes lumières pour un rendu commercial [Tuto : 2:12 à 3:43, 11:54].
 
-**Lecture** : les positions portent sur des objectifs différents (données et diffusion contre style). **Défaut : détail conservé partout** ; pas d'écrasement des noirs de la peau ni du produit ; l'écrasement d'un décor est un choix de style, proposé à Cabezer plan par plan, pas appliqué d'office (question 5, §18). Pour D et F, le produit garde son détail (croûte, sauce, fromage).
+**Lecture** : les positions portent sur des objectifs différents (données et diffusion contre style). **Règle (réponse du 12/10/2026, skill §10) : détail gardé partout** ; pas d'écrasement des noirs de la peau ni du produit ni du décor ; un noir plus profond sur un décor est seulement proposé à Cabezer plan par plan, jamais appliqué d'office. Pour D et F, le produit garde son détail (croûte, sauce, fromage).
 
 ### 7.4 Balance des blancs et teinte
 

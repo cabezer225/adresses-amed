@@ -1,18 +1,18 @@
 # Conformité, droits et accessibilité à l'écran
 
-> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander ». **Format d'abord, famille ensuite (SKILL §2)** : long (L-Food, L-Story, L-Tech, L-Films, L-Life) ou court (C-Food, C-Story, C-Tech, C-Films, C-Life) ; codes de cette fiche : D = C-Food, F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; nouvelle famille Lifestyle (vlogs, face caméra : aucune musique, SFX comme la dégustation). **Tous les courts** : hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, punch-ins secs, appel au commentaire, notation sur 10, identité propre au court. **Longs** : SRT seul en France ; composition musicale en Story, food et tech ; respirations d'émotion gardées en films/séries et au verdict du food long ; 4K si rushs 4K. Aussi : identité Story v15 et générique « Amed Story 🧢 » supprimés ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; un rendu de sous-titres par passage ; intervenants identifiés à la première apparition (hors courts food) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. **Réponses techniques (série 3)** : interface de Premiere et d'AE en anglais ; scripts AE et Terminal autorisés ; stock libre de droits sans redemander ; tout SFX de la banque Pixabay permis ; arrêt sur image permis partout ; pas de test de photosensibilité ; audio YouTube 384 kbit/s ; proxys toujours en long ; Frame.io pour les relectures ; WhisperX à installer ; « 19h30 » et « 12,50 € » ; Liquid Glass à recréer. Liste complète : `../decisions-en-attente.md`.
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander ». **Format d'abord, famille ensuite (SKILL §2)** : long (L-Food, L-Story, L-Tech, L-Films, L-Life) ou court (C-Food, C-Story, C-Tech, C-Films, C-Life) ; codes de cette fiche : D = C-Food, F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; nouvelle famille Lifestyle (vlogs, face caméra : aucune musique, SFX comme la dégustation). **Tous les courts** : hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, punch-ins secs, appel au commentaire, notation sur 10, identité propre au court. **Longs** : SRT seul en France ; composition musicale en Story, food et tech ; respirations d'émotion gardées en films/séries et au verdict du food long ; 4K si rushs 4K. Aussi : identité Story v15 et générique « Amed Story 🧢 » supprimés ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; un rendu de sous-titres par passage ; intervenants identifiés à la première apparition (hors courts food) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. **Réponses techniques (série 3)** : interface de Premiere et d'AE en anglais ; scripts AE et Terminal autorisés ; stock libre de droits sans redemander ; tout SFX de la banque Pixabay permis ; arrêt sur image permis partout ; pas de test de photosensibilité ; audio YouTube 384 kbit/s ; proxys toujours en long ; Frame.io pour les relectures ; WhisperX à installer ; « 19h30 » et « 12,50 € » ; Liquid Glass à recréer. **Pour cette fiche** : Claude signale au dérush les personnes filmées, Cabezer décide du floutage ; la mention commerciale (formule et durée) est choisie par Cabezer à chaque vidéo ; le test de photosensibilité n'est fait que sur sa demande. Liste complète : `../decisions-en-attente.md`.
 
 Fiche de référence pour tout ce qui, à l'écran, expose Cabezer à un retrait de vidéo, à une revendication, à une plainte ou à un malaise du spectateur : personnes filmées, données visibles, mentions commerciales, extraits tiers, musiques, flashs, typographie française, identification des intervenants, contraste et sous-titres accessibles. Dernière vérification : 12/10/2026. Ce sont des **repères pratiques, pas un conseil juridique** : tout cas limite passe par Cabezer, puis par un juriste. Versions, libellés lus à l'écran et test de fumée des scripts : `pilotage-environnement-reprise.md` et `Suivi/environnement-verifie.md`.
 
 ## Quand lire cette fiche
 
 - **Au brief (skill §3, étape 0)** : poser les questions de contenu commercial, de personnes filmées et d'extraits (§2.1, §3.1, §4.1).
-- **Au dérush** : repérer personnes, enfants, plaques, écrans et tickets (§2) ; repérer les rushs qui scintillent (§6.7).
+- **Au dérush** : repérer personnes, enfants, plaques, écrans et tickets (§2) ; signaler les rushs qui scintillent (§6.7).
 - **Avant l'habillage** : placer la mention commerciale, les cartouches d'intervenants et les crédits d'extraits (§3, §4, §8).
-- **Avant tout export de contrôle** : décompte des flashs (§6.4), typographie (§7), contraste (§8.2).
+- **Avant tout export de contrôle** : typographie (§7), contraste (§8.2) ; décompte des flashs (§6.4) seulement si Cabezer demande un test de photosensibilité.
 - **Au contrôle final et à la livraison** : liste de contrôle (§12) ; `organisation-livraison-qc.md §10.2` y renvoie.
 
-À ne pas lire pour : la technique de montage, la publication (skills `cabezer-shorts-publication`, `youtube-publication-package`), l'identité visuelle (skill §5.1, §6). **Aucune règle ne contredit le skill** (§1) ; tout point sans décision est dans « Décisions à demander » (§13) avec son défaut. Familles : D dégustation, F food long, S Cabezer Story, P films/séries PRISME, T tech, H hors familles. Nom français de l'interface suivi de l'anglais entre parenthèses ; tout libellé non lu à l'écran est marqué « libellé à confirmer » ; aucun raccourci clavier n'est utilisé (décision B.4).
+À ne pas lire pour : la technique de montage, la publication (skills `cabezer-shorts-publication`, `youtube-publication-package`), l'identité visuelle (skill §5.1, §6). **Aucune règle ne contredit le skill** (§1) ; les décisions de Cabezer sont reportées dans « Décisions à demander » (§13). Familles : D dégustation, F food long, S Cabezer Story, P films/séries PRISME, T tech, H hors familles (le Lifestyle est une famille à part entière et suit ici les mêmes règles que H). **L'interface de Premiere et d'After Effects est en anglais** : le libellé anglais fait foi, le français entre parenthèses n'est qu'un repère ; tout libellé non lu à l'écran est marqué « libellé à confirmer » ; aucun raccourci clavier n'est utilisé (décision B.4).
 
 ## Sommaire
 
@@ -37,18 +37,18 @@ Fiche de référence pour tout ce qui, à l'écran, expose Cabezer à un retrait
 
 | # | Sujet | Règle de départ | Statut |
 |---|---|---|---|
-| 1 | Personne reconnaissable (client, passant, employé) | Accord écrit, sinon flou ou exclusion | [Pratique] + [Extrait] |
-| 2 | Enfant identifiable | Flou ou exclusion ; accord des parents pour publier | [Pratique] + [Extrait] |
-| 3 | Plaque, ticket, écran, document | Flou des données | [Extrait] (CNIL) + [Pratique] |
-| 4 | Repas offert, invitation, partenariat | Mention « Collaboration commerciale » ou « Publicité », dès le début, lisible | [Extrait] |
-| 5 | Extrait de film, série, vidéo | Courte citation, commentée, source affichée ; un crédit n'est pas une autorisation | [Extrait] |
+| 1 | Personne reconnaissable (client, passant, employé) | Claude signale au dérush ; Cabezer décide du floutage | [Pratique] + [Extrait] |
+| 2 | Enfant identifiable | Signalé en priorité ; Cabezer décide (repère : accord des parents pour publier) | [Pratique] + [Extrait] |
+| 3 | Plaque, ticket, écran, document | Signalés ; flou seulement de ce que Cabezer désigne | [Extrait] (CNIL) + [Pratique] |
+| 4 | Repas offert, invitation, partenariat | Signalé au brief ; mention (formule et durée) choisie par Cabezer à chaque vidéo | [Extrait] |
+| 5 | Extrait de film, série, vidéo | Durée utile, commenté, source affichée au moins 3 s ; un crédit n'est pas une autorisation ; Content ID signalé | [Extrait] |
 | 6 | Musique, son | Une ligne par piste dans `licences.csv`, preuve de licence | [Extrait] |
-| 7 | Flashs | Au plus 3 flashs généraux par seconde (WCAG 2.3.1) ; limites maison plus strictes (§6.3) | [Lu] + [Mesuré] |
+| 7 | Flashs | Pas de test sans demande de Cabezer ; repère facultatif : au plus 3 flashs généraux par seconde (WCAG 2.3.1) | [Lu] + [Mesuré] |
 | 8 | Typographie française | Espaces insécables, virgule décimale, œ, accents sur capitales | [Lu] (CLDR, LanguageTool) |
-| 9 | Intervenant nommé | Nom et fonction à la première apparition, durée selon la formule du skill | [Lu] (WCAG) + [Pratique] |
+| 9 | Intervenant nommé | Nom et fonction à la première apparition (hors courts food), durée selon la formule du skill | [Lu] (WCAG) + [Pratique] |
 | 10 | Contraste du texte | 4,5:1 (normal), 3:1 (grand texte), sans arrondi | [Lu] (WCAG 1.4.3) |
 
-Distinguer appliqué / contrôlé / validé par Cabezer (skill §1) : un test de flash réussi n'est pas un avis médical, une mention posée n'est pas validée juridiquement.
+Distinguer appliqué / contrôlé / validé par Cabezer (skill §1) : un test de flash, s'il est demandé, n'est pas un avis médical, une mention posée n'est pas validée juridiquement.
 
 ---
 
@@ -58,53 +58,55 @@ Distinguer appliqué / contrôlé / validé par Cabezer (skill §1) : un test de
 
 **Pourquoi** : Cabezer filme en restaurant et dans la rue ; des clients, des employés, des enfants, des plaques et des tickets entrent dans le cadre.
 
+*Repères légaux ci-dessous : information facultative pour Cabezer, qui décide ; ils ne déclenchent aucun flou automatique.*
+
 - **Droit civil.** Le droit à l'image procède du respect de la vie privée (article 9 du Code civil) : une personne identifiable peut s'opposer à la publication de son image, même prise en lieu public, sauf intérêt légitime d'information [Extrait ; article non lu].
 - **Droit pénal.** L'article 226-1 du Code pénal punit la captation de l'image d'une personne en lieu privé sans consentement (un an, 45 000 € selon les synthèses) [Extrait]. Un restaurant ouvert au public est un cas intermédiaire : lieu ouvert, mais propriété privée dont le gérant peut interdire de filmer [Pratique, à faire trancher].
 - **Jurisprudence : ne rien citer.** Le numéro 95-10.185 donné pour la première chambre civile du 20 février 2001 est contredit : une recherche de contrôle donne le pourvoi **n° 98-23.471** (Bull. 2001 I, n° 42), sur des images de personnes impliquées dans un événement et la dignité de la personne, non sur un cliché pris en lieu public [Extrait]. L'arrêt du 20 mai 2025 (chambre criminelle) n'est pas vérifié. **Ne citer aucune décision à Cabezer** ; dire « cadre général, à faire valider ».
-- **Usage commercial.** Aucune source trouvée sur une personne reconnaissable dans une vidéo sponsorisée : par prudence, accord écrit dès que la vidéo est commerciale [Pratique, lacune].
+- **Usage commercial.** Aucune source trouvée sur une personne reconnaissable dans une vidéo sponsorisée : repère de prudence à rappeler à Cabezer : accord écrit quand la vidéo est commerciale [Pratique, lacune].
 - **RGPD.** Une image identifiable est une donnée personnelle. Pour les photos, la FAQ de la CNIL indique qu'un particulier ne publie pas la photo d'un véhicule sans flouter la plaque (identification indirecte du propriétaire), avec des exceptions [Extrait : texte non ouvert ; aucune position trouvée pour la vidéo]. L'exception journalistique (article 85 du RGPD) n'a pas été étudiée : **ne pas s'en prévaloir**.
 - **Critique nommée d'un restaurant.** Dénigrement et diffamation n'ont pas été recherchés : aucun jugement factuel non vérifié (skill §8) ; en cas de doute, signaler.
 
-**Quand** : au brief, poser la question « personnes filmées ? accord obtenu ? » ; au dérush, lister ; avant l'export, vérifier.
-**Signaler à Cabezer** : toute personne reconnaissable sans accord, tout enfant, tout ticket ou écran lisible, avec le moment (timecode) et la proposition (flou, recadrage, coupe).
+**Quand** : au brief, poser la question « personnes filmées ? accord obtenu ? » ; au dérush, lister ; avant l'export, vérifier que la décision de Cabezer est appliquée.
+**Signaler à Cabezer** : toute personne reconnaissable (accord connu ou non), tout enfant en priorité, tout ticket ou écran lisible, avec le moment (timecode) ; Claude peut proposer un flou, un recadrage ou une coupe, **Cabezer décide**.
 
-### 2.2 Qui apparaît, et que faire (défaut de travail, à confirmer en §13)
+### 2.2 Qui apparaît, et que faire (Claude signale, Cabezer décide)
 
-| Cas | Défaut de travail | Statut |
+| Cas | Au dérush | Statut |
 |---|---|---|
-| Client isolé, reconnaissable (visage net, tatouage, vêtement distinctif) | Flou du visage, recadrage ou plan de dos, sauf accord écrit | [Pratique] |
-| Groupe sans visage reconnaissable, ou personne ayant donné un accord écrit (noté, §2.5) | Pas de flou | [Pratique] |
-| Serveur, cuisinier, gérant, chef | Accord de la personne (celui du gérant ne suffit pas pour un salarié) ; sinon flou du visage et du badge | [Pratique] (blogs) |
-| Enfant identifiable | Flou ou exclusion ; pas de prénom prononcé ni sous-titré ; publication identifiante seulement avec accord des parents | [Pratique] + [Extrait] |
-| Plaque d'immatriculation | Flou fort (bloc opaque ou mosaïque) | [Extrait] |
-| Ticket de caisse, écran de caisse, réservation, note | Garder le total et les lignes de prix ; masquer numéro de carte, nom, numéro de client, adresse | [Pratique] |
-| Capture d'écran (T, S) | Masquer onglets, e-mails, notifications, jetons | [Pratique] (`styles-food-et-tech.md`) |
-| Reflet (miroir, vitre, écran) | Traiter comme une personne | [Pratique] |
+| Client isolé, reconnaissable (visage net, tatouage, vêtement distinctif) | Signaler ; proposer flou du visage, recadrage ou plan de dos ; pas de flou sans la décision de Cabezer | [Pratique] |
+| Groupe sans visage reconnaissable, ou personne dont Cabezer a noté l'accord (§2.5) | Rien à signaler de plus ; pas de flou | [Pratique] |
+| Serveur, cuisinier, gérant, chef | Signaler ; repère : l'accord du gérant ne suffit pas pour un salarié ; flou du visage et du badge seulement si Cabezer le décide | [Pratique] (blogs) |
+| Enfant identifiable | Signaler en priorité, avec tout prénom prononcé ou sous-titré ; Cabezer décide (flou, exclusion, accord des parents) | [Pratique] + [Extrait] |
+| Plaque d'immatriculation | Signaler ; si Cabezer la désigne, flou fort (bloc opaque ou mosaïque) | [Extrait] |
+| Ticket de caisse, écran de caisse, réservation, note | Signaler ; proposition : garder le total et les lignes de prix, masquer numéro de carte, nom, numéro de client, adresse, si Cabezer le décide | [Pratique] |
+| Capture d'écran (T, S) | Signaler onglets, e-mails, notifications, jetons ; masquage selon la décision de Cabezer | [Pratique] (`styles-food-et-tech.md`) |
+| Reflet (miroir, vitre, écran) | Signaler comme une personne | [Pratique] |
 | Enseigne, logo, menu affiché | Pas de flou par défaut ; le plan de stock de D exclut logo et lieu (décision D.13) | [Pratique] |
-| Voix ou nom prononcé d'un tiers identifiable | Couper ou signaler ; le flou ne suffit pas si le nom est dit ou sous-titré | [Pratique] |
+| Voix ou nom prononcé d'un tiers identifiable | Signaler ; Cabezer décide de la coupe (le flou ne suffit pas si le nom est dit ou sous-titré) | [Pratique] |
 
 ### 2.3 Mineurs
 
 - **Article 372-1 du Code civil** (loi n° 2024-120 du 19 février 2024) : les parents protègent en commun le droit à l'image de leur enfant mineur, en l'associant selon son âge et sa maturité ; acte non usuel, donc accord des deux parents [Extrait : commentaires ; texte consolidé non lu].
 - **Loi n° 2020-1266 du 19 octobre 2020** : exploitation commerciale de l'image d'enfants de moins de 16 ans ; vise surtout les comptes qui monétisent leurs propres enfants [Extrait].
-- **Application à Cabezer.** Un enfant client ou passant n'est pas un enfant de la famille de Cabezer : défaut = flou ou exclusion ; accord écrit des titulaires de l'autorité parentale pour toute publication identifiante.
+- **Application à Cabezer.** Un enfant client ou passant n'est pas un enfant de la famille de Cabezer : le mineur est signalé en priorité au dérush et Cabezer décide ; repère légal : accord écrit des titulaires de l'autorité parentale pour toute publication identifiante.
 
 ### 2.4 Exécuter le floutage dans Premiere et AE (gratuit, sans IA générative)
 
-**Principe.** Un masque suivi qui porte une mosaïque ou un flou fort, vérifié image par image à 100 %, puis sur le MP4 exporté. **Jamais** de service de floutage en ligne (les rushs sortent de la machine) ni de remplissage génératif (décision B.2). Roto Brush ne sert qu'en dernier recours si le suivi décroche, résultat vérifié ; Object Mask seulement avec l'accord de Cabezer.
+**Principe** (pour ce que Cabezer a désigné). Un masque suivi qui porte une mosaïque ou un flou fort, vérifié image par image à 100 %, puis sur le MP4 exporté. **Jamais** de service de floutage en ligne (les rushs sortent de la machine) ni de remplissage génératif (décision B.2). Roto Brush ne sert qu'en dernier recours si le suivi décroche, résultat vérifié ; **Object Matte et Object Mask sont exclus** (réponse de Cabezer) : masques manuels et suivi.
 
 **Quand** : **après la validation du dérush** (coupes fixées), **avant la colorimétrie et l'habillage** ; revérifier après toute retouche de Cabezer et après les punch-ins.
 
-**Procédure Premiere (sur le plan à flouter)** : les libellés ne sont pas confirmés sur la machine de Cabezer.
+**Procédure Premiere (sur le plan à flouter)** : libellés anglais, français entre parenthèses ; non confirmés sur la machine de Cabezer.
 1. Au dérush, poser un marqueur nommé « FLOU » (Marker) sur chaque plan concerné.
-2. Ouvrir « Contrôles d'effets » (Effect Controls) et appliquer « Mosaïque » (Mosaic) ou « Flou gaussien » (Gaussian Blur) (libellés à confirmer ; catégories Stylisation et Flou et netteté selon des tutoriels [Extrait]).
+2. Ouvrir Effect Controls (Contrôles d'effets) et appliquer Mosaic (Mosaïque) ou Gaussian Blur (Flou gaussien) (libellés à confirmer ; catégories Stylize et Blur & Sharpen selon des tutoriels [Extrait]).
 3. Créer un masque ellipse (Create ellipse mask, libellé à confirmer) autour du visage, marge de 20 à 30 % [valeur non sourcée], contour progressif (Mask Feather) de 10 à 30 px [valeur non sourcée] ; plus petit pour une plaque.
-4. « Suivre le masque vers l'avant » (Track selected mask forward, libellé à confirmer) ; attendre la fin de l'analyse avant tout autre geste (`pilotage-environnement-reprise.md`).
+4. Track selected mask forward (Suivre le masque sélectionné vers l'avant, libellé à confirmer) ; attendre la fin de l'analyse avant tout autre geste (`pilotage-environnement-reprise.md`).
 5. **Mosaïque de préférence** à un flou léger : le visage tient en 4 à 6 blocs de large [valeur de départ à tester].
 6. Parcourir le plan image par image, surtout quand la tête tourne ou se cache : images clés manuelles au besoin.
-7. Exporter 10 secondes et relire avant de traiter tout le montage. Vérifier qu'un punch-in (Mouvement, Motion) ou un second clip garde le flou : l'ordre d'application des effets est à confirmer sur la version installée.
+7. Exporter 10 secondes et relire avant de traiter tout le montage. Vérifier qu'un punch-in (Motion, Mouvement) ou un second clip garde le flou : l'ordre d'application des effets est à confirmer sur la version installée.
 
-**Alternative dans AE** : calque de forme ou masque, suivi de masque (Mask Tracking, libellé à confirmer), « Mosaïque » ou « Flou gaussien », le tout **précomposé** pour rester modifiable et nommé « FLOU_<plan> » (skill §16, calques natifs). Le plan flouté est ensuite rendu ou lié par Dynamic Link (`after-effects-motion-design.md`).
+**Alternative dans AE** : calque de forme ou masque, suivi de masque (Mask Tracking, libellé à confirmer), Mosaic ou Gaussian Blur, le tout **précomposé** pour rester modifiable et nommé « FLOU_<plan> » (skill §16, calques natifs). Le plan flouté est ensuite rendu ou lié par Dynamic Link (`after-effects-motion-design.md`).
 
 **Critère de réussite (Claude peut le contrôler).** Extraire l'image du pire moment à 100 % et à 270 × 480 (taille d'un téléphone réduit) : yeux, nez, bouche, tatouage, coiffure et plaque ne sont plus distinguables. Si un doute subsiste, durcir.
 
@@ -112,7 +114,7 @@ Distinguer appliqué / contrôlé / validé par Cabezer (skill §1) : un test de
 
 ### 2.5 Où consigner les accords et les masquages
 
-Les accords écrits (nom, date, supports, durée, territoire) et la liste des masquages vont dans la section « Personnes et données » de `Suivi/decisions.md` (aucun nouveau fichier n'est créé tant que `organisation-livraison-qc.md §2.2` ne l'a pas décidé, voir §13 Q14). Un accord précise les supports, la durée et le territoire ; pour une diffusion en ligne, viser le monde entier [Extrait]. Au rapport de contrôle : « masqué : ... ; reste à valider : ... ».
+Les décisions de Cabezer sur les personnes, les accords écrits éventuels (nom, date, supports, durée, territoire) et la liste des masquages vont dans la section « Personnes et données » de `Suivi/decisions.md` (réponse de Cabezer ; aucun fichier dédié). Un accord précise les supports, la durée et le territoire ; pour une diffusion en ligne, viser le monde entier [Extrait]. Au rapport de contrôle : « masqué : ... ; reste à valider : ... ».
 
 ---
 
@@ -130,24 +132,27 @@ Les accords écrits (nom, date, supports, durée, territoire) et la liste des ma
 
 **Question au brief (skill §3 étape 0, champ « contraintes légales »)** : « Plat offert, invitation, partenariat, affiliation, produit reçu ? Annonceur ? » Réponse dans `Suivi/brief.md`. **Sans réponse en mode autonome**, ne pas supposer l'absence : consigner « en attente » et le dire à la livraison (décision D.16).
 
-### 3.2 Quand ajouter la mention, et laquelle
+### 3.2 Qui choisit la mention, et quels repères donner
 
-- **Ajouter** la mention quand le brief ou Cabezer confirme un partenariat, un repas ou un produit offert, une invitation liée à la vidéo, une rémunération ou un lien d'affiliation.
-- **Ne pas l'ajouter** sans confirmation : la DA v2 interdit un texte non demandé pour relancer l'image, mais **une mention légale n'est pas une relance** ; en cas de doute, poser la question (§13 Q5).
-- **Formule.** Utiliser l'une des deux expressions exactes : « Collaboration commerciale » ou « Publicité », tant que le texte consolidé n'est pas lu. Défaut proposé : « Collaboration commerciale » pour un repas offert ou un partenariat ; « Publicité » si une marque a payé la diffusion (§13 Q4). Mention en français.
-- **Quand l'afficher.** Dès le début (de 0 à 2 s), puis maintenue **pendant toute la vidéo** par prudence (la durée légale exacte n'est pas lue) ; si Cabezer choisit une durée plus courte, c'est une décision consignée (§13 Q4). Une mention de fin de vidéo, dans la description seule ou dans un générique ne suffit pas.
-- **Familles.** D (étiquette discrète persistante), F, S, T, P, H : même règle. Pour un segment sponsorisé dans une vidéo longue, la mention s'affiche **dès le début du segment** ; il est monté comme le reste, sans atténuer ni inventer l'avis de Cabezer.
+**Réponse de Cabezer (12/10/2026)** : repas offert, invitation, produit reçu ou partenariat sont **signalés au brief** ; la **formule et la durée** de la mention sont **choisies par Cabezer à chaque vidéo**. Claude ne l'impose pas et n'ajoute rien sans sa validation.
+
+- **Ce que Claude fait.** Signaler la contrepartie au brief (annonceur, produit offert, invitation, rémunération, affiliation), puis demander à Cabezer la formule et la durée en lui donnant les repères ci-dessous. En cas de doute sur l'existence d'une contrepartie, poser la question : la DA v2 interdit un texte non demandé pour relancer l'image, mais **une mention légale n'est pas une relance**.
+- **Repères de formule (information).** La loi cite « Collaboration commerciale » ou « Publicité » ; l'ordonnance de 2024 admet une mention équivalente, claire, en français. Usage courant : « Collaboration commerciale » pour un repas ou un produit offert, « Publicité » si une marque a payé la diffusion. Ce sont des suggestions, pas une règle du skill.
+- **Repères de durée (information).** ARPP et DGCCRF visent une mention dès le début, lisible, jamais seulement en fin de vidéo ou dans la description ; la durée légale exacte n'est pas lue. Cabezer choisit (début seulement, ou toute la vidéo), et son choix est consigné dans `Suivi/decisions.md`.
+- **Familles.** D (étiquette discrète persistante), F, S, T, P, H : même démarche. Pour un segment sponsorisé dans une vidéo longue, Claude propose de l'afficher dès le début du segment ; la durée reste celle que choisit Cabezer. Le segment est monté comme le reste, sans atténuer ni inventer l'avis de Cabezer.
 
 ### 3.3 Réalisation dans AE et Premiere
+
+Une fois la formule et la durée choisies par Cabezer :
 
 1. **Composition AE « MENTION-COMMERCIALE »**, texte éditable en calque natif, à l'identité de la famille (D : pastille blanche à coins arrondis, texte noir Avenir Next Bold, casse normale, comme l'étiquette de la DA v2 ; autres familles : style d'identité validé). Entrée animée de 4 à 8 images, sortie sèche, rendue en ProRes 4444 alpha (skill §5.1 : une composition éditable par élément). Aucune image générée.
 2. **Placement 9:16** : dans la boîte de `formats-courts-verticaux.md §6.2` (hors des 270 px du haut, 670 px du bas, 132 px de droite), par exemple en haut à gauche sous la zone interdite. **Une mention masquée par l'interface de la plateforme n'est pas une mention** : tester sur le téléphone de Cabezer (même fiche, §6.3). En cas de conflit avec l'étiquette « lieu » du hook, la mention reste, l'autre élément se déplace (le dire à Cabezer).
 3. **Taille et contraste.** Texte lisible sur l'image réduite à 270 × 480 (corps de départ 44 px sur 1080, valeur non sourcée) ; contraste ≥ 4,5:1 (§8.2). Pastille blanche + texte noir : 21:1.
 4. **Sous-titres.** Pendant l'entrée animée de la mention, la règle du skill §9 s'applique (pas de sous-titre sous un texte animé). Ensuite la mention est statique et ne recouvre jamais un sous-titre : les deux n'occupent pas la même zone.
-5. **Calage dans Premiere** sur une piste de titres dédiée, de la première image à la fin ; piste active à l'export.
+5. **Calage dans Premiere** sur une piste de titres dédiée, pour la durée choisie par Cabezer ; piste active à l'export.
 6. **À la publication** (hors périmètre du montage) : Cabezer coche la case « promotion payante » ou « contenu de marque » de la plateforme, qui complète sans remplacer la mention à l'image [Extrait ARPP]. Le dire dans le message de livraison.
 
-**Signaler à Cabezer** : un annonceur, un produit offert ou un montant cité dans le brief ; l'absence de réponse à la question du brief ; le seuil de 1 000 € HT s'il le dépasse ; la mention qui entre en conflit avec un autre élément.
+**Signaler à Cabezer** : un annonceur, un produit offert ou un montant cité dans le brief ; l'absence de réponse à la question du brief ; le seuil de 1 000 € HT s'il le dépasse ; la mention qui entre en conflit avec un autre élément ; la formule et la durée à choisir.
 
 ---
 
@@ -162,9 +167,9 @@ Les accords écrits (nom, date, supports, durée, territoire) et la liste des ma
 ### 4.1 Procédure de départ (règle D.14 des `../decisions-harmonisation.md`)
 
 1. **Besoin** : l'extrait est-il nécessaire à l'analyse ? Si Cabezer peut dire la phrase, ne pas citer l'extrait.
-2. **Durée minimale nécessaire**, encadrée de commentaire avant et après. Aucune durée chiffrée n'est sourcée ; défaut = la durée strictement utile à ce que Cabezer analyse (§13 Q8).
-3. **Source affichée** dans une composition AE « SOURCE » (titre, année, éditeur ou plateforme) ; durée = max(3 s ; max(1,5 s ; 1 s + caractères/15)) [3 s : valeur de départ] ; jamais en fin de vidéo seulement.
-4. **Pas d'altération du sens** : ni ralenti, ni montage qui change le propos. L'exploration par caméra 3D ou la fenêtre de l'identité PRISME est un cadrage de présentation, permis sans déformation tant que le plan reste identifiable (§13 Q15).
+2. **Durée minimale nécessaire**, encadrée de commentaire avant et après. Aucune durée chiffrée n'est sourcée ; réponse de Cabezer : la durée utile à ce qu'il analyse.
+3. **Source affichée** dans une composition AE « SOURCE » (titre, année, éditeur ou plateforme) ; durée d'au moins 3 s, soit max(3 s ; max(1,5 s ; 1 s + caractères/15)) ; jamais en fin de vidéo seulement.
+4. **Pas d'altération du sens** : ni ralenti, ni montage qui change le propos. L'exploration par caméra 3D ou la fenêtre de l'identité PRISME est un cadrage de présentation, permis sans déformation tant que le plan reste identifiable (réponse de Cabezer).
 5. **Registre** `Suivi/licences.csv` : `type = extrait`, statut `citation (à valider)`, minute dans la source, durée utilisée, crédit à l'écran (`organisation-livraison-qc.md §2.2`).
 6. **Un crédit n'est pas une autorisation.** Un extrait crédité peut quand même être bloqué ou revendiqué.
 7. **Risque Content ID signalé à Cabezer avant publication**, avec la liste des extraits et leur durée ; Claude n'agit jamais dans YouTube Studio et ne contacte aucun ayant droit.
@@ -177,6 +182,8 @@ Les accords écrits (nom, date, supports, durée, territoire) et la liste des ma
 ## 5. Musique, sons et registre des licences
 
 - **Registre unique** : une ligne par piste, son, image, police dans `Suivi/licences.csv` (fichier, source, licence lue, URL, date, preuve, périmètre) ; « libre » seulement si la licence a été lue (`organisation-livraison-qc.md §2.2`). La banque Pixabay de la dégustation garde `LICENCES-SFX.md`.
+- **Plans vidéo stock libres de droits** (Pexels, Pixabay) : accord général de Cabezer (réponse du 12/10/2026) ; téléchargés sans redemander, licence lue et consignée dans `licences.csv`, signalés (nom, source, taille). Cet accord ne vaut que pour les plans vidéo ; toute autre vidéo, image ou piste téléchargée attend son accord.
+- **Musique** : aucune dans les courts ni en Lifestyle ; composition originale en Story, food long et tech (SKILL §11). **SFX** : tout son de la banque Pixabay est permis dans les courts (SKILL §5).
 - **Pixabay** : usage commercial permis sans attribution, revente des fichiers bruts interdite ; une revendication Content ID reste possible, des contributeurs enregistrant leurs pistes [Extrait ; conditions officielles lues en partie]. Relire la page de licence à la date du téléchargement et en garder une capture.
 - **YouTube Audio Library** : conditions propres à chaque piste [Extrait, non lu]. **Pistes achetées (Halal Beats)** : consigner la licence piste par piste. **Apple Loops** : jamais une boucle seule publiée (skill §11) ; consigner les boucles. **Musique originale** : réduit le risque de revendication sans l'annuler. **SACEM** : non étudiée [lacune] ; ne rien affirmer.
 - **En cas de revendication** : ne rien supprimer, conserver les preuves de licence, laisser Cabezer contester.
@@ -186,29 +193,31 @@ Les accords écrits (nom, date, supports, durée, territoire) et la liste des ma
 
 ## 6. Photosensibilité : flashs, secousses et coupes
 
+> **Réponse de Cabezer (12/10/2026) : pas de test de photosensibilité.** Claude ne fait ni décompte de flashs ni `flash-check.py` de lui-même. Cette section est une **information facultative** (WCAG et mesures) : elle ne s'applique que si Cabezer demande un test, ou pour répondre à sa question. Rien ci-dessous ne bloque une livraison.
+
 ### 6.1 Le critère de référence (WCAG 2.3.1, lu)
 
-**Pourquoi** : la DA v2 impose flash blanc, shake, scintillement et whips ; le hook agressif enchaîne des extraits rapides. Des alternances rapides de luminosité peuvent déclencher des crises chez des personnes photosensibles. Référence retenue : WCAG 2.3.1 (niveau A) « Three Flashes or Below Threshold », issu de la radiodiffusion [Lu : Understanding].
+**Pourquoi** : la DA v2 impose flash blanc, shake, scintillement et whips ; le hook agressif enchaîne des extraits rapides. Des alternances rapides de luminosité peuvent déclencher des crises chez des personnes photosensibles. Référence facultative : WCAG 2.3.1 (niveau A) « Three Flashes or Below Threshold », issu de la radiodiffusion [Lu : Understanding].
 
 - **Flash général** : paire de changements opposés de luminance relative d'au moins **0,10** (sur 1,0) quand l'état le plus sombre est **sous 0,80**. « Opposés » : une montée suivie d'une descente, ou l'inverse [Lu : glossaire].
 - **Seuil de passage** : au plus **3 flashs généraux et au plus 3 flashs rouges dans toute période d'une seconde**, **ou** surface cumulée des flashs simultanés d'au plus 0,006 stéradian, soit 25 % d'un champ de 10 degrés [Lu].
 - **Exception** : motif fin et équilibré (bruit blanc, damier aux carrés de moins de 0,1 degré) [Lu].
 - **Flash rouge saturé** : transition vers ou depuis un état dont R/(R+G+B) ≥ 0,8, avec un écart de chromaticité > 0,2 dans le diagramme CIE 1976 UCS [Lu].
 - **Niveau AAA (2.3.2, « Three Flashes »)** : aucun flash de plus de 3 par seconde, **quelle que soit la taille ou la luminosité** [Lu : Understanding]. Les limites maison de §6.3 (aire non exemptée, au plus 2 par seconde) respectent aussi ce critère.
-- **Portée.** WCAG vise le web ; les plateformes ne l'appliquent pas telle quelle. C'est la **référence de sécurité** de ce skill, pas une obligation légale établie [Pratique].
+- **Portée.** WCAG vise le web ; les plateformes ne l'appliquent pas telle quelle. C'est un **repère de sécurité facultatif**, pas une obligation légale établie ni une règle du skill [Pratique].
 - **Export SDR Rec.709** : la définition en luminance relative suffit. La formulation de l'UIT-R BT.1702 (20 cd/m² d'écart quand le côté sombre est sous 160 cd/m²) est citée par WCAG et n'a pas été lue directement [Lu par citation].
 
 **Ce qui n'est pas un flash** : un fondu lent (une seule transition) ; un zoom, un whip, un shake ou une coupe entre plans de luminosité proche. Ces gestes en deviennent dès que des zones très claires et très sombres alternent (§6.3).
 
 ### 6.2 Surface : ne pas compter sur l'exception sur téléphone
 
-Le champ de 10 degrés vaut 341 × 256 px CSS (87 296 px) ; un quart, **21 824 px CSS**, se mesure en pixels CSS même sur un petit écran [Lu : Understanding]. Sur un écran de 390 × 844 px CSS (hypothèse : téléphone courant) cela fait **environ 7 % de l'écran** (21 824 / 329 160 = 6,6 % ; calcul maison). L'exception ne vaut que pour une petite pastille ou de petites étincelles, **jamais pour un flash plein cadre**. Règle : tout flash couvrant plus de 7 % du cadre compte entièrement.
+Le champ de 10 degrés vaut 341 × 256 px CSS (87 296 px) ; un quart, **21 824 px CSS**, se mesure en pixels CSS même sur un petit écran [Lu : Understanding]. Sur un écran de 390 × 844 px CSS (hypothèse : téléphone courant) cela fait **environ 7 % de l'écran** (21 824 / 329 160 = 6,6 % ; calcul maison). L'exception ne vaut que pour une petite pastille ou de petites étincelles, **jamais pour un flash plein cadre**. Repère : tout flash couvrant plus de 7 % du cadre compte entièrement.
 
-### 6.3 Limites chiffrées compatibles avec la DA v2 (à 29,97 images par seconde)
+### 6.3 Repères chiffrés compatibles avec la DA v2 (à 29,97 images par seconde, facultatifs)
 
 DA v2 (skill §5.1) : flash blanc 70 % → 0 en 4 images (0,133 s), shake de 6 images (0,2 s), whip de 4 à 6 images, scintillement. Le pop (0 → 118 → 96 → 100 %) et la glisse ne changent pas la luminance globale. **La DA ne fixe aucune fréquence** : le placement décide. Essais **[Mesuré]** sur clips synthétiques 180 × 320, 29,97 i/s, H.264 CRF 8, grille 18 × 32, flash mélangé en sRGB non linéaire : si le projet AE est en lumière linéaire (libellé à confirmer), la luminance d'un flash à 70 % diffère ; mesurer l'export.
 
-| Élément | Comptage | Résultat mesuré | Respecte WCAG 2.3.1 ? | Limite maison (valeur de départ, à valider) |
+| Élément | Comptage | Résultat mesuré | Respecte WCAG 2.3.1 ? | Repère maison facultatif (valeur de départ) |
 |---|---|---|---|---|
 | Flash blanc 70 → 0 en 4 images, seul | 1 flash par occurrence (montée puis descente) sur fond de luminance < 0,80 | 1 par seconde → 1 ; 2 par seconde → 2 ; 3 par seconde → 3 (limite) ; un toutes les 8 images (3,7 par seconde) → 4, **échec** ; pic 100 % au lieu de 70 % : même décompte | **Oui jusqu'à 3 par seconde ; non à 4** | Au plus **2 flashs par seconde** (marge d'une unité), soit **au moins 15 images (0,5 s)** entre deux flashs |
 | Flash blanc sur fond déjà clair (luminance ≥ 0,80, soit environ 231/255 en sRGB) | Ne compte pas : l'état sombre dépasse 0,80 | Fond à 235 → 0 flash | Oui | Ne pas s'en servir comme excuse : un fond à 200 compte (luminance 0,58) |
@@ -219,26 +228,26 @@ DA v2 (skill §5.1) : flash blanc 70 % → 0 en 4 images (0,133 s), shake de 6 i
 | Scintillement (étincelles) | Chaque étincelle qui s'allume puis s'éteint = 1 flash local | Non mesuré (étincelles non fournies) | Oui par la voie de la surface si ≤ ~7 % du cadre au total | **Au plus 3 pulsations par seconde par étincelle, aire cumulée des étincelles simultanées sous 7 % du cadre** ; au-delà, compter comme un flash plein cadre |
 | Rouge de l'identité (#E63946, #CE2B37, #B8323A) | R/(R+G+B) vaut 0,64 en valeurs sRGB brutes, mais 0,87 à 0,91 en valeurs linéarisées : la définition WCAG est ambiguë | Flash rouge non calculé | **À vérifier** | **Pas de clignotement du cadre entier en rouge ou en vert/rouge** ; mêmes limites de fréquence |
 
-**Verdict à donner à Cabezer** : la DA v2 telle que spécifiée (flash 70 % → 0 en 4 images, shake de 6 images) **respecte WCAG 2.3.1 prise isolément**, à condition que les occurrences soient espacées, ce que la DA ne fixe pas. Le risque est dans les enchaînements : hook agressif (coupes courtes entre plans contrastés, whip, flash), note et intérieur rapprochés, shake répété. Les limites maison gardent une unité de marge sous 3 et sont compatibles avec 2.3.2.
+**Information pour Cabezer, si elle est demandée** : la DA v2 telle que spécifiée (flash 70 % → 0 en 4 images, shake de 6 images) **respecte WCAG 2.3.1 prise isolément**, à condition que les occurrences soient espacées, ce que la DA ne fixe pas. Le risque est dans les enchaînements : hook agressif (coupes courtes entre plans contrastés, whip, flash), note et intérieur rapprochés, shake répété. Les repères maison gardent une unité de marge sous 3 et sont compatibles avec 2.3.2.
 
 **Pourquoi 2 et non 3.** Le seuil de 3 est une limite de passage, non une cible : le ré-encodage de la plateforme peut décaler les valeurs, l'outil ne calcule ni la surface ni le rouge.
 
-### 6.4 Décompte pendant le montage (Claude, avant l'export)
+### 6.4 Décompte pendant le montage (seulement si Cabezer demande un test)
 
 1. Lister sur la timeline, **seconde par seconde** (fenêtre glissante), les événements lumineux : flash AE (1), flash de la note ou du prix (1), gros moment (3), paire de coupes très contrastées (1), whip entre plans contrastés (1), scintillement dense (1), glitch (1 par alternance), scintillement d'un rush.
-2. Si une fenêtre d'une seconde cumule **plus de 2** (un gros moment isolé, compté 3, est admis seul dans sa seconde) : retirer un flash, décaler un effet de quelques images ou rallonger un plan. Ne pas se contenter de baisser l'opacité d'un flash sans retester (70 % ou 100 %, le décompte est le même sur fond sombre : mesuré).
+2. Si une fenêtre d'une seconde cumule **plus de 2** (un gros moment isolé, compté 3, est admis seul dans sa seconde) : le signaler à Cabezer et proposer de retirer un flash, de décaler un effet de quelques images ou de rallonger un plan. Ne pas se contenter de baisser l'opacité d'un flash sans retester (70 % ou 100 %, le décompte est le même sur fond sombre : mesuré).
 3. Hook agressif (`formats-courts-verticaux.md §1.7`) : compter dans les 3 premières secondes ; c'est là que l'accumulation est la plus probable.
 
-### 6.5 Contrôle outillé sur l'export : `flash-check.py`
+### 6.5 Contrôle outillé sur l'export : `flash-check.py` (seulement sur demande)
 
-Script lecture seule, à ajouter au jeu de scripts nommés (`organisation-livraison-qc.md §6.6`) ; fichier `references/pro/scripts/flash-check.py`. Il réduit la vidéo en grille, calcule la luminance relative WCAG de chaque zone image par image, et compte les paires de transitions (écart ≥ 0,10, côté sombre < 0,80) dans toute fenêtre d'une seconde. Appel :
+Script lecture seule, **lancé uniquement si Cabezer demande un test de photosensibilité** (SKILL §3) ; fichier `references/pro/scripts/flash-check.py`. Il réduit la vidéo en grille, calcule la luminance relative WCAG de chaque zone image par image, et compte les paires de transitions (écart ≥ 0,10, côté sombre < 0,80) dans toute fenêtre d'une seconde. Appel :
 
 ```
 python3 -I flash-check.py Exports/Brouillons/video.mp4 --grid 18x32 --max 3     # vertical 9:16
 python3 -I flash-check.py Exports/Brouillons/video.mp4 --grid 32x18 --max 3     # horizontal 16:9
 ```
 
-Sortie : une ligne JSON (`max_flashs_par_seconde`, zone, temps des flashs fautifs, verdict) ; code de sortie 1 en cas d'échec. Avec `--max 2`, un échec est un signal de la marge maison ; l'échec WCAG est celui de `--max 3`.
+Sortie : une ligne JSON (`max_flashs_par_seconde`, zone, temps des flashs fautifs, verdict) ; code de sortie 1 en cas d'échec. Avec `--max 2`, un échec est un signal du repère maison ; l'échec WCAG est celui de `--max 3`.
 
 **Validation [Mesuré].** 7 clips de la recherche (flash seul, flash local, variations sous 0,10, côté sombre au-dessus de 0,80) : résultats attendus pour les 7. 24 clips de cette passe : chiffres du tableau §6.3.
 
@@ -251,17 +260,17 @@ Sortie : une ligne JSON (`max_flashs_par_seconde`, zone, temps des flashs fautif
 - Tester **l'export encodé** : étalonnage et compression décalent les valeurs.
 - Pas d'outil de référence essayé (la page WCAG cite PEAT et Harding FPA).
 
-### 6.6 Procédure avant publication
+### 6.6 Procédure si Cabezer demande un test
 
 1. Exporter la version de contrôle (même réglage que le final, `organisation-livraison-qc.md §8.5`).
 2. Lancer `flash-check.py` (`--max 3`, puis `--max 2`).
 3. En cas d'alerte, lire les temps fautifs, ouvrir la timeline à ces secondes et traiter selon §6.4 (retirer, décaler, rallonger).
-4. Consigner dans `Controles/` : verdict, version, date, limites. Test bloquant en cas d'échec à 3.
+4. Consigner dans `Controles/` : verdict, version, date, limites. En cas d'échec à 3, le dire à Cabezer avec les temps fautifs ; il décide, le test ne bloque pas la livraison.
 5. Dire à Cabezer : « mesuré, pas vu » ; la validation sur son écran reste la sienne.
 
 ### 6.7 Rushs à surveiller au dérush
 
-Plans sous néon ou LED (scintillement, bandes) : repérer sur une planche d'images consécutives ou par la luminance moyenne image par image (`organisation-livraison-qc.md §6.3`, signalstats) ; aucun correctif natif fiable n'est établi : choisir un autre plan.
+Plans sous néon ou LED (scintillement, bandes) : signaler à Cabezer après repérage sur une planche d'images consécutives ou par la luminance moyenne image par image (`organisation-livraison-qc.md §6.3`, signalstats) ; aucun correctif natif fiable n'est établi : proposer un autre plan.
 
 ---
 
@@ -269,7 +278,7 @@ Plans sous néon ou LED (scintillement, bandes) : repérer sur une planche d'ima
 
 **Pourquoi** : sous-titres, cartons, prix et étiquettes sont en français et souvent en capitales Avenir Next Heavy. Une espace mal placée ou une apostrophe droite se voit.
 
-**Principe de hiérarchie** : l'**usage propre de Cabezer prime** (étiquette de Milan « 19h30 · Luini ferme à 20h »), à condition de rester **cohérent dans une même vidéo**. Les règles ci-dessous valent quand son usage n'est pas connu.
+**Principe de hiérarchie** : l'**usage propre de Cabezer prime** (étiquette de Milan « 19h30 · Luini ferme à 20h »), à condition de rester **cohérent dans une même vidéo**. Les règles ci-dessous valent quand son usage n'est pas connu. **Réponse de Cabezer : « 19h30 » et « 12,50 € »** pour les heures et les prix.
 
 ### 7.1 Règles et statut
 
@@ -281,21 +290,21 @@ Plans sous néon ou LED (scintillement, bandes) : repérer sur une planche d'ima
 | Avant `€` et `%` | Espace insécable U+00A0 : « 12,50 € », « 50 % » | [Lu] CLDR fr (motifs `#,##0.00 ¤` et `#,##0 %`) |
 | Décimale | Virgule : « 12,50 € » | [Lu] CLDR fr |
 | Milliers | Espace fine insécable U+202F : « 1 200 » ; CLDR groupe dès 4 chiffres (minimumGroupingDigits hérité = 1) ; une année ne se sépare pas (« 2026 ») | [Lu] CLDR ; année : usage |
-| Heures | Le format système français est `HH:mm` ; « 19h30 » et « 19 h 30 » sont des conventions de typographie, **non vérifiées** ; **usage de Cabezer : « 19h30 »** | [Lu] CLDR (format) ; convention [À vérifier] |
+| Heures | Le format système français est `HH:mm` ; « 19h30 » et « 19 h 30 » sont des conventions de typographie, **non vérifiées** ; **réponse de Cabezer : « 19h30 »** | [Lu] CLDR (format) ; convention [À vérifier] |
 | Points de suspension | Caractère unique « … » (CLDR : motifs d'ellipse avec le caractère, espace après) | [Lu] CLDR (motifs) ; usage |
 | Apostrophe | Courbe ’ plutôt que droite ' | [Pratique] |
 | Ligature œ | « œuf, bœuf, cœur, sœur, nœud, vœu, œil, œuvre, chœur, mœurs » ; la transcription écrit souvent « oe » ; ne pas toucher « moelleux » | Orthographe usuelle [À vérifier : source primaire non lue] |
 | Capitales accentuées | « ÉCLAIR », « À EMPORTER », « DÉGUSTATION » : l'accent reste sur la capitale | Usage [À vérifier : source primaire non lue] |
 
-**Imprimerie nationale** : non lue ; des guides secondaires sont cohérents avec LanguageTool [Extrait]. « 19 h 30 », les majuscules accentuées et la ligature œ restent **à vérifier**. **La recherche présentait « 19 h 30 » comme convention de la maison ; ni `../decisions-harmonisation.md` ni le skill (« 19h30 ») ne le disent : l'usage de Cabezer s'applique** (§13 Q10).
+**Imprimerie nationale** : non lue ; des guides secondaires sont cohérents avec LanguageTool [Extrait]. « 19 h 30 », les majuscules accentuées et la ligature œ restent **à vérifier**. La recherche présentait « 19 h 30 » comme convention de la maison ; ni `../decisions-harmonisation.md` ni le skill (« 19h30 ») ne le disent : **la réponse de Cabezer s'applique, « 19h30 » et « 12,50 € »**.
 
 ### 7.2 Mettre en œuvre dans AE et Premiere
 
 - **Police.** Les caractères U+202F et U+00A0 doivent exister dans la police d'identité (Avenir Next Heavy et Bold, Hoefler Text, Futura, PT Mono). Test : écrire dans un calque de texte « Quoi[U+202F]? Oui[U+00A0]: 12[U+202F]000[U+00A0]€ » à 400 %, chercher un carré, un trou ou une espace trop large (police de remplacement), consigner dans `Suivi/environnement-verifie.md`. Glyphes présents non vérifiés sur la machine de Cabezer.
 - **Code.** Dans un script AE (ExtendScript) : `String.fromCharCode(0x202F)` et `String.fromCharCode(0x00A0)` [Pratique, non exécuté dans AE]. Le compteur de `styles-food-et-tech.md` suit déjà cette règle pour `€`.
-- **Capitales.** Attribut « Toutes les capitales » (All Caps, libellé à confirmer) ou `toUpperCase()` d'un script : vérifier « é », « à », « œ » dans AE.
+- **Capitales.** Attribut All Caps (Toutes les capitales, libellé à confirmer) ou `toUpperCase()` d'un script : vérifier « é », « à », « œ » dans AE.
 - **SRT.** UTF-8 **sans BOM**, espaces insécables intactes ; relire avec le lint.
-- **D, mot à mot.** Seules la casse, les accents, la ligature œ et l'orthographe s'appliquent.
+- **Courts, mot à mot.** Seules la casse, les accents, la ligature œ et l'orthographe s'appliquent.
 
 ### 7.3 Contrôle outillé : `lint-fr.py`
 
@@ -308,11 +317,11 @@ python3 -I lint-fr.py -f sous_titres.srt
 
 **Essai [Mesuré]** : 20 chaînes (fautives et correctes) ; les cas fautifs sont signalés (espace normale avant `?`, deux-points collé, « 12.50€ », guillemets sans insécable, « 1200 », « oeuf », apostrophe droite, « … » en trois points, « ECLAIR A EMPORTER ») ; les cas corrects passent, y compris « 23:20 », une adresse web, une année et « moelleux ». **Limites** : pas de contrôle des heures, de la présence des glyphes, des noms propres, ni des majuscules accentuées hors liste ; les lignes de numérotation et d'horodatage du SRT sont à exclure (utiliser le texte seul si le lint les signale).
 
-**Quand l'utiliser** : sur le SRT et sur le texte source de chaque composition AE de texte, avant l'export. **Quand l'éviter** : sur une langue étrangère (D à l'étranger en anglais, passages cités). **Familles** : D, F, S, P, T, H pour le texte français affiché ; en D mot à mot, uniquement casse, accents, œ.
+**Quand l'utiliser** : sur le SRT et sur le texte source de chaque composition AE de texte, avant l'export. **Quand l'éviter** : sur une langue étrangère (D à l'étranger en anglais, passages cités). **Familles** : D, F, S, P, T, H pour le texte français affiché ; en court mot à mot, uniquement casse, accents, œ.
 
 ### 7.4 Découpage et vitesse de lecture
 
-Limites du skill (§9) : D français un mot ; D traduction 1 à 3 mots, 18 caractères au plus ; autres familles 2 lignes, 24 caractères par ligne en 9:16, 42 en 16:9. Elles sont **plus strictes** que le repère Netflix (42 caractères par ligne, 17 ou 20 caractères par seconde selon des sources secondaires contradictoires, guide non lu) [Extrait]. La formule du skill max(1,5 s ; 1 s + caractères/15) vaut environ 15 caractères par seconde : **la garder** ; elle ne s'applique ni au mot à mot de D ni aux coupes rapides (décisions, section C).
+Limites du skill (§9) : tous les courts en mot à mot, un mot en français, paquets de 1 à 3 mots et 18 caractères au plus en traduction, au rythme de la parole (plancher 0,25 s) ; format long incrusté (étranger, passages traduits) 2 lignes, 24 caractères par ligne en 9:16, 42 en 16:9. Elles sont **plus strictes** que le repère Netflix (42 caractères par ligne, 17 ou 20 caractères par seconde selon des sources secondaires contradictoires, guide non lu) [Extrait]. La formule du skill max(1,5 s ; 1 s + caractères/15) vaut environ 15 caractères par seconde : **la garder** ; elle ne s'applique ni au mot à mot des courts ni aux coupes rapides (décisions, section C).
 
 ---
 
@@ -322,15 +331,15 @@ Limites du skill (§9) : D français un mot ; D traduction 1 à 3 mots, 18 carac
 
 **Pourquoi** : en S, T, F et P, interviews, témoignages et experts apparaissent ; la voix ne dit ni le nom ni la fonction. WCAG 1.2.2 (sous-titres préenregistrés) demande que les sous-titres **identifient qui parle** et rendent les sons significatifs [Lu : Understanding Captions].
 
-- **Règle de départ.** Un cartouche « Prénom Nom » sur la première ligne, « fonction ou rôle » sur la seconde (exemple « cheffe pâtissière »), à la **première apparition seulement**, jamais répété à chaque retour de la personne. Pour un particulier ou un employé, **n'afficher son nom qu'avec son accord** (§2.2) ; l'orthographe est vérifiée sur la source primaire (skill §8).
-- **Exception au skill à valider.** Le skill (§6, point 7) réserve titres et cartons aux concepts, dates et chapitres et refuse le texte qui double chaque nom. Une identification donne une information que la voix ne donne pas ; elle n'est pas ce « doublon », mais cette lecture attend l'accord de Cabezer (§13 Q12). **Défaut en attendant** : appliquer l'identification à la première apparition seulement, la signaler dans le message de livraison comme « en attente de validation ».
+- **Règle de départ.** Un cartouche « Prénom Nom » sur la première ligne, « fonction ou rôle » sur la seconde (exemple « cheffe pâtissière »), à la **première apparition seulement**, jamais répété à chaque retour de la personne. Pour un particulier ou un employé, signaler à Cabezer l'absence d'accord connu de la personne (§2.2), qui décide ; l'orthographe est vérifiée sur la source primaire (skill §8).
+- **Exception au skill, validée.** Le skill (§6, point 7) réserve titres et cartons aux concepts, dates et chapitres et refuse le texte qui double chaque nom. Cabezer a répondu le 12/10/2026 : identifier un intervenant (nom et fonction) à sa première apparition, une seule fois, **jamais dans les courts food** ; ce n'est pas un « doublon », la voix ne donne pas cette information.
 - **Réalisation.** Composition AE « INTERVENANT » en calques natifs à l'identité de la famille (jamais un gabarit Premiere), entrée et sortie de 8 à 15 images (skill §6, point 9).
 - **Durée.** Formule du skill : max(1,5 s ; 1 s + caractères/15). « Marie Dupont, cheffe pâtissière » (32 caractères) : 1 + 32/15 ≈ **3,1 s**.
 - **Position.** Dans la boîte sûre 9:16 (§3.3), jamais sur le visage ni l'interface ; en 16:9, marges de la fiche d'identité.
 - **Source qui parle en extrait ou archive** : crédit court pendant l'extrait (`documentaire-essai-video-archives.md §11`).
 - **Voix off** : « Voix off » dans le SRT quand le locuteur ne se voit pas.
 
-**Quand l'utiliser** : S, T, F, P avec intervenants ; **quand l'éviter** : D (Cabezer seul), plan sans intervenant, plan déjà identifié.
+**Quand l'utiliser** : S, T, F, P avec intervenants (longs et courts hors food) ; **quand l'éviter** : courts food (D), Cabezer seul, plan sans intervenant, plan déjà identifié.
 
 ### 8.2 Contraste du texte (WCAG 1.4.3, lu)
 
@@ -368,10 +377,10 @@ Arguments : temps en secondes, x, y, largeur, hauteur de la zone, couleur du tex
 
 ## 9. Sous-titres accessibles et SRT
 
-- **Contenu identique** : les sous-titres incrustés (composition AE, ProRes 4444 alpha) et le SRT livré portent le même texte et la même ponctuation, de sorte qu'une personne sourde ou malentendante reçoive la même information que l'écran (skill §9, voie unique).
+- **Contenu identique** : en France, les vidéos longues n'ont **qu'un SRT, rien d'incrusté** (réponse de Cabezer) ; dans les courts (mot à mot) et à l'étranger, les sous-titres incrustés (composition AE, ProRes 4444 alpha) et le SRT livré portent le même texte et la même ponctuation, de sorte qu'une personne sourde ou malentendante reçoive la même information que l'écran (skill §9, voie unique).
 - **Sons significatifs** : un bruitage qui remplace un nom ou un prix ne doit pas être la seule information ; l'écrit est toujours présent (prix, note, mot de l'appel au commentaire) [Pratique].
 - **Audiodescription** : critère 1.2.5 (niveau AA) non étudié ; à signaler pour les formats longs, sans engagement.
-- **Temps de lecture** : formule du skill (§7.4) ; en D mot à mot, rythme de la parole.
+- **Temps de lecture** : formule du skill (§7.4) pour le format long ; dans les courts en mot à mot, rythme de la parole.
 - **Traduction automatique** : relue (décision B.2).
 - **Vérification** : sur le MP4, jamais sur le SRT seul (`organisation-livraison-qc.md §6.4`).
 
@@ -382,15 +391,15 @@ Arguments : temps en secondes, x, y, largeur, hauteur de la zone, couleur du tex
 | Technique | Quand l'utiliser | Quand l'éviter | Familles |
 |---|---|---|---|
 | Question « conformité » au brief | Toujours, avant le dérush | Jamais d'omission en mode autonome : consigner « en attente » | D, F, S, P, T, H |
-| Mosaïque ou flou fort sur masque suivi (Premiere) | Un visage ou une plaque sur plusieurs images | Plan de moins de 1 s où une coupe ou un recadrage suffit | D, F, S, P, T, H |
-| Recadrage ou coupe plutôt que flou | La personne n'est pas le sujet et le cadre le permet | Plan à protéger (yeux, mains, produit) | D, F |
-| Composition AE « MENTION-COMMERCIALE » | Partenariat, repas offert, invitation, rémunération | Aucune contrepartie ni invitation liée à la vidéo | D, F, S, P, T, H |
+| Mosaïque ou flou fort sur masque suivi (Premiere) | Un visage ou une plaque que Cabezer a désigné, sur plusieurs images | Plan de moins de 1 s où une coupe ou un recadrage suffit | D, F, S, P, T, H |
+| Recadrage ou coupe plutôt que flou | Cabezer a désigné la personne, elle n'est pas le sujet et le cadre le permet | Plan à protéger (yeux, mains, produit) | D, F |
+| Composition AE « MENTION-COMMERCIALE » | Partenariat, repas offert, invitation, rémunération, une fois la formule et la durée choisies par Cabezer | Aucune contrepartie ni invitation liée à la vidéo | D, F, S, P, T, H |
 | Composition AE « SOURCE » (crédit d'extrait) | Tout extrait tiers cité | Image personnelle de Cabezer | P, S, H |
-| Décompte de flashs (§6.4) | Hook agressif, gros moments rapprochés, glitch | Dérush sans effet lumineux | D surtout ; F, S, T, P, H |
-| `flash-check.py` | Tout export contenant flash, glitch, scintillement ou coupes rapides | Jamais sur le master 4K ; sur la version de contrôle | D, F, S, P, T, H |
+| Décompte de flashs (§6.4) | Seulement si Cabezer demande un test de photosensibilité | Par défaut : pas de test | D surtout ; F, S, T, P, H |
+| `flash-check.py` | Seulement si Cabezer demande un test de photosensibilité, sur la version de contrôle | Par défaut ; jamais sur le master 4K | D, F, S, P, T, H |
 | `lint-fr.py` | Tout texte français affiché | Texte étranger | D, F, S, P, T, H |
 | `contraste-zone.py` | Texte coloré, texte sur fond clair | Texte blanc sur fond sombre contrôlé | D, F, S, P, T |
-| Cartouche INTERVENANT | Intervenant nommé à la première apparition | Cabezer seul, intervenant déjà identifié | S, T, F, P |
+| Cartouche INTERVENANT | Intervenant nommé à la première apparition | Courts food, Cabezer seul, intervenant déjà identifié | S, T, F, P |
 
 ---
 
@@ -398,12 +407,12 @@ Arguments : temps en secondes, x, y, largeur, hauteur de la zone, couleur du tex
 
 | Erreur de débutant | Réflexe de pro |
 |---|---|
-| Flouter au hasard ou « à la fin » | Lister au dérush, flouter après validation du dérush, vérifier le MP4 à 100 % |
+| Flouter au hasard, « à la fin » ou sans décision | Lister et signaler au dérush ; flouter ce que Cabezer désigne après validation du dérush, vérifier le MP4 à 100 % |
 | Flou gaussien léger sur un visage | Mosaïque ou flou fort, test à 270 × 480 |
-| Ajouter la mention en fin de vidéo ou dans la description | Mention à l'image dès le début, lisible sur téléphone, dans la boîte sûre, maintenue |
+| Ajouter la mention en fin de vidéo ou dans la description, ou choisir à la place de Cabezer | Mention à l'image dont Cabezer a choisi la formule et la durée, lisible sur téléphone, dans la boîte sûre |
 | « Libre de droits » sans licence lue | Une ligne par piste dans `licences.csv`, preuve capturée |
-| Baisser l'opacité d'un flash pour le « rendre sûr » | Espacer ou retirer, puis retester l'export |
-| Se fier à l'exception de surface sur téléphone | Environ 7 % du cadre : tout flash plus grand compte entièrement |
+| Baisser l'opacité d'un flash pour le « rendre sûr » (si un test est demandé) | Espacer ou retirer, puis retester l'export |
+| Se fier à l'exception de surface sur téléphone (si un test est demandé) | Environ 7 % du cadre : tout flash plus grand compte entièrement |
 | Espace normale avant `?` ou `€` | U+202F avant `? ! ;`, U+00A0 avant `: € %` et dans les guillemets |
 | « 12.50€ », « oeuf », « ECLAIR », apostrophe droite | « 12,50 € », « œuf », « ÉCLAIR », ’ |
 | Déclarer « conforme » parce que le script passe | « Contrôlé automatiquement, limites dites ; validation de Cabezer en attente » |

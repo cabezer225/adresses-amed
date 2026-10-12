@@ -12,7 +12,7 @@ Hiérarchie (skill §1) : brief de Cabezer, règles du skill, fiches, tutoriels.
 
 ## Sommaire
 
-1. Principes et niveaux de preuve · 2. Arborescence, dossier Suivi, nommage · 3. Ingestion, proxys, cadence · 4. Sauvegarde, archivage, reprise · 5. Boucle de retours · 6. Contrôle qualité et scripts · 7. Audio · 8. Export (vertical, YouTube long, carré et 4:5, matériel ou logiciel) · 9. Plateformes, zones sûres, sous-titres livrés · 10. Livraison, conformité, clôture · 11. Techniques : quand, quand éviter, quelles familles · 12. Erreurs de débutant → réflexes de pro · 13. Liste de contrôle · 14. Décisions à demander · 15. Sources étudiées
+1. Principes et niveaux de preuve · 2. Arborescence, dossier Suivi, nommage · 3. Ingestion, proxys, cadence · 4. Sauvegarde, archivage, reprise · 5. Boucle de retours · 6. Contrôle qualité et scripts · 7. Audio · 8. Export (vertical, YouTube long, matériel ou logiciel) · 9. Plateformes, zones sûres, sous-titres livrés · 10. Livraison, conformité, clôture · 11. Techniques : quand, quand éviter, quelles familles · 12. Erreurs de débutant → réflexes de pro · 13. Liste de contrôle · 14. Décisions à demander · 15. Sources étudiées
 
 ---
 
@@ -26,7 +26,7 @@ Niveaux de preuve : **[Doc lue]** documentation ou code lu (ffmpeg, API UXP, gui
 
 **Limite.** Les pages d'aide d'Adobe, YouTube, TikTok, Instagram, Netflix, EBU et Frame.io n'ont pas pu être ouvertes (proxy) : aucune spécification de plateforme n'est donnée comme certaine. Les chemins de menu viennent de tutoriels de 2015 à 2022.
 
-**Interface en français.** Nom français suivi de l'anglais entre parenthèses. Noms sûrs : Fichier > Enregistrer sous (Save As), Gestionnaire de projet (Project Manager), Moniteur Programme (Program Monitor), Contrôles d'effets (Effect Controls), Imbriquer (Nest). Tout autre libellé : « libellé à confirmer », à lire à l'écran puis consigner dans `Suivi/environnement-verifie.md`. Aucun raccourci tant qu'il n'a pas été lu dans Raccourcis clavier.
+**Interface de Premiere et d'After Effects en anglais** (réponse du 12/10/2026). Les libellés anglais font foi ; le nom français entre parenthèses n'est qu'un repère. Noms sûrs : File > Save As (Fichier > Enregistrer sous), Project Manager (Gestionnaire de projet), Program Monitor (Moniteur Programme), Effect Controls (Contrôles d'effets), Nest (Imbriquer). Tout autre libellé : « libellé à confirmer », à lire à l'écran puis consigner dans `Suivi/environnement-verifie.md`. Aucun raccourci tant qu'il n'a pas été lu dans Keyboard Shortcuts (Raccourcis clavier).
 
 ---
 
@@ -93,7 +93,7 @@ Réussite : toutes les lignes `OK`. Ne formater la carte qu'après la sauvegarde
 
 ### 3.2 Proxys (décision de fond)
 
-**Défaut : ProRes Proxy, dossier `Media/Proxys/` séparé, environ un quart de la taille source.** H.264 seulement si l'espace disque manque (petit, mais lourd à décoder) [Tuto : Larry Jordan, 2020]. À confirmer par un essai sur un rush de Cabezer (lecture fluide, durée d'encodage). **Quand** : S, P, F longs, multicam, rushs > 4K, machine qui saccade. **Éviter** : D sur un Mac qui lit en temps réel.
+**Règle (réponse du 12/10/2026) : en format long (L-Food, L-Story, L-Tech, L-Films, L-Life), proxys ProRes Proxy toujours** ; en format court, seulement si la lecture saccade. Dossier `Media/Proxys/` séparé, environ un quart de la taille source ; export depuis les originaux. H.264 seulement si l'espace disque manque (petit, mais lourd à décoder) [Tuto : Larry Jordan, 2020]. **Éviter** : un court sur un Mac qui lit en temps réel.
 
 Dans tous les cas, sans se fier aux affirmations contradictoires sur l'export :
 1. Avant tout export, **désactiver les proxys** (bouton Basculer les proxys du Moniteur Programme ; libellé à confirmer).
@@ -111,7 +111,7 @@ Dans tous les cas, sans se fier aux affirmations contradictoires sur l'export :
 
 ### 4.1 Pendant le montage
 
-1. **Enregistrement automatique** actif, vers `Projet/` (Préférences > Enregistrement automatique, à confirmer). Départ : 5 minutes, 20 versions. Les défauts de Premiere ne sont pas établis : les régler et les noter dans `environnement-verifie.md` [À vérifier].
+1. **Enregistrement automatique** actif, vers `Projet/` (Preferences > Auto Save, à confirmer), réglé à 5 minutes et 20 versions dans Premiere et dans After Effects (réponse du 12/10/2026). Noter les anciens réglages dans `environnement-verifie.md`.
 2. **Enregistrer sous** avant chaque étape lourde : dérush validé, habillage, retouches de Cabezer, export. L'enregistrement automatique sert à la panne, pas à revenir sur une décision.
 3. Enregistrer `.prproj` et `.aep` **avant** chaque export (skill §13).
 
@@ -153,7 +153,7 @@ After Effects : Fichier > Rassembler les fichiers (Collect Files, libellé à co
 ffmpeg -i export.mp4 -vf "drawtext=timecode='00\:00\:00\;00':rate=30000/1001:fontcolor=white:fontsize=48:box=1:boxcolor=black@0.5:x=24:y=24,scale=-2:720" -c:v libx264 -crf 23 -pix_fmt yuv420p -c:a aac -b:a 128k export_REVIEW.mp4
 ```
 
-   À 25 i/s : `timecode='00\:00\:00\:00':rate=25`. **Jamais** livré comme export final. **Quand** : S, P, F longs ; D si demandé.
+   À 25 i/s : `timecode='00\:00\:00\:00':rate=25`. **Jamais** livré comme export final. C'est le fichier déposé sur Frame.io (§5.2). **Quand** : longs ; courts si demandé.
 3. **Retours = liste datée** dans `Suivi/retours.md` : `R12 | v04 | 1:12,15 | « le hook est mou » | action | état (à faire, appliqué, contrôlé, validé)`.
 4. **Retour ambigu** (« plus dynamique », « pas ouf ») : ne pas deviner ; proposer deux options chiffrées (« couper les blancs > 0,2 s » ou « ajouter un punch-in ») et demander ; il a déjà rejeté un ajout non demandé (skill §5.1).
 5. **Retouches manuelles de Cabezer** : enregistrer sa version sous un nouveau numéro avant tout. Pour savoir ce qu'il a changé, exporter les deux séquences en FCP XML et comparer avec `xml-coupes.py`. Les pistes d'un seul tenant (sous-titres, habillage rendu) ne suivent pas ses coupes : les recouper (skill §9, §14).
@@ -161,8 +161,8 @@ ffmpeg -i export.mp4 -vf "drawtext=timecode='00\:00\:00\;00':rate=30000/1001:fon
 
 ### 5.2 Outils de revue
 
-- **Défaut** : fichier `_REVIEW` envoyé par message, plus un marqueur Premiere par retour (couleur par état) : gratuit et suffisant pour Cabezer seul.
-- **Frame.io** : commentaires au timecode, versions, import comme marqueurs [Tuto : Adobe Live, vers 2022]. **Plan payant possible : signaler à Cabezer avant tout usage** (gratuits uniquement) ; plan gratuit non vérifié [À vérifier].
+- **Frame.io** (inclus dans l'abonnement Adobe de Cabezer, réponse du 12/10/2026) : outil de relecture. Déposer le fichier `_REVIEW` : commentaires au timecode, versions, import comme marqueurs [Tuto : Adobe Live, vers 2022]. Un lien de relecture n'est pas une publication (skill §1).
+- **Dans Premiere** : un marqueur par retour (couleur par état), en plus de `Suivi/retours.md`. Si Frame.io est indisponible, envoyer le fichier `_REVIEW` par message.
 
 ### 5.3 Relecture à froid
 
@@ -183,12 +183,12 @@ Dans Premiere : aucun média hors ligne, clip désactivé oublié ni trou vidéo
 ### 6.2 Niveau 1 : conformité technique
 
 `controle-mp4.sh f.mp4 [largeur hauteur]` (défaut 1080 1920) compare le fichier au brief (taille, codec, cadence constante, étiquettes couleur, débit, durée, audio AAC 48 kHz stéréo, écart A/V), puis enchaîne intégrité, noirs, figements, son manquant, niveaux vidéo et loudness (§6.3). Lecture seule [Mesuré]. Lecture des lignes :
-- **couleur** : `None` = export sans étiquettes (le lecteur devine l'espace couleur). Un export SDR Rec.709 de Premiere doit donner `bt709/bt709/bt709` (`etalonnage-gestion-couleur.md`). **Source HLG ou HDR** (iPhone) : conversion vers SDR à décider avec Cabezer [À vérifier].
+- **couleur** : `None` = export sans étiquettes (le lecteur devine l'espace couleur). Un export SDR Rec.709 de Premiere doit donner `bt709/bt709/bt709` (`etalonnage-gestion-couleur.md`). **Source HLG ou HDR** (iPhone) : livraison toujours en SDR Rec.709 (réponse du 12/10/2026) ; convertir avant les corrections, jamais livrer en HDR.
 - **cadence** : `VARIABLE` est un défaut (§3.3).
 - **débit** : affiché sans seuil ; environ 20 Mbit/s en vertical = **débit de Cabezer, non issu d'une source officielle**.
 - **niveau H.264** : x264 choisit au minimum 4.1 pour 1080×1920 à 29,97 i/s, 5.1 pour 3840×2160 à 30 [Mesuré]. « Constrained Baseline » est anormal pour un export réel.
 - **niveaux vidéo** : plage légale 8 bits 16 à 235 ; au-delà, cas à examiner.
-- Autre format : `bash controle-mp4.sh f.mp4 1080 1350`.
+- YouTube long : `bash controle-mp4.sh f.mp4 1920 1080` (ou `3840 2160` quand les rushs sont en 4K).
 
 ### 6.3 Bibliothèque de commandes ffmpeg/ffprobe (tableau unique)
 
@@ -220,12 +220,12 @@ Chaque cas examiné est noté dans le rapport (§6.5).
 **Sous-titres.** Extraire les images aux **milieux de bloc** du SRT, puis les ouvrir (réduire à 270 × 480 pour juger la lisibilité mobile) :
 
 ```bash
-for t in $(python3 -I lint-srt.py sous_titres.srt autre 9:16 --mids | tail -1); do ffmpeg -v error -y -ss $t -i export.mp4 -frames:v 1 -vf scale=360:-1 -update 1 "bloc_$t.png"; done
+for t in $(python3 -I lint-srt.py sous_titres.srt D-fr 9:16 --mids | tail -1); do ffmpeg -v error -y -ss $t -i export.mp4 -frames:v 1 -vf scale=360:-1 -update 1 "bloc_$t.png"; done
 ```
 
 Regarder : jamais trois lignes, aucun mot coupé ou collé au bord, aucun sous-titre sur un texte animé (skill §9), sur le visage ou sur l'interface. Un SRT correct ne prouve rien : le contrôle porte sur le MP4.
 
-`lint-srt.py f.srt D-fr|D-trad|autre [9:16|16:9] [--mids]` applique les limites du skill (§9) : `D-fr` un mot par bloc ; `D-trad` 1 à 3 mots, 18 caractères au plus ; `autre` 2 lignes, 24 caractères par ligne en 9:16 (42 en 16:9), pas de mot isolé, bloc d'au moins **max(1,5 s ; 1 s + caractères/15)** (formule du skill, familles longues, **jamais** pour le mot à mot de D). Pour tous : espace simple avant `; : ! ? € %`, apostrophe droite (`conformite-droits-accessibilite.md §7`). [Mesuré]
+`lint-srt.py f.srt D-fr|D-trad|autre [9:16|16:9] [--mids]` applique les limites du skill (§9) : `D-fr` un mot par bloc (court en français) ; `D-trad` 1 à 3 mots, 18 caractères au plus (court traduit) ; `autre` 2 lignes, 42 caractères par ligne en 16:9 (format long incrusté ; la limite de 24 caractères du script en 9:16 ne sert plus, tout format vertical étant un court en mot à mot), pas de mot isolé, bloc d'au moins **max(1,5 s ; 1 s + caractères/15)** (formule du skill, formats longs, **jamais** pour le mot à mot des courts). Pour tous : espace simple avant `; : ! ? € %`, apostrophe droite (`conformite-droits-accessibilite.md §7`). [Mesuré]
 
 **Coupes, mots coupés, appel au commentaire.**
 1. `xml-coupes.py seq.xml [motif]` liste coupes, trous, chevauchements, clips désactivés, transitions, clips écrits dans le désordre (piège du skill §14) et, avec un motif de nom, la part de face caméra. Dans un xmeml : `start`/`end` = images d'**enregistrement** (`end` exclusif) ; `in`/`out` = images de la source ; `ntsc` TRUE signifie `timebase × 1000/1001` (30 → 29,97) ; `start` = −1 marque un clip pris dans une transition [Doc lue : notes de pipeline GitHub, §15]. Testé sur un export Premiere de tiers, pas de Cabezer.
@@ -235,11 +235,11 @@ Regarder : jamais trois lignes, aucun mot coupé ou collé au bord, aucun sous-t
 
 ### 6.5 Rapport de contrôle
 
-Dans `Controles/` : date, version, commandes, sorties brutes, **chaque cas examiné avec son issue** (« noir à 12,4 s : voulu, fondu » ; « figé 5,2–8,0 s : preuve tenue »). Distinguer « contrôlé automatiquement », « examiné à l'image », « écouté par Cabezer » ; écrire tout contrôle non fait. En D, rejouer le barème du skill §5.2 et donner les deux notes (≥ 8).
+Dans `Controles/` : date, version, commandes, sorties brutes, **chaque cas examiné avec son issue** (« noir à 12,4 s : voulu, fondu » ; « figé 5,2–8,0 s : preuve tenue »). Distinguer « contrôlé automatiquement », « examiné à l'image », « écouté par Cabezer » ; écrire tout contrôle non fait. Pour chaque court, rejouer le barème du skill (§5.2 pour le C-Food, adapté aux autres familles) et donner les deux notes sur 10 (visées ≥ 8) ; sous 8, au plus deux passes de retravail, puis livrer avec la note réelle (réponse du 12/10/2026).
 
 ### 6.6 Jeu de scripts nommés (source unique)
 
-Fichiers dans `references/pro/scripts/` du skill (emplacement proposé, §14). Tout fichier lu (XML, SRT, transcription) passe par `python3 -I`. **Statut** : « testé sur fichiers générés » jusqu'au passage sur un vrai export de Cabezer, consigné au skill §20.
+Fichiers dans `references/pro/scripts/` du skill (un seul jeu). Tout fichier lu (XML, SRT, transcription) passe par `python3 -I`. **Statut** : « testé sur fichiers générés » jusqu'au passage sur un vrai export de Cabezer, consigné au skill §20.
 
 | Script | Rôle et appel | Détail |
 |---|---|---|
@@ -248,10 +248,13 @@ Fichiers dans `references/pro/scripts/` du skill (emplacement proposé, §14). T
 | `lister-clips.jsx` | pré-contrôle de séquence, lecture seule | §6.1 |
 | `xml-coupes.py` | coupes, trous, désordres, transitions d'un FCP XML | §6.4 |
 | `mesure-plans.py` | durées de plans d'un MP4 ; `python3 -I mesure-plans.py f.mp4 [seuil=0.3] [fenetre_s=60] > plans.csv` ; moyenne, médiane et coupes par fenêtre sur stderr | — |
-| `paquets.py` | paquets de sous-titres, décalage sous les animations | `formats-courts-verticaux.md §4.6` |
-| `affiner_bords.py` | recale les bords de mots sur l'énergie du son | `audio-dialogue-sound-design-mixage.md §3.1` |
-| `mesure-derive.py` | dérive caméra/enregistreur (`mesurer_derive.py` dans audio §2.4 : même rôle, un seul fichier à garder) | `premiere-pro-avance.md §6.2` |
-| `reprise-candidats.py`, `envcheck-mac.sh` | reprise, relevé d'environnement | `pilotage-environnement-reprise.md` ; `noter_hook_retention.py` (D) : skill §5.2 |
+| `paquets.py` | paquets de sous-titres traduits, retrait ou décalage sous les animations ; `python3 -I paquets.py mots.tsv [fenetres_animations.tsv] > paquets.tsv` | `formats-courts-verticaux.md §4.6` |
+| `affiner_bords.py` | recale les bords de mots sur l'énergie du son ; `python3 -I affiner_bords.py rush.mov mots.json sortie.csv` | `audio-dialogue-sound-design-mixage.md §3.1` |
+| `mesurer_derive.py` | dérive caméra/enregistreur ; `python3 -I mesurer_derive.py cam.mov rec.wav` | `premiere-pro-avance.md §6.2` ; `audio-dialogue-sound-design-mixage.md §2.4` |
+| `lint-fr.py` | typographie française à l'écran | `conformite-droits-accessibilite.md §7` |
+| `contraste-zone.py` | contraste WCAG d'un texte sur le fond d'une zone du MP4 | `conformite-droits-accessibilite.md §8` |
+| `flash-check.py` | flashs par seconde ; **seulement si Cabezer demande un test de photosensibilité** (aucun test automatique) | `conformite-droits-accessibilite.md §6` |
+| `reprise-candidats.py`, `envcheck-mac.sh` | reprise, relevé d'environnement | `pilotage-environnement-reprise.md` ; `noter_hook_retention.py` (C-Food, dans `Tiktok degustation/Identite-Degustation/`) : skill §5.2 |
 
 `mesure-plans.py` repère une zone anormalement longue ou monotone et compare deux versions ; ses valeurs ne définissent pas un bon rythme. Seuil de scène 0,3 : valeur de départ.
 
@@ -261,19 +264,19 @@ Fichiers dans `references/pro/scripts/` du skill (emplacement proposé, §14). T
 
 **Pourquoi** : le skill (§11, §13) valide le mix à l'écoute, puis le mesure sur le MP4 ; les niveaux sont des **repères**, pas des cibles imposées. Valeurs et méthode : `audio-dialogue-sound-design-mixage.md §9` (loudness) et `§10` (contrôle du MP4). Ici, seulement ce qui touche la livraison.
 
-- **Repères** : −14 LUFS intégrés (±1) ; crête vraie du MP4 ≤ −1 dBTP ; AAC 48 kHz 320 kbit/s. Si la crête dépasse, baisser d'abord la source fautive (SFX, musique), pas de limiteur de bus maître sans accord. Aucun chiffre vérifié pour YouTube, TikTok, Instagram ni Shorts : n'en pas inventer.
+- **Repères** : −14 LUFS intégrés (±1) ; crête vraie du MP4 ≤ −1 dBTP ; AAC 48 kHz, **320 kbit/s pour les courts, 384 kbit/s pour YouTube long**. Si la crête dépasse, baisser d'abord la source fautive (SFX, musique, voix) : pas de limiteur sur la sortie générale (réponse du 12/10/2026). Si la voix d'un court demanderait plus de 3 dB de limitation pour atteindre −14 LUFS, rester plus bas et signaler la mesure. Aucun chiffre vérifié pour YouTube, TikTok, Instagram ni Shorts : n'en pas inventer.
 - **Repère personnel** : mesurer 3 exports validés à l'écoute par Cabezer, noter I, LRA et crête dans `Suivi/verifications.md`, comparer les nouveaux exports à cette plage. Écart : revoir la chaîne voix (skill §11) et la balance SFX/voix, sans corriger au hasard.
 - **Normalisation** : « Correspondance automatique » et « Dynamique » d'Essential Sound sont écartées par le skill ; pas de normaliseur sur le mix final sans accord. `loudnorm=print_format=json` sert à **mesurer** (`input_i`, `input_tp`), pas à traiter [Mesuré].
 - **Repliement mono** (skill §11) : comparer l'intégré stéréo à `-af "pan=mono|c0=0.5*c0+0.5*c1,ebur128"`. Un fichier déphasé est passé de −18,9 à −70 LUFS [Mesuré]. Plus de 3 LU de chute sur une voix stéréo = signal de phase.
-- **Par famille** : D voix + SFX, sans musique ; S nappe sous la voix (`audio §5.5`), silences de 1 à 2 s voulus ; F, P, T musique selon l'émotion, vitesse du morceau inchangée.
+- **Par format et famille** : tous les courts et le Lifestyle (long et court) : voix + SFX comme la dégustation, aucune musique ; L-Story : nappe 24 dB sous la voix, réglage final à l'écoute (`audio §5.5`), silences de 1 à 2 s voulus ; L-Food, L-Films, L-Tech : musique selon l'émotion, vitesse du morceau inchangée (composition originale en Story, food long et tech).
 
 ---
 
-## 8. Export : vertical, YouTube long, carré et 4:5, encodage matériel ou logiciel
+## 8. Export : vertical, YouTube long, encodage matériel ou logiciel
 
-**Pourquoi** : les plateformes recompressent toujours ; un fichier trop léger est recompressé une seconde fois et se dégrade [Tuto : Larry Jordan, 2015 ; son 720p est périmé, non repris].
+**Pourquoi** : les plateformes recompressent toujours ; un fichier trop léger est recompressé une seconde fois et se dégrade [Tuto : Larry Jordan, 2015 ; son 720p est périmé, non repris]. **Jamais de carré (1:1) ni de 4:5** (réponse du 12/10/2026) : le 9:16 est le seul format vertical.
 
-### 8.1 Vertical : TikTok, Reels, Shorts (D ; F, S, P, T déclinés)
+### 8.1 Vertical : TikTok, Reels, Shorts (tous les courts)
 
 Réglages du skill (§13), point de départ unique : FHD 1080×1920 exporté directement de Premiere, MP4 H.264, **VBR 1 passe environ 20 Mbit/s** (débit de Cabezer, non issu d'une source officielle), AAC 48 kHz 320 kbit/s, cadence de la source ; master 4K sur demande seulement. Cases « Utiliser la qualité de rendu maximale » (Use Maximum Render Quality) et « Rendre à la profondeur de bits maximale » (Render at Maximum Depth) : libellés à confirmer à l'écran (le skill écrivait « résolution maximale »), à consigner dans `environnement-verifie.md` puis `decisions.md`. Après tout changement de préréglage, **contrôler la taille 1080 × 1920** : les préréglages « YouTube 1080p » repassent en 1920 × 1080 avec bandes noires (`formats-courts-verticaux.md §7.1`, d'après un tutoriel de Dolinski).
 
@@ -281,7 +284,7 @@ H.265 : sur demande seulement (skill §13) ; tester la lecture sur téléphone e
 
 ### 8.2 YouTube long (F, S, P, T)
 
-**Quand** : toute vidéo longue horizontale. **Éviter** : 4K sans source 4K. Rushs en 4K : export 4K par défaut (réponse du 12/10/2026, skill §13).
+**Quand** : toute vidéo longue horizontale. **Éviter** : 4K sans source 4K. Rushs en 4K : export 4K par défaut (réponse du 12/10/2026, skill §13). Encodage logiciel pour le livrable.
 
 Base (skill §13) : 3840×2160 quand les rushs sont en 4K (réponse du 12/10/2026), sinon 1920×1080 ; cadence de la séquence, SDR Rec.709. Pour les envois SDR, YouTube recommande [Extrait de sa page d'aide, non ouverte] H.264 profil High, progressif, 4:2:0, audio AAC-LC 48 kHz ; aucune limite de débit imposée, seulement des repères :
 
@@ -290,40 +293,31 @@ Base (skill §13) : 3840×2160 quand les rushs sont en 4K (réponse du 12/10/202
 | 1080p | 8 Mbit/s | **16** | 12 Mbit/s | **24** |
 | 4K (2160p) | 35–45 Mbit/s | **50** | 53–68 Mbit/s | **75** |
 
-(1440p : 16 et 24 Mbit/s selon le même extrait.) **Les départs sont mes propositions, non sourcées** : deux fois le repère en 1080p, un peu au-dessus du haut de la fourchette en 4K, puisque YouTube ré-encode. Les tester sur 60 s de plans difficiles (feuillage, dégradés, texte fin) avant adoption ; H.264 VBR 1 passe.
+(1440p : 16 et 24 Mbit/s selon le même extrait.) **Ces départs ont été retenus par Cabezer le 12/10/2026** (ils ne viennent pas d'une source officielle : deux fois le repère en 1080p, un peu au-dessus du haut de la fourchette en 4K, puisque YouTube ré-encode). Les tester sur 60 s de plans difficiles (feuillage, dégradés, texte fin) avant le premier export ; H.264 VBR 2 passes (skill §13).
 
-Poids ≈ débit × durée / 8 : 16 Mbit/s × 1 200 s = 2 400 Mo ; 50 Mbit/s = 7 500 Mo. Vérifier l'espace libre (§4.3) et la limite de taille de la plateforme [À vérifier]. Audio : 320 kbit/s (skill) ; le même extrait liste 384 kbit/s en stéréo (§14). Contrôle : `bash controle-mp4.sh f.mp4 1920 1080`. Chapitres et fin compatibles avec l'écran de fin (skill §13).
-
-### 8.3 Carré (1:1) et 4:5 (H ; D, F, S déclinés)
-
-**Quand** : fil Instagram (4:5) ou demande explicite. **Éviter** par défaut : le 9:16 reste le format des Shorts, Reels et TikTok ; un carré de moins de 3 minutes compte comme Short mais s'affiche avec des bandes noires [Extrait : guides tiers ; `formats-courts-verticaux.md §8`]. Dimensions : 1:1 = 1080 × 1080 ; 4:5 = 1080 × 1350 [Extrait : guides tiers sur Instagram, page officielle non lue].
-
-1. **Recomposer, pas rogner** : nouvelle séquence 1080×1350 ou 1080×1080 à partir du montage maître. Un 9:16 en 4:5 ne garde que 70 % de la hauteur, un 16:9 en 4:5 que 45 % de la largeur : textes compris, le reste disparaît. Auto Reframe (`premiere-pro-avance.md §8.1`, options de ratio à lire à l'écran) n'est qu'un départ ; corriger visage, produit, mains.
-2. **Refaire textes et sous-titres** à cette taille, en compositions AE (skill §9) ; à largeur égale (1080), 24 caractères par ligne reste le départ.
-3. **Zones sûres** : la boîte de `formats-courts-verticaux.md §6.2` vaut pour le 9:16 seulement. Aucune boîte validée en 4:5 ni 1:1 : texte clé dans le tiers central, test sur téléphone (§14).
-4. **Export** comme §8.1 (VBR 1 passe, 20 Mbit/s de Cabezer, AAC 320). Nom : `<Sujet>_InstagramFeed4x5_v<NN>.mp4`. Contrôle : `bash controle-mp4.sh f.mp4 1080 1350`, puis chaque fichier à part (§8.6).
+Poids ≈ débit × durée / 8 : 16 Mbit/s × 1 200 s = 2 400 Mo ; 50 Mbit/s = 7 500 Mo. Vérifier l'espace libre (§4.3) et la limite de taille de la plateforme [À vérifier]. Audio : AAC 48 kHz **384 kbit/s** (réponse du 12/10/2026 ; 320 kbit/s est réservé aux courts). Contrôle : `bash controle-mp4.sh f.mp4 1920 1080`. Chapitres et fin compatibles avec l'écran de fin (skill §13).
 
 ### 8.4 Encodage matériel ou logiciel sur Mac (Apple Silicon)
 
-**Quand tester** : avant le premier export livré, puis à chaque changement de machine ou mise à jour majeure. **Éviter** : de changer d'encodeur sans essai, ou entre deux versions d'une même vidéo.
+**Décision (12/10/2026) : logiciel pour le livrable, matériel pour les aperçus et les brouillons.** Ne pas changer d'encodeur entre deux versions d'une même vidéo. L'essai ci-dessous n'est à faire que si Cabezer veut réexaminer ce choix, ou après un changement de machine.
 
 Ce que les sources établissent :
 - Apple Silicon (M1 Pro et suivants) prend en charge l'encodage matériel H.264 et H.265 dans Premiere [Extrait : page d'aide Adobe].
-- Le réglage « Encodage matériel / logiciel » (Performance, Hardware / Software Encoding) est dans la fenêtre d'export (libellé à confirmer). Des fils de la communauté Adobe rapportent que le matériel n'est proposé qu'avec **VBR 1 passe** (le VBR 2 passes serait réservé au logiciel) et que l'option peut être grisée (CBR, « Correspondre à la source ») [Extrait : forums, non officiel]. Le réglage du skill (VBR 1 passe) est donc compatible.
+- Le réglage « Encodage matériel / logiciel » (Performance, Hardware / Software Encoding) est dans la fenêtre d'export (libellé à confirmer). Des fils de la communauté Adobe rapportent que le matériel n'est proposé qu'avec **VBR 1 passe** (le VBR 2 passes serait réservé au logiciel) et que l'option peut être grisée (CBR, « Correspondre à la source ») [Extrait : forums, non officiel]. Le VBR 1 passe des courts est donc compatible avec le matériel ; le VBR 2 passes du YouTube long reste au logiciel.
 - **Aucune comparaison de qualité sur Apple Silicon n'a été lue.** Les tests de Puget Systems portent sur d'autres machines : environ ×2 en vitesse et peu de différence visible avec des cartes NVIDIA/AMD (2021) ; avec Intel Quick Sync, débit cible pas toujours atteint et qualité inférieure (2018) [Extrait]. Non transposable.
 - ffmpeg expose `h264_videotoolbox` et `hevc_videotoolbox` (options `allow_sw`, `realtime`, `prio_speed`, `profile`) [Doc lue : `videotoolboxenc.c`] ; il ne sert qu'aux essais, Premiere exporte le livrable.
 
-**Défaut avant l'essai** : logiciel pour le livrable, matériel permis pour les brouillons. **Essai, une fois** :
-1. Sur 20 à 60 s de plans difficiles : exporter un **master ProRes** (référence), puis deux MP4 au même débit en VBR 1 passe, l'un matériel, l'autre logiciel.
+**Essai éventuel** :
+1. Sur 20 à 60 s de plans difficiles : exporter une **référence ProRes** jetable (supprimée après l'essai ; ce n'est pas un master d'archive), puis deux MP4 au même débit en VBR 1 passe, l'un matériel, l'autre logiciel.
 2. Noter durée d'encodage, taille et débit réel (le matériel peut s'écarter du débit demandé).
-3. Comparer chacun au master : `ffmpeg -i mp4.mp4 -i master.mov -lavfi "[0:v][1:v]ssim" -f null -` (même taille ; plus haut = meilleur ; **aucun seuil sourcé**, le score départage). Exemple [Mesuré] : MP4 à 4 Mbit/s contre master, SSIM 0,994, PSNR 42,9 dB.
-4. Cabezer regarde les deux sur les plans critiques (bouchée, gros plan, dégradés). Consigner dans `decisions.md`. Matériel adopté pour les livrables seulement si le débit réel est conforme (±10 %, départ non sourcé) et si Cabezer ne voit pas de différence.
+3. Comparer chacun à la référence : `ffmpeg -i mp4.mp4 -i reference.mov -lavfi "[0:v][1:v]ssim" -f null -` (même taille ; plus haut = meilleur ; **aucun seuil sourcé**, le score départage). Exemple [Mesuré] : MP4 à 4 Mbit/s contre la référence, SSIM 0,994, PSNR 42,9 dB.
+4. Cabezer regarde les deux sur les plans critiques (bouchée, gros plan, dégradés). Consigner dans `decisions.md`. Le matériel ne passerait au livrable que si le débit réel est conforme (±10 %, départ non sourcé), si Cabezer ne voit pas de différence et s'il en décide ainsi.
 
 ### 8.5 Procédure d'export
 
 1. `.prproj` et `.aep` enregistrés sous une version (§4.1) ; niveau 0 du §6 passé ; espace disque contrôlé.
 2. Séquence active sélectionnée ; Fichier > Exporter > Média (Export > Media, libellé à confirmer). Régler d'après §8.1 à §8.3 ; nommer selon §2.3.
-3. **Exporter** (direct) ou **Envoyer à Media Encoder** (file : on continue à monter, utile pour plusieurs variantes) [À vérifier]. Dossiers de contrôle de Media Encoder : jamais sur `Media/Rushs/` (le fichier source est déplacé), `pilotage-environnement-reprise.md §6`.
+3. **Exporter** (direct) ou **Envoyer à Media Encoder** (file : on continue à monter, utile pour plusieurs variantes) [À vérifier]. Pas de dossiers de contrôle de Media Encoder (réponse du 12/10/2026 ; `pilotage-environnement-reprise.md §6`).
 4. Après l'export : le fichier existe, sa taille est plausible, **les niveaux 1 à 3 du §6 sont rejoués sur ce fichier**. Noter « exporté », puis « contrôlé ».
 
 Par script [Doc lue] : ExtendScript `sequence.exportAsMediaDirect(outputPath, presetPath, workAreaType)` (0 entier, 1 entrée-sortie, 2 zone de travail) ; UXP `EncoderManager.exportSequence(sequence, exportType, outputFile, presetFile, exportFull)` avec `ExportType.IMMEDIATELY`, `QUEUE_TO_AME` ou `QUEUE_TO_APP`. Les deux demandent un préréglage `.epr` : le créer une fois à la main depuis un export validé et le ranger dans `Projet/`.
@@ -331,7 +325,7 @@ Par script [Doc lue] : ExtendScript `sequence.exportAsMediaDirect(outputPath, pr
 ### 8.6 Déclinaisons et dégradés
 
 - TikTok vers Shorts/Reels, ou long vers court (skill §12) : une séquence par variante. **Rejouer le contrôle sur chaque fichier** : une variante réencodée n'est plus « la même ».
-- Dégradés lisses (verre Liquid Glass, fonds colorés) : bandes possibles en 8 bits. Examiner l'image exportée ; si bandes, tester un débit plus haut ou un léger grain dans AE [À vérifier]. **Familles** : T, S.
+- Dégradés lisses (fonds colorés, identité tech à recréer) : bandes possibles en 8 bits. Examiner l'image exportée ; si bandes, tester un débit plus haut ou un léger grain dans AE [À vérifier]. **Familles** : T, S.
 
 ---
 
@@ -341,18 +335,22 @@ Par script [Doc lue] : ExtendScript `sequence.exportAsMediaDirect(outputPath, pr
 
 ### 9.1 Zones sûres 9:16 : une seule boîte
 
-La seule définition est la **boîte de test provisoire** de `formats-courts-verticaux.md §6.2` (1080 × 1920 : 270 px en haut, y ≥ 1250 en bas, x ≥ 948 à droite), qui vaut pour le **texte clé** (étiquettes, prix, pop-ups, note, appel au commentaire). Les sous-titres de D restent à 72–75 % de la hauteur (règle de Cabezer) : exemptés en attendant sa réponse, avec contrôle sur téléphone qu'ils ne sont pas masqués (§14). Dès réception de ses captures d'écran, remplacer les valeurs par les mesures réelles, et les nombres de la commande avec elles. Contrôle d'un export vertical [Mesuré] :
+La seule définition est la **boîte de test provisoire** de `formats-courts-verticaux.md §6.2` (1080 × 1920 : 270 px en haut, y ≥ 1250 en bas, x ≥ 948 à droite), qui vaut pour le **texte clé** (étiquettes, prix, pop-ups, note, appel au commentaire). Les sous-titres des courts (mot à mot) restent à 72–75 % de la hauteur : exemptés de la boîte (réponse du 12/10/2026), avec contrôle sur capture et sur téléphone qu'ils ne sont pas masqués. Dès réception de ses captures d'écran, remplacer les valeurs par les mesures réelles, et les nombres de la commande avec elles. Contrôle d'un export vertical [Mesuré] :
 
 ```bash
 ffmpeg -ss 5 -i export.mp4 -vf "drawbox=x=iw*948/1080:y=0:w=iw*132/1080:h=ih:color=red@0.35:t=fill,drawbox=x=0:y=0:w=iw:h=ih*270/1920:color=red@0.35:t=fill,drawbox=x=0:y=ih*1250/1920:w=iw:h=ih*670/1920:color=red@0.35:t=fill" -frames:v 1 -update 1 zones.png
 ```
 
-Réussite : ni texte clé ni visage dans les zones rouges (sous-titres de D exemptés). Les marges de sécurité TV de Premiere ne conviennent pas au vertical [À vérifier].
+Réussite : ni texte clé ni visage dans les zones rouges (sous-titres des courts exemptés). Les marges de sécurité TV de Premiere ne conviennent pas au vertical [À vérifier].
 
 ### 9.2 Sous-titres livrés
 
-**Voie unique** (skill §9) : sous-titres finaux incrustés = **composition After Effects** à l'identité de la famille (calque de texte éditable, un mot ou un paquet par clé de Texte source, entrée animée), rendue en ProRes 4444 alpha, **plus le SRT livré**. La piste de légendes de Premiere ne sert que de transcription, de calage et de source du SRT ; « Mettre à niveau la légende » n'est plus utilisé. Un repli sans AE, si Cabezer l'accepte, s'appelle « repli non animé » et se consigne dans `decisions.md`.
-- D : langue demandée à chaque tournage à l'étranger ; autres familles tournées à l'étranger : anglais, deux lignes. Limites : §6.4.
+**Voies selon le format** (skill §9, réponses du 12/10/2026) :
+- **Long tourné en France** : SRT français seul, rien d'incrusté. Extrait sonore étranger : toujours sous-titré en français (2 lignes en long).
+- **Long tourné à l'étranger** : anglais incrusté, deux lignes (limites du §6.4), plus le SRT.
+- **Tous les courts** : sous-titres mot à mot incrustés (français : un mot à la fois ; traduction : paquets de 1 à 3 mots, 18 caractères au plus, au rythme de la parole, plancher 0,25 s, vérifié sur téléphone), plus le SRT. Tourné à l'étranger : langue locale ou anglais, à demander à chaque vidéo (défaut : anglais).
+
+Les sous-titres incrustés sont une **composition After Effects** à l'identité de la famille (calque de texte éditable, un mot ou un paquet par clé de Texte source, entrée animée), rendue en ProRes 4444 alpha, **un rendu par passage validé**, plus le SRT livré. La piste de légendes de Premiere ne sert que de transcription, de calage et de source du SRT ; « Upgrade caption » (Mettre à niveau la légende) n'est plus utilisé. **Si After Effects est indisponible : aucun sous-titre de secours dans Premiere** ; décrire le blocage et attendre.
 - Générer le SRT à partir de **la même liste de coupes** que le rendu AE ; si Cabezer retouche la timeline, recouper puis rejouer le §6.4. Menu d'export SRT : à lire à l'écran.
 
 ---
@@ -376,10 +374,10 @@ Publication : non faite. Licences : Suivi/licences.csv.
 
 Seuils et procédures : `conformite-droits-accessibilite.md` (numéros de section du brouillon, à confirmer) ; à faire valider par un juriste. Cette fiche ne répète ni seuil ni texte de loi.
 - **Personnes et données visibles** (§2) : visages, enfants, employés, plaques, tickets, écrans traités ou accord obtenu ; masquages notés au rapport.
-- **Contenu commercial** (§3) : question posée au brief (plat offert ou invité, partenariat, affiliation ?) ; si oui, mention construite dans AE, dès le début, lisible sur téléphone, jamais masquée par un sous-titre.
+- **Contenu commercial** (§3) : question posée au brief (plat offert ou invité, partenariat, affiliation ?) ; si oui, formule et durée de la mention choisies par Cabezer à chaque vidéo (jamais imposées), mention construite dans AE, lisible sur téléphone, jamais masquée par un sous-titre.
 - **Extraits tiers** (§4, P et S) : durée minimale, commentés, source affichée ; un crédit n'est pas une autorisation ; risque Content ID signalé avant publication.
 - **Musique et sons** (§5) : chaque piste dans `licences.csv` avec preuve.
-- **Photosensibilité** (§6), **typographie française** (§7, avec `lint-srt.py`), **intervenants et contraste** (§8) : vérifiés.
+- **Typographie française** (§7, avec `lint-srt.py` et `lint-fr.py`), **intervenants et contraste** (§8) : vérifiés. Pas de test de photosensibilité automatique (réponse du 12/10/2026) : `flash-check.py` seulement à la demande de Cabezer.
 
 ### 10.3 Clôture
 
@@ -392,23 +390,22 @@ Seuils et procédures : `conformite-droits-accessibilite.md` (numéros de sectio
 | Technique | Utiliser quand | Éviter quand | Familles |
 |---|---|---|---|
 | Copie vérifiée (somme de contrôle) | Toute carte copiée | Jamais | D F S P T H |
-| Proxys ProRes Proxy | Multicam, rushs > 4K, machine qui saccade | Rushs légers ; export sans vérifier la bascule | S P F ; D rarement |
+| Proxys ProRes Proxy | Formats longs : toujours ; courts : seulement si la lecture saccade | Export sans vérifier la bascule | Toutes les familles en long ; courts si saccade |
 | Interpréter le métrage | Ralenti d'un rush à cadence élevée | Pour masquer une cadence variable | Toutes |
 | Fichier `_REVIEW` + timecode | Retours par minutage | Livraison finale | S P F longs ; D si demandé |
-| Frame.io | Relecteurs distants | Gratuit seulement ; Cabezer seul | S P F longs |
+| Frame.io (inclus dans l'abonnement Adobe) | Relectures : commentaires au timecode, versions | Le prendre pour une publication | Toutes |
 | `controle-mp4.sh` et détecteurs | Chaque export | Les lire comme verdict | D F S P T H |
 | `xml-coupes.py`, `mesure-plans.py` | Audit de coupes, comparaison de versions | Juger un bon rythme | F S P T ; D coupes |
 | ebur128 + crête vraie, repliement mono | Chaque export | Cible imposée ; normalisation sans accord ; voix mono dupliquée | Toutes |
 | Planche contact, images aux blocs | Verticaux, sous-titres | Juger le rythme | D F ; verticaux |
 | `lint-srt.py` | SRT ou sous-titres éditables | Mot à mot : sans durée minimale ni débit | D F S P T H |
 | `lister-clips.jsx` | Avant export | Sur l'original avec écriture | Toutes |
-| Zones sûres en superposition | Export 9:16 | Horizontal, 4:5, 1:1 (pas de boîte) | D ; verticaux |
+| Zones sûres en superposition | Export 9:16 | Horizontal (pas de boîte) | D ; verticaux |
 | Export YouTube long (§8.2) | Vidéo horizontale longue | 4K sans source 4K | F S P T |
-| Carré, 4:5 recomposés | Fil Instagram, demande | Par défaut ; simple rognage | H ; D F S déclinés |
-| Encodage matériel (après essai) | Brouillons ; gain établi | Livrable sans essai ; VBR 2 passes | Toutes |
+| Encodage matériel | Aperçus et brouillons | Livrable (logiciel) ; VBR 2 passes | Toutes |
 | Relecture à froid | Avant livraison | Urgence explicite | Toutes |
 
-Hors familles (H) : commande, carré, 4:5, multilingue. Même flux ; relire la page de plateforme ; faire valider l'identité (skill §6).
+Hors familles (H) : commande, multilingue. Même flux ; relire la page de plateforme ; faire valider l'identité (skill §6).
 
 ---
 
@@ -424,8 +421,7 @@ Hors familles (H) : commande, carré, 4:5, multilingue. Même flux ; relire la p
 | Lire une détection comme une faute, ou copier un seuil d'une autre fiche | Cas à examiner ; lire la ligne du tableau §6.3, chaque seuil a son usage |
 | Retoucher sans sauvegarder la version de Cabezer | Sa version d'abord, puis comparer les listes de coupes |
 | Citer une valeur de plateforme d'un blog ou d'un tutoriel de 2015 | Page actuelle, valeur et date notées ; libellés lus à l'écran |
-| Rogner un 9:16 pour faire un 4:5 | Recomposer, refaire textes et sous-titres |
-| Passer en encodage matériel « parce que c'est plus rapide » | Essai à débit égal, SSIM, regard de Cabezer |
+| Passer en encodage matériel « parce que c'est plus rapide » | Logiciel pour le livrable, matériel pour les aperçus (réponse du 12/10/2026) |
 | Archiver en MP4 recompressé, oublier polices et `.aep` | Originaux avec poignées, `usedFonts`, Rassembler les fichiers |
 
 ---
@@ -448,8 +444,8 @@ Hors familles (H) : commande, carré, 4:5, multilingue. Même flux ; relire la p
 - [ ] Planche contact, premières et dernières images vues ; zones sûres contrôlées (9:16).
 - [ ] Sous-titres : `lint-srt.py`, jamais trois lignes, masqués pendant les textes animés, vérifiés sur les images ; SRT recoupé.
 - [ ] Mots coupés, « Bref, c'est partiiii », mot de l'appel au commentaire vérifiés (transcription, forme d'onde).
-- [ ] Dégustation : hook et rétention ≥ 8 notés ; aucun SFX orphelin ni audio d'insert.
-- [ ] Chaque variante (YouTube long, 1:1, 4:5, déclinaisons) contrôlée à part.
+- [ ] Courts : hook et rétention notés sur 10 (visées ≥ 8 ; sous 8, au plus deux passes, puis note réelle) ; en dégustation, aucun SFX orphelin ni audio d'insert.
+- [ ] Chaque variante (YouTube long, déclinaisons) contrôlée à part.
 
 **Livraison**
 - [ ] Conformité du §10.2 passée ; rapport dans `Controles/` ; états distingués ; ce qui n'a pas été contrôlé est écrit (écoute, téléphone).
@@ -461,20 +457,19 @@ Hors familles (H) : commande, carré, 4:5, multilingue. Même flux ; relire la p
 
 > **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
 
-Défaut appliqué en attendant la réponse ; une réponse consignée dans `Suivi/decisions.md` ne se redemande pas.
+Réponses de Cabezer (12/10/2026) ; une réponse ne se redemande pas.
 
-| Question | Défaut en attendant |
+| Question | Réponse |
 |---|---|
-| Sous-titres de D à 72–75 % de la hauteur : exemptés de la boîte de zones sûres ? | Exemptés ; test sur téléphone ; pas déplacés seul |
-| Proxys : ProRes Proxy convient-il après essai sur un de tes rushs ? | ProRes Proxy ; H.264 seulement si l'espace manque |
-| Encodage matériel ou logiciel pour les livrables, après l'essai du §8.4 ? | Logiciel pour le livrable ; matériel permis pour les brouillons |
-| Débits de départ YouTube long du §8.2 : OK ? (4K quand les rushs sont en 4K : réponse du 12/10/2026) | Valeurs du §8.2, testées sur 60 s |
-| Audio YouTube long : 320 kbit/s (skill) ou 384 ? | 320 kbit/s |
-| Carré et 4:5 : quelles plateformes, quelle zone sûre ? | Seulement si demandé ; texte clé dans le tiers central |
-| Dossier des scripts : `references/pro/scripts/` du skill ? | Oui, un seul jeu |
-| Frame.io (plan payant possible) ? | Non ; fichier `_REVIEW` |
-| Master ProRes d'archive en fin de projet ? | Non, sauf demande |
-| Repli sans After Effects pour les sous-titres (« repli non animé ») accepté dans certains cas ? | Non : composition AE + SRT |
+| Sous-titres à 72–75 % de la hauteur : exemptés de la boîte de zones sûres ? | Oui, gardés à 72–75 % ; contrôle sur capture et sur téléphone |
+| Proxys | ProRes Proxy toujours en format long ; en court seulement si la lecture saccade |
+| Encodage matériel ou logiciel | Logiciel pour le livrable, matériel pour les aperçus |
+| Débits de départ YouTube long du §8.2 | Retenus, testés sur 60 s ; 4K quand les rushs sont en 4K |
+| Audio | 384 kbit/s pour YouTube long, 320 kbit/s pour les courts |
+| Carré et 4:5 | Jamais |
+| Frame.io | Oui, inclus dans son abonnement Adobe : utilisé pour les relectures |
+| Master ProRes d'archive en fin de projet | Non, sauf demande |
+| Repli sans After Effects pour les sous-titres | Non : décrire le blocage et attendre |
 
 ---
 
@@ -506,7 +501,6 @@ Défaut appliqué en attendant la réponse ; une réponse consignée dans `Suivi
 - Adobe Help, « Hardware-accelerated encoding and decoding in Premiere » (https://helpx.adobe.com/premiere/desktop/get-started/technical-requirements/hardware-accelerated-decoding-and-encoding.html) : H.264/H.265 sur Apple Silicon.
 - Adobe Community : « No VBR dual pass for H.265 hardware encoding, stay with H.264 ? » (https://community.adobe.com/t5/premiere-pro-discussions/no-vbr-dual-pass-for-h-265-hardware-encoding-stay-with-h-264/td-p/11352036), « No Hardware Encoding on M1 Pro » (https://community.adobe.com/t5/premiere-pro-discussions/no-hardware-encoding-on-m1-pro/td-p/12485400), « Premiere Pro 25.2: Hardware encoding greyed out / unavailable » (https://community.adobe.com/questions-729/premiere-pro-25-2-hardware-encoding-greyed-out-unavailable-1418072) : VBR 1 passe, option grisée.
 - Puget Systems, « Premiere Pro 14.2 H.264 and H.265 Hardware Encoding Performance » (https://www.pugetsystems.com/labs/articles/premiere-pro-14-2-h-264-and-h-265-hardware-encoding-performance-1778/) et « H.264 Hardware Acceleration in Adobe Media Encoder - Good or Bad? » (https://www.pugetsystems.com/labs/articles/video-h-264-hardware-acceleration-in-adobe-media-encoder-good-or-bad-1211/) : autres machines que le Mac.
-- Guides tiers, dimensions seulement : Instagram 4:5 = 1080 × 1350 (https://influencermarketinghub.com/instagram-video-size/, https://posteverywhere.ai/blog/instagram-aspect-ratios) ; Shorts carrés (https://riverside.com/blog/youtube-shorts-dimensions).
 
 **Essais du 12/10/2026** (ffmpeg et ffprobe 6.1.1, fichiers générés) : les quatre scripts hors Premiere, `drawbox`, `ssim`, `psnr`, drop-frame, repliement mono, sommes de contrôle, niveaux H.264. `lister-clips.jsx` jamais exécuté dans Premiere.
 
