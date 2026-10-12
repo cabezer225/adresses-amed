@@ -65,3 +65,5 @@
 Voir le tableau en tête de `decisions-en-attente.md`. En particulier : D6 (respirations) est étendu aux films/séries et au verdict du food long ; D9 (hook) : au plus deux passes de retravail ; D10 (ambiance en D) : proposée au premier usage ; D11 (foley) : jamais ; sous-titres longs en France : SRT seul ; un rendu de sous-titres de dégustation par passage validé ; YouTube long en 4K quand les rushs sont en 4K ; composition musicale en S, F et T ; identité Story v15 et générique supprimés ; Tesseract et Higgsfield retirés.
 
 Série 2 (12/10/2026) : formats long et court distingués (SKILL §2), famille Lifestyle ajoutée ; tous les courts : hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, appel au commentaire, notation sur 10, identité propre au court.
+
+Série 3 (12/10/2026) : 72 réponses techniques (tableau de `decisions-en-attente.md`). En particulier, B5 change : **l'interface de Premiere et d'After Effects passe en anglais** ; les libellés anglais (entre parenthèses dans les fiches) font foi, les noms français ne sont qu'un repère.

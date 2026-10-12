@@ -23,7 +23,7 @@ La version de ton skill installée sur claude.ai ne contient **que SKILL.md**. C
   - `after-effects/` : `premiere-after-effects.md`, `tech-liquid-glass.md`, `tutoriels-2026-09-16.md`.
 - **5 fichiers `assets/sfx-cabezer/`** : les 4 SFX de base et `manifest.json`.
 
-Depuis tes réponses, `premiere-tesseract.md` et `montage-higgsfield.md` ne servent plus (outils retirés) : il en reste 16 à rapatrier, plus les 5 SFX.
+Depuis tes réponses, `premiere-tesseract.md`, `montage-higgsfield.md` (outils retirés) et `after-effects/tech-liquid-glass.md` (méthode abandonnée) ne servent plus : il en reste 15 à rapatrier, plus les 5 SFX.
 
 **Conséquence :** quand Claude lit ton skill depuis claude.ai, il ne peut ouvrir ni PRISME, ni Liquid Glass, ni la chaîne couleur Pocket 3, ni la méthode Micode/Amistory. Il devine ou il saute.
 
@@ -138,6 +138,24 @@ Le skill sépare maintenant **le format d'abord, la famille ensuite** (SKILL §2
 
 ---
 
+## 4 ter. Tes 72 réponses techniques (série 3)
+
+Toutes appliquées dans le skill ; le détail complet, question par question, est dans `references/decisions-en-attente.md`. Les changements les plus importants pour un montage :
+
+| Domaine | Ce qui change |
+|---|---|
+| Pilotage du Mac | Premiere et After Effects passent en **anglais** ; scripts AE et pilotage par le Terminal autorisés ; enregistrement automatique 5 min / 20 versions ; aucune mise à jour en cours de projet sans ton accord |
+| Courts | Plan stock libre de droits sans redemander ; tout SFX de la banque Pixabay permis ; arrêt sur image permis ; coupe à l'extinction de la voix après l'appel au commentaire |
+| Long | Coupe franche par défaut, fondus rares ; teaser proposé, jamais imposé ; chapitres à l'écran en Story seulement ; prix animé comme en dégustation |
+| Image | Pas de masques assistés par IA, pas de flux optique, pas de retouche de vraie photo, pas de flou simulé, pas de MOGRT ; plan vertical en 16:9 sur fond flou du même plan |
+| Couleur | Gamma 2.4 + plan test sur téléphone ; Pocket 3 en D-Log M, conversion unique puis réglages, Exterior réservée au Pocket 3 ; tout en SDR |
+| Audio | Nappe Story 24 dB confirmée ; WhisperX à installer ; −14 LUFS ±1 sans écraser la voix ; écoute sur l'aperçu puis sur le final |
+| Export et organisation | AAC 384 kbit/s pour YouTube ; jamais de carré ni de 4:5 ; proxys toujours en long ; Frame.io pour les relectures ; pas de master d'archive |
+| Conformité | Pas de test de photosensibilité ; mention commerciale (formule et durée) à te demander à chaque fois |
+| Identités | Liquid Glass n'existe plus : identité tech à recréer, comme les identités de court et la charte food long |
+
+---
+
 ## 5. À retirer ou déplacer (fait dans la v3)
 
 | Élément de la v2 | Pourquoi | Où c'est maintenant |
@@ -185,6 +203,6 @@ Ce que j'ai **refusé** parmi les suggestions des agents :
 2. Fais-en une copie de sauvegarde.
 3. Remplace `SKILL.md` par celui de ce dépôt.
 4. Copie dedans le dossier `references/pro/` (13 fiches et 10 scripts) et les fichiers `references/historique.md`, `projets-cabezer.md`, `decisions-en-attente.md` et `decisions-harmonisation.md`.
-5. Vérifie que les 18 fiches et les 5 SFX de la section 1 sont bien présents, puis compresse le dossier et téléverse-le là où tu gères ce skill sur claude.ai (le dossier entier, pas seulement SKILL.md).
+5. Vérifie que les 15 fiches encore utiles et les 5 SFX de la section 1 sont bien présents, puis compresse le dossier et téléverse-le là où tu gères ce skill sur claude.ai (le dossier entier, pas seulement SKILL.md).
 
-L'archive `cabezer-premiere-shorts-v3.zip` de ce dépôt contient déjà tout ce que j'ai produit. Il ne lui manque que tes 23 fichiers d'origine.
+L'archive `cabezer-premiere-shorts-v3.zip` de ce dépôt contient déjà tout ce que j'ai produit. Il ne lui manque que tes 20 fichiers d'origine encore utiles (15 fiches et 5 SFX).

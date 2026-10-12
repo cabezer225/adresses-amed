@@ -6,13 +6,13 @@ Nouvelle version du skill `cabezer-premiere-shorts` (Premiere Pro + After Effect
 
 | Élément | Rôle |
 |---|---|
-| [`ANALYSE-CONTRADICTIONS.md`](ANALYSE-CONTRADICTIONS.md) | **À lire en premier.** Ce qu'il faut garder, ce qui a été retiré ou reformulé, les 23 contradictions tranchées et tes réponses du 12/10/2026, appliquées |
+| [`ANALYSE-CONTRADICTIONS.md`](ANALYSE-CONTRADICTIONS.md) | **À lire en premier.** Ce qu'il faut garder, ce qui a été retiré ou reformulé, les 23 contradictions tranchées et toutes tes réponses du 12/10/2026 (choix éditoriaux, formats, 72 questions techniques), appliquées |
 | [`cabezer-premiere-shorts/SKILL.md`](cabezer-premiere-shorts/SKILL.md) | Le skill v3, organisé par **format (long / court) puis par famille** (food, Story, tech, films/séries, Lifestyle) : toutes tes règles, sans contradiction, avec la définition de l'animation, le mode autonome, les outils IA classés, le statut des méthodes et l'index des fiches pro |
 | [`cabezer-premiere-shorts/references/pro/`](cabezer-premiere-shorts/references/pro/) | 13 fiches de monteur professionnel (environ 7 000 à 9 000 mots chacune), harmonisées avec tes règles |
 | [`cabezer-premiere-shorts/references/pro/scripts/`](cabezer-premiere-shorts/references/pro/scripts/) | 10 scripts de contrôle en lecture seule : MP4, coupes du XML, sous-titres, typographie, photosensibilité, contraste, environnement du Mac, reprise après plantage |
 | `cabezer-premiere-shorts/references/historique.md` | Historique des consignes, trié dans l'ordre et annoté (« remplacée le… ») |
 | `cabezer-premiere-shorts/references/projets-cabezer.md` | Détails des projets passés (Milan, Story fast-food, générique, musique v10) sortis des règles générales |
-| `cabezer-premiere-shorts/references/decisions-en-attente.md` | Registre unique des questions ouvertes, avec le défaut appliqué en attendant |
+| `cabezer-premiere-shorts/references/decisions-en-attente.md` | Toutes tes réponses du 12/10/2026, question par question, et ce qui reste à faire |
 | `cabezer-premiere-shorts/references/decisions-harmonisation.md` | Les arbitrages communs auxquels les fiches renvoient |
 | `v2-original/SKILL.md` | Ta version précédente, pour comparer |
 
@@ -51,5 +51,5 @@ Nouvelle version du skill `cabezer-premiere-shorts` (Premiere Pro + After Effect
 1. Sur ton Mac, ouvre ton dossier actuel du skill `cabezer-premiere-shorts`, celui qui contient tes `references/` et `assets/`, et fais-en une copie de sauvegarde.
 2. Remplace `SKILL.md` par celui d'ici.
 3. Ajoute `references/pro/` (fiches et scripts) et les 4 fichiers `references/historique.md`, `projets-cabezer.md`, `decisions-en-attente.md` et `decisions-harmonisation.md`.
-4. Vérifie que tes 18 fiches d'origine et tes 5 SFX y sont bien. **Ils manquent dans la version installée sur claude.ai** : voir la section 1 de l'analyse.
+4. Vérifie que tes 15 fiches d'origine encore utiles et tes 5 SFX y sont bien (Tesseract, Higgsfield et Liquid Glass ne servent plus). **Ils manquent dans la version installée sur claude.ai** : voir la section 1 de l'analyse.
 5. Compresse le dossier entier et téléverse-le là où tu gères ce skill sur claude.ai.
