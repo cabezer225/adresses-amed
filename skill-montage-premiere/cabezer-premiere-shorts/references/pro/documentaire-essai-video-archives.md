@@ -165,9 +165,11 @@ Procédure (Raymond [T, wTr6df0H5Po 0:38–3:39], complétée par le skill §8).
 
 **Toute photo qui recevra un mouvement (§6.4) passe en « Définir à la taille du cadre »** ; lire Échelle dans les Contrôles d'effets (Effect Controls) : plus de 100 % est normal.
 
-### 6.3 Remplir le cadre sans barres noires
+### 6.3 Remplir le cadre : plan vertical, photo et archive
 
-Traitements de plan (Premiere), d'après Raymond [T, 5:12–7:15] : **fond flou** (copie du clip sur la piste du dessus, copie du bas à l'échelle de remplissage avec **Flou gaussien**, Effets vidéo > Flou et netteté ; libellés et geste à confirmer), **fond texture** (bois, pierre) ou **recadrage**. Fond flou : H, F, T, photo isolée ; éviter pour un portrait ou un document à lire. **Story :** fond flou en attendant la nouvelle identité (la grammaire v15, papier rose et tirages 3D, a été supprimée le 12/10/2026). **P :** identité validée ; fond flou avec l'accord de Cabezer.
+Réponses de Cabezer du 12/10/2026 : le **fond flou est réservé au plan vertical posé dans une vidéo 16:9** ; une **photo ou une archive 4:3** reçoit des **bandes sur le fond de l'identité** de la famille, jamais étirée ni floutée en fond.
+- **Plan vertical en 16:9** (traitement de plan, Premiere), d'après Raymond [T, 5:12–7:15] : le plan net au centre, une copie du même plan en fond (copie du clip sur la piste du dessus, copie du bas à l'échelle de remplissage avec **Flou gaussien (Gaussian Blur)**, Effets vidéo > Flou et netteté ; geste à confirmer). Éviter pour un document à lire. Familles : S, P, F, T, H.
+- **Photo ou archive** : bandes sur le fond de l'identité. **P :** fond de PRISME v1. **Story :** l'identité (v15, papier rose et tirages 3D) a été supprimée le 12/10/2026 et reste à refaire : en attendant, fond uni neutre (noir), signalé à Cabezer [Choix], sans fond flou.
 
 ### 6.4 Mouvement sur une image fixe (« Ken Burns », photomation)
 
@@ -190,11 +192,11 @@ Traitements de plan (Premiere), d'après Raymond [T, 5:12–7:15] : **fond flou*
 
 ### 6.5 Collage, passé/présent, parallaxe
 
-**Collage et objets posés (S, P, F, H ; T rare ; D non).** Raymond le monte avec l'effet 3D de base de Premiere [T, 16:30–19:35] ; c'est une animation graphique : AE. Photos à leur résolution native dans une composition à la taille de la séquence, calques 3D, caméra parentée à un nul `CAM_PILOTE` (`after-effects-motion-design.md` §10.1), photos désalignées (rotation de quelques degrés, chevauchements, petits écarts de Z), style de calque **Ombre portée** [Choix, à l'œil : opacité 40–50 %, distance 8–15 px, flou 20–40 px], échelle augmentée si des bords noirs apparaissent (Raymond [T, 19:05]). **Quand :** relation entre plusieurs documents d'une période. **Éviter :** sources sans lien (skill : un univers suivi).
+**Collage et objets posés (S, P, F, H ; T rare ; D non).** Raymond le monte avec l'effet 3D de base de Premiere [T, 16:30–19:35] ; c'est une animation graphique : AE. Photos à leur résolution native dans une composition à la taille de la séquence, calques 3D, caméra parentée à un nul `CAM_PILOTE` (`after-effects-motion-design.md` §11), photos désalignées (rotation de quelques degrés, chevauchements, petits écarts de Z), style de calque **Ombre portée** [Choix, à l'œil : opacité 40–50 %, distance 8–15 px, flou 20–40 px], échelle augmentée si des bords noirs apparaissent (Raymond [T, 19:05]). **Quand :** relation entre plusieurs documents d'une période. **Éviter :** sources sans lien (skill : un univers suivi).
 
 **Passé et présent (S, F, H ; pas P, T, D).** Raymond superpose une photo ancienne à une vidéo actuelle du même lieu [T, 20:06–21:09]. Dans Premiere : figer un plan actuel, poser la photo à 50 % d'opacité pour **caler** Échelle et Position, remettre à 100 %, puis fondu. Un masque animé est une animation graphique : AE. **Condition :** lieu réel et reconnaissable, correspondance non fabriquée. **Réussite :** une arête de bâtiment reste immobile pendant le fondu.
 
-**Parallaxe 2.5D (S, P).** AE seulement (`after-effects-motion-design.md` §10.2 ; Raymond renvoie à une vidéo non lue [T, 21:41]). Séparer une photo en calques suppose de reconstituer des parties cachées : jamais par remplissage génératif ni IA ; limiter l'amplitude aux plans réellement disponibles.
+**Parallaxe 2.5D (S, P) : sur demande seulement** (réponse du 12/10/2026). AE seulement (`after-effects-motion-design.md` §11 ; Raymond renvoie à une vidéo non lue [T, 21:41]). Séparer une photo en calques suppose de reconstituer des parties cachées : jamais par remplissage génératif ni IA, et jamais de retouche du contenu d'une vraie photo ; limiter l'amplitude aux plans réellement disponibles.
 
 ### 6.6 Archives vidéo : contrôler avant de monter
 
@@ -204,8 +206,8 @@ ffmpeg -hide_banner -i archive.mov -vf idet -frames:v 200 -an -f null - 2>&1 | g
 ```
 [Testé ici sur un fichier synthétique entrelacé TFF : la seconde commande renvoie le décompte TFF/BFF/Progressive ; garder la **dernière** ligne, ffmpeg 6.1.1 en a affiché deux.]
 - **TFF ou BFF élevé, Progressive proche de 0 :** entrelacé. Régler l'ordre des trames par Clip > Modifier > Interpréter le métrage (Interpret Footage) [K, libellés à confirmer] avant tout traitement.
-- **4:3 dans une séquence 16:9 :** bandes sur le fond de l'identité (papier en Story), jamais d'étirement (§16).
-- **Cadence différente :** la noter ; conformer selon `premiere-pro-avance.md` §3.4. Ni mélange d'images ni flux optique par défaut : ce sont des images calculées (§16).
+- **4:3 dans une séquence 16:9 :** bandes sur le fond de l'identité (en Story, fond uni neutre en attendant la nouvelle identité, §6.3), jamais d'étirement ni de fond flou.
+- **Cadence différente :** la noter ; conformer selon `premiere-pro-avance.md` §3.4. **Flux optique interdit** (réponse du 12/10/2026) : un ralenti propre ne se fait que sur une archive 50/60p, sinon mélange de trames.
 - **Aucune restauration générative par défaut :** colorisation, montée en résolution IA, interpolation IA, Generative Extend et remplissage d'après le contenu reconstruisent des pixels : seulement sur demande explicite de Cabezer (skill §16), consignée dans `Suivi/decisions.md`, avec mention à l'écran ou en description.
 - **Couleur :** archives traitées à part (skill §10), correction primaire minimale, mêmes réglages par lot, ni LUT de caméra ni grain ajouté. **Droit :** une archive de télévision ou d'agence est un extrait tiers (§10.4, §12).
 
@@ -247,7 +249,7 @@ Harris emploie GeoLayers (styles Mapbox [T, 18:33]) et parle de « 200 » sans d
 
 ### 8.1 Perspective, ambiance, soustraction
 
-Nerdwriter sur *Munich* [T, kavxsXhzD48] : une ambiance continue fait le lit, quelques bruits-clés racontent, la tension monte par soustraction. **Familles :** S, P, F, T, H ; D : aucune ambiance continue ni musique par défaut.
+Nerdwriter sur *Munich* [T, kavxsXhzD48] : une ambiance continue fait le lit, quelques bruits-clés racontent, la tension monte par soustraction. **Familles :** S, P, F, T, H ; D : aucune musique ; ambiance du lieu seulement proposée au premier usage, sans accord aucune ; jamais de foley d'aliment.
 
 **Pour une archive ou une scène de Story :**
 1. **Garder l'ambiance d'origine** quand elle existe ; la couper complètement sonne faux.
@@ -275,11 +277,11 @@ Mesures : `audio-dialogue-sound-design-mixage.md` §10 et la bibliothèque uniqu
 ## 9. Rythme, coupe et honnêteté du raccord
 
 Principes de rythme : `fondamentaux-montage-narratif.md` §9. Compléments propres au documentaire :
-- **Laisser le temps de ressentir.** Après une révélation, tenir le visage ou l'objet plus longtemps qu'en dégustation (valeur de départ : retomber en deux fois le temps de montée, S et P). Respirations conservées : exception de Story (skill §6) ; l'étendre à P est une question ouverte (§16).
+- **Laisser le temps de ressentir.** Après une révélation, tenir le visage ou l'objet plus longtemps qu'en dégustation (valeur de départ : retomber en deux fois le temps de montée, S et P). Respirations conservées : en Story (skill §6), en films/séries aux moments d'émotion (P) et au verdict du food long, comme au Lifestyle posé (réponse du 12/10/2026 ; skill §2.2).
 - **Coupe invisible, visible, dérangeante.** Invisible pour l'émotion [T, EFAP 6:15] ; visible, avec mouvement qui désigne, pour diriger le regard ; dérangeante seulement pour une émotion agitée [T, EFAP 7:16].
 - **Couper sur l'impulsion du mouvement.** Pearlman : couper quand l'impulsion du mouvement suivant commence ; l'œil tarde à voir la coupe [T, RqI4kD8RQng 22:42–23:45]. Vérifier image par image. Source : montage de danse ; en documentaire, pour les plans de preuve et d'ambiance, pas pour les paroles.
 - **Interdit sur des faits réels : le faux raccord de mouvement.** Pearlman enchaîne les gestes de deux personnes pour simuler un seul mouvement et ne le garde pas [T, 24:17–24:49]. **Règle [Choix] :** aucun raccord qui fait croire à la continuité d'un geste, d'un lieu ou d'un moment entre deux sources, sauf si la voix annonce le rapprochement (cas P : comparer deux plans de films).
-- **Masquer un saut dans une interview :** coupe franche assumée → plan de coupe qui apporte quelque chose → second angle synchronisé → animation seulement si elle était prévue ; pas de Morph Cut par défaut (`premiere-pro-avance.md` §5.4).
+- **Masquer un saut dans une interview :** coupe franche assumée → plan de coupe qui apporte quelque chose → second angle synchronisé → animation seulement si elle était prévue ; Morph Cut seulement sur demande (`premiere-pro-avance.md` §5.4).
 
 **Réussite :** chaque plan de plus de 8 s a une raison notée : émotion, preuve à lire, regard.
 
@@ -303,14 +305,14 @@ Nerdwriter refait une scène avec sa propre bande-son pour montrer ce que l'orig
 
 ### 10.4 Citer un extrait de film ou d'émission (extraits tiers, P et S)
 
-Règle d’harmonisation : **durée minimale nécessaire, extrait commenté, source affichée ; un crédit n'est pas une autorisation ; risque Content ID signalé avant publication** (cadre juridique : §12 et `conformite-droits-accessibilite.md`).
+Règle d’harmonisation et réponses de Cabezer du 12/10/2026 : **durée utile (minimale nécessaire), extrait commenté, source affichée au moins 3 s ; un crédit n'est pas une autorisation ; risque Content ID signalé avant publication** (cadre juridique : §12 et `conformite-droits-accessibilite.md`).
 1. **Fonction :** l'extrait est une preuve, pas un remplissage. Écrire la phrase de thèse qu'il prouve ; sans commentaire proche, le retirer.
 2. **Quantité :** aucun seuil de secondes dans le texte de loi [X]. Règle de travail [Choix] : le plan nécessaire à la démonstration ; couper dès que la preuve est faite ; pas de scène entière sans la voix de Cabezer par-dessus.
-3. **Source à l'écran :** titre, auteur ou réalisateur, source, pendant l'extrait (§11.4 ; skill §8).
+3. **Source à l'écran :** titre, auteur ou réalisateur, source, pendant l'extrait, **affichée 3 s au moins** (§11.4 ; skill §8) ; si l'extrait est plus court, prolonger la source sur le plan suivant.
 4. **Registre :** une ligne par extrait dans `Suivi/licences.csv`, statut « citation (à valider) », minute dans la source et durée utilisée.
 5. **Content ID :** avant publication, dire à Cabezer quels extraits peuvent déclencher une revendication automatique, sans promettre l'absence de revendication (skill §11) ; un système automatique ne reconnaît pas les exceptions au droit d'auteur [X : page d'aide YouTube sur le fair use, version italienne].
-6. **INA :** service payant, devis ; rien sans l'accord de Cabezer (§12). **PRISME :** affiches et extraits officiels explorés en caméra 3D dans AE, aucun visuel généré (skill §6).
-7. **Valeur ajoutée :** l'apport d'un essai est le commentaire (Bolanos [T, 17:49]). **Extrait sonore étranger :** sous-titres français relus (§16).
+6. **INA :** service payant, devis ; rien sans l'accord de Cabezer (§12). **PRISME :** affiches et extraits officiels explorés en caméra 3D dans AE (§5.2), sans déformation de l'image, aucun visuel généré (skill §6).
+7. **Valeur ajoutée :** l'apport d'un essai est le commentaire (Bolanos [T, 17:49]). **Extrait sonore étranger :** toujours sous-titré en français (réponse du 12/10/2026 ; skill §9) : mot à mot en court, 2 lignes en long, relus.
 
 **Familles :** P et S ; F, T, H selon le brief ; D : aucun extrait tiers.
 
@@ -320,13 +322,13 @@ Règle d’harmonisation : **durée minimale nécessaire, extrait commenté, sou
 
 ### 11.1 Chapitres, direction artistique, générique
 
-**Chapitres de Story : skill §6, Story, point 12** (silence, carton seul d'environ 3 s, signature musicale, déchirure à la reprise de la voix) ; construction : `retention-youtube-long.md` §8.1. Le moment « soul » sans preuve de Perell avant les titres de chapitre [T, 44:46–45:17] n'est pas appliqué : il ajoute un plan que la règle ne prévoit pas (§16). Générique : aucune source lue ; « Amed Story » a été supprimé le 12/10/2026, un nouveau générique sera à créer et faire valider.
+**Chapitres de Story : skill §6, Story, point 12** (silence, carton seul d'environ 3 s, signature musicale, déchirure à la reprise de la voix) ; construction : `retention-youtube-long.md` §8.1. Le moment « soul » sans preuve de Perell avant les titres de chapitre [T, 44:46–45:17] n'est pas appliqué : il ajoute un plan que la règle ne prévoit pas. Générique : aucune source lue ; « Amed Story » a été supprimé le 12/10/2026, un nouveau générique sera à créer et faire valider.
 
 **Direction artistique par vidéo.** Perell tient une page « ingrédients artistiques » par vidéo et refait la direction artistique à chaque fois [T, 37:38–42:12]. **Le skill l'interdit pour l'identité** (§6). Reprise compatible [Choix] : une fiche de vidéo qui liste les *objets et matières* du sujet (documents, symboles, textures de papier) dans l'identité validée, sans toucher à la palette, aux polices ni à la grammaire.
 
 ### 11.3 Identifier une personne qui parle (usage narratif)
 
-L'identification (nom, fonction) est une information que la voix ne donne pas : ce n'est pas un « texte qui double chaque nom » (skill §6, Story, point 7). Règle à valider avec Cabezer sur un extrait (§16), appliquée en attendant :
+L'identification (nom, fonction) est une information que la voix ne donne pas : ce n'est pas un « texte qui double chaque nom » (skill §6, Story, point 7). Règle de Cabezer (12/10/2026) : intervenant identifié à sa première apparition, hors courts food. Application :
 1. **À la première apparition seulement**, pendant que la personne parle ; jamais répétée à chaque retour.
 2. **Une ligne courte** : « Nom, fonction » (« Prénom Nom » si la personne est connue du public) ; au besoin deux lignes, nom en haut, fonction en bas.
 3. **Construite dans AE**, identité de la famille, entrée animée, texte éditable (jamais un gabarit Premiere).
@@ -369,9 +371,9 @@ Tout élément externe (image, vidéo, son, musique, police, extrait) va dans **
 ## 13. Familles en bref
 
 Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne ses familles dans sa section.
-- **S (Story) :** partition à une ligne par idée (§2), promesse dans l'intro face caméra (§3), transcription pour repérer seulement (§4.2), désignation et collage en AE (§5.1, §6.5), mouvement sur photo pour désigner ou présenter (§6.4), nappe basse et silences (§8.1), chapitres du skill (§11.1) ; ni fond flou ni générique de fin.
-- **P (films/séries) :** extraits commentés et A/B de version (§10), mouvement sur photo pour désigner (§6.4), fond flou avec accord, pas de passé/présent.
-- **F, T, H :** question et promesse (§2, §3), désignation (§5.1), carte (§7.1), fond flou (§6.3) ; mouvement sur photo rare.
+- **S (Story) :** partition à une ligne par idée (§2), promesse dans l'intro face caméra (§3), transcription pour repérer seulement (§4.2), désignation et collage en AE (§5.1, §6.5), mouvement sur photo pour désigner ou présenter (§6.4), nappe basse et silences (§8.1), chapitres du skill (§11.1) ; bandes sur fond uni neutre pour photos et archives en attendant l'identité (§6.3), pas de générique de fin.
+- **P (films/séries) :** extraits commentés et A/B de version (§10), mouvement sur photo pour désigner (§6.4), photos et archives en bandes sur le fond PRISME (§6.3), pas de passé/présent.
+- **F, T, H :** question et promesse (§2, §3), désignation (§5.1), carte (§7.1), plan vertical sur fond flou de lui-même, photos et archives en bandes (§6.3) ; mouvement sur photo rare.
 - **D :** aucune technique de cette fiche (coupes franches, pas d'archives ni d'extrait tiers).
 - **Jamais sans accord de Cabezer :** plugin de carte payant (§7.2), INA ou tout service payant (§12.2). **Jamais :** faux raccord de mouvement (§9).
 
@@ -385,7 +387,7 @@ Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne s
 | Photo glissée sur « Nouvelle séquence » | Séquence du projet, mise à l'échelle ensuite (§6.2) |
 | Photo importée en « Mettre à l'échelle » puis zoomée : image granuleuse | « Définir à la taille du cadre » pour toute photo qui bougera (§6.2) |
 | Ken Burns sur toutes les photos, ou mouvement sur un document à lire | Mouvement seulement pour désigner ou présenter, avec pauses ; document à lire exploré dans AE (§6.4, §5.2) |
-| Texte qui passe trop vite, ou formule appliquée au mot à mot de dégustation | Formule du §5.3 dans son périmètre, vérifiée sur le MP4 son coupé |
+| Texte qui passe trop vite, ou formule appliquée au mot à mot des formats courts | Formule du §5.3 dans son périmètre, vérifiée sur le MP4 son coupé |
 | Promesse repoussée après 30 s, ou répondue tout de suite | Confirmer avant 30 s, rappeler en question, répondre à la fin (§3) |
 | Archive colorisée ou « améliorée » par IA, ou musique sur une archive qui parle | Aucun traitement génératif sans demande explicite (§6.6) ; musique basse ou absente (§8.1) |
 | −6 à −8 dB d'un tutoriel pris pour le niveau de la musique | C'est un creux d'EQ ; niveau de nappe : audio §5.5 (§8.2) |
@@ -406,8 +408,8 @@ Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne s
 - [ ] Archives lues (`ffprobe`, `idet`), sans étirement ni peigne ; aucune image générée ni restaurée par IA sans demande explicite consignée.
 - [ ] Données visibles et personnes identifiables traitées selon `conformite-droits-accessibilite.md`.
 - [ ] Ambiance d'origine sous les archives ; musique basse ou absente sous une source qui parle ; voix mesurée ; écoute faite par Cabezer ou signalée comme non faite.
-- [ ] Chaque extrait : commentaire proche, mention (titre, auteur, source), ligne `citation (à valider)`, risque Content ID signalé.
-- [ ] Chaque personne qui parle longuement est identifiée une fois (ou la décision contraire est consignée), orthographe vérifiée.
+- [ ] Chaque extrait : durée utile, commentaire proche, mention (titre, auteur, source) affichée 3 s au moins, ligne `citation (à valider)`, risque Content ID signalé.
+- [ ] Chaque personne qui parle longuement est identifiée une fois, à sa première apparition (hors courts food), orthographe vérifiée.
 - [ ] `Suivi/licences.csv` à jour, aucun « libre » sans licence lue ; services payants signalés avant achat.
 - [ ] Crédits à l'écran et en description ; pas de générique de fin non demandé ; fin Story : regard, fondu au noir, accord qui s'éteint.
 
@@ -417,18 +419,18 @@ Recommandations de départ ; le brief de Cabezer prime. Chaque technique donne s
 
 > **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
 
-**Décisions** (poser la question la première fois, noter la réponse dans `Suivi/decisions.md` ; en attendant, appliquer le défaut).
+**Réponses appliquées dans la fiche** (noter dans `Suivi/decisions.md` les cas particuliers rencontrés).
 
-| # | Question | Défaut en attendant |
+| # | Sujet | Réponse |
 |---|---|---|
-| 1 | Photo ou archive isolée en Story : fond noir, fond flou ou traitement de la future identité ? (v15 supprimée le 12/10/2026) | Fond flou du même plan, en attendant la nouvelle identité Story |
-| 2 | Archive en 4:3 : bandes, fond ou recadrage ? | Bandes sur le fond de l'identité ; jamais d'étirement |
-| 3 | Extrait sonore étranger dans une vidéo française : sous-titres en français ? (le skill règle les vidéos tournées à l'étranger par Cabezer, pas les archives insérées) | Sous-titres français relus, 2 lignes, 24 caractères par ligne en 9:16, 42 en 16:9 |
-| 4 | Flux optique, changement de cadence calculé ou interpolation sur archive | Non utilisés (question commune avec `premiere-pro-avance.md`) |
-| 5 | INA ou tout service de licences payant | Aucun achat ; signaler nom et prix avant commande |
-| 6 | Moment visuel sans preuve avant un chapitre (« soul moment » de Perell) | Non appliqué ; règle du skill |
-| 7 | Identification d'une personne à sa première apparition (§11.3) | Appliquée quand la voix ne donne pas nom et fonction ; à valider sur un extrait |
-| 8 | Respirations conservées aux moments d'émotion de P | Règle du skill inchangée (question commune avec `fondamentaux-montage-narratif.md`) |
+| 1 | Photo ou archive isolée en Story | Bandes sur le fond de l'identité ; l'identité Story (v15 supprimée le 12/10/2026) est à refaire, fond uni neutre signalé en attendant ; fond flou réservé au plan vertical posé en 16:9 (§6.3) |
+| 2 | Archive en 4:3 | Bandes sur le fond de l'identité ; jamais d'étirement (§6.6) |
+| 3 | Extrait sonore étranger dans une vidéo française | Toujours sous-titré en français : mot à mot en court, 2 lignes en long (skill §9) |
+| 4 | Flux optique, changement de cadence calculé ou interpolation sur archive | Flux optique interdit ; ralenti propre sur 50/60p, sinon mélange de trames (§6.6) |
+| 5 | INA ou tout service de licences payant | Aucun achat ; signaler nom et prix avant commande (§12.2) |
+| 6 | Moment visuel sans preuve avant un chapitre (« soul moment » de Perell) | Non appliqué ; règle du skill (§11.1) |
+| 7 | Identification d'une personne | À la première apparition, hors courts food (§11.3) |
+| 8 | Respirations conservées aux moments d'émotion de P | Gardées aussi en films/séries et au verdict du food long (§9) |
 
 **À vérifier sur sa version** (à consigner dans `Suivi/environnement-verifie.md`) : filtre par locuteur et points d'entrée automatiques (`premiere-pro-avance.md` §5) ; « Mise à l'échelle par défaut des médias », « Interpréter le métrage », « Interpolation temporelle », « Flou gaussien » ; AE : « Rastérisation continue », « Créer des formes à partir d'un calque vectoriel », « Tracés rognés », import d'un .svg ; Illustrator installé ; raccourcis (Y, S, P, T) ; expressions du §7.1 sur une copie.
 

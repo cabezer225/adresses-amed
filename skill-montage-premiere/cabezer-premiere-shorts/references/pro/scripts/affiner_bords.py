@@ -55,7 +55,7 @@ def entree(db, t0, t1, seuil, borne):
 
 def main(audio, js, out):
     db=charger(audio)
-    W=[dict(w, mot=w["word"].strip()) for s in json.load(open(js, encoding="utf-8"))["segments"] for w in s.get("words", [])]
+    W=[dict(w, mot=w["word"].strip()) for s in json.load(open(js, encoding="utf-8"))["segments"] for w in s.get("words", []) if "start" in w and "end" in w]  # mots sans temps ignores
     lignes, prev=[["n", "mot", "debut_whisper", "fin_whisper", "debut_propose", "fin_propose", "ecart_debut_ms", "ecart_fin_ms", "plancher_db", "pic_db", "drapeaux"]], 0.0
     for i, w in enumerate(W):
         a, b=w["start"], w["end"]

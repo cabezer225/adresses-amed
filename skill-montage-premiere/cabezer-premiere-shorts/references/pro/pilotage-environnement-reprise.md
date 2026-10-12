@@ -106,7 +106,7 @@ Chaque essai produit un fichier témoin ou une capture ; un échec oriente vers 
 | Terminal | `ffprobe -version` ; `python3 -I --version` | Versions | Signaler l'outil absent, ne rien installer sans accord (WhisperX excepté, ligne suivante) |
 | WhisperX | `whisperx --help` (ou l'appel documenté par le projet) | Aide affichée, version consignée | Absent : l'installer au premier usage (§ 4.2), puis rejouer l'essai sur un extrait de quelques secondes |
 | AE manuel | File > Scripts > Run Script File (repère FR : Fichier > Scripts > Exécuter un fichier de script), `smoke-ae.jsx` | `smoke-ae.txt` créé | Lire l'erreur d'AE, la ligne ; vérifier que l'option d'écriture est cochée et la cocher sinon (accordée, § 4.3) |
-| AE `osascript` | `DoScriptFile` (§ 4.3) | Même témoin, daté après l'essai | Autorisation d'automatisation du Terminal (accordée : la cocher dans Réglages Système si décochée), nom d'application, bogue de version |
+| AE `osascript` | `DoScriptFile` (§ 4.3) | Même témoin, daté après l'essai | Autorisation d'automatisation du Terminal (accordée : la cocher dans System Settings (Réglages Système) si décochée), nom d'application, bogue de version |
 | Premiere UXP | Modèle `premierepro-quick-starter` ou code ci-dessous, chargé par UXP Developer Tool (UDT) | Le panneau affiche projet et séquence actifs | Mode développeur, Premiere fermé, manifeste modifié sans Unload/Load |
 | Premiere ExtendScript | Console du débogueur VS Code : `app.version` | Chaîne de version | Abandonner cette voie pour l'outil concerné ; UXP ou XML |
 | Premiere XML | Exporter une séquence en FCP XML (menu à confirmer), `head -c 300 sequence.xml` | Racine `<xmeml` (Final Cut 7) ou `<fcpxml` (Final Cut Pro X) : **noter laquelle** | § 4.4 C |
@@ -268,7 +268,7 @@ Aucun menu d'exécution de script. Quatre voies, par ordre de préférence pour 
 
 ### 4.7 À reporter dans les autres fiches
 
-1. `premiere-pro-avance.md §13.2` : l'export OTIO par UXP est documenté depuis la 26.2 [Doc lue] ; à tester. `§13.3` et `organisation-livraison-qc.md §6.1` : mode développeur dans Réglages > Plugins ; ajouter la limite de `launchProcess`, `lockedAccess`, le piège de `saveAs`.
+1. `premiere-pro-avance.md §13.2` : l'export OTIO par UXP est documenté depuis la 26.2 [Doc lue] ; à tester. `§13.3` et `organisation-livraison-qc.md §6.1` : mode développeur dans Settings > Plugins ; ajouter la limite de `launchProcess`, `lockedAccess`, le piège de `saveAs`.
 2. `after-effects-motion-design.md §1` et `§16.1` : emplacement contesté de l'option d'écriture, `app.isoLanguage`, `findMenuCommandId` ; `§16.7` : `aerender` lance sa propre instance, `-reuse`.
 3. `organisation-livraison-qc.md §8.2` : `exportSequence` attend un préréglage ; piège du dossier de contrôle.
 
@@ -559,7 +559,7 @@ Deux scripts d'accompagnement (`references/pro/scripts/`), **exécutés sous Lin
 
 ## 13. Décisions à demander
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur tout ce qui précède.
 
 Réponses de Cabezer du 12/10/2026, appliquées dans cette fiche (la liste complète est dans `../decisions-en-attente.md`, qui prime) :
 

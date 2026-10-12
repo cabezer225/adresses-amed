@@ -1,20 +1,20 @@
 # S'adapter à tout montage : analyse de style et grammaires de genres
 
-> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander ». **Format d'abord, famille ensuite (SKILL §2)** : long (L-Food, L-Story, L-Tech, L-Films, L-Life) ou court (C-Food, C-Story, C-Tech, C-Films, C-Life) ; codes de cette fiche : D = C-Food, F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; nouvelle famille Lifestyle (vlogs, face caméra : aucune musique, SFX comme la dégustation). **Tous les courts** : hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, punch-ins secs, appel au commentaire, notation sur 10, identité propre au court. **Longs** : SRT seul en France ; composition musicale en Story, food et tech ; respirations d'émotion gardées en films/séries et au verdict du food long ; 4K si rushs 4K. Aussi : identité Story v15 et générique « Amed Story 🧢 » supprimés ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; un rendu de sous-titres par passage ; intervenants identifiés à la première apparition (hors courts food) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. **Réponses techniques (série 3)** : interface de Premiere et d'AE en anglais ; scripts AE et Terminal autorisés ; stock libre de droits sans redemander ; tout SFX de la banque Pixabay permis ; arrêt sur image permis partout ; pas de test de photosensibilité ; audio YouTube 384 kbit/s ; proxys toujours en long ; Frame.io pour les relectures ; WhisperX à installer ; « 19h30 » et « 12,50 € » ; Liquid Glass à recréer. Liste complète : `../decisions-en-attente.md`.
+> **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander ». **Format d'abord, famille ensuite (SKILL §2)** : long (L-Food, L-Story, L-Tech, L-Films, L-Life) ou court (C-Food, C-Story, C-Tech, C-Films, C-Life) ; codes de cette fiche : D = C-Food, F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; famille **Lifestyle** (L-Life en long, C-Life en court ; code **Life** dans cette fiche), qui remplace le « hors familles » pour le vlog et la prise de parole face caméra : aucune musique, SFX comme la dégustation. **Tous les courts** : hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, punch-ins secs, appel au commentaire, notation sur 10, identité propre au court. **Longs** : SRT seul en France ; composition musicale en Story, food et tech ; respirations d'émotion gardées en films/séries et au verdict du food long ; 4K si rushs 4K. Aussi : identité Story v15 et générique « Amed Story 🧢 » supprimés ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; un rendu de sous-titres par passage ; intervenants identifiés à la première apparition (hors courts food) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. **Réponses techniques (série 3)** : interface de Premiere et d'AE en anglais ; scripts AE et Terminal autorisés ; stock libre de droits sans redemander ; tout SFX de la banque Pixabay permis ; arrêt sur image permis partout ; pas de test de photosensibilité ; audio YouTube 384 kbit/s ; proxys toujours en long ; Frame.io pour les relectures ; WhisperX à installer ; « 19h30 » et « 12,50 € » ; Liquid Glass à recréer. Liste complète : `../decisions-en-attente.md`.
 
 Fiche de référence du skill `cabezer-premiere-shorts` (publiée dans `references/pro/`), rédigée le 12/10/2026, harmonisée (passe 2) avec le skill v3 et `../decisions-harmonisation.md`. Elle apprend à fixer un brief pour un montage hors familles, à analyser une référence, à en tirer une grammaire (rythme, ordre des plans, accroche, son) et à l'appliquer sans copier ni changer l'identité de Cabezer. Elle ne remplace aucune règle du skill.
 
-Codes de famille : **D** dégustation, **F** food long, **S** Story, **P** films/séries (PRISME), **T** tech, **H** hors familles.
+Codes de famille : **D** dégustation (C-Food), **F** food long, **S** Story, **P** films/séries (PRISME), **T** tech, **Life** Lifestyle (vlogs et prises de parole face caméra, en long et en court), **H** hors familles (interview d'un tiers, publicité, clip, bande-annonce, comédie, aftermovie, etc.). Les courts de Story, tech et films/séries (C-Story, C-Tech, C-Films) suivent le cadre des courts décrit en section 2, avec le fond de leur famille.
 
 ## Quand lire cette fiche
 
-- Cabezer demande un montage « dans le style de » : bande-annonce, publicité, clip, vlog de voyage, aftermovie, interview, gag, court métrage.
+- Cabezer demande un montage « dans le style de » : bande-annonce, publicité, clip, aftermovie, interview d'un tiers, gag, court métrage. Un vlog ou une prise de parole face caméra relève de la famille Lifestyle (section 6.10), pas du « hors familles ».
 - Il donne une vidéo de référence à imiter ou à comprendre.
-- Le montage ne rentre dans aucune des familles D, F, S, P, T (famille **H**) : lire d'abord la section 3.
+- Le montage ne rentre dans aucune des familles D, F, S, P, T, Life (famille **H**) : lire d'abord la section 3.
 - Avant l'étude de références récentes demandée par le skill (§8, « Inspiration actuelle »).
 - Une coupe ou un rythme « ne marche pas » et il faut comparer à une référence avec des chiffres.
 
-Ne pas la lire pour l'identité visuelle (skill §5.1, §6), les sous-titres (§9), l'audio technique (§11) ou l'export (§13). Fiches liées : `fondamentaux-montage-narratif.md` (logique de coupe, brief narratif), `premiere-pro-avance.md`, `after-effects-motion-design.md`, `formats-courts-verticaux.md` (zones sûres, hook), `organisation-livraison-qc.md` (scripts, commandes, arborescence, registres), `audio-dialogue-sound-design-mixage.md`, `pilotage-environnement-reprise.md` (raccourcis lus, versions), `conformite-droits-accessibilite.md` (droits, mentions commerciales, photosensibilité), `documentaire-essai-video-archives.md` (cartes, temps de lecture, extraits).
+Ne pas la lire pour l'identité visuelle (skill §5.1, §6), les sous-titres (§9), l'audio technique (§11) ou l'export (§13). Fiches liées : `fondamentaux-montage-narratif.md` (logique de coupe, brief narratif), `premiere-pro-avance.md`, `after-effects-motion-design.md`, `formats-courts-verticaux.md` (zones sûres, hook), `organisation-livraison-qc.md` (scripts, commandes, arborescence, registres), `audio-dialogue-sound-design-mixage.md`, `pilotage-environnement-reprise.md` (raccourcis lus, versions), `conformite-droits-accessibilite.md` (droits, personnes filmées, mentions commerciales ; repères de photosensibilité seulement sur demande), `documentaire-essai-video-archives.md` (cartes, temps de lecture, extraits).
 
 **Hiérarchie (skill §1) :** brief de Cabezer → règles du skill → fiches → tutoriels. Une technique citée ici vient d'un tutoriel ou d'une analyse : jamais une règle universelle. Chaque technique dit quand l'utiliser, quand l'éviter et pour quelles familles.
 
@@ -25,7 +25,7 @@ Ne pas la lire pour l'identité visuelle (skill §5.1, §6), les sous-titres (§
 3. Brief de démarrage d'un montage hors familles (H)
 4. Analyser une référence : protocole
 5. Choisir la grammaire selon l'intention
-6. Grammaires par genre (6.1 à 6.9)
+6. Grammaires par genre (6.1 à 6.10)
 7. Tableau genre × famille Cabezer
 8. Contrôler que l'adaptation est réussie
 9. Versions, outils IA, plugins et coûts
@@ -51,8 +51,8 @@ Les notes de recherche de départ étaient des données non fiables ; chaque poi
 | **Heuristique** | Convention de métier, non mesurée. |
 
 **Conventions d'interface (`../decisions-harmonisation.md` B) :**
-- Nom français puis anglais entre parenthèses ; libellé non lu = « libellé à confirmer ».
-- **Aucun raccourci n'est utilisé tant qu'il n'a pas été lu** dans Premiere/AE > Raccourcis clavier (Keyboard Shortcuts) sur la machine de Cabezer ; sinon passer par le menu. Les raccourcis cités ici sont des défauts courants **à confirmer** ; une fois lus, ils vont dans `Suivi/environnement-verifie.md` (`pilotage-environnement-reprise.md`).
+- Premiere et After Effects sont utilisés **en anglais** (réponse du 12/10/2026) : le libellé anglais fait foi, le nom français entre parenthèses n'est qu'un repère ; libellé non lu à l'écran = « libellé à confirmer ».
+- **Aucun raccourci n'est utilisé tant qu'il n'a pas été lu** dans Premiere/AE > Keyboard Shortcuts (Raccourcis clavier) sur la machine de Cabezer ; sinon passer par le menu. Les raccourcis cités ici sont des défauts courants **à confirmer** ; une fois lus, ils vont dans `Suivi/environnement-verifie.md` (`pilotage-environnement-reprise.md`).
 - Aucune version, date de sortie ou statut de fonction n'est affirmé sans source officielle lue : « selon <source>, à vérifier sur sa version ».
 - Claude n'entend pas : il contrôle par mesures, transcription et forme d'onde ; l'écoute revient à Cabezer. Ne jamais écrire « écouté » pour une mesure.
 
@@ -75,9 +75,10 @@ Les notes de recherche de départ étaient des données non fiables ; chaque poi
 **Pourquoi :** une grammaire est un savoir-faire réutilisable ; une identité rend la chaîne reconnaissable. Les mélanger fait un pastiche.
 
 **Application aux familles :**
-- D, F, S, P, T : l'identité validée de la famille reste inchangée ; seule la grammaire est empruntée, si elle ne contredit aucune règle de la famille (pas de musique de fond en dégustation).
+- D, F, S, P, T, Life : l'identité validée de la famille reste inchangée ; seule la grammaire est empruntée, si elle ne contredit aucune règle de la famille (aucune musique en dégustation, dans aucun court ni en Lifestyle).
+- **Format d'abord, famille ensuite :** une grammaire de genre se choisit pour un format (long ou court). Les courts de Story, tech et films/séries ne reprennent pas les règles du long : hook demandé, sous-titres mot à mot, aucune musique, SFX de la banque Pixabay, punch-ins secs seulement, appel au commentaire, notation sur 10, identité propre au court (skill §2).
 - **Le barème du skill §5.2 prime sur toute grammaire de genre** (hook et rétention des dégustations). Une grammaire n'apporte que des idées de hook (un seul axe, boucle ouverte, écart de curiosité), retenues si le barème les valide (`formats-courts-verticaux.md` §1.2).
-- H : le skill dit « proposer un court extrait représentatif et le faire valider avant de décliner ». Ne pas attribuer arbitrairement couleurs ou polices définitives.
+- H (interview d'un tiers, publicité, clip, bande-annonce, comédie, aftermovie, etc.) : le skill dit « proposer un court extrait représentatif et le faire valider avant de décliner ». Ne pas attribuer arbitrairement couleurs ou polices définitives. Le vlog et la prise de parole face caméra ne sont plus H : ils forment la famille Life (6.10).
 
 **Animations :** tout élément graphique créé (texte, forme, carte, sous-titre animé, transition graphique, flash ou glitch graphique) est construit dans After Effects en calques natifs modifiables (skill §1, §16). Une référence faite avec des packs ou de l'IA se reconstruit avec des effets natifs d'AE, ou on y renonce. Punch-in sec, speed ramp et recadrage d'un plan filmé sont des traitements de plan, faits dans Premiere.
 
@@ -85,7 +86,7 @@ Les notes de recherche de départ étaient des données non fiables ; chaque poi
 
 ## 3. Brief de démarrage d'un montage hors familles (H)
 
-**Quand l'utiliser :** tout montage H et tout montage « dans le style de ». **Quand l'éviter :** retouche ponctuelle d'un montage déjà briefé ; pour D, F, S, P, T le brief est cadré par `fondamentaux-montage-narratif.md` §3.1. **Familles :** H ; les autres réutilisent les champs 9 et 13 à 16 quand une référence de style est en jeu.
+**Quand l'utiliser :** tout montage H et tout montage « dans le style de ». **Quand l'éviter :** retouche ponctuelle d'un montage déjà briefé ; pour D, F, S, P, T, Life le brief est cadré par `fondamentaux-montage-narratif.md` §3.1. **Familles :** H ; les autres réutilisent les champs 9 et 13 à 16 quand une référence de style est en jeu.
 
 Aucun montage ne commence sans brief écrit dans `Suivi/brief.md`. Les douze champs et la méthode (Claude remplit à partir du dossier, ne pose de question que sur les champs bloquants) sont définis dans **skill §3, étape 0** ; en cas de différence de libellé, le skill prime. Le brief fait foi pour le contrôle final (`organisation-livraison-qc.md` §6.5).
 
@@ -93,9 +94,9 @@ Aucun montage ne commence sans brief écrit dans `Suivi/brief.md`. Les douze cha
 
 ```
 BRIEF H — <Sujet> — <date> — état : brouillon | validé par Cabezer le ___
- 1. FAMILLE : hors famille (H). Genre visé (section 6) : ___
+ 1. FORMAT ET FAMILLE : long ou court ; hors famille (H). Genre visé (section 6) : ___
     Intention en une ligne : le spectateur doit ressentir / comprendre ___
- 2. PLATEFORMES ET RATIOS : ___ (9:16, 16:9, 1:1)
+ 2. PLATEFORMES ET RATIOS : ___ (9:16 ou 16:9 ; jamais de carré ni de 4:5)
     Texte clé : boîte de test de formats-courts-verticaux.md §6.2
  3. DURÉE CIBLE : ___ s
  4. PROMESSE : « le spectateur a cliqué pour voir ___ »
@@ -123,7 +124,7 @@ Compléments propres à H
 **Procédure :**
 1. Lire le dossier (rushs, notes, messages) et remplir tout ce qui s'y trouve ; marquer le reste « à demander ».
 2. **Champs bloquants pour H :** genre ou intention, promesse, plateformes et durée, contraintes légales si partenariat ou personnes filmées. Les poser **en une seule fois**, avec un défaut proposé pour chacun.
-3. Pour les autres champs, appliquer le mode autonome (décisions D16) : langue à l'étranger = anglais ; téléchargement = jamais sans accord (s'en passer) ; validations consignées « en attente » dans `Suivi/decisions.md`.
+3. Pour les autres champs, appliquer le mode autonome (skill §1) : hook d'un court = son hook habituel, noté ; langue des sous-titres à l'étranger = anglais ; téléchargement : plans stock libres de droits permis sans redemander (licence consignée, signalés), toute autre vidéo jamais sans accord (s'en passer) ; validations consignées « en attente » dans `Suivi/decisions.md` et rappelées à la livraison.
 4. Faire valider le brief et dater la validation. Tout changement de promesse ou de plateforme est noté dans `Suivi/decisions.md`.
 
 **Critère de réussite :** Claude, après une reprise de session, refait les mêmes choix de genre, de durée et de livrables en lisant uniquement le brief.
@@ -137,7 +138,7 @@ Compléments propres à H
 ### 4.1 Cadre, accord et rangement
 
 1. **Demander l'accord avant de télécharger** une vidéo de référence, avec nom, source et taille : le skill l'impose pour toute vidéo à télécharger (§6 « Ses propres images », §8), références d'analyse comprises. Sans accord : visionner, relever à la main, ou travailler sur les captures que Cabezer fournit.
-2. Ranger le fichier **hors du projet**, jamais dans une séquence de Cabezer. Mesures et fiche de style vont dans `Controles/Analyses/` ; accord, taille et suppression sont consignés dans `Suivi/journal.md`. Suppression du fichier : question 1 de la section 12.
+2. Ranger le fichier **hors du projet**, jamais dans une séquence de Cabezer. Mesures et fiche de style vont dans `Controles/Analyses/` ; accord, taille et suppression sont consignés dans `Suivi/journal.md`. Le fichier téléchargé est supprimé à la fin de l'analyse ; mesures, fiche de style et lien restent (réponse du 12/10/2026).
 3. Noter titre, chaîne, date de publication, URL, durée exacte, date de consultation.
 4. Mesurer **au moins 60 secondes**, idéalement 2 minutes. En dessous de 30 s, la durée moyenne d'un plan n'a pas de sens.
 5. Analyser **trois références** du même genre avant de conclure : une seule donne un style d'auteur, pas une grammaire de genre.
@@ -153,7 +154,7 @@ Compléments propres à H
 - Un effet (zoom, flash, glitch) n'est pas toujours détecté comme une coupe ; un fondu enchaîné ne l'est presque jamais [Testé]. Contrôler à l'œil les zones à effets.
 - Décider une fois pour toutes si un plan long avec transition interne compte pour un ou plusieurs plans, et appliquer la même règle à toutes les références.
 - **Ne pas confondre avec les « relances » du skill (§5.2)** : le barème de rétention compte une coupe seulement si elle change de rush ou de cadre ; l'analyse compte toutes les coupes détectées. Ne jamais mettre une note de rétention en face d'un ASL.
-- **Durée d'affichage d'un texte :** comparer au temps de lecture de `documentaire-essai-video-archives.md` §5.3. Cette formule vise cartons, textes d'habillage et traductions ; elle ne vise ni les sous-titres mot à mot de D ni les coupes rapides nommées (0,4 à 0,8 s).
+- **Durée d'affichage d'un texte :** comparer au temps de lecture de `documentaire-essai-video-archives.md` §5.3. Cette formule vise cartons, textes d'habillage et traductions ; elle ne vise ni les sous-titres mot à mot des courts ni les coupes rapides nommées (0,4 à 0,8 s).
 
 ### 4.3 Détecter les coupes
 
@@ -161,7 +162,7 @@ Compléments propres à H
 - cadence et taille : ligne « conformité technique » (§6.2) ;
 - `mesure-plans.py` (paramètres : seuil de scène, fenêtre, sortie CSV) : demander ASL, médiane, plans le plus court et le plus long, coupes par minute **par fenêtre de 15 s**, et garder `plans.csv` dans `Controles/Analyses/` ;
 - planche contact : commande de §6.3, une image toutes les 0,5 s pour une référence rapide ;
-- attaques sonores et palette : si le jeu ne les contient pas, **les y ajouter** (`attaques-sons.py`, extraction de palette), pas ici.
+- attaques sonores et palette : le jeu de scripts ne contient aucun script pour cela (il n'existe pas de fichier `attaques-sons.py`) ; relever les attaques à la forme d'onde de Premiere (zoom jusqu'à l'image, 4.4) et la couleur à la pipette sur une image fixe (4.5). Un script ne s'ajoute au jeu que s'il devient nécessaire, dans `organisation-livraison-qc.md` §6, pas ici.
 - lire tout fichier externe (vidéo, XML, SRT, transcription) avec `python3 -I` ; tout script reste « testé sur fichiers générés » tant qu'il n'a pas tourné sur un vrai export de Cabezer (skill §20).
 
 **Valeurs et pièges des détecteurs (seuil de départ `select` : 0,3) :**
@@ -176,11 +177,11 @@ Compléments propres à H
 - **Piège majeur :** en ligne de commande, `-m/--min-scene-len` vaut **0,6 s par défaut** [Code source, `--help`]. Une référence plus rapide (clip, aftermovie, TikTok) perd des coupes sans prévenir : passer `-m 2` (2 images), et ne jamais comparer deux montages mesurés avec des réglages différents.
 - Les seuils des guides tiers (0,25 à 0,30 pour un montage rapide, 0,35 en général, 0,45 à 0,50 pour des coupes dures) sont des points de départ : lire les scores avant de choisir. Sur la vidéo de test, PySceneDetect a trouvé les 5 coupes vraies **et** une fausse coupe dans un plan très animé : un détecteur seul se trompe dans les deux sens.
 - **Méthode :** ffmpeg pour la liste brute, PySceneDetect (installé avec l'accord de Cabezer) pour recouper, puis contrôle de **10 % des coupes au minimum** et de toutes les zones à effets.
-- **Dans Premiere :** clic droit sur un clip, puis la détection des changements de plan (Scene Edit Detection ; libellé à confirmer ; `premiere-pro-avance.md` §5.2). Un extrait de formation signale qu'elle peut rater des coupes ou produire des images éclair et de mauvais fondus [Extrait, section 13]. À utiliser pour feuilleter une référence dans une séquence d'analyse, pas pour mesurer. **Dans AE :** même fonction sur un calque (libellé à confirmer). Détection des scènes = aide autorisée, résultat vérifié (skill §16).
+- **Dans Premiere :** clic droit sur un clip, puis Scene Edit Detection (détection des changements de plan ; libellé à confirmer ; `premiere-pro-avance.md` §5.2). Un extrait de formation signale qu'elle peut rater des coupes ou produire des images éclair et de mauvais fondus [Extrait, section 13]. À utiliser pour feuilleter une référence dans une séquence d'analyse, pas pour mesurer. **Dans AE :** même fonction sur un calque (libellé à confirmer). Détection des scènes = aide autorisée, résultat vérifié (skill §16).
 
 ### 4.4 Coupes et attaques sonores
 
-**Quand l'utiliser :** montage sur musique ou sur SFX (F, S, P, T, H). **Quand l'éviter :** coupe de voix ; D hors SFX. Question posée à la référence : « coupe-t-elle sur le temps, une image avant, ou pas du tout ? ». Utiliser `attaques-sons.py` (4.3) avec les temps de coupe ; la précision annoncée en passe 1 est d'environ une demi-image sur un son net (clics toutes les 0,5 s) [Testé]. Sur une musique dense, contrôler la forme d'onde de Premiere et demander à Cabezer.
+**Quand l'utiliser :** montage sur musique ou sur SFX (F, S, P, T, H ; en D, en Life et dans tous les courts, SFX seulement : aucune musique). **Quand l'éviter :** coupe de voix ; D hors SFX. Question posée à la référence : « coupe-t-elle sur le temps, une image avant, ou pas du tout ? ». Relever les attaques à la forme d'onde de Premiere (zoom jusqu'à l'image) et les comparer aux temps de coupe. Une détection scriptée d'attaques essayée en passe 1 donnait environ une demi-image de précision sur un son net (clics toutes les 0,5 s) [Testé] ; ce script n'est pas dans le jeu de scripts (4.3). Sur une musique dense, contrôler la forme d'onde de Premiere et demander à Cabezer.
 
 ### 4.5 Supports d'analyse
 
@@ -214,8 +215,9 @@ ADAPTATION CABEZER : équivalent | contraintes du skill | à faire valider
 | Donner envie de voir sans tout dévoiler | Bande-annonce « setup » ou « ambiance » | 6.1 |
 | Vendre ou promouvoir en 15 à 30 s | Publicité / UGC | 6.2 |
 | Accompagner une musique | Clip, montage sur temps | 6.3 |
-| Montrer un lieu et un trajet | Vlog voyage | 6.4 |
-| Faire témoigner, faire parler | Interview, extrait de podcast | 6.5 |
+| Montrer un lieu et un trajet | Vlog voyage (famille Lifestyle) | 6.4, 6.10 |
+| Faire témoigner un tiers, le faire parler | Interview, extrait de podcast | 6.5 |
+| Parler face caméra (conseil, anecdote, sujet personnel) | Lifestyle, face caméra | 6.10 |
 | Faire rire par le cadre ou le timing | Comédie visuelle | 6.6 |
 | Célébrer un événement | Aftermovie, hype | 6.7 |
 | Raconter une histoire courte | Court métrage | 6.8 |
@@ -243,7 +245,7 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 2. Compter par catégorie ; la dominante est l'axe. Si la chronologie domine, retirer des plans jusqu'à ce que la prémisse domine.
 3. Monter en trois blocs : prémisse (peu de mots), montée d'ambiance, final. Voix off limitée à la prémisse.
 4. Construire les cartons dans AE (calques natifs), puis les poser dans Premiere comme respirations.
-5. Au plus un ou deux moments musicaux forts ; ne pas couper la musique au milieu d'une phrase.
+5. Au plus un ou deux moments musicaux forts ; ne pas couper la musique au milieu d'une phrase. **En court, en Life et en dégustation : aucune musique** ; les moments forts sont portés par la voix, les coupes et les SFX de la banque Pixabay.
 
 **Extraits tiers (P, S, H) :** extraits officiels et affiches seulement ; durée minimale nécessaire, commentés, source affichée ; un crédit n'est pas une autorisation ; signaler le risque Content ID avant publication (`documentaire-essai-video-archives.md` §10.4, `conformite-droits-accessibilite.md`).
 
@@ -266,11 +268,11 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 
 **Sound design publicitaire :** vidéos de Daniel Schiffer non lues, rien retenu ; observer la synchronisation son/image des références (4.4).
 
-**Zones sûres : une seule boîte.** Le **texte clé** (étiquettes, prix, pop-ups, note, appel au commentaire) respecte la « boîte de test provisoire » de `formats-courts-verticaux.md` §6.2 ; aucune autre valeur n'est définie ici. Les sous-titres de dégustation restent à 72–75 % de la hauteur, avec contrôle sur téléphone qu'ils ne sont pas masqués (question 5, section 12). Contrôle sans publier : captures d'écran des applications fournies par Cabezer (`formats-courts-verticaux.md` §6.3) ; jamais de publication de test sans son accord (skill §1).
+**Zones sûres : une seule boîte.** Le **texte clé** (étiquettes, prix, pop-ups, note, appel au commentaire) respecte la « boîte de test provisoire » de `formats-courts-verticaux.md` §6.2 ; aucune autre valeur n'est définie ici. Les sous-titres de dégustation sont gardés à 72–75 % de la hauteur, exemptés de la boîte (réponse du 12/10/2026), avec contrôle sur capture qu'ils ne sont pas masqués. Contrôle sans publier : captures d'écran des applications, que Cabezer enverra (boîte provisoire en attendant) (`formats-courts-verticaux.md` §6.3) ; jamais de publication de test sans son accord (skill §1).
 
-**Mentions commerciales :** publicité et partenariat exigent des mentions (`conformite-droits-accessibilite.md`).
+**Mentions commerciales :** publicité, partenariat, repas offert, invitation ou produit reçu : signalés au brief ; la formule et la durée de la mention sont choisies par Cabezer à chaque vidéo (`conformite-droits-accessibilite.md`).
 
-**Quand l'utiliser :** H (publicité, partenariat, présentation de produit) ; accroche d'une vidéo F ou T quand Cabezer demande de « travailler le hook ». **Quand l'éviter :** S et P (le ton « vendeur » casse l'identité) ; D, qui a son barème.
+**Quand l'utiliser :** H (publicité, partenariat, présentation de produit) ; accroche d'une vidéo F ou T quand Cabezer demande de « travailler le hook ». **Quand l'éviter :** S, P et Life (le ton « vendeur » casse l'identité) ; D, qui a son barème.
 
 **Pièges :** accroche qui résume la suite ; plusieurs appels à l'action ; logo avant la première image utile ; texte sous les boutons de la plateforme.
 
@@ -281,42 +283,42 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 **Technique 1 : la coupe une image avant le temps fort [Lu, Filmmaker IQ — un praticien].**
 - L'auteur place la coupe **une image avant** l'attaque lue dans la forme d'onde : l'oreille réagit plus vite que l'œil, et une image d'avance laisse à l'œil le temps de lire le plan quand le son arrive. Il précise que cela vaut aussi pour les coupes sur action et les réactions : « ajoute quelques images de chaque côté et regarde ce qui marche ».
 - Une image dure 41,7 ms à 24 i/s, 40 ms à 25 i/s, 33,4 ms à 29,97 i/s, 16,7 ms à 59,94 i/s.
-- **Statut :** le défaut du skill est la coupe ou l'accent **sur l'attaque** (swoosh sur son pic). La technique est un **essai A/B** à procédure unique, décrite dans `audio-dialogue-sound-design-mixage.md` §6.2 (−1, 0, +1 image sur un extrait), adopté seulement avec la validation de Cabezer sur plusieurs vidéos (skill §15, §20). Ne pas la présenter comme règle.
+- **Statut :** Cabezer a tranché le 12/10/2026 : calage **sur l'attaque**, swoosh sur son pic, **sans essai** de décalage. La technique « une image avant » n'est donc pas appliquée ; elle reste citée comme source, jamais comme règle.
 
-**Procédure de l'essai (Premiere) :** zoomer jusqu'à l'image sur l'attaque ; poser la coupe sur l'attaque ; préparer les variantes −1 et +1 avec l'outil d'édition par roulement (Rolling Edit Tool ; raccourci courant N, à confirmer ; ou menu) ; remettre les trois versions à Cabezer, qui juge à l'écoute à volume normal. Une coupe parfaitement sur le temps qui casse le ton est une mauvaise coupe.
+**Procédure (Premiere) :** zoomer jusqu'à l'image sur l'attaque lue dans la forme d'onde et poser la coupe ou le SFX dessus (Rolling Edit Tool, outil d'édition par roulement, pour affiner ; raccourci courant N, à confirmer ; ou menu). Une coupe parfaitement sur le temps qui casse le ton est une mauvaise coupe.
 
 **Technique 2 : plans courts, répartis uniformément [Lu, Jay Sia — un praticien].** Plans de 2 à 3 s au maximum, chaque prise utilisée au maximum, plans répartis régulièrement sur le morceau, 3 à 4 prises (jusqu'à 10 ou 15) pour avoir de la matière, pauses remplies par des transitions de mouvement rapide.
 
-**Flux de Jay Sia et flux de Cabezer :** Jay Sia séquence dans Premiere, exporte, puis termine dans AE. **Ce n'est pas le flux de Cabezer** : Premiere reste la timeline maîtresse. Effets et habillage se font dans AE et s'intègrent par « Remplacer par une composition After Effects » (clic droit ; libellé à confirmer ; `premiere-pro-avance.md` §9) : la lecture ralentit, éviter sur des dizaines de clips.
+**Flux de Jay Sia et flux de Cabezer :** Jay Sia séquence dans Premiere, exporte, puis termine dans AE. **Ce n'est pas le flux de Cabezer** : Premiere reste la timeline maîtresse. Effets et habillage se font dans AE et s'intègrent par Replace with After Effects Composition (« Remplacer par une composition After Effects », clic droit ; libellé à confirmer ; `premiere-pro-avance.md` §9) : la lecture ralentit, éviter sur des dizaines de clips.
 
 **Effets cités, classés :**
 - **Natifs AE (ou très probablement) :** Roto Brush, CC Light Sweep, Posterize Time (8 à 15 i/s dans son exemple), Displacement Map, Optics Compensation, Luma Key (libellés à lire à l'écran), pré-composition, Easy Ease. Raccourcis courants (Cmd+Maj+C, F9) **à confirmer**.
 - **Payants (accord de Cabezer avant tout usage) :** Sapphire (Boris FX), Element 3D (Video Copilot), packs de l'auteur (Fast Movement Effects : tarif à vérifier). **Statut non vérifié :** Deep Glow, CRT Emulator, MXM : ne pas installer avant d'avoir signalé le prix (skill §17).
 - Reconstruire un effet de style (papier, CRT) avec des effets natifs d'AE, en calques éditables.
 
-**Musique :** un morceau fini garde sa vitesse d'origine ; un ajustement de tempo ne concerne qu'une composition faite de boucles (décision D15). Licence consignée dans `Suivi/licences.csv` (skill §11). **Flashs et glitchs :** vérifier la photosensibilité (`conformite-droits-accessibilite.md`).
+**Musique :** un morceau fini garde sa vitesse d'origine ; un ajustement de tempo ne concerne qu'une composition faite de boucles (décision D15). Licence consignée dans `Suivi/licences.csv` (skill §11). **Flashs et glitchs :** pas de test de photosensibilité automatique (réponse du 12/10/2026) ; repères dans `conformite-droits-accessibilite.md` seulement si Cabezer le demande.
 
-**Quand l'utiliser :** passages montés sur musique en F, S, T (générique, transition, bilan), P, H (clip, aftermovie). **Quand l'éviter :** D (pas de musique de fond ; la technique ne vise que les SFX, calés sur l'attaque) ; toute coupe de voix, qui suit le dernier mot entièrement audible (skill §4) ; S quand une respiration porte une émotion (skill §6).
+**Quand l'utiliser :** passages montés sur musique en F, S, T (générique, transition, bilan), P, H (clip, aftermovie). **Quand l'éviter :** D, Life et tous les courts (aucune musique ; la technique ne vise que les SFX, calés sur l'attaque) ; toute coupe de voix, qui suit le dernier mot entièrement audible (skill §4) ; S quand une respiration porte une émotion (skill §6).
 
 **Pièges :** une coupe sur chaque temps fait un défilé sans intention (varier : sur le temps, après une respiration, plan tenu sur une note longue) ; un effet « papier » ou « CRT » partout perd son effet ; Posterize Time : rendre à la cadence de la séquence et vérifier le scintillement ; repasser en pleine résolution avant tout jugement de netteté, de flou ou de grain (Jay Sia prévisualise en quart de résolution).
 
-### 6.4 Vlog voyage
+### 6.4 Vlog voyage (famille Lifestyle)
 
-**Couverture : faible. Aucune vidéo de référence lue ; techniques à tester.** Sam Kolder dit travailler surtout les transitions, le son et le rythme (site officiel, extrait) ; rien d'autre n'est vérifié.
+**Couverture : faible. Aucune vidéo de référence lue ; techniques à tester.** Sam Kolder dit travailler surtout les transitions, le son et le rythme (site officiel, extrait) ; rien d'autre n'est vérifié. Le vlog est de la famille Lifestyle (L-Life, C-Life) : les règles de Cabezer en 6.10 priment, notamment **aucune musique** ; de Sam Kolder, ne reprendre que les transitions sonorisées, jamais un montage rapide calé sur une musique.
 
 **Techniques à essayer (à valider sur un extrait) :**
 - **Mouvement raccordé :** deux plans qui vont dans le même sens, coupés là où le mouvement est le plus fort (cohérent avec la coupe sur l'action [Lu, StudioBinder]) ; transition marquée, sonorisée (skill §7).
 - **Masque par objet de premier plan :** un bras, un dos ou un tronc traverse le cadre et sert de cache entre deux plans. Se prépare au tournage ; se construit par masque ou pré-composition dans AE.
-- **Interprétation de cadence pour un ralenti propre :** rapport de vitesse = cadence de la séquence / cadence de la source (séquence à 29,97 i/s : source 59,94 i/s → 50 % ; 119,88 i/s → 25 %). Dans Premiere : Clip > Modifier > Interpréter le métrage (Interpret Footage ; libellé à confirmer). Vérifier la cadence réelle du rush avant de promettre un ralenti (skill §7 ; `premiere-pro-avance.md` §3.4 et §7.1).
+- **Interprétation de cadence pour un ralenti propre :** rapport de vitesse = cadence de la séquence / cadence de la source (séquence à 29,97 i/s : source 59,94 i/s → 50 % ; 119,88 i/s → 25 %). Dans Premiere : Clip > Modify > Interpret Footage (Clip > Modifier > Interpréter le métrage ; libellé à confirmer). Vérifier la cadence réelle du rush avant de promettre un ralenti (skill §7 ; `premiere-pro-avance.md` §3.4 et §7.1).
 - **Ralenti sur les inserts seulement**, jamais sur la parole ni sur la bouchée retenue ; un ralenti partout supprime le repère de vitesse. Un speed ramp sans son perd son impact : SFX synchronisé sur la transition marquée.
 
 **Cartes et trajets.** La méthode de carte animée (fond vectoriel, objet nul, zoom, étiquettes) est dans `documentaire-essai-video-archives.md` §7 ; ne pas la dupliquer. Pour un trajet :
 1. **Fond de carte :** préférer Natural Earth (domaine public selon le dépôt, même fiche §7.1). Pour des données OpenStreetMap, le crédit demandé est « © OpenStreetMap contributors », avec la licence ODbL rendue claire et un lien vers openstreetmap.org/copyright [Extrait : guide d'attribution de l'OSMF]. Consigner source, licence et capture dans `Suivi/licences.csv`.
-2. **Tracé :** outil Plume sur un calque de forme, puis Trim Paths animé sur **Fin (End)** de 0 à 100 % avec une courbe douce. Libellé français à confirmer : « Réduire les tracés » dans un fil de la communauté Adobe [Extrait], « Tracés rognés » dans `after-effects-motion-design.md` §8.1.
+2. **Tracé :** outil Plume sur un calque de forme, puis Trim Paths animé sur **Fin (End)** de 0 à 100 % avec une courbe douce. Libellé anglais à lire à l'écran (interface en anglais) ; les noms français « Réduire les tracés » (fil de la communauté Adobe [Extrait]) et « Tracés rognés » (`after-effects-motion-design.md` §8.1) ne sont que des repères.
 3. **Repère qui suit le trajet :** copier le tracé, le coller sur la Position du repère, activer l'orientation automatique du calque (libellé à confirmer). Vitesse constante permise pour un défilement continu, sinon courbe douce (décision D1).
 4. Placer la carte entre deux lieux, pas à chaque déplacement ; respecter le temps de lecture (`documentaire-essai-video-archives.md` §5.3).
 
-**Quand l'utiliser :** F tourné à l'étranger, H (vlog). **D tourné à l'étranger :** couleurs du pays et sous-titres en langue locale ou anglais (à demander) ; changements de lieu par whip de 4 à 6 images (skill §5.1), sans carte animée sauf demande. **Quand l'éviter :** S (images réelles et documents explorés d'abord) ; P ; carte qui ne sert pas à comprendre.
+**Quand l'utiliser :** Life (vlog, en long comme en court : cartes de lieu et de date comprises, 6.10) ; F tourné à l'étranger (vlog street food). **D tourné à l'étranger :** couleurs du pays et sous-titres en langue locale ou anglais (à demander) ; changements de lieu par whip de 4 à 6 images (skill §5.1), sans carte animée sauf demande. **Quand l'éviter :** S (images réelles et documents explorés d'abord) ; P ; carte qui ne sert pas à comprendre ; tout montage rapide calé sur une musique.
 
 **Pièges :** même transition à chaque plan ; trop de ralentis ; carte décorative.
 
@@ -333,7 +335,7 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 
 **Dérush :** le montage par le texte repère et pré-découpe (aide autorisée, relecture obligatoire) ; chaque coupe est recalée à la forme d'onde et à l'énergie du son, jamais aux temps de transcription (`premiere-pro-avance.md` §5.1). Retirer un faux départ pour garder ce que la personne voulait dire est permis ; jamais un collage qui crée une affirmation qu'elle n'a pas faite (D7).
 
-**Masquer un jump cut** (`premiere-pro-avance.md` §5.4) : coupe franche assumée ou punch-in sec (D) → plan de coupe qui apporte quelque chose → second angle synchronisé → animation seulement si prévue. Pas de Morph Cut par défaut.
+**Masquer un jump cut** (`premiere-pro-avance.md` §5.4) : coupe franche assumée ou punch-in sec (D) → plan de coupe qui apporte quelque chose → second angle synchronisé → animation seulement si prévue. Morph Cut seulement sur demande.
 
 **Guides tiers (non vérifiés) :** cacher une hésitation par un plan de coupe ; voix de l'interviewé sur du B-roll. La durée de 10 s par plan de B-roll d'un guide n'est pas sourcée : durées du skill (§6).
 
@@ -341,7 +343,7 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 
 **Moments d'un podcast : aucune source lue.** Retenir les passages qui portent une émotion ou une information (critères 1 et 2 de Murch), compréhensibles sans le reste, avec chute ou verdict : c'est la règle du skill pour les Shorts tirés d'une vidéo longue (§12, « passages autonomes »), à valider avec Cabezer.
 
-**Quand l'utiliser :** S (témoignages, avis d'experts), P (analyse), T (explication), F, H. **Quand l'éviter :** D, où la voix reste collée aux coupes franches (seul décalage utile : le B-roll sous la voix, skill §5). Identification des intervenants à l'écran : `conformite-droits-accessibilite.md`.
+**Quand l'utiliser :** interview d'un tiers (H) ; extraits d'un tiers dans S (témoignages, avis d'experts), P (analyse), T (explication), F. La prise de parole face caméra de Cabezer n'est pas une interview : c'est la famille Life (6.10). **Quand l'éviter :** D, où la voix reste collée aux coupes franches (seul décalage utile : le B-roll sous la voix, skill §5). **Intervenants :** nom et fonction à la première apparition, une seule fois, ligne faite dans AE à l'identité de la famille, hors visage ; jamais dans les courts food (réponse du 12/10/2026 ; détails dans `conformite-droits-accessibilite.md`).
 
 **Pièges :** changement d'angle au milieu d'un mot ; jump cut sans plan de coupe ni punch-in ; sous-titres sur le visage ; décalage J/L qui fait entendre un bout de phrase supprimée.
 
@@ -357,13 +359,13 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 - La durée d'un plan porte l'émotion (Every Frame a Painting) ; les chiffres annoncés (30 images contre 30 secondes) ne sont pas repris. Gags d'action (Jackie Chan) : `fondamentaux-montage-narratif.md` §12.
 
 **Procédure Premiere :**
-1. Poser le SFX du gag **sur son attaque** (défaut du skill). Pour tester un décalage, utiliser l'essai A/B unique de `audio-dialogue-sound-design-mixage.md` §6.2 ; Cabezer juge à l'écoute.
+1. Poser le SFX du gag **sur son attaque** (swoosh sur son pic), sans essai de décalage (réponse du 12/10/2026).
 2. Gag de cadre : caler l'entrée dans le cadre sur le plan de réaction, pas sur le suivant.
 3. Gag de fin de plan : couper une image après la dernière action et préparer la variante à deux images ; Cabezer choisit.
 
 **Coupe au noir : aucune source.** Pas de règle. Si Cabezer la demande, monter deux versions (avec et sans noir de 3 à 6 images) sur un extrait et les lui faire comparer.
 
-**Quand l'utiliser :** D (la « touche mème » du skill passe par des SFX de la liste de référence bien placés et un punch-in sec, sans mèmes vocaux ni boom) ; F (moments drôles) ; H sur brief. **Quand l'éviter :** S et P sérieux, sauf demande : une coupe pour le gag qui casse le ton viole le critère 1 de Murch.
+**Quand l'utiliser :** D (la « touche mème » du skill passe par des SFX de la banque Pixabay bien placés, liste de référence ou tout autre son, et un punch-in sec, sans mèmes vocaux ni boom) ; F (moments drôles) ; H sur brief. **Quand l'éviter :** S et P sérieux, sauf demande : une coupe pour le gag qui casse le ton viole le critère 1 de Murch.
 
 **Pièges :** trop de gags (le rythme devient un tic) ; SFX mal calé ; SFX synthétisé ou générique (skill §11).
 
@@ -375,7 +377,7 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 - **Eye trace :** garder le point d'intérêt de l'action au même endroit du cadre d'un plan à l'autre pour que des plans de moins d'une seconde restent lisibles (chef opérateur de *Mad Max: Fury Road* dans la vidéo de StudioBinder ; Film Riot cite le même exemple) [Lu].
 - **Coupe sur l'impact** pour donner de la force à un coup ou un choc [Lu, StudioBinder]. Les plans courts de Jay Sia (6.3) sont ceux d'un clip, pas d'un aftermovie.
 
-**Structure d'un aftermovie : non sourcée.** Ne pas inventer de durées. Analyser trois aftermovies validés par Cabezer (section 4), puis proposer un plan de montage et un extrait à faire valider. Flashs rapides : photosensibilité ; personnes filmées lors d'un événement : droit à l'image (`conformite-droits-accessibilite.md`).
+**Structure d'un aftermovie : non sourcée.** Ne pas inventer de durées. Analyser trois aftermovies validés par Cabezer (section 4), puis proposer un plan de montage et un extrait à faire valider. Flashs rapides : pas de test de photosensibilité automatique (repères sur demande, `conformite-droits-accessibilite.md`) ; personnes filmées lors d'un événement : droit à l'image, signalées au dérush, Cabezer décide du floutage.
 
 **Quand l'utiliser :** événement filmé en H ; compilation de moments forts. **Quand l'éviter :** D (barème de rétention) ; S. F et P : rare, sur brief.
 
@@ -390,7 +392,7 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 - **Impressionnisme (Hitchcock) :** le cerveau complète ce qui n'est pas montré (douche de *Psychose* : environ 78 morceaux en 45 secondes selon Hitchcock cité dans la vidéo, non vérifié).
 - **Eye trace :** un plan d'horreur où la créature était du mauvais côté du regard a réduit la surprise (Film Riot).
 
-**Procédure :** monter l'histoire en une phrase par séquence, supprimer toute séquence qui ne la sert pas, puis régler le rythme séquence par séquence (arbitrage de la section 5). **Respirations :** l'exception du skill (garder les pauses qui portent un regard ou une émotion) vise Story ; l'étendre aux moments d'émotion de films/séries est une question ouverte (section 12), défaut : règle du skill inchangée.
+**Procédure :** monter l'histoire en une phrase par séquence, supprimer toute séquence qui ne la sert pas, puis régler le rythme séquence par séquence (arbitrage de la section 5). **Respirations :** garder les pauses qui portent un regard ou une émotion en Story, aux moments d'émotion de films/séries (P) et au verdict d'un food long, ainsi que dans le Lifestyle posé (réponse du 12/10/2026) ; jamais un blanc où la personne cherche ses mots.
 
 **Quand l'utiliser :** P (extraits officiels), fiction en H. **Quand l'éviter :** D, T, et F sauf annonce.
 
@@ -402,23 +404,47 @@ Le skill contient déjà une méthode validée (§6 : « une image par idée, ja
 
 **Quand l'utiliser :** S, mesure seulement. **Quand l'éviter :** tout remplacement de la méthode du skill ; D, F, T. **Piège :** transposer le rythme d'un clip ou d'une publicité à un récit de société (coupes de 0,4 à 0,8 s seulement quand la vitesse est le sens).
 
+### 6.10 Lifestyle : vlog et prise de parole face caméra (L-Life, C-Life)
+
+**Couverture : aucune source de cette étude. Les règles de Cabezer (skill §2.5, réponse du 12/10/2026) priment ; les techniques de 6.4 (vlog) et de 6.5 (coupes) ne sont reprises que si elles ne les contredisent pas.**
+
+**Règles communes (long et court) :**
+- **Aucune musique**, ni en vlog ni en face caméra. Pas de montage rapide calé sur une musique : les grammaires de clip et d'aftermovie (6.3, 6.7) ne servent pas de modèle.
+- **SFX comme la dégustation :** banque Pixabay, touche mème, sans mèmes vocaux ni boom, clairement audibles, calés sur l'attaque (swoosh sur son pic), chaque SFX lié à un élément visible.
+- **Identité à créer** sur un extrait de 15 à 30 s à faire valider : une pour le long (L-Life), une propre au court (C-Life). Animations graphiques dans After Effects, jamais ailleurs. Tant que l'identité courte n'est pas validée, les sous-titres gardent la forme DA v2 en blanc seul, signalée (skill §9).
+
+**Vlog :**
+- **En long :** coupe au dernier mot, temps morts retirés, plans de lieu tenus le temps de situer.
+- **Cartes de lieu et de date** faites dans AE (calques natifs, temps de lecture de `documentaire-essai-video-archives.md` §5.3), **speed ramps** sur les inserts et **transitions entre les lieux** (whip de 4 à 6 images, match cut) sonorisées, **textes et emojis de réaction** (vrais emojis Apple importés dans AE) seulement sur les vrais moments.
+- **En court :** règles du format court : hook demandé, sous-titres mot à mot, blancs de plus de 0,25 s coupés, punch-ins secs, whip permis, ni shake ni flash (réservés au C-Food), appel au commentaire dans les 5 dernières secondes, jusqu'à 3 min, notation sur 10 (minimum 8, barème « Life » du skill §5.2).
+
+**Prise de parole face caméra :** le style se choisit selon le sujet et se précise au brief (le demander s'il manque).
+- **Serré** (conseil, anecdote) : jump cuts, punch-ins secs, textes clés.
+- **Posé** (sujet personnel) : coupes au dernier mot, silences qui portent gardés, zoom façon Micode (progressif, centré sur le visage, seulement s'il sert le moment). Jamais un blanc où il cherche ses mots.
+- **En court,** les blancs morts sont coupés dans les deux styles ; le zoom façon Micode ne s'applique pas (punch-ins secs seulement).
+
+**Quand l'utiliser :** Life uniquement. **Quand l'éviter :** interview d'un tiers, publicité, clip, bande-annonce, comédie, aftermovie (H). **Pièges :** musique de fond par réflexe ; rythme de clip sur un vlog ; même transition à chaque lieu ; texte ou emoji sur chaque phrase au lieu des vrais moments.
+
 ---
 
 ## 7. Tableau genre × famille Cabezer
 
 « Non » : le skill ou le style de la famille l'écarte. « Hook seulement » : emprunter l'idée dans le hook, validée par le barème. « Brief » : demander à Cabezer (section 3).
 
-| Grammaire | D | F | S | P | T | H |
-|---|---|---|---|---|---|---|
-| Bande-annonce (6.1) | Hook seulement | Annonces | Teaser | Oui | Annonces | Oui |
-| Publicité / UGC (6.2) | Hook : barème d'abord | Hook | Non | Non | Accroche | Oui, extrait à valider |
-| Montage sur musique (6.3) | SFX seulement | Passages montés | Montées, générique | Oui | Passages montés | Oui |
-| Vlog voyage (6.4) | Whip entre lieux (skill) | Oui | Selon récit | Non | Non | Oui |
-| Interview / podcast (6.5) | Non | Oui | Oui | Oui | Oui | Oui |
-| Comédie (6.6) | SFX liste de référence, punch-in | Moments drôles | Rare | Non | Rare | Brief |
-| Aftermovie / hype (6.7) | Non | Rare, brief | Non | Rare, brief | Non | Brief, extrait à valider |
-| Court métrage (6.8) | Non | Non | Non | Oui | Non | Oui |
-| Documentaire de société (6.9) | Non | Non | Méthode du skill | Non | Non | Non |
+| Grammaire | D | F | S | P | T | Life | H |
+|---|---|---|---|---|---|---|---|
+| Bande-annonce (6.1) | Hook seulement | Annonces | Teaser | Oui | Annonces | Hook seulement | Oui |
+| Publicité / UGC (6.2) | Hook : barème d'abord | Hook | Non | Non | Accroche | Non | Oui, extrait à valider |
+| Montage sur musique (6.3) | SFX seulement | Passages montés | Montées, générique | Oui | Passages montés | Non (aucune musique) | Oui |
+| Vlog voyage (6.4, 6.10) | Whip entre lieux (skill) | Oui (street food) | Selon récit | Non | Non | Oui | Non : famille Life |
+| Face caméra (6.10) | Non | Règles de la famille | Règles de la famille | Règles de la famille | Règles de la famille | Oui | Non : famille Life |
+| Interview d'un tiers / podcast (6.5) | Non | Oui | Oui | Oui | Oui | Non | Oui |
+| Comédie (6.6) | SFX Pixabay, punch-in | Moments drôles | Rare | Non | Rare | Rare, brief | Brief |
+| Aftermovie / hype (6.7) | Non | Rare, brief | Non | Rare, brief | Non | Non | Brief, extrait à valider |
+| Court métrage (6.8) | Non | Non | Non | Oui | Non | Non | Oui |
+| Documentaire de société (6.9) | Non | Non | Méthode du skill | Non | Non | Non | Non |
+
+Les colonnes F, S, P, T valent pour le format long ; leurs courts (C-Story, C-Tech, C-Films) reprennent la forme de D (hook demandé, sous-titres mot à mot, aucune musique, SFX Pixabay, punch-ins secs, appel au commentaire, notation sur 10) avec le fond de leur famille.
 
 ---
 
@@ -428,7 +454,7 @@ Un montage « dans le style de » est réussi quand il **ressemble par la gramma
 
 1. **Comparer les chiffres :** relancer `mesure-plans.py` (4.3) sur l'export avec les réglages de la référence ; comparer ASL, coupes par minute, courbe. Un écart voulu s'explique en une phrase. Jamais de comparaison avec une note de rétention.
 2. **Vérifier ce qui n'a pas été repris :** aucun plan, son, voix, logo, police ou couleur de la référence.
-3. **Vérifier les règles de la famille** avec le skill §14 et le rapport de `organisation-livraison-qc.md` §6.5 (sous-titres, musique, notes de hook et de rétention en D, appel au commentaire, animations dans AE, zones sûres de `formats-courts-verticaux.md` §6.2).
+3. **Vérifier les règles de la famille** avec le skill §14 et le rapport de `organisation-livraison-qc.md` §6.5 (sous-titres, musique, notes de hook et de rétention sur 10 dans tous les courts, appel au commentaire, animations dans AE, zones sûres de `formats-courts-verticaux.md` §6.2).
 4. **Essai court d'abord :** pour toute grammaire nouvelle, livrer un extrait de 15 à 30 s représentatif (hook, passage calme, passage rapide) et attendre la validation avant de décliner (skill §6, « Famille sans identité validée »).
 5. **Comparer au brief** (promesse, durée, plateformes, livrables) et **distinguer** mesuré, vu, écouté par Cabezer, validé par Cabezer (skill §1).
 
@@ -438,11 +464,11 @@ Un montage « dans le style de » est réussi quand il **ressemble par la gramma
 
 ## 9. Versions, outils IA, plugins et coûts
 
-- **Versions et libellés :** les commandes citées existent depuis plusieurs versions de Premiere et d'AE, mais leurs libellés français et raccourcis n'ont pas pu être vérifiés dans la documentation Adobe : les lire dans l'interface. Table des versions et test de fumée (ExtendScript, UXP, XML) : `pilotage-environnement-reprise.md`.
+- **Versions et libellés :** les commandes citées existent depuis plusieurs versions de Premiere et d'AE, mais leurs libellés et raccourcis n'ont pas pu être vérifiés dans la documentation Adobe : les lire dans l'interface, qui est en anglais (réponse du 12/10/2026) ; les noms français ne sont que des repères. Table des versions et test de fumée (ExtendScript, UXP, XML) : `pilotage-environnement-reprise.md`.
 - **Outils IA, trois statuts (skill §16 ; `premiere-pro-avance.md` §2) :**
   - aides autorisées, résultat vérifié : transcription, montage par le texte, détection des scènes, Auto Reframe comme point de départ, Media Intelligence, Roto Brush et suivi sur un vrai plan ;
   - seulement sur demande explicite : Morph Cut, Remplissage d'après le contenu, **Generative Extend** (crée des images absentes des rushs), tout outil Firefly ou de génération de pixels ;
-  - interdits par défaut : « Améliorer la parole », Correspondance automatique, « Dynamique » d'Essential Sound, images ou animations générées (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16).
+  - interdits par défaut : masques assistés (Object Mask, Object Matte : masques manuels, suivi ou Roto Brush vérifié), flux optique (ralentis sur rushs 50/60p, sinon mélange de trames), « Améliorer la parole », Correspondance automatique, « Dynamique » d'Essential Sound, images ou animations générées (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16).
 - **Plugins :** gratuits uniquement par défaut ; tout outil payant est signalé (nom, prix connu ou « à vérifier ») et attend l'accord de Cabezer (6.3).
 - **Analyse :** `ffmpeg`/`ffprobe` suffisent ; aucune installation (PySceneDetect facultatif) sur le Mac de Cabezer sans son accord.
 
@@ -460,7 +486,7 @@ Un montage « dans le style de » est réussi quand il **ressemble par la gramma
 | Laisser PySceneDetect à 0,6 s sur un montage rapide, ou reprendre un seuil de `select` pour `scdet` | `-m 2` ; deux échelles (0 à 1 contre 0 à 100) ; mêmes réglages pour comparer |
 | Croire que ASL bas = bon rythme, ou le comparer à une note de rétention | L'ASL décrit, il ne juge pas ; « relances » du skill et coupes détectées ne se comptent pas pareil |
 | Couper tout sur les temps d'un morceau | Varier : sur le temps, après une respiration, plan tenu sur une note longue |
-| Adopter « une image avant » comme règle, ou l'appliquer à une voix | Défaut : sur l'attaque ; essai A/B jugé par Cabezer ; la voix suit le dernier mot audible |
+| Adopter « une image avant » comme règle, ou l'appliquer à une voix | Calage sur l'attaque, swoosh sur son pic, sans essai ; la voix suit le dernier mot audible |
 | Appliquer le rythme d'une publicité à une Story | Une image par idée ; coupes rapides seulement quand la vitesse est le sens |
 | Cacher le produit en D pour garder un écart de curiosité | Le barème prime : produit ou bouchée dans la première seconde |
 | Reproduire un effet avec un pack payant | Effets natifs d'AE, calques éditables ; signaler tout payant |
@@ -486,25 +512,25 @@ Un montage « dans le style de » est réussi quand il **ressemble par la gramma
 
 **Avant livraison**
 - [ ] Mesures relancées sur l'export, écarts expliqués ; contrôles du skill §14 faits.
-- [ ] Texte clé hors de la boîte de `formats-courts-verticaux.md` §6.2 ; sous-titres D vérifiés sur téléphone.
-- [ ] Mentions commerciales, droits et photosensibilité vérifiés (`conformite-droits-accessibilite.md`).
+- [ ] Texte clé hors de la boîte de `formats-courts-verticaux.md` §6.2 ; sous-titres de dégustation vérifiés sur capture de chaque application.
+- [ ] Mentions commerciales (formule et durée choisies par Cabezer) et droits vérifiés (`conformite-droits-accessibilite.md`) ; photosensibilité seulement sur demande.
 - [ ] Mesuré / vu / écouté par Cabezer / validé distingués dans le rapport.
 
 ---
 
 ## 12. Décisions à demander à Cabezer
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur cette fiche ; les réponses sont reprises ci-dessous.
 
-Chaque question donne le **défaut appliqué en attendant** ; l'alternative n'est jamais une règle.
+Réponses de Cabezer, appliquées dans toute la fiche :
 
-1. **Fichier de référence téléchargé : le supprimer après l'analyse ?** *Défaut :* oui, à la fin de la session d'analyse ; mesures, fiche de style et URL restent dans `Controles/Analyses/`.
-2. **Respirations hors Story :** garder les pauses qui portent une émotion aussi en films/séries et au verdict d'un food long ? *Défaut :* règle du skill inchangée (exception de Story seulement).
-3. **Coupe sur la musique ou SFX : essayer −1 / 0 / +1 image ?** *Défaut :* sur l'attaque ; essai A/B sur un extrait seulement à sa demande, adopté après validation sur plusieurs vidéos.
-4. **Coupe au noir dans un gag.** *Défaut :* aucune ; sur demande, deux versions sur un extrait.
-5. **Sous-titres de dégustation à 72–75 % de la hauteur** (bande qui tombe dans la zone basse de la boîte de test). *Défaut :* exemptés de la boîte, contrôle sur son téléphone qu'ils ne sont pas masqués (question reprise de `formats-courts-verticaux.md` §14).
-6. **Captures d'écran de ses applications** pour remplacer la boîte de test par des mesures réelles. *Défaut :* boîte provisoire de `formats-courts-verticaux.md` §6.2.
-7. **Montage H sans référence ni accord de téléchargement.** *Défaut :* grammaire choisie en section 6, extrait de 15 à 30 s à valider, aucune référence téléchargée.
+1. **Fichier de référence téléchargé :** supprimé après l'analyse ; mesures, fiche de style et URL restent dans `Controles/Analyses/`.
+2. **Respirations :** gardées aussi aux moments d'émotion de films/séries, au verdict du food long et dans le Lifestyle posé, en plus de la Story.
+3. **Coupe sur la musique ou les SFX :** sur l'attaque, swoosh sur son pic, sans essai −1 / 0 / +1 image.
+4. **Coupe au noir dans un gag :** seulement sur demande, en deux versions sur un extrait.
+5. **Sous-titres de dégustation :** gardés à 72–75 % de la hauteur, exemptés de la boîte ; contrôle sur capture de chaque application.
+6. **Captures d'écran des applications :** Cabezer les enverra ; la boîte provisoire de `formats-courts-verticaux.md` §6.2 sert en attendant.
+7. **Montage H sans référence ni accord de téléchargement :** grammaire choisie en section 6, extrait de 15 à 30 s à valider avant de décliner (skill §1), aucune référence téléchargée.
 
 ---
 
