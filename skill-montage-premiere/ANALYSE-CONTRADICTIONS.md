@@ -23,6 +23,8 @@ La version de ton skill installée sur claude.ai ne contient **que SKILL.md**. C
   - `after-effects/` : `premiere-after-effects.md`, `tech-liquid-glass.md`, `tutoriels-2026-09-16.md`.
 - **5 fichiers `assets/sfx-cabezer/`** : les 4 SFX de base et `manifest.json`.
 
+Depuis tes réponses, `premiere-tesseract.md` et `montage-higgsfield.md` ne servent plus (outils retirés) : il en reste 16 à rapatrier, plus les 5 SFX.
+
 **Conséquence :** quand Claude lit ton skill depuis claude.ai, il ne peut ouvrir ni PRISME, ni Liquid Glass, ni la chaîne couleur Pocket 3, ni la méthode Micode/Amistory. Il devine ou il saute.
 
 **À faire (toi) :** ces fichiers existent sans doute dans ton dossier de skill sur le Mac. Au moment d'installer la v3, fusionne les dossiers (section 7) pour que tout parte ensemble. En attendant, la v3 dit à Claude de signaler un fichier manquant et de ne jamais en deviner le contenu.
