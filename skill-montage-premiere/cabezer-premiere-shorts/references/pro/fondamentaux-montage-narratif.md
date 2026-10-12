@@ -71,11 +71,11 @@ Aucun montage ne commence sans brief écrit. Lire `Suivi/brief.md`, ou le créer
 1. **Famille** (ou « hors famille ») : elle donne les exceptions du skill et la colonne du §19. Famille sans identité validée : prévoir l'extrait de 15 à 30 s à faire valider (skill §6).
 2. **Promesse en une phrase** : « le spectateur a cliqué pour voir ___ ». Elle sert de critère « histoire » (§2). Sujet et promesse sont confirmés avant la 30e seconde (dans l'intro face caméra en Story) ; l'enjeu peut être rappelé ensuite (`retention-youtube-long.md` §2).
 3. **Durée cible et plateformes.**
-4. **Hook (D)** : le demander à chaque vidéo. Noter le hook choisi avec le barème du skill §5.2 et donner la note ; sous 8, retravailler jusqu'à 8 ; si son hook l'empêche, son choix prime : note réelle livrée et au plus deux variantes proposées, son hook restant une option.
+4. **Hook (tous les courts)** : le demander à chaque vidéo. Noter le hook choisi avec le barème du skill §5.2 (adapté à la famille) et donner la note ; sous 8, au plus deux passes de retravail, puis livrer avec la note réelle (réponse du 12/10/2026) ; son hook reste une option si Cabezer le préfère.
 5. **Niveau d'autonomie** : valider le dérush avant l'habillage, sauf autorisation d'enchaîner ; elle n'autorise jamais la publication (skill §1).
 6. **Contraintes** : langue des sous-titres à l'étranger, références de style et accord de téléchargement, contraintes légales (`conformite-droits-accessibilite.md`).
 
-**Mode autonome :** hook = son hook habituel, noté ; langue à l'étranger = anglais ; aucun téléchargement sans accord (s'en passer) ; validations consignées « en attente » dans `Suivi/decisions.md`. Champ bloquant manquant (famille, promesse) : poser la question. Le brief fait foi pour le contrôle final.
+**Mode autonome :** hook = son hook habituel, noté ; langue à l'étranger = anglais (en court, la langue locale ou l'anglais est à demander ; défaut anglais consigné) ; plans stock libres de droits permis sans redemander (licence consignée, signalés) ; tout autre téléchargement (vidéo de sa chaîne ou d'un tiers, référence) demande son accord, donc s'en passer ; validations consignées « en attente » dans `Suivi/decisions.md`. Champ bloquant manquant (famille, promesse) : poser la question. Le brief fait foi pour le contrôle final.
 
 ### 3.2 Découvrir la matière avant de couper
 
@@ -96,7 +96,7 @@ Aucun montage ne commence sans brief écrit. Lire `Suivi/brief.md`, ou le créer
 ### 4.1 Fin de pensée
 Murch coupe quand la pensée est finie, avant le début de l'action suivante. Le skill fixe la coupe de voix (§4 : juste après le dernier mot entièrement audible, bords placés à la forme d'onde et à l'énergie du son). Critère d'image ajouté : sur un visage, couper quand l'expression de fin de phrase retombe, pas en plein mouvement de bouche ou de tête. **Familles :** toutes.
 
-**Respirations.** L'exception du skill (§4, §6) vise Story : garder les pauses qui portent un regard, une émotion, une attente construite, jamais un blanc vide. L'étendre aux moments d'émotion de P et au verdict de F est une décision en attente (§22) ; défaut : règle du skill inchangée. Interdite en D et en T.
+**Respirations.** L'exception du skill (§4, §6) vise Story : garder les pauses qui portent un regard, une émotion, une attente construite, jamais un blanc vide. Elle est étendue aux moments d'émotion de films/séries (P), au verdict du food long (F) et au Lifestyle posé (réponse du 12/10/2026, skill §4). Interdite en D (courts) et en T.
 
 ### 4.2 Clignement
 Murch : un clignement marque la fin d'une pensée ; couper **une image avant** lui paraît naturel. Contrepoint de Baxter : il retire les clignements hors du rythme des mots en gros plan, mais en a gardé dans *The Killer*. **Pour Cabezer :** le clignement est un **indice**, jamais une règle. Si fin de phrase et clignement coïncident, couper juste avant. Ne pas retoucher un clignement sans demande. En jump cut de D, le rythme des mots prime. **Familles :** indice partout ; critère plein en P.
@@ -140,22 +140,22 @@ Extraire des images autour de la coupe (§18.3) : le mouvement n'est pas montré
 3. second angle synchronisé ;
 4. animation, seulement si elle était déjà prévue.
 
-Pas de Morph Cut par défaut (§16.3), pas de texte ajouté seulement pour relancer l'image (skill §5.1). Détail : `formats-courts-verticaux.md` §3.4, `premiere-pro-avance.md` §5.4.
+Morph Cut seulement sur demande (§16.3), pas de texte ajouté seulement pour relancer l'image (skill §5.1). Détail : `formats-courts-verticaux.md` §3.4, `premiere-pro-avance.md` §5.4.
 
 ### 5.4 Catalogue des transitions : durées de départ et emploi par famille
 
-**Règle du skill (§7) :** transitions réservées aux changements d'argument ou de séquence. Elle vise les transitions **visibles**. Les micro-fondus audio de 1 à 2 images et les J/L-cuts sont permis s'ils ne mordent pas l'attaque d'un mot (skill §4) ; jamais de J/L-cut sur la bouchée ni la réaction en D.
+**Règle du skill (§7) :** transitions réservées aux changements d'argument ou de séquence. Elle vise les transitions **visibles**. En long : **coupe franche par défaut, fondus rares (fin de Story ou sur demande)** ; fondu de calme, coupe au noir et noir dans un gag seulement sur demande, avec deux versions sur un extrait (réponse du 12/10/2026). Les micro-fondus audio de 1 à 2 images et les J/L-cuts sont permis s'ils ne mordent pas l'attaque d'un mot (skill §4) ; jamais de J/L-cut sur la bouchée ni la réaction en D.
 
-**Statut des valeurs.** Repères de la littérature : un fondu enchaîné classique dure 24 à 48 images (environ 1 à 2 s) ; un fondu de 6 à 12 images (« soft-cut ») adoucit un jump cut (Pixel Valley Studio, MasterClass, Boris FX : extraits de recherche). Les durées du tableau sont des **valeurs de départ de métier, non sourcées, à valider sur un extrait avec Cabezer**, en images à 29,97 i/s ; reconvertir à la cadence de la séquence (12 images = 0,40 s à 29,97, 0,48 s à 25). La durée par défaut d'une transition dans Premiere serait de 1 s selon l'aide Adobe (extrait ; à vérifier dans Préférences > Timeline, libellé à confirmer) : souvent trop long ici, donc **fixer la durée à la pose**.
+**Statut des valeurs.** Repères de la littérature : un fondu enchaîné classique dure 24 à 48 images (environ 1 à 2 s) ; un fondu de 6 à 12 images (« soft-cut ») adoucit un jump cut (Pixel Valley Studio, MasterClass, Boris FX : extraits de recherche). Les durées du tableau sont des **valeurs de départ de métier, non sourcées, à valider sur un extrait avec Cabezer**, en images à 29,97 i/s ; reconvertir à la cadence de la séquence (12 images = 0,40 s à 29,97, 0,48 s à 25). La durée par défaut d'une transition dans Premiere serait de 1 s selon l'aide Adobe (extrait ; à vérifier dans Preferences > Timeline, libellé anglais à confirmer) : souvent trop long ici, donc **fixer la durée à la pose**.
 
 | Transition | Durée de départ | Employer quand | Éviter quand | Familles |
 |---|---|---|---|---|
-| **Coupe franche** | 0 | Défaut : même idée, même lieu, changement de valeur de plan | Temps ou lieu qui changent sans repère (§11) | Toutes ; seule transition de D, hors whip et flash |
-| **Fondu enchaîné** (Cross Dissolve) | 12 à 24 images ; 24 à 48 pour une ellipse longue ou un fondu de calme décidé au brief | Changement de temps, de lieu ou de ton ; passé/présent ; ellipse | Entre deux prises du même visage (fantôme) ; pour masquer un jump cut ; sur une preuve à lire | S occasionnel, F, T rare, P et H au brief ; **jamais D** |
-| **Fondu au noir** (Dip to Black, libellé à confirmer), milieu de vidéo | 12 à 24 images à la descente, autant à la remontée | Fin d'une grande partie, rupture nette de ton ou de jour | Entre deux idées voisines ; D | F, P, S, H au brief (en S, le chapitre a son carton, skill §6) ; T rare |
-| **Fondu depuis le noir** (ouverture) | 12 à 24 images | Ouverture posée d'un film ou d'une série | Quand l'image 1 porte le hook ou le produit | P, F, S, H au brief ; **jamais D** (produit ou bouchée dans la 1re seconde, skill §5.2) |
-| **Fondu final** | S : 30 à 60 images (1 à 2 s) proposées ; autres : 12 à 24 | Refermer une vidéo | D : aucun ajouté sans demande | **S :** après le regard silencieux, avant que Cabezer bouge, accord musical qui s'éteint sur le noir, aucun bruitage, pas de carton d'abonnement (skill §6). **F, T, P :** au brief, compatible avec l'écran de fin (skill §13). **D :** coupe après l'extinction réelle de la voix et l'appel au commentaire entier (skill §4) |
-| **Cut au noir** (coupe sèche vers le noir) | 0 ; noir tenu à décider au brief (départ 0,5 s) | Choc ou chute au milieu d'une vidéo | Fin de Story (pas de fin coupée sèche, skill §6) ; tout noir non écrit (skill §14 traque les noirs involontaires) | Au brief seulement ; défaut : non utilisé |
+| **Coupe franche** | 0 | Défaut partout : même idée, même lieu, changement de valeur de plan | Temps ou lieu qui changent sans repère (§11) | Toutes ; seule transition des courts, hors whip et flash de C-Food |
+| **Fondu enchaîné** (Cross Dissolve) | 12 à 24 images ; 24 à 48 pour une ellipse longue ou un fondu de calme | Rare : changement de temps, de lieu ou de ton ; passé/présent ; ellipse, seulement sur demande de Cabezer (fondu de calme : deux versions sur un extrait) | Par défaut ; entre deux prises du même visage (fantôme) ; pour masquer un jump cut ; sur une preuve à lire | Longs, sur demande (en S, rare, surtout en fin de vidéo) ; **jamais dans les courts** |
+| **Fondu au noir** (Dip to Black, libellé à confirmer), milieu de vidéo | 12 à 24 images à la descente, autant à la remontée | Seulement sur demande : fin d'une grande partie, rupture nette de ton ou de jour | Par défaut ; entre deux idées voisines ; courts | Longs, sur demande (en S, le chapitre a son carton, skill §6) |
+| **Fondu depuis le noir** (ouverture) | 12 à 24 images | Seulement sur demande : ouverture posée d'un film ou d'une série | Par défaut ; quand l'image 1 porte le hook ou le produit | Longs, sur demande ; **jamais en court** (produit ou bouchée dans la 1re seconde, skill §5.2) |
+| **Fondu final** | S : 30 à 60 images (1 à 2 s) proposées ; autres : 12 à 24 | Refermer une vidéo | Courts : aucun ajouté | **S :** après le regard silencieux, avant que Cabezer bouge, accord musical qui s'éteint sur le noir, aucun bruitage, pas de carton d'abonnement (skill §6) ; 5 à 20 s réservées à l'écran de fin. **F, T, P, L-Life :** sur demande seulement, compatible avec l'écran de fin (skill §13). **Tous les courts :** appel au commentaire dans les 5 dernières secondes, puis coupe à l'extinction réelle de la voix (skill §4) |
+| **Cut au noir** (coupe sèche vers le noir), y compris le noir dans un gag | 0 ; noir tenu à décider avec Cabezer (départ 0,5 s) | Choc ou chute au milieu d'une vidéo, seulement sur demande, deux versions sur un extrait | Par défaut ; fin de Story (pas de fin coupée sèche, skill §6) ; tout noir non écrit (skill §14 traque les noirs involontaires) | Sur demande seulement ; sinon non utilisé |
 | **J-cut / L-cut** | Décalage de départ 6 à 15 images | Voir §6 | Voir §6 | Voir §6 |
 | **Fondu audio de raccord** | 1 à 2 images dans le silence, ou deux clés de volume | Seulement où un clic ou un saut de fond est audible (§13.3) | En masse ; coupes serrées de D ; attaque d'un mot | Toutes, avec ces limites |
 
@@ -165,7 +165,7 @@ Pas de Morph Cut par défaut (§16.3), pas de texte ajouté seulement pour relan
 
 **Poser un fondu dans Premiere.**
 1. Vérifier que les deux clips ont des images au-delà de la coupe (poignées) ; sinon poser la transition au bord du clip.
-2. Panneau Effets (Effects) > Transitions vidéo (Video Transitions) > Fondu (Dissolve) : libellés à confirmer, noms français indicatifs d'après des tutoriels (Fondu enchaîné, Fondu au noir, Fondu au blanc). Glisser la transition sur le point de montage, fixer la durée en images.
+2. Panneau Effects > Video Transitions > Dissolve (interface de Premiere en anglais ; libellés à confirmer, repères français d'après des tutoriels : Effets > Transitions vidéo > Fondu enchaîné, Fondu au noir, Fondu au blanc). Glisser la transition sur le point de montage, fixer la durée en images.
 3. Le fondu vidéo ne traite pas l'audio : poser le fondu audio à part (§13.3).
 4. Fondu au noir : selon l'aide Adobe (extrait), il peut affecter une vidéo posée sur une piste inférieure ; vérifier l'aperçu avec toutes les pistes (à vérifier). Rendre la plage avant de juger.
 
@@ -205,7 +205,7 @@ La sélection liée peut se désactiver après une coupe : la revérifier avant 
 3. **Temps de lecture :** appliquer `documentaire-essai-video-archives.md` §5.3 (formule du skill) aux textes d'habillage, cartons, traductions et blocs de sous-titres des familles longues. Elle ne vise ni les sous-titres mot à mot de D ni les coupes rapides nommées de 0,4 à 0,8 s (accumulation sans texte à lire). Image sans texte : 2 s au moins ; univers visuel suivi : 2 à 3 s.
 4. Plan muet : sans son source (skill §5).
 5. **Mouvement sur une image fixe ou un document :** seulement pour désigner un détail ou présenter un visage, avec un temps avant et après et une courbe douce ; jamais de dérive décorative, jamais sur un plan qui porte un texte à lire (skill §6 point 11 et §7, « Mouvement sur image fixe »).
-6. **Plan stock de préparation (D) :** seulement avec l'accord de Cabezer et la licence consignée ; une préparation du même type de produit, jamais présentée comme le plat servi, sans logo ni lieu identifiable (skill §5).
+6. **Plan stock de préparation (D) :** accord général de Cabezer pour les plans stock libres de droits : téléchargés sans redemander, licence consignée dans `Suivi/licences.csv`, signalés à Cabezer ; une préparation du même type de produit, jamais présentée comme le plat servi, sans logo ni lieu identifiable (skill §5).
 7. **Extrait tiers (P, S) :** durée minimale nécessaire, commenté, source affichée ; un crédit n'est pas une autorisation ; signaler le risque Content ID avant publication (`conformite-droits-accessibilite.md`).
 
 **Exemple de Hamilton :** un briefing de *Top Gun: Maverick* alterné avec des plans de pilotes sous une musique ; le briefing donne l'information, les plans le sentiment. **Réussite :** sans le plan de coupe, quelque chose manque ; sinon le supprimer.
@@ -233,7 +233,7 @@ Procédure détaillée : `premiere-pro-avance.md` §5.1. Le panneau Texte (Text)
 **Règles pour Cabezer :**
 - **Repérer et pré-découper** un assemblage, rien de plus. Aucune suppression en masse.
 - **Recaler chaque coupe** à la forme d'onde et à l'énergie du son, jamais aux temps de la transcription (qui étire les mots) ; vérifier qu'aucun début de mot n'est mordu (skill §4). Pour recaler en série, utiliser l'outil d'affinage des bords de `audio-dialogue-sound-design-mixage.md` §3.1 : il propose des candidats en CSV, jamais appliqués sans l'écoute de Cabezer, et se règle d'abord sur un montage validé.
-- **D :** abaisser le seuil de pause à 0,25 s si le panneau le permet, sinon couper à la main ; garder réactions et échanges.
+- **D et tous les courts :** abaisser le seuil de pause à 0,25 s si le panneau le permet, sinon couper à la main ; garder réactions et échanges.
 - **S :** pas de « supprimer toutes les pauses » : cela efface les respirations que le skill garde (§6).
 - Une fonction « Paper Edit » est annoncée par une source non officielle : à vérifier sur sa version avant d'en parler.
 
@@ -250,7 +250,7 @@ Baxter : quand le personnage maîtrise, on étire ; quand il perd le contrôle, 
 ### 9.3 Tenir un plan plus longtemps que confortable
 Baxter tient certains plans un peu trop longtemps ; Scorsese : « un peu trop longtemps, puis couper si c'est justifié » (via Zhou). Deux cas :
 - **Plan sans parole** (extrait, document, lieu, carton) : durée fixée par le temps de lecture (§7 règle 3) et l'émotion. Permis en S, F, P.
-- **Visage de Cabezer après son dernier mot** (respiration) : exception du skill réservée à S (§4.1). Moments d'émotion de P et verdict de F : décision en attente (§22), défaut : couper selon le skill §4.
+- **Visage de Cabezer après son dernier mot** (respiration) : exception du skill (§4.1) en S, aux moments d'émotion de P, au verdict de F et dans le Lifestyle posé. Ailleurs (C-Food, T, tous les courts), couper selon le skill §4.
 
 **Éviter :** D, explications tech, tout moment où Cabezer cherche ses mots.
 
@@ -282,7 +282,7 @@ Murch place la coupe, ajoute ou retire des images, relit (la fenêtre de trim af
 
 **Ellipse :** passer sur un moment en gardant le sens (Kon saute l'action attendue et montre le résultat). **Procédure (Hamilton) :** 1) rapporter chaque scène à sa fonction ; 2) pour chaque plan, demander s'il peut être une image plus court ou supprimé ; 3) compresser une suite de scènes avec musique et une ou deux répliques clés. « L'information est la mort de l'émotion » : Hamilton serre jusqu'à casser, puis rend de l'air.
 
-**Application :** D, déjà très comprimée, ne pas retirer les réactions ; S, garder les respirations qui portent une émotion (skill §6) ; déclinaisons, comprimer avec les paroles existantes sans recomposer le sens (skill §12). **Piège :** une ellipse sans repère de temps désoriente ; ajouter un signal : fondu enchaîné (§5.4), lumière, mot, musique.
+**Application :** D, déjà très comprimée, ne pas retirer les réactions ; S, P (moments d'émotion) et verdict de F, garder les respirations qui portent une émotion (skill §4, §6) ; déclinaisons, comprimer avec les paroles existantes sans recomposer le sens (skill §12). **Piège :** une ellipse sans repère de temps désoriente ; ajouter un signal : fondu enchaîné (§5.4), lumière, mot, musique.
 
 ---
 
@@ -290,7 +290,7 @@ Murch place la coupe, ajoute ou retire des images, relit (la fenêtre de trim af
 
 **Source :** Zhou sur Jackie Chan (transcription lue). Edgar Wright et Roger Nygard non lus. Action et réaction dans le même plan quand c'est possible ; ne pas couper sur chaque coup ; montrer le coup deux fois, en reprenant le geste trois images en arrière (un seul coup, plus fort) ; faire payer le gag par le visage.
 
-**Quand :** un moment comique de Cabezer en F, S ou P. **Éviter :** généraliser les trois images, propres à l'action ; en D, la chute passe par la coupe franche et le SFX du skill. **Chute dite à voix haute :** laisser finir la dernière syllabe, puis couper. Tenir le visage 0,5 à 1 s relève de la respiration (§4.1) : S seulement par défaut.
+**Quand :** un moment comique de Cabezer en F, S ou P. **Éviter :** généraliser les trois images, propres à l'action ; en D, la chute passe par la coupe franche et le SFX du skill. **Chute dite à voix haute :** laisser finir la dernière syllabe, puis couper. Tenir le visage 0,5 à 1 s relève de la respiration (§4.1) : permis en S, en P et au verdict de F quand il porte l'émotion ; pas en D ni en T.
 
 ---
 
@@ -300,7 +300,7 @@ Murch place la coupe, ajoute ou retire des images, relit (la fenêtre de trim af
 Le son est la moitié de l'histoire (Hamilton). **Contrôler le rythme visuel sans le son** une fois : un bon son cache un rythme faible (Claude lit planche d'images et durées, §18 ; Cabezer regarde l'aperçu muet).
 
 ### 13.2 Compatibilité avec le skill
-D : pas de musique, aucune ambiance continue par défaut, SFX audibles (skill §5, liste de référence) ; le « silence composé » ne s'y applique pas. Ambiance sous un insert muet et foley d'aliment : décisions en attente, `audio-dialogue-sound-design-mixage.md` §15. S : nappe continue et vrai silence de 1 à 2 s avant une bascule (skill §11 ; valeurs dans `audio-dialogue-sound-design-mixage.md` §5.5), qui recouvre les silences de Baxter.
+Tous les courts : aucune musique, SFX de la banque Pixabay audibles comme en dégustation (skill §5, §11) ; le « silence composé » ne s'y applique pas. D : aucune ambiance continue par défaut ; une ambiance discrète du lieu sous un insert muet est à proposer au premier usage et n'est posée qu'avec l'accord de Cabezer ; foley d'aliment : jamais (`audio-dialogue-sound-design-mixage.md` §15). S : nappe continue et vrai silence de 1 à 2 s avant une bascule (skill §11 ; valeurs dans `audio-dialogue-sound-design-mixage.md` §5.5), qui recouvre les silences de Baxter.
 
 ### 13.3 Éviter les clics aux raccords audio
 Nedomansky pose un fondu enchaîné de 2 images aux bords des clips de dialogue (il dit « 2 images » puis « une image » : valeur à confirmer). **La version ciblée de `audio-dialogue-sound-design-mixage.md` §3.2 fait foi :**
@@ -336,7 +336,7 @@ Murch exporte le film, place cette copie au-dessus de la timeline et la découpe
 
 ## 16. Procédures Premiere Pro
 
-**Raccourcis (skill §3).** N'utiliser aucun raccourci tant qu'il n'a pas été lu dans Premiere > Raccourcis clavier (Keyboard Shortcuts) sur la machine de Cabezer ; sinon passer par la commande de menu. Consigner raccourcis et libellés lus dans `Suivi/environnement-verifie.md` (`pilotage-environnement-reprise.md`). Les raccourcis d'édition courants, marqués « à confirmer », sont dans `premiere-pro-avance.md` §4.
+**Raccourcis (skill §3).** N'utiliser aucun raccourci tant qu'il n'a pas été lu dans Premiere > Keyboard Shortcuts (Raccourcis clavier) sur la machine de Cabezer (interface en anglais) ; sinon passer par la commande de menu. Consigner raccourcis et libellés lus dans `Suivi/environnement-verifie.md` (`pilotage-environnement-reprise.md`). Les raccourcis d'édition courants, marqués « à confirmer », sont dans `premiere-pro-avance.md` §4.
 
 **Versions.** Ne pas affirmer une version, une date ou un statut de fonction : la version lue dans l'application fait foi (`pilotage-environnement-reprise.md`). Libellé non lu = « libellé à confirmer ».
 
@@ -344,13 +344,13 @@ Murch exporte le film, place cette copie au-dessus de la timeline et la découpe
 1. Repère sur le point d'édition ; mode trim par double-clic (geste à confirmer). 2. Ajouter ou retirer des images ; lire le décalage affiché (+1, −4) : affichage vu dans CC 2015, à vérifier. 3. Comparer trois valeurs (§9.4) et noter la retenue.
 
 ### 16.2 Ralenti
-Réservé aux inserts (skill §7), jamais sur la parole ni la bouchée retenue. Vitesse constante : clic droit > Vitesse/Durée (Speed/Duration, libellé à confirmer). Rampe : Remappage temporel (Time Remapping) avec images clés lissées. Vérifier la cadence du rush (50/60p) avant de promettre un ralenti. Schoonmaker ralentit un instant pour souligner un regard, puis revient à la vitesse normale. **Interpolation :** mélange de trames ou rush à cadence élevée par défaut ; le flux optique n'a pas de statut tranché (§22) et n'est pas utilisé sans accord (`premiere-pro-avance.md` §7).
+Réservé aux inserts (skill §7), jamais sur la parole ni la bouchée retenue. Vitesse constante : clic droit > Speed/Duration (Vitesse/Durée, libellé à confirmer). Rampe : Time Remapping (Remappage temporel) avec images clés lissées. Vérifier la cadence du rush (50/60p) avant de promettre un ralenti. Schoonmaker ralentit un instant pour souligner un regard, puis revient à la vitesse normale. **Interpolation :** ralentis sur rushs 50/60p, sinon mélange de trames ; le flux optique est interdit (réponse du 12/10/2026).
 
 ### 16.3 Fonctions IA : trois statuts (skill §16)
 Le skill §16 fait foi ; ne sont rappelées que les fonctions qui touchent le montage narratif.
 - **Aides autorisées, résultat vérifié :** transcription (Speech to Text), montage par le texte pour repérer et pré-découper (§8.4), détection des changements de plan, recherche Media Intelligence, Auto Reframe comme point de départ, détection de mots de remplissage (repérage, jamais suppression automatique).
 - **Seulement sur demande explicite de Cabezer :** Extension générative (Generative Extend), Morph Cut, Remplissage d'après le contenu, tout outil Firefly. Si un plan manque d'une demi-seconde : un autre plan réel, un ralenti d'insert, un fondu, un plan de coupe, dans cet ordre.
-- **Interdits par défaut (règle de Cabezer) :** Améliorer la parole (Enhance Speech), Correspondance automatique et « Dynamique » d'Essential Sound, images ou animations générées par IA (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16). Si une fonction manque dans sa version, le dire.
+- **Interdits par défaut (règle de Cabezer) :** Enhance Speech (Améliorer la parole), Auto Match (Correspondance automatique) et « Dynamics » (Dynamique) d'Essential Sound, images ou animations générées par IA (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16). Si une fonction manque dans sa version, le dire.
 
 ---
 
@@ -393,7 +393,7 @@ ffmpeg -y -i montage.mp4 -vf "select='between(t,1.92,2.08)',scale=160:-1,tile=4x
 Regarder : mouvement non montré deux fois, ni œil mi-clos ni bouche en plein mot sur la première image entrante (§4.4). Planches de contact : fiche d'organisation §6.3.
 
 ### 18.4 Silences, noirs, images figées, niveau
-Utiliser le tableau de la fiche d'organisation §6 (blancs à vérifier, son manquant, fin d'un mot protégé, noirs, figements, ebur128). Pour la note de rétention en D (skill §5.2), n'employer que la méthode étalonnée du skill (18 dB sous le 80e centile sur 4 s, voix seule). `freezedetect` signale aussi les plans fixes volontaires : interpréter avant de corriger. Le loudness est un repère, pas une cible (`audio-dialogue-sound-design-mixage.md` §9).
+Utiliser le tableau de la fiche d'organisation §6 (blancs à vérifier, son manquant, fin d'un mot protégé, noirs, figements, ebur128). Pour la note de rétention des courts (skill §5.2), n'employer que la méthode étalonnée du skill (18 dB sous le 80e centile sur 4 s, voix seule). `freezedetect` signale aussi les plans fixes volontaires : interpréter avant de corriger. Le loudness est un repère, pas une cible (`audio-dialogue-sound-design-mixage.md` §9).
 
 ### 18.5 Coupes et transitions de la timeline
 `xml-coupes.py` lit un export FCP XML (voie de secours, `premiere-pro-avance.md` §13) et liste coupes, trous et transitions (un `<start>` de −1 indiquerait une transition : à confirmer sur un export réel). `lister-clips.jsx` lit la piste V1 sans rien modifier ; ExtendScript sert tant que le test de fumée de `pilotage-environnement-reprise.md` le confirme, UXP est préféré pour un nouvel outil.
@@ -408,7 +408,7 @@ Raccords : §5.0 ; transitions : §5.4 ; plans de coupe : §7.
 |---|---|---|---|---|---|---|
 | Règle des six | Après les seuils du skill | Oui | Oui (histoire d'abord) | Oui | Oui (histoire d'abord) | Oui |
 | J-cut / L-cut | Jamais sur bouchée ni réaction ; B-roll sous voix | Oui | Oui | Oui | Oui | Oui |
-| Respiration après le dernier mot | Non | En attente, défaut non | Oui | En attente, défaut non | Non | Selon brief |
+| Respiration après le dernier mot | Non | Oui, au verdict | Oui | Oui, moments d'émotion | Non | Selon brief ; Lifestyle posé : oui |
 | Tenir un plan sans parole | Non | Oui | Oui | Oui | Non | Selon émotion |
 | Montage parallèle | Hook seulement | Rare | Oui | Oui | Rare | Cas par cas |
 | Montage par le texte | Aide, recaler, seuil 0,25 s | Aide | Aide, garder respirations | Aide | Aide | Aide |
@@ -447,8 +447,8 @@ Raccords : §5.0 ; transitions : §5.4 ; plans de coupe : §7.
 - [ ] Aucune phrase recollée ne change le sens de ce que la personne a dit.
 - [ ] J-cut / L-cut : aucun bout de phrase supprimée ; aucun sur bouchée ou réaction en D.
 - [ ] Chaque plan de coupe apporte une information ou masque une coupe voulue.
-- [ ] Transitions relues : une raison écrite et une durée en images chacune ; aucune en D hors whip et flash du skill.
-- [ ] Respirations gardées (S) ou coupées selon le skill ; extension à P et F seulement si Cabezer l'a décidée.
+- [ ] Transitions relues : une raison écrite et une durée en images chacune ; aucune dans les courts hors whip et flash de C-Food ; coupe franche par défaut en long, fondus seulement en fin de Story ou sur demande.
+- [ ] Respirations gardées (S, moments d'émotion de P, verdict de F, Lifestyle posé) ou coupées selon le skill §4 ailleurs.
 - [ ] Zones longues et courtes listées (§18.2) et justifiées ; rythme visuel contrôlé sans le son ; écoute finale demandée à Cabezer.
 - [ ] Aucune fonction IA hors des aides autorisées ; raccourcis et menus lus sur l'interface réelle.
 - [ ] Suivi : appliqué / contrôlé (mesuré, extrait) / validé par Cabezer.
@@ -457,17 +457,15 @@ Raccords : §5.0 ; transitions : §5.4 ; plans de coupe : §7.
 
 ## 22. Décisions à demander
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur tout autre passage.
 
-| Question pour Cabezer | Défaut en attendant |
+| Question tranchée | Réponse de Cabezer |
 |---|---|
-| Étendre l'exception « Respirations » (garder le regard ou l'émotion après le dernier mot) aux moments d'émotion de films/séries et au verdict d'un food long ? | Règle du skill inchangée : exception réservée à Story, coupe selon le skill §4 ailleurs. |
-| Valider les durées de départ des transitions (§5.4) sur un extrait de chaque famille ? | Coupe franche partout ; fondus seulement en fin de Story et là où le brief les demande ; durée fixée en images à la pose. |
-| Autoriser un fondu enchaîné de calme (24 à 48 images) ou un cut au noir en films/séries et en food long ? | Non utilisé sans brief. |
-| Accepter l'interpolation par flux optique pour les ralentis d'inserts ? | Non ; mélange de trames ou rush à cadence élevée. |
-| Autoriser Morph Cut sur un face caméra stable en Story ? | Non, sauf demande explicite. |
-
----
+| Étendre l'exception « Respirations » aux moments d'émotion de films/séries et au verdict d'un food long ? | Oui : respirations gardées en films/séries (moments d'émotion) et au verdict du food long, en plus de la Story et du Lifestyle posé. |
+| Durées de départ des transitions (§5.4) | Coupe franche par défaut en long ; fondus rares (fin de Story ou sur demande). Durée fixée en images à la pose, vérifiée sur l'extrait. |
+| Fondu enchaîné de calme, cut au noir, noir dans un gag | Seulement sur demande, avec deux versions sur un extrait. |
+| Interpolation par flux optique pour les ralentis d'inserts | Non : ralentis sur rushs 50/60p, sinon mélange de trames. |
+| Morph Cut sur un face caméra stable | Seulement sur demande. |
 
 ## 23. Sources étudiées
 

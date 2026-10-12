@@ -400,9 +400,9 @@ La chaîne s'exécute sur un fichier de test synthétique [Mesuré] ; elle n'a �
 
 ### 12.4 HDR : cas de la livraison
 
-- **SDR Rec.709** sauf brief contraire (skill §13) ; une séquence SDR n'exporte pas en HDR [S].
-- **Séquence 100 % HLG** : Direct HLG fonctionne [Tuto Adobe : Druss 14:23], seulement si Cabezer demande une livraison HDR.
-- **Séquence mixte** : conversion par clip (Direct Rec.709 par défaut ; gamut large à tester, §3.3).
+- **Livraison toujours en SDR Rec.709** (réponse du 12/10/2026) ; une séquence SDR n'exporte pas en HDR [S].
+- **Séquence 100 % HLG** : pas de Direct HLG ; séquence en Direct Rec.709 et conversion par clip (§12.2).
+- **Séquence mixte** : conversion par clip dans une séquence Direct Rec.709 (§3.3).
 - **Contrôle** : après export, vérifier les balises (§14) ; un fichier HLG a un transfert différent de Rec.709.
 
 ---
@@ -411,15 +411,15 @@ La chaîne s'exécute sur un fichier de test synthétique [Mesuré] ; elle n'a �
 
 Les animations sont faites dans After Effects (skill §16) ; leur couleur doit rester juste.
 
-1. **Ne pas étalonner les graphismes.** Le look et les corrections se posent sur les plans vidéo (V1, V2), pas sur un calque d'ajustement qui recouvre les pistes d'habillage. Raison : les couleurs d'identité (rouge tomate #E63946, couleurs de pays, skill §5.1) doivent sortir exactes. Si un calque d'ajustement global est indispensable, l'appliquer **sous** les graphismes. Le skill ne fixe pas la place de l'étalonnage par rapport aux graphismes : ceci est le défaut de cette fiche (question 10, §18).
-2. **Profondeur de la composition AE** : voir `after-effects-motion-design.md §3.1` (8 bpc pour aplats et texte ; 16 bpc pour ombres douces, dégradés, verre). Si un dégradé de fond montre des bandes, passer cette composition à 16 bpc, puis à 32 bpc seulement si les bandes restent [Tuto : Levine 50:26 à 50:57, ancien ; principe toujours valable, **à vérifier sur AE installé**].
+1. **Ne pas étalonner les graphismes.** Le look et les corrections se posent sur les plans vidéo (V1, V2), pas sur un calque d'ajustement qui recouvre les pistes d'habillage. Raison : les couleurs d'identité (rouge tomate #E63946, couleurs de pays, skill §5.1) doivent sortir exactes. Si un calque d'ajustement global est indispensable, l'appliquer **sous** les graphismes. C'est la règle du skill (§10) : jamais de calque de réglage global au-dessus de l'habillage.
+2. **Profondeur de la composition AE** : voir `after-effects-motion-design.md §4.1` (8 bpc pour aplats et texte ; 16 bpc pour ombres douces, dégradés, verre). Si un dégradé de fond montre des bandes, passer cette composition à 16 bpc, puis à 32 bpc seulement si les bandes restent [Tuto : Levine 50:26 à 50:57, ancien ; principe toujours valable, **à vérifier sur AE installé**].
 3. **Espace de travail AE** : désaccord non tranché. Levine (ancien) : AE ne tient pas compte d'un espace de travail avec Premiere ; Frame.io : Rec.709 gamma 2.4 dans Fichier > Paramètres du projet > Couleur [S]. **Ne pas choisir sur la foi d'une source** : le test ci-dessous tranche.
 4. **Rendu ProRes 4444 alpha** (skill §5.1) : importer dans Premiere et vérifier qu'un aplat de couleur connu (#E63946) ressort identique avant/après passage par Premiere.
 5. **Dynamic Link** : les effets Lumetri suivent le clip ; éviter de doubler une correction des deux côtés [Tuto : Levine 48:51 à 50:57].
 
 **Test de couleur pour un modèle AE** (une fois par machine ; D, F, S, P, T)
 1. Dans AE, créer une composition 1080 × 1920 avec un aplat #E63946, un dégradé noir-blanc horizontal et un gris 50 %.
-2. Rendre en ProRes 4444 avec alpha. Lire d'abord la valeur du pixel du rendu seul avec la commande de `after-effects-motion-design.md §14` (point 5, couleur de marque, attendu `(230, 57, 70)` à ±2).
+2. Rendre en ProRes 4444 avec alpha. Lire d'abord la valeur du pixel du rendu seul avec la commande de `after-effects-motion-design.md §15` (point 4, couleur de marque, attendu `(230, 57, 70)` à ±2).
 3. Importer le rendu dans une séquence Premiere (Direct Rec.709), l'exporter en MP4, puis lire le même pixel sur une image du MP4 (grand aplat, pour éviter l'erreur du sous-échantillonnage de la chrominance [I]). Un écart sensible entre les deux lectures indique un réglage d'espace à corriger côté AE ou côté séquence.
 4. Consigner la procédure exacte dans la fiche d'identité de la famille.
 
@@ -449,7 +449,7 @@ Commandes exécutées sur un fichier de test [Mesuré], jamais sur un export de 
 
 ## 15. Contrôle sur téléphone
 
-**Pas de source sur cette procédure.** Procédure proposée [I], à faire valider.
+**Pas de source sur cette procédure** [I]. Réponse du 12/10/2026 : plan test proposé à chaque projet, jamais bloquant.
 
 1. Exporter un **plan test** de 10 s (sombre, clair, peau), au format de livraison, et l'envoyer sur le téléphone de Cabezer (luminosité automatique, puis moyenne).
 2. Comparer à l'écran de montage : une image plus claire ou moins contrastée est normale dans une pièce lumineuse.

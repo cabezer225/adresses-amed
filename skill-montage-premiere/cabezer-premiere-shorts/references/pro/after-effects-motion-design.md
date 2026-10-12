@@ -479,24 +479,26 @@ Sources : extraits Adobe et forums [Extrait], aucune page officielle ouverte.
 | Technique | D | F | S | P | T | H |
 |---|---|---|---|---|---|---|
 | Pop, étiquette, prix, note, CTA (§7) | oui | oui | rare | non | avec accord | brief |
-| Sous-titres animés AE (§8.2) | oui | oui | oui | oui | oui | oui |
+| Sous-titres incrustés AE (§8.2) | oui (mot à mot) | étranger seulement | étranger seulement | étranger et passages traduits | étranger seulement | brief |
 | Révélation mot à mot (§8.1) | non | oui | titres de concept | non | oui | brief |
 | Trim Paths, surlignage (§9) | rare | oui | oui | oui | oui | oui |
 | Caméra 3D sur documents (§11) | non | oui | oui | oui | oui | brief |
 | Profondeur de champ sur calques AE | non | rare | rare | non | oui | brief |
-| Parallaxe 2.5D | non | avec accord | avec accord | avec accord | non | brief |
-| Rebond, écrasement-étirement (§10.4-5) | non | avec accord | non | non | avec accord | brief |
+| Parallaxe 2.5D | non | sur demande | sur demande | sur demande | non | brief |
+| Rebond, écrasement-étirement (§10.4-5) | jamais | sur demande | sur demande | jamais | sur demande | brief |
 | Suivi attaché au plan (§12) | avec accord | oui | oui | rare | oui | brief |
 | Roto Brush, aide vérifiée | rare | oui | oui | oui | oui | brief |
 | Flou de mouvement (§13) | oui | oui | oui | léger | oui | oui |
 
-**Imposé par famille** : skill §6 (jamais « Cabezer Story » écrit en S ; pas d'affiche générée en P). T : Liquid Glass sans fiche = non appliqué ; verre par effets natifs, repères non validés [À vérifier] : calque de réglage + cache de forme + flou, Décalage turbulent, 16 bpc ; barres et compteurs : `styles-food-et-tech.md §6`.
+Les colonnes F, S, P, T décrivent les longs ; leurs versions courtes (C-Story, C-Tech, C-Films, C-Life) suivent les règles de tous les courts : sous-titres mot à mot incrustés, aucune musique, punch-ins secs sans shake ni flash, identité propre au court.
+
+**Imposé par famille** : skill §6 (jamais « Cabezer Story » écrit en S ; identité Story v15 et générique « Amed Story 🧢 » supprimés, à refaire ; pas d'affiche générée en P). T : Liquid Glass n'existe plus, identité tech à recréer sur un extrait validé ; en attendant, aucun habillage tech n'est présenté comme définitif. Verre par effets natifs (repères non validés [À vérifier]) : calque de réglage + cache de forme + flou, Décalage turbulent, 16 bpc ; barres et compteurs : `styles-food-et-tech.md §6`.
 
 ---
 
 ## 18. Plugins gratuits et payants
 
-Gratuits uniquement (skill §17, décisions d’harmonisation B3) ; téléchargé, installé, en essai, fonctionnel sont des états distincts. **Inclus dans AE** : éditeur de graphiques, expressions, animateurs, Trim Paths, caméra 3D, Suivi, Mocha AE, Keylight, rendu multi-image, flou de mouvement, Roto Brush. **Payants, sans accord non intégrés** : Essential Namer (aescripts), Mocha Pro, Video Copilot (Element 3D, Shockwave…), formations School of Motion et Skillshare. **Licence non lue, traités comme payants** : fichier ECAbrams (Gumroad), fichiers d'expressions de Mike Murphy, paquet de papier plié de T10. Un preset gratuit n'autorise pas son audio, ses polices ni ses images ; consigner dans `Suivi/licences.csv`.
+Gratuits uniquement (skill §17, décisions d’harmonisation B3) ; téléchargé, installé, en essai, fonctionnel sont des états distincts. **Inclus dans AE** : éditeur de graphiques, expressions, animateurs, Trim Paths, caméra 3D, Suivi, Mocha AE, Keylight, rendu multi-image, flou de mouvement, Roto Brush. **Payants, sans accord non intégrés** : Essential Namer (aescripts), Mocha Pro, Video Copilot (Element 3D, Shockwave…), formations School of Motion et Skillshare. **Licence non claire, non utilisés** (réponse du 12/10/2026) : fichier ECAbrams (Gumroad), fichiers d'expressions de Mike Murphy, paquet de papier plié de T10. Un preset gratuit n'autorise pas son audio, ses polices ni ses images ; consigner dans `Suivi/licences.csv`.
 
 ---
 
@@ -515,7 +517,7 @@ Gratuits uniquement (skill §17, décisions d’harmonisation B3) ; télécharg�
 11. Script lancé sur le projet de travail → copie, test de fumée, journal (§16.1).
 12. Mauvais nombre d'objets `KeyframeEase` → 1 pour Position et valeurs simples, 3 pour l'échelle (§16.4).
 13. Confondre le curseur de CPU réservé et le paramètre de script → deux sens opposés (§14.4).
-14. Flash en plein cadre sans compter → limite de `conformite-droits-accessibilite.md §6`.
+14. Flash blanc fait ailleurs que dans AE → c'est un élément graphique : calque blanc animé dans AE, réservé aux gros moments (§7).
 15. Animation déclarée finie après le rendu → contrôles §15, puis revue du MP4 final.
 
 ---
