@@ -2,7 +2,7 @@
 
 > **Réponses de Cabezer du 12/10/2026 — elles priment sur cette fiche**, en particulier sur sa section « Décisions à demander ». **Format d'abord, famille ensuite (SKILL §2)** : long (L-Food, L-Story, L-Tech, L-Films, L-Life) ou court (C-Food, C-Story, C-Tech, C-Films, C-Life) ; codes de cette fiche : D = C-Food, F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; nouvelle famille Lifestyle (vlogs, face caméra : aucune musique, SFX comme la dégustation). **Tous les courts** : hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, punch-ins secs, appel au commentaire, notation sur 10, identité propre au court. **Longs** : SRT seul en France ; composition musicale en Story, food et tech ; respirations d'émotion gardées en films/séries et au verdict du food long ; 4K si rushs 4K. Aussi : identité Story v15 et générique « Amed Story 🧢 » supprimés ; jamais de foley d'aliment ; ambiance en dégustation proposée au premier usage ; un rendu de sous-titres par passage ; intervenants identifiés à la première apparition (hors courts food) ; au plus deux passes de retravail sous 8 ; Tesseract, Higgsfield et SCANDALE FOOD retirés. **Réponses techniques (série 3)** : interface de Premiere et d'AE en anglais ; scripts AE et Terminal autorisés ; stock libre de droits sans redemander ; tout SFX de la banque Pixabay permis ; arrêt sur image permis partout ; pas de test de photosensibilité ; audio YouTube 384 kbit/s ; proxys toujours en long ; Frame.io pour les relectures ; WhisperX à installer ; « 19h30 » et « 12,50 € » ; Liquid Glass à recréer. Liste complète : `../decisions-en-attente.md`.
 
-Fiche de référence du skill `cabezer-premiere-shorts`, publiée dans `references/pro/`. Elle apprend à monter un récit documentaire ou un essai : partition, preuve, photo, archive, carte, voix, extrait de film, crédits. Dernière révision : 12/10/2026, harmonisée avec `../decisions-harmonisation.md` de la passe 2. Versions visées : Premiere et After Effects 25.x–26.x, à confirmer sur la machine de Cabezer (`pilotage-environnement-reprise.md`).
+Fiche de référence du skill `cabezer-premiere-shorts`, publiée dans `references/pro/`. Elle apprend à monter un récit documentaire ou un essai : partition, preuve, photo, archive, carte, voix, extrait de film, crédits. Dernière révision : 12/10/2026, harmonisée avec `../decisions-harmonisation.md` de la passe 2. Versions visées : Premiere et After Effects 25.x–26.x, à confirmer sur la machine de Cabezer (`pilotage-environnement-reprise.md`). Premiere et After Effects sont utilisés **en anglais** (réponse du 12/10/2026) : le libellé anglais affiché à l'écran fait foi, les libellés français de cette fiche ne sont qu'un repère.
 
 **Légende des preuves :** **[T]** transcription lue en entier (sous-titres automatiques de YouTube, non relus ; minutes de la transcription) · **[Lu]** fichier ouvert et lu le 12/10/2026 (dépôts GitHub publics) · **[Testé ici]** commande exécutée sur fichiers synthétiques (ffmpeg 6.1.1) · **[K]** connaissance générale, à vérifier sur sa version · **[X]** extrait de résultat de recherche, page non ouverte · **[Choix]** décision de cette fiche, sans valeur de règle.
 
@@ -71,7 +71,7 @@ Ne pas la lire pour : l'identité visuelle (skill §6), le dérush technique (`p
 
 **Quatre entrées observées** (Perell [T, 18:36–19:38]) : par l'action, par l'objet à regarder, par le ton, par la question.
 
-**Procédure.** (1) Choisir une image ou une phrase d'ouverture qui ne dit pas encore la thèse. (2) Faire le test de promesse (« Le spectateur a cliqué pour voir ___ »). (3) Poser la question de rappel dans la première minute, sans y répondre. (4) Finaliser l'ouverture en dernier (skill §3) ; ouvrir une boucle au début, la refermer à la fin (skill §4). (5) Vérifier par transcription que le sujet et la promesse sont prononcés avant la 30e seconde (en Story, avant le générique).
+**Procédure.** (1) Choisir une image ou une phrase d'ouverture qui ne dit pas encore la thèse. (2) Faire le test de promesse (« Le spectateur a cliqué pour voir ___ »). (3) Poser la question de rappel dans la première minute, sans y répondre. (4) Finaliser l'ouverture en dernier (skill §3) ; ouvrir une boucle au début, la refermer à la fin (skill §4). (5) Vérifier par transcription que le sujet et la promesse sont prononcés avant la 30e seconde (en Story, dans l'intro face caméra).
 
 ---
 
@@ -87,7 +87,7 @@ Procédure : `premiere-pro-avance.md` §5.1. Compléments :
 1. Transcrire, lire, puis poser des marqueurs colorés par fonction dans le panneau Texte (Text) : *preuve, contrepoint, concession, émotion*.
 2. Organiser en bacs : un bac par personne, séquences de sélection `SEL_<thème>` [X, Ron Delsener Presents].
 3. Filtrer par locuteur pour écarter l'intervieweur [X] ; les points d'entrée et de sortie automatiques doivent être actifs pour que les modifications de texte arrivent sur la timeline [X, fil Adobe]. À vérifier sur sa version.
-4. **Le montage par le texte repère et pré-découpe, rien de plus.** Chaque coupe est ensuite recalée à la forme d'onde et à l'énergie du son, jamais aux temps de la transcription (skill §4). Aucune suppression en masse. **S : ne pas supprimer les pauses en masse** ; garder les respirations qui portent un regard ou une émotion (skill §6, Story).
+4. **Le montage par le texte repère et pré-découpe, rien de plus.** Chaque coupe est ensuite recalée à la forme d'onde et à l'énergie du son, jamais aux temps de la transcription (skill §4). Aucune suppression en masse. **S, P : ne pas supprimer les pauses en masse** ; garder les respirations qui portent un regard ou une émotion (skill §6, Story ; en films/séries, aux moments d'émotion ; au verdict du food long ; Lifestyle posé).
 
 ### 4.3 Raccord sonore et écoute
 
@@ -116,7 +116,7 @@ Combler un saut de fond sonore avec le silence de la pièce du même rush (skill
 
 ### 5.2 Document ou capture réels, explorés
 
-Suivre `after-effects-motion-design.md` §10.1 : image à deux fois la composition au moins, calque 3D, caméra pilotée par un nul, pause de lecture complète sur chaque détail, déplacement de 8 à 15 images, aucune dérive décorative (skill §6, Story, point 11). **Un document à lire ne reçoit jamais le mouvement Premiere du §6.4.** Avant d'importer une capture ou un document, masquer les données qui ne doivent pas être visibles (onglets, e-mails, notifications, jetons) : `conformite-droits-accessibilite.md`.
+Suivre `after-effects-motion-design.md` §11 (caméra 3D) : image à deux fois la composition au moins, calque 3D, caméra pilotée par un nul, pause de lecture complète sur chaque détail, déplacement de 8 à 15 images, aucune dérive décorative (skill §6, Story, point 11). **Un document à lire ne reçoit jamais le mouvement Premiere du §6.4.** Avant d'importer une capture ou un document, masquer les données qui ne doivent pas être visibles (onglets, e-mails, notifications, jetons) : `conformite-droits-accessibilite.md`.
 
 ### 5.3 Temps de lecture : cette section fait foi
 
@@ -130,7 +130,7 @@ Suivre `after-effects-motion-design.md` §10.1 : image à deux fois la compositi
 | Image sans texte | 2 s au moins |
 | Univers visuel suivi | Plans de 2 à 3 s |
 | Coupes rapides nommées (accumulation sans texte à lire) | 0,4 à 0,8 s, seulement quand la vitesse est le sens |
-| Sous-titres mot à mot de dégustation | Hors formule : rythme de la parole (`formats-courts-verticaux.md` §4.2) |
+| Sous-titres mot à mot de tous les formats courts | Hors formule : rythme de la parole (`formats-courts-verticaux.md` §4.2) |
 
 Les repères de densité des tutoriels ne valent que pour des plans sans texte.
 

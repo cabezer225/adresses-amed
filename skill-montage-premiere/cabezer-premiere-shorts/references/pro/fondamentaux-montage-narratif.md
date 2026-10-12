@@ -228,7 +228,7 @@ Baxter cherche les « meilleurs moments d'écoute » et coupe sur celui qui éco
 Baxter reste large pendant les déplacements et réserve le gros plan au point important ; en facecam, zoom façon Micode seulement quand il sert le moment (skill §7).
 
 ### 8.4 Montage par le texte dans Premiere
-Procédure détaillée : `premiere-pro-avance.md` §5.1. Le panneau Texte (Text) transcrit les clips ; supprimer un mot supprime le passage avec ripple. Selon des guides, une fonction repère les mots de remplissage et supprime les pauses au-delà d'une durée réglable (défaut cité 0,75 s).
+Procédure détaillée : `premiere-pro-avance.md` §5.1. Le panneau Text (Texte) transcrit les clips ; supprimer un mot supprime le passage avec ripple. Selon des guides, une fonction repère les mots de remplissage et supprime les pauses au-delà d'une durée réglable (défaut cité 0,75 s).
 
 **Règles pour Cabezer :**
 - **Repérer et pré-découper** un assemblage, rien de plus. Aucune suppression en masse.
@@ -368,10 +368,10 @@ s = ease(t, 0, framesToTime(4), 0, 100);  // 0 → 100 % en 4 images, accéléra
 `ease`, `framesToTime` et `thisComp.marker.key()` font partie du langage d'expressions d'AE. Ce n'est pas un élément de la DA v2 (pop 0 → 118 → 96 → 100 % en 7 images, skill §5.1).
 
 ### 17.2 Courbes
-Tout mouvement progressif (échelle, position) est lissé en Bézier / Progressif, jamais linéaire (skill §7) : sélectionner les images clés, appliquer Easy Ease (Animation > Assistant de clés, libellé à confirmer ; raccourci à lire dans AE), affiner dans l'éditeur de graphiques (Graph Editor). Deux exceptions qui ne sont pas des défauts : un **punch-in sec** est un changement instantané (clé maintenue ou deux clips) ; la **vitesse constante** est permise pour une rotation continue, un défilement, un compteur ou une boucle.
+Tout mouvement progressif (échelle, position) est lissé en Bézier / Progressif, jamais linéaire (skill §7) : sélectionner les images clés, appliquer Easy Ease (Animation > Keyframe Assistant, repère français : Assistant de clés ; libellé à confirmer ; raccourci à lire dans AE), affiner dans l'éditeur de graphiques (Graph Editor). Deux exceptions qui ne sont pas des défauts : un **punch-in sec** est un changement instantané (clé maintenue ou deux clips) ; la **vitesse constante** est permise pour une rotation continue, un défilement, un compteur ou une boucle.
 
 ### 17.3 Remappage temporel
-Pour un plan filmé seul, le ralenti se fait dans Premiere (§16.2). Dans AE, seulement pour une composition qui contient déjà un plan dans un habillage : Calque > Temps > Activer le remappage temporel (Layer > Time > Enable Time Remapping, libellé à confirmer). AE crée une image clé au début et à la fin du calque (aide Adobe, résumé) ; option grisée sur un calque d'animation : précomposer d'abord (fil Adobe, à vérifier). **Rampe :** deux images clés intermédiaires, Easy Ease. La bouchée retenue n'est jamais ralentie.
+Pour un plan filmé seul, le ralenti se fait dans Premiere (§16.2). Dans AE, seulement pour une composition qui contient déjà un plan dans un habillage : Layer > Time > Enable Time Remapping (repère français : Calque > Temps > Activer le remappage temporel ; libellé à confirmer). AE crée une image clé au début et à la fin du calque (aide Adobe, résumé) ; option grisée sur un calque d'animation : précomposer d'abord (fil Adobe, à vérifier). **Rampe :** deux images clés intermédiaires, Easy Ease. La bouchée retenue n'est jamais ralentie.
 
 ---
 
