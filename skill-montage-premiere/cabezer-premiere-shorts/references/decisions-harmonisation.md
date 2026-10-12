@@ -1,0 +1,61 @@
+# Décisions d'harmonisation (skill v3, 12/10/2026)
+
+Ce document a tranché les conflits relevés entre les fiches `references/pro/` et avec le skill. Le SKILL.md prime ; ce document prime sur les fiches, qui y renvoient par lettre et numéro (B4, C, D16…). Les points marqués **[Q]** attendent une décision de Cabezer : la fiche donne le **défaut** indiqué, signale la question et ne présente jamais l'alternative comme une règle.
+
+## A. Emplacement final et renvois
+
+- Les fiches sont publiées dans `references/pro/` du skill. Renvoyer entre fiches par leur nom de fichier et leur numéro de section : `organisation-livraison-qc.md §6`.
+- Le skill v3 suit cette numérotation (garder ces numéros dans les renvois « skill §N ») :
+  §1 Priorités, portée, arbitrage, définition de l'animation, mode autonome · §2 Vue rapide par famille · §3 Flux de travail (étape 0 brief, pilotage, montage long) · §4 Dérush · §5 Dégustation (§5.1 habillage DA v2, §5.2 notation) · §6 Identité par famille (food long, films/séries PRISME, tech, Story) · §7 Zooms, mouvements, transitions · §8 Recherches, illustrations, droits · §9 Sous-titres · §10 Colorimétrie · §11 Audio · §12 Déclinaisons et multicam · §13 Export · §14 Contrôles avant livraison · §15 Boucle rétention · §16 After Effects, outils IA, outils tiers · §17 Plugins · §18 Apprendre de nouvelles références · §19 Fiches pro (index) · §20 Statut des méthodes et décisions en attente.
+- Fiches transversales : `pilotage-environnement-reprise.md` (pilotage de l'interface, exécution des scripts sur le Mac, contrôle d'environnement, reprise après incident) et `conformite-droits-accessibilite.md` (droit à l'image, mentions commerciales, extraits tiers, photosensibilité, typographie française à l'écran, identification des intervenants). Les autres fiches y renvoient au lieu de dupliquer.
+- Codes de famille communs : D dégustation, F food long, S Story, P films/séries (PRISME), T tech, H hors familles.
+
+## B. Définitions et politiques (s'appliquent partout)
+
+1. **Animation (skill §1, §16).** *Animation graphique* = tout élément créé : texte, forme, emoji, pastille, prix, note, schéma, carte, sous-titre animé, flash ou glitch graphique, transition graphique, parallaxe 2.5D. Elle se fait **dans After Effects**, en calques natifs modifiables. *Traitement d'un plan filmé* = punch-in sec, zoom façon Micode, whip ou shake du cadre, speed ramp, recadrage, Auto Reframe, stabilisation, fondu, mouvement sur une photo ou un document qui **désigne** un détail : autorisé **dans Premiere**. Un script peut piloter AE (créer compositions, calques, clés) ; il ne fabrique jamais d'image hors d'AE. Les emojis Apple rendus par macOS sont des sources autorisées.
+2. **Outils IA — trois statuts (skill §16).**
+   - *Autorisés comme aides, résultat vérifié* : transcription (Speech to Text), montage par le texte pour repérer et pré-découper, détection des scènes, Auto Reframe comme point de départ, recherche Media Intelligence, Roto Brush et suivi sur un vrai plan, traduction automatique de légendes **relue**.
+   - *Seulement sur demande explicite de Cabezer* : Morph Cut, Remplissage d'après le contenu, Generative Extend, tout outil Firefly ou de génération/reconstruction de pixels.
+   - *Interdits par défaut (règle de Cabezer)* : « Améliorer la parole » / Enhance Speech (change le timbre), Correspondance automatique et « Dynamique » d'Essential Sound, voix ou musique générées, images ou animations générées par IA.
+3. **Payant.** Gratuits uniquement par défaut. Tout outil, plugin, banque ou service payant est signalé (nom, prix connu ou « à vérifier ») et attend l'accord de Cabezer.
+4. **Raccourcis clavier.** Aucun raccourci n'est utilisé tant qu'il n'a pas été lu dans Premiere/AE > Raccourcis clavier sur sa machine ; sinon passer par le menu. Les raccourcis et libellés lus sont consignés dans `Suivi/environnement-verifie.md` (voir `pilotage-environnement-reprise.md`). Une fiche peut citer un raccourci courant **en le marquant « à confirmer »**.
+5. **Libellés d'interface.** Nom français suivi de l'anglais entre parenthèses ; tout libellé non lu à l'écran est marqué « libellé à confirmer ». Exemple : l'option d'export s'appelle « Utiliser la qualité de rendu maximale » (Use Maximum Render Quality) et « Rendu à la profondeur maximale » (Render at Maximum Depth) — libellés à confirmer ; le skill écrivait « Rendu à la résolution maximale ».
+6. **Versions.** Ne pas affirmer une version, une date de sortie ou un statut (ExtendScript, UXP, Paper Edit, mode Color…) comme certain sans source officielle lue ; écrire « selon <source>, à vérifier sur sa version ». La table des versions et le test de fumée vivent dans `pilotage-environnement-reprise.md`.
+7. **ExtendScript / UXP / XML.** ExtendScript est utilisé tant qu'un test de fumée le confirme sur la machine de Cabezer ; UXP est préféré pour un nouvel outil dans Premiere ; FCP XML reste la voie de secours pour un premier assemblage. Ce que le XML ne transporte pas est listé dans `premiere-pro-avance.md`.
+8. **Écoute.** Claude n'entend pas. Il contrôle par mesures (ebur128, crêtes, spectre), transcription et forme d'onde ; l'écoute finale revient à Cabezer. Ne jamais écrire « écouté » pour une mesure.
+
+## C. Valeurs et emplacements uniques (une seule source, les autres renvoient)
+
+| Sujet | Décision | Fiche qui fait foi |
+|---|---|---|
+| Zones sûres 9:16 | Une seule « boîte de test provisoire » (valeurs de `formats-courts-verticaux.md §6.2`), pour le **texte clé** (étiquettes, prix, pop-ups, note, appel au commentaire). Les sous-titres de dégustation restent à 72–75 % de la hauteur (règle de Cabezer) : contrôle sur téléphone qu'ils ne sont pas masqués **[Q : exemption à confirmer]**. | formats-courts §6 |
+| Commandes ffmpeg/ffprobe de contrôle | Une seule bibliothèque avec tableau « usage, commande, seuil » : blancs à vérifier −35 dB / 0,25 s ; son manquant −50 dB / 0,5 s ; fin de mot −40 dB / 0,1 s ; plus blackdetect, freezedetect, ebur128, signalstats. | organisation-livraison-qc §6 |
+| Scripts | Un seul jeu de scripts nommés (mesure-plans.py, xml-coupes.py, lint-srt.py, controle-mp4.sh, etc.) décrit une fois ; les autres fiches renvoient au nom. | organisation-livraison-qc (section scripts) |
+| Loudness | −14 LUFS intégrés = **repère de contrôle** (±1), pas une cible imposée (règle de Cabezer) ; crête vraie du MP4 ≤ −1 dBTP ; AAC 48 kHz 320 kbit/s. Si la crête dépasse, baisser d'abord la source fautive. | audio §9 |
+| Nappe Story | Environ **24 dB sous la voix** (consigne la plus récente, 30/09 bis), mesurée en LUFS court terme sur les passages parlés ; réglage final à l'écoute de Cabezer. La valeur 15 dB est périmée. | audio §5.5 |
+| Ducking | Valeurs de départ de `audio §5.4`, à régler à l'écoute. | audio §5.4 |
+| Fondus audio aux raccords | Seulement là où un clic est audible : 1 à 2 images dans le silence, ou deux clés de volume. Jamais en masse sur les coupes serrées de dégustation, jamais sur l'attaque d'un mot. | audio §3.2 |
+| Proxys | ProRes Proxy par défaut, dossier séparé ; H.264 seulement si l'espace disque manque ; à confirmer par un essai sur un rush de Cabezer. | organisation-livraison-qc §3.2 |
+| Arborescence | `Media/` (Rushs/<caméra>, Assets, Audio, Proxys) · `Projet/` (.prproj, .aep versionnés) · `Exports/` (Brouillons, Final) · `Controles/` · `Suivi/` · `Publication/` facultatif. Les dossiers dégustation existants de Cabezer restent valables. | organisation-livraison-qc §2.1 |
+| Dossier Suivi | `brief.md`, `decisions.md`, `retours.md`, `journal.md`, `environnement-verifie.md`, `licences.csv` (registre unique images, vidéos, sons, musiques, polices), `verifications.md` (faits). `LICENCES-SFX.md` de la banque dégustation reste en place. | organisation-livraison-qc |
+| Limites de sous-titres | Skill prime : D français = un mot ; D traduction = 1 à 3 mots, ≤ 18 caractères ; autres familles et étranger = 2 lignes max, ≤ 24 caractères par ligne en 9:16 ; en 16:9 viser ≤ 42 caractères par ligne. Sous-titres finaux incrustés = **composition AE** à l'identité de la famille (entrée animée), texte éditable, + SRT livré ; la piste de légendes Premiere sert de transcription et de calage. « Mettre à niveau la légende » n'est plus utilisé. | formats-courts §4 |
+| Temps de lecture | Formule du skill max(1,5 s ; 1 s + caractères/15) pour textes d'habillage, cartons, traductions et blocs de sous-titres des familles longues ; **pas** pour les sous-titres mot à mot de dégustation ni pour les coupes rapides nommées (0,4–0,8 s). Image sans texte ≥ 2 s, univers visuel suivi 2 à 3 s. | documentaire §5.3 |
+
+## D. Règles de montage harmonisées
+
+1. **Linéaire.** « Jamais linéaire » vise les mouvements progressifs. Un punch-in sec est un changement instantané (clé maintenue ou deux clips). La vitesse constante est permise pour rotation continue, défilement, compteur, boucle.
+2. **Mouvement sur image fixe.** Il désigne un détail ou présente un visage, avec un temps avant et après, courbe douce ; jamais de dérive décorative ; jamais sur un plan qui porte un texte à lire (skill §6 point 11).
+3. **Masquer un jump cut** (ordre) : coupe franche assumée ou punch-in sec (D) → plan de coupe qui apporte quelque chose → second angle synchronisé → animation seulement si elle était déjà prévue. Pas de Morph Cut par défaut.
+4. **Transitions.** « Réservées aux changements d'argument ou de séquence » vise les transitions **visibles**. Micro-fondus audio et J/L-cuts sont permis s'ils ne mordent pas une attaque de mot ; jamais de J/L-cut sur la bouchée ou la réaction en dégustation.
+5. **Montage par le texte.** Sert à repérer et pré-découper ; chaque coupe est ensuite recalée à la forme d'onde et à l'énergie du son (jamais aux temps de transcription).
+6. **Respirations.** L'exception du skill concerne Story. Étendre aux moments d'émotion de films/séries et au verdict de food long = **[Q]**, défaut : règle du skill inchangée.
+7. **Corrections au dérush.** Retirer un faux départ pour garder ce que Cabezer voulait dire (ses propres exemples : « trois mozzarelles ») est permis ; jamais un collage qui crée une affirmation qu'il n'a pas faite ni ne change le sens.
+8. **Promesse.** Sujet et promesse confirmés avant la 30e seconde (avant le générique en Story) ; l'enjeu peut être rappelé ensuite.
+9. **Hook dégustation.** Noter son hook choisi avec le barème §5.2 et donner la note ; sous 8, proposer au plus deux variantes en gardant son hook comme option ; son choix prime ; au plus deux itérations.
+10. **Ambiance en dégustation.** Défaut : aucune ambiance continue ni musique. Ambiance discrète du lieu sous un insert muet = **[Q]**.
+11. **Foley d'aliment.** Défaut : aucun (jamais sur une bouchée ni une réaction ; pas sur un insert muet sans accord) **[Q]**.
+12. **SFX dégustation.** Banque Pixabay dédiée et liste fermée du skill (swoosh, pop, ding, boing, scratch, caisse, photo, scintillement) ; bibliothèque ouverte pour F, S, P, T. Calage par défaut à l'attaque (swoosh sur son pic) ; essai A/B ±1 image possible, adopté seulement s'il gagne à l'écoute de Cabezer.
+13. **Plan stock de préparation (D).** Seulement avec l'accord de Cabezer et licence consignée ; montrer une préparation du même type de produit, jamais présentée comme le plat servi, sans logo ni lieu identifiable.
+14. **Extraits tiers (P, S).** Durée minimale nécessaire, commentés, source affichée ; un crédit n'est pas une autorisation ; signaler le risque Content ID avant publication.
+15. **Vitesse de la musique.** Un morceau fini garde sa vitesse d'origine ; un ajustement de tempo ne concerne qu'une composition faite de boucles.
+16. **Mode autonome.** Défauts : hook = son hook habituel noté ; langue à l'étranger = anglais ; téléchargement = jamais sans accord (sinon s'en passer) ; validations = consignées comme « en attente ».
