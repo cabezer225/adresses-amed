@@ -503,7 +503,7 @@ Claude ne peut pas voir le téléphone. Noter dans `Suivi/retours.md` : « contr
 
 ## 18. Décisions à demander à Cabezer
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime en cas d'écart avec cette section.
 
 Réponses appliquées dans la fiche ; ne jamais présenter une alternative comme une règle.
 

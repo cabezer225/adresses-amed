@@ -11,15 +11,15 @@ Fiche de référence du skill `cabezer-premiere-shorts`. Elle apprend à tenir l
 - Quand une vidéo paraît lente, agitée, confuse ou fatigante sans qu'on sache pourquoi.
 - Pour poser chapitres et fin de vidéo, ou lire une courbe de rétention (skill §15).
 
-Ne pas la lire pour une dégustation TikTok/Shorts/Reels (D) : le hook et la rétention y sont notés par le barème du skill §5.2, qui ne vaut pas pour les vidéos longues. Ne pas la lire non plus pour l'identité visuelle (skill §6), les sous-titres (`formats-courts-verticaux.md` §4, skill §9), la couleur ou l'export.
+Ne pas la lire pour un format court TikTok/Shorts/Reels (dégustation D et autres courts) : le hook et la rétention y sont notés sur 10 par le barème du skill §5.2 (adapté à la famille), qui ne vaut pas pour les vidéos longues. Ne pas la lire non plus pour l'identité visuelle (skill §6), les sous-titres (`formats-courts-verticaux.md` §4, skill §9), la couleur ou l'export.
 
 **Hiérarchie (skill §1) :** brief de Cabezer, puis règles du skill, puis cette fiche, puis tutoriels. Chaque technique dit quand l'employer, quand l'éviter et pour quelles familles. Aucun chiffre de tutoriel n'est une règle.
 
 **Limite de Claude.** Claude ne ressent pas l'ennui d'un spectateur et n'entend pas. Il remplace l'ennui par des mesures (durée des plans, coupes par minute, part de face caméra), des planches d'images, la transcription et la forme d'onde. Écrire « mesuré », « lu en transcription » ou « vu sur planche », jamais « écouté » pour une mesure, jamais « le rythme est bon » sans dire comment on le sait. L'écoute finale et la validation reviennent à Cabezer (skill §1, §3).
 
 **Conventions.**
-- Nom français de l'interface, anglais entre parenthèses. Tout libellé non lu à l'écran est marqué « libellé à confirmer ».
-- Aucun raccourci clavier tant qu'il n'a pas été lu dans Raccourcis clavier (Keyboard Shortcuts) ; sinon passer par le menu. Libellés et raccourcis lus : `Suivi/environnement-verifie.md` (`pilotage-environnement-reprise.md`), qui fait aussi foi pour les versions.
+- Interface de Premiere et d'After Effects en anglais : le libellé anglais fait foi, le repère français suit entre parenthèses. Tout libellé non lu à l'écran est marqué « libellé à confirmer ».
+- Aucun raccourci clavier tant qu'il n'a pas été lu dans Keyboard Shortcuts (Raccourcis clavier) ; sinon passer par le menu. Libellés et raccourcis lus : `Suivi/environnement-verifie.md` (`pilotage-environnement-reprise.md`), qui fait aussi foi pour les versions.
 - Gratuits uniquement par défaut ; tout outil payant est signalé et attend l'accord de Cabezer.
 
 **Statuts de preuve :**
@@ -78,17 +78,17 @@ Ne pas confondre confirmer et payer.
 3. Couper ou remplacer tout plan qui n'y apporte rien.
 4. Vérifier qu'à 30 s le sujet et la promesse ont été montrés ou dits.
 
-**Réussite :** transcrire les 30 premières secondes (par fenêtres de 10 s qui se chevauchent, skill §5.2 pour la méthode de transcription) ; quelqu'un qui n'a vu que la miniature et ce texte retrouve la phrase écrite à l'étape 1. En Story, la transcription s'arrête avant le générique.
+**Réussite :** transcrire les 30 premières secondes (par fenêtres de 10 s qui se chevauchent, skill §5.2 pour la méthode de transcription) ; quelqu'un qui n'a vu que la miniature et ce texte retrouve la phrase écrite à l'étape 1. En Story, la transcription couvre l'intro face caméra.
 
 **Quand l'abréger :** retouche ponctuelle d'une vidéo déjà validée. **Familles :** F, S, P, T, H ; pas D.
 
 ### 2.2 Remonter un passage fort en ouverture (Paddy Galloway)
 
-Paddy remplace une intro faible par un passage plus fort pris plus loin et le relie à l'intro. Technique de tutoriel : la proposer à Cabezer sans l'appliquer seul (§16), et seulement si ce passage correspond à ce qu'annonce la miniature.
+Paddy remplace une intro faible par un passage plus fort pris plus loin et le relie à l'intro. Technique de tutoriel : la proposer à Cabezer, avec le passage candidat, et ne l'appliquer qu'avec son accord (réponse du 12/10/2026), seulement si ce passage correspond à ce qu'annonce la miniature.
 
-1. Enregistrer sous une nouvelle version (skill §1). Dupliquer la séquence montée (clic droit dans le panneau Projet, libellé à confirmer) et travailler sur la copie.
-2. Dans la transcription, repérer le passage ; poser un marqueur `HOOK:candidat` (menu Marqueur, libellé à confirmer) et marquer entrée et sortie. Vérifier qu'il se comprend sans ce qui précède.
-3. Le copier en tête de séquence par la commande d'insertion ou d'écrasement du menu Séquence (libellés à confirmer).
+1. Enregistrer sous une nouvelle version (skill §1). Dupliquer la séquence montée (clic droit dans le panneau Project, repère français : Projet ; libellé à confirmer) et travailler sur la copie.
+2. Dans la transcription, repérer le passage ; poser un marqueur `HOOK:candidat` (menu Marker, repère français : Marqueur ; libellé à confirmer) et marquer entrée et sortie. Vérifier qu'il se comprend sans ce qui précède.
+3. Le copier en tête de séquence par la commande d'insertion ou d'écrasement du menu Sequence (repère français : Séquence ; libellés à confirmer).
 4. Écrire la liaison avec des phrases déjà tournées ; ne jamais recomposer une phrase ni créer par collage une affirmation que Cabezer n'a pas faite (skill §4 et §8).
 5. Rejouer le passage à sa place d'origine ou justifier son absence (§3).
 6. Sur chaque nouveau raccord, appliquer les règles de coupe : aucun mot coupé, sortie à l'extinction réelle du son, room tone si un trou apparaît (`audio-dialogue-sound-design-mixage.md` §3.1 et §7.1).
@@ -103,7 +103,7 @@ Paddy remplace une intro faible par un passage plus fort pris plus loin et le re
 - **30-60 s :** preuve, première relance, première boucle ouverte.
 
 **Contraintes de Cabezer prioritaires :**
-- Story : la promesse est dite dans l'intro face caméra (skill §6, Story). Le générique « Amed Story » a été supprimé le 12/10/2026 ; un futur générique validé viendrait après cette intro.
+- Story : la promesse est dite dans l'intro face caméra (skill §6, Story). Le générique « Amed Story » a été supprimé le 12/10/2026 (à refaire en entier) : aucun générique n'est posé tant que Cabezer n'en a pas validé un nouveau.
 - Hook finalisé en dernier, une fois la structure stable (skill §3, étape Structure et habillage).
 - Ne jamais écrire « Cabezer Story » dans un titre ou une carte (skill §6, Story). (Le générique « Amed Story » a été supprimé le 12/10/2026.)
 - Demander le hook à Cabezer quand le brief ne le donne pas. En mode autonome : écrire le hook du test de promesse et le consigner « en attente ».
@@ -124,7 +124,7 @@ Paddy remplace une intro faible par un passage plus fort pris plus loin et le re
 
 ### 3.1 Procédure : marqueurs et audit
 
-1. Nommer chaque marqueur de séquence `TYPE:clé`, types `PROMESSE`, `BOUCLE`, `PAYOFF`, `REHOOK`. Exemple : `BOUCLE:golf` à l'ouverture, `PAYOFF:golf` à la fermeture. Poser par le menu Marqueur (libellé à confirmer), double-clic pour nommer.
+1. Nommer chaque marqueur de séquence `TYPE:clé`, types `PROMESSE`, `BOUCLE`, `PAYOFF`, `REHOOK`. Exemple : `BOUCLE:golf` à l'ouverture, `PAYOFF:golf` à la fermeture. Poser par le menu Marker (repère français : Marqueur ; libellé à confirmer), double-clic pour nommer.
 2. Par script, au choix. Ne pas lancer un script sur le projet maître : l'essayer sur une copie (chaîne d'exécution et test de fumée : `pilotage-environnement-reprise.md`).
    - **UXP** (préféré pour un nouvel outil dans Premiere). Signatures vérifiées sur les définitions de types `@adobe/premierepro` 26.5.0 ; code non exécuté dans Premiere ; version minimale de l'API à vérifier par le test de fumée :
 ```javascript
@@ -139,7 +139,7 @@ projet.executeTransaction((action) => {
 ```
    Types acceptés d'après les définitions : `Comment`, `Chapter`, `Segmentation`, `WebLink`. Le temps est un `TickTime`, pas un nombre de secondes.
    - **ExtendScript**, tant que le test de fumée le confirme sur la machine : `var m = app.project.activeSequence.markers.createMarker(75.0); m.name = "BOUCLE:golf";` (secondes) [une source, guide de scripts Premiere non rouvert ; à tester sur une copie].
-3. Auditer les boucles par la voie de secours XML : exporter la séquence en FCP XML (menu Fichier > Exporter, libellé à lire) puis lancer `xml-coupes.py` (jeu de scripts de `organisation-livraison-qc.md` §6 ; ne pas réécrire un script ici). Résultat attendu : pour chaque clé, un `BOUCLE` avant son `PAYOFF` avec l'écart en secondes ; `OUVERTE` pour une boucle sans payoff ; `ORPHELIN` pour un payoff sans boucle. Structure lue `<marker><name><in>` sous `<sequence>` [testé sur un XML synthétique, à confirmer sur un vrai export]. Si le script n'offre pas cet audit, l'ajouter à ce jeu, pas à cette fiche. Lire tout XML avec `python3 -I`.
+3. Auditer les boucles par la voie de secours XML : exporter la séquence en FCP XML (menu File > Export, repère français : Fichier > Exporter ; libellé à lire) puis lancer `xml-coupes.py` (jeu de scripts de `organisation-livraison-qc.md` §6 ; ne pas réécrire un script ici). Résultat attendu : pour chaque clé, un `BOUCLE` avant son `PAYOFF` avec l'écart en secondes ; `OUVERTE` pour une boucle sans payoff ; `ORPHELIN` pour un payoff sans boucle. Structure lue `<marker><name><in>` sous `<sequence>` [testé sur un XML synthétique, à confirmer sur un vrai export]. Si le script n'offre pas cet audit, l'ajouter à ce jeu, pas à cette fiche. Lire tout XML avec `python3 -I`.
 4. Relire chaque ouverture : l'enjeu est-il senti (un plan qui laisse peser, une phrase) avant la promesse de retour ?
 5. Écrire en une ligne ce qui donne envie du sujet suivant, à chaque fin de sujet.
 
@@ -168,10 +168,10 @@ La colonne 4 reprend la règle Story du skill (§6, « une image par idée » : 
 
 ### 4.2 Le rythme suit l'état émotionnel
 
-- *The Bear* : le calme vient après le chaos, le style revient au chaos quand l'histoire y revient ; fondus enchaînés pour le calme, coups d'énergie brefs (zoom rapide) avant les montages. Transposer l'idée, pas la recette : le skill réserve les transitions **visibles** aux changements d'argument ou de séquence (skill §7), donc le calme se construit par des plans tenus. Un fondu enchaîné de calme en P se décide au brief ; ailleurs, ne pas l'employer. Micro-fondus audio de 1 à 2 images et J/L-cuts sont permis s'ils ne mordent pas l'attaque d'un mot (`audio-dialogue-sound-design-mixage.md` §3.2 et §3.3) ; jamais sur la bouchée ou la réaction en dégustation.
-- Flash et zoom de choc : photosensibilité dans `conformite-droits-accessibilite.md`.
+- *The Bear* : le calme vient après le chaos, le style revient au chaos quand l'histoire y revient ; fondus enchaînés pour le calme, coups d'énergie brefs (zoom rapide) avant les montages. Transposer l'idée, pas la recette : le skill réserve les transitions **visibles** aux changements d'argument ou de séquence (skill §7), donc le calme se construit par des plans tenus. En long, la coupe franche reste le défaut et les fondus sont rares (fin de Story ou sur demande) : un fondu enchaîné de calme, une coupe au noir ou un noir dans un gag ne se posent que sur demande de Cabezer, avec deux versions sur un extrait (réponse du 12/10/2026). Micro-fondus audio de 1 à 2 images et J/L-cuts sont permis s'ils ne mordent pas l'attaque d'un mot (`audio-dialogue-sound-design-mixage.md` §3.2 et §3.3) ; jamais sur la bouchée ou la réaction en dégustation.
+- Flash et zoom de choc : repère WCAG facultatif dans `conformite-droits-accessibilite.md` ; aucun test de photosensibilité n'est imposé (réponse du 12/10/2026).
 - Hillier-Smith aime les contrastes (« ping-pong, whiplash ») : seulement sur un changement de ton voulu.
-- **Respirer.** Hillier-Smith conseille de rester sur le visage quelques secondes, puis d'élargir. En **Story**, le skill garde les respirations qui portent un regard, une émotion ou une attente construite et cette exception prime sur la coupe au dernier mot (skill §6). **Ailleurs, la coupe du skill s'applique** (skill §4) : un blanc ne reste que s'il est occupé par un élément prévu (illustration, réaction d'une autre personne, ambiance du lieu), jamais vide. Étendre l'exception aux moments d'émotion de P et au verdict de F : question ouverte (§16). Aucune exception en dégustation ni en tech.
+- **Respirer.** Hillier-Smith conseille de rester sur le visage quelques secondes, puis d'élargir. En **Story**, le skill garde les respirations qui portent un regard, une émotion ou une attente construite et cette exception prime sur la coupe au dernier mot (skill §6). Elle est étendue aux **moments d'émotion de films/séries (P)**, au **verdict du food long (F)** et au Lifestyle posé (réponse du 12/10/2026, skill §4). **Ailleurs, la coupe du skill s'applique** (skill §4) : un blanc ne reste que s'il est occupé par un élément prévu (illustration, réaction d'une autre personne, ambiance du lieu), jamais vide. Aucune exception en dégustation ni en tech.
 - **Montage par le texte.** Il sert à repérer et à pré-découper un assemblage ; chaque coupe est ensuite recalée à la forme d'onde et à l'énergie du son, jamais aux temps de transcription (skill §4, `premiere-pro-avance.md` §5.1). En Story, ne pas supprimer les pauses en masse.
 
 ### 4.3 Mesures : ce qu'elles disent et ce qu'elles cachent
@@ -207,7 +207,7 @@ L'architecture d'un montage long (séquence maîtresse, séquences par chapitre,
 
 ### 5.1 Un B-roll, une idée
 
-Hillier-Smith : un B-roll a besoin d'une intention de récit ; il préfère un plan de drone à quatre plans rapides. C'est la méthode « une image par idée, jamais par mot » du skill (§6, Story). Sur le stock, les interlocuteurs ne s'accordent pas ; le skill tranche : rushs de Cabezer d'abord, compléments précis ensuite, sources et licences consignées dans `Suivi/licences.csv` (skill §8, `conformite-droits-accessibilite.md`).
+Hillier-Smith : un B-roll a besoin d'une intention de récit ; il préfère un plan de drone à quatre plans rapides. C'est la méthode « une image par idée, jamais par mot » du skill (§6, Story). Sur le stock, les interlocuteurs ne s'accordent pas ; le skill tranche : rushs de Cabezer d'abord, compléments précis ensuite. Les plans stock libres de droits ont un accord général : téléchargés sans redemander, licence consignée dans `Suivi/licences.csv`, signalés à Cabezer ; toute autre vidéo à télécharger demande son accord (skill §6, §8, `conformite-droits-accessibilite.md`).
 
 ### 5.2 Raccorder le mouvement
 
@@ -233,12 +233,12 @@ Hillier-Smith : un B-roll a besoin d'une intention de récit ; il préfère un p
 - F, T, H : désignation seulement, cas rare.
 - D : non (le hook de dégustation n'emploie pas de photo, skill §5).
 
-**Procédure Premiere** (libellés français à confirmer à l'écran) :
-1. Contrôles d'effets (Effect Controls) > Mouvement (Motion) : Position et Échelle (Scale).
+**Procédure Premiere** (interface en anglais ; libellés à confirmer à l'écran) :
+1. Effect Controls (Contrôles d'effets) > Motion (Mouvement) : Position et Scale (Échelle).
 2. Placer la tête de lecture un peu après le début du plan (pause initiale d'au moins 0,5 s, valeur de départ de `documentaire-essai-video-archives.md` §6.4) et activer les chronomètres de Position et d'Échelle.
 3. Avancer sur le mot qui désigne le détail et changer la valeur : Premiere crée l'image clé. Garder l'échelle finale dans la définition de la source ; vérifier qu'aucun bord de l'image n'apparaît (une source 4K dans une séquence 1080p laisse environ 200 % de marge selon Film Booth [une source ; à mesurer]).
 4. Pour la pause après le mouvement, dupliquer l'image clé avec le bouton d'ajout, jamais en recliquant le chronomètre (il efface les clés).
-5. Lisser : clic droit sur les clés > Interpolation temporelle > Bézier automatique ou continu (libellés à confirmer). Jamais linéaire pour un mouvement progressif (skill §7).
+5. Lisser : clic droit sur les clés > Temporal Interpolation > Auto Bezier ou Continuous Bezier (repère français : Interpolation temporelle > Bézier automatique ou continu ; libellés à confirmer). Jamais linéaire pour un mouvement progressif (skill §7).
 6. Lire à vitesse réelle : un mouvement qui paraît rapide paraît mauvais (Film Booth).
 
 **Réussite :** le détail désigné est net et lisible quand la voix le nomme ; le mouvement se sent sans se voir ; l'arrivée est douce.
@@ -269,7 +269,7 @@ Film Booth : un cadrage trop serré coupe les mains. Le skill protège déjà ye
 
 - **Mots-clés incrustés** (Film Booth) : quelques mots qui renforcent ce qui est dit. **Quand :** F et T, si la charte de la famille le permet (skill §6) ; H selon brief. **Éviter :** S et P, car le skill réserve titres et cartons à un concept, une date ou un chapitre. D : voir skill §5.1 (étiquettes, pop-ups), hors de cette fiche.
 - **Texte réel :** filmer un panneau, une page, un menu et le laisser lisible (compatible avec la preuve réelle de la Story).
-- **Temps de lecture** la formule `max(1,5 s ; 1 s + caractères/15)` du skill s'applique aux mots-clés incrustés, cartons, traductions et blocs de sous-titres des familles longues ; une preuve reste au moins 3 s, une image sans texte au moins 2 s, un univers visuel suivi 2 à 3 s. Elle ne vaut ni pour les sous-titres mot à mot de dégustation ni pour les coupes rapides nommées (0,4 à 0,8 s) de la Story. Détail : `documentaire-essai-video-archives.md` §5.3.
+- **Temps de lecture** la formule `max(1,5 s ; 1 s + caractères/15)` du skill s'applique aux mots-clés incrustés, cartons, traductions et blocs de sous-titres des familles longues ; une preuve reste au moins 3 s, une image sans texte au moins 2 s, un univers visuel suivi 2 à 3 s. Elle ne vaut ni pour les sous-titres mot à mot des courts ni pour les coupes rapides nommées (0,4 à 0,8 s) de la Story. Détail : `documentaire-essai-video-archives.md` §5.3.
 - **Ton du graphisme :** une carte très léchée sur un sujet grave fait perdre confiance ; il suit l'identité de la famille.
 - Toute animation de texte se fait dans After Effects en calques natifs (skill §16). Typographie française à l'écran (espaces avant « : », « ? », « ! », guillemets) : `conformite-droits-accessibilite.md`.
 
@@ -292,15 +292,15 @@ Complète la passe de mixage (skill §11) sans la remplacer. Les valeurs de loud
 ### 7.2 Ambiance par lieu
 
 Hillier-Smith : si un lieu est présenté comme vivant, chaque plan de ce lieu doit porter son son ; une image muette dans un lieu sonore se remarque. Poser l'ambiance **avant** le premier plan du lieu, avec fondu d'entrée, et la tenir sur toute la scène (skill §11, `audio-dialogue-sound-design-mixage.md` §7.2). La prendre dans les rushs du lieu, sinon dans une banque dont la licence est consignée.
-**Familles :** F, S, P, T, H. **D :** défaut, aucune ambiance continue ni musique ; une ambiance discrète du lieu sous un insert muet est une question ouverte (§16).
+**Familles :** F, S, P, T, H. **D :** aucune ambiance continue ni musique ; une ambiance discrète du lieu sous un insert muet est à proposer au premier usage et n'est posée qu'avec l'accord de Cabezer (réponse du 12/10/2026).
 
 ### 7.3 Son provisoire pour couper plus tôt
 
 *The Bear* : un petit bruitage sous l'image permet de quitter le plan plus vite, car le spectateur relie l'action. **Quand :** gestes et objets en F et T, avec la bibliothèque ouverte (skill §11). **Éviter :**
 - Story : pas de bruitage d'objet gratuit (skill §11).
-- Foley d'aliment : défaut aucun, jamais sur une bouchée ni une réaction (question en §16).
+- Foley d'aliment : jamais (réponse du 12/10/2026), ni sur une bouchée ni sur une réaction.
 - Tout SFX doit rester audible sous la voix.
-- Caler le SFX à l'attaque de l'événement ; un essai A/B de plus ou moins une image est permis et n'est adopté que s'il gagne à l'écoute de Cabezer.
+- Caler le SFX sur l'attaque de l'événement, un swoosh sur son pic, sans essai A/B (réponse du 12/10/2026).
 
 ### 7.4 Contraste sonore, faux sons, musique
 
@@ -313,7 +313,7 @@ Hillier-Smith : si un lieu est présenté comme vivant, chaque plan de ce lieu d
 
 **Sources :** Hillier-Smith répond « no title » à la question d'un carton de titre sur une vidéo d'environ 10 minutes (quelques secondes perdues). Paddy termine un chapitre en amorçant le suivant.
 
-**Règle de Cabezer.** Le skill montre le carton de chapitre seul environ 3 s, sans voix, avec la signature musicale, et le déchire quand la voix reprend (skill §6, Story). C'est une signature validée par Cabezer pour la **Story** : la garder. Pour les autres familles, ne pas imposer ce carton ; poser seulement les marqueurs (§16). Le titre que Cabezer prononce n'est pas un chapitre.
+**Règle de Cabezer.** Le skill montre le carton de chapitre seul environ 3 s, sans voix, avec la signature musicale, et le déchire quand la voix reprend (skill §6, Story). C'est une signature validée par Cabezer pour la **Story** : la garder. Hors Story, aucun carton de chapitre à l'écran : les chapitres vont dans la description YouTube (`youtube-publication-package`) et en marqueurs de séquence (réponse du 12/10/2026). Le titre que Cabezer prononce n'est pas un chapitre.
 
 ### 8.1 Procédure (carton de chapitre, Story)
 
@@ -336,10 +336,10 @@ Une vidéo ne tranche pas : relever la rétention avant et après chaque carton 
 
 - **Laisser respirer.** Une fin coupée sèchement ne donne pas de conclusion (échange dans la critique de Hillier-Smith). En Story, le skill est précis : regard silencieux à la caméra, accord réel qui s'éteint, fondu au noir avant que Cabezer bouge, aucun bruitage, pas de carton d'abonnement (skill §6, Story).
 - **Écran de fin** [extrait de l'aide YouTube ; à vérifier sur la page en cours] : 5 à 20 dernières secondes, vidéo d'au moins 25 s, jusqu'à quatre éléments en 16:9 (les autres ratios peuvent en limiter le nombre) ; il masque les teasers de cartes et le filigrane ; indisponible pour les vidéos conçues pour les enfants. Gabarits et tailles : lire la page d'aide.
-- **Au montage :** aucune information utile, texte ou animation essentielle dans les 20 dernières secondes. Garder un fond calme où Cabezer (ou `youtube-publication-package`) posera les éléments. Cet écran n'est pas un carton d'abonnement dans l'image : il ne contredit pas la fin silencieuse de la Story.
+- **Au montage :** aucune information utile, texte ou animation essentielle dans les 20 dernières secondes. Garder un fond calme sur ces 5 à 20 s réservées ; les éléments à poser sont indiqués par `youtube-publication-package` (réponse du 12/10/2026). Cet écran n'est pas un carton d'abonnement dans l'image : il ne contredit pas la fin silencieuse de la Story.
 
 **Réussite :** si l'on masque mentalement les 20 dernières secondes, aucune chute ni aucun appel au commentaire n'est perdu ; l'appel au commentaire protégé par le skill (§4) reste entier et audible.
-**Familles :** F, S, T, H ; P selon brief ; jamais D (format court).
+**Familles :** F, S, T, H ; P selon brief ; jamais en court, où l'appel au commentaire tombe dans les 5 dernières secondes et la coupe se fait à l'extinction de la voix (skill §4).
 
 ---
 
@@ -359,7 +359,7 @@ Hillier-Smith et Paddy décrivent le même travers : tout jeter au spectateur pa
 
 ### 10.3 Sujets graves
 
-Hillier-Smith juge inappropriées les tactiques de rétention sur un reportage de guerre ; le créateur critiqué voulait éviter un ton manipulateur et reconnaît l'équilibre difficile. **Pour Cabezer :** sur un sujet grave (santé, drame, décès, injustice), retirer les effets de pure attention (zoom de choc, whoosh, texte qui claque), tenir les plans qui portent l'émotion, garder la musique en retrait. En Story, appliquer la règle des respirations (skill §6) ; pour P et F, voir §16. Ne pas utiliser la détresse d'une personne comme hook ; droit à l'image et intervenants : `conformite-droits-accessibilite.md`.
+Hillier-Smith juge inappropriées les tactiques de rétention sur un reportage de guerre ; le créateur critiqué voulait éviter un ton manipulateur et reconnaît l'équilibre difficile. **Pour Cabezer :** sur un sujet grave (santé, drame, décès, injustice), retirer les effets de pure attention (zoom de choc, whoosh, texte qui claque), tenir les plans qui portent l'émotion, garder la musique en retrait. Appliquer la règle des respirations (skill §4, §6) : en Story, aux moments d'émotion de films/séries et au verdict du food long. Ne pas utiliser la détresse d'une personne comme hook ; droit à l'image et intervenants : `conformite-droits-accessibilite.md`.
 
 ---
 
@@ -367,7 +367,7 @@ Hillier-Smith juge inappropriées les tactiques de rétention sur un reportage d
 
 Détaille le skill §15. Une courbe est un signal, jamais une cause.
 
-1. **Obtenir la courbe** (YouTube Studio : Contenu > la vidéo > Analytique, onglet Engagement ; libellés à vérifier), 1 à 2 jours au moins après publication. vidIQ peut servir de relais, mais ses offres sont en partie payantes : prévenir Cabezer.
+1. **Obtenir la courbe** : Cabezer l'envoie depuis YouTube Studio (Content > la vidéo > Analytics, onglet Engagement ; libellés à vérifier), 1 à 2 jours au moins après publication. Pas de vidIQ (réponse du 12/10/2026).
 2. **Comparer** à ses propres vidéos de la même famille et de durée proche. Le graphique relatif de YouTube compare à des vidéos de durée similaire [extrait, deux sources] sans dire si le niveau est bon pour sa niche. Un pourcentage seul n'a pas de valeur absolue.
 3. **Marquer** les cinq plus grosses baisses et les pics, retrouver le timecode dans le montage publié (projet versionné) et extraire une planche autour de chaque point (commande de planche de `organisation-livraison-qc.md` §6.3, avec `-ss` au timecode et `-t 20`).
 4. **Noter** pour chaque point ce qui se passe à l'image et au son, et une seule hypothèse (confusion, passage long, son, carton, relance absente, sujet, sponsor), marquée « hypothèse ». Calculer coupes par minute et plus long plan autour du point (§4.3).
@@ -397,9 +397,9 @@ Pièges : un pic n'est pas toujours un succès ; la rétention dépend aussi du 
 | Mesures de rythme (§4.3) | Voir skill §5.2 | Oui | Oui, avec prudence | Oui | Oui | Oui |
 | Mouvement sur image fixe qui désigne (§5.3) ; dérive décorative : jamais | Non | Rare | Oui | Oui | Rare | Rare |
 | Mots-clés incrustés (§6.3) | Voir skill §5.1 | Si la charte le permet | Non | Non | Si la charte le permet | Selon brief |
-| Ambiance par lieu (§7.2) | Défaut non (question §16) | Oui | Oui | Oui | Oui | Oui |
-| Carton de chapitre de 3 s (§8) | Non | Non, marqueurs seuls | Oui (signature) | Non, marqueurs seuls | Non, marqueurs seuls | Non, marqueurs seuls |
-| Respiration au-delà de la coupe du skill (§4.2) | Non | Défaut non (question §16) | Oui (skill §6) | Défaut non (question §16) | Non | Défaut non |
+| Ambiance par lieu (§7.2) | Proposée au premier usage, sans accord non | Oui | Oui | Oui | Oui | Oui |
+| Carton de chapitre de 3 s (§8) | Non | Non, chapitres dans la description | Oui (signature) | Non, chapitres dans la description | Non, chapitres dans la description | Non, chapitres dans la description |
+| Respiration au-delà de la coupe du skill (§4.2) | Non | Oui, au verdict | Oui (skill §6) | Oui, moments d'émotion | Non | Selon brief ; Lifestyle posé : oui |
 | Libérer les 20 dernières secondes (§9) | Non | Oui | Oui | Selon brief | Oui | Oui |
 
 ---
@@ -444,7 +444,7 @@ Ne pas reprendre sans nouvelle vérification :
 **Ouverture et structure**
 - [ ] Sujet et promesse confirmés avant la 30e seconde (dans l'intro face caméra en Story) ; son dès la première image ; hook finalisé en dernier.
 - [ ] Marqueurs `BOUCLE`/`PAYOFF` audités (§3.1) : aucune boucle ouverte, aucun payoff orphelin ; chaque fin de sujet donne une raison d'attendre la suite.
-- [ ] Chapitres posés selon la famille (carton de 3 s en Story seulement), marqueurs nommés.
+- [ ] Chapitres posés selon la famille (carton de 3 s à l'écran en Story seulement ; ailleurs, chapitres dans la description), marqueurs nommés.
 
 **Rythme et son**
 - [ ] Mesures prises sur l'export ; fenêtres atypiques justifiées dans `Suivi/` ; cinq plus longs passages face caméra justifiés ou relancés.
@@ -462,21 +462,17 @@ Ne pas reprendre sans nouvelle vérification :
 
 ## 16. Décisions à demander
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur tout autre passage.
 
-Défaut appliqué en attendant ; l'alternative n'est jamais présentée comme une règle.
-
-| Question pour Cabezer | Défaut en attendant |
+| Question tranchée | Réponse de Cabezer |
 |---|---|
-| Étendre l'exception des respirations de la Story aux moments d'émotion des films/séries et au verdict d'un food long ? | Règle du skill inchangée (coupe au dernier mot) |
-| En dégustation, autoriser une ambiance discrète du lieu sous un insert muet ? | Aucune ambiance continue ni musique |
-| Autoriser un foley d'aliment (jamais sur une bouchée ni une réaction) en vidéo longue ? | Aucun foley d'aliment |
-| Autoriser le teaser « passage fort remonté en ouverture » (§2.2) en food long et en Story ? | Ne pas l'appliquer sans accord ; le proposer avec le passage candidat |
-| Ajouter un carton de chapitre hors Story ? | Marqueurs de chapitre seulement, sans carton visible |
-| Qui pose l'écran de fin (éléments cliquables) ? | Fond calme garanti sur 20 s ; Cabezer ou `youtube-publication-package` pose les éléments |
-| Utiliser vidIQ (offres en partie payantes) pour récupérer la courbe ? | Non ; courbe lue dans YouTube Studio, fournie par Cabezer |
-
----
+| Étendre l'exception des respirations de la Story aux moments d'émotion des films/séries et au verdict d'un food long ? | Oui : respirations gardées dans les deux cas (et au Lifestyle posé). |
+| En dégustation, autoriser une ambiance discrète du lieu sous un insert muet ? | À proposer au premier usage ; sans accord, aucune ambiance continue ni musique. |
+| Autoriser un foley d'aliment en vidéo longue ? | Jamais. |
+| Teaser « passage fort remonté en ouverture » (§2.2) en food long et en Story ? | Proposé avec le passage candidat, appliqué seulement avec l'accord de Cabezer. |
+| Ajouter un carton de chapitre hors Story ? | Non : chapitres dans la description. |
+| Qui pose l'écran de fin (éléments cliquables) ? | 5 à 20 s réservées au montage ; éléments indiqués par `youtube-publication-package`. |
+| Utiliser vidIQ pour récupérer la courbe ? | Non : Cabezer envoie la courbe depuis YouTube Studio. |
 
 ## 17. Sources étudiées
 

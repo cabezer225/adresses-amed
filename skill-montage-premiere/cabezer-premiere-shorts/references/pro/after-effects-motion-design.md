@@ -325,7 +325,7 @@ Placer Cabezer devant un document ou une capture (T, S, F ; pas en D) : Ultra Ke
 
 ### 14.2 Module de sortie ProRes 4444 alpha
 
-Ajouter à la file de rendu (Cmd+M à confirmer ou script, §16.6) ; module QuickTime, Apple ProRes 4444, canaux **RVB + alpha**, profondeur la plus haute [À vérifier] ; **le Format ne se règle pas par script** (lisible, non modifiable [Doc lue]) : créer le module une fois à la main puis l'enregistrer comme modèle `ProRes4444_alpha_Cabezer` (`saveAsTemplate` existe par script). Alpha : partir de **Straight (Unmatted)** et tester. Rendre depuis AE, pas Media Encoder (alpha mal conservé selon des fils [Extrait]) ; repli : séquence PNG alpha. Nom `<Sujet>_<Element>_v<NN>.mov`, dossier `03_RENDUS`. Dans Premiere, vérifier l'alpha sur fond clair **et** foncé ; Clip > Modifier > Interpréter le métrage change l'interprétation [À vérifier].
+Ajouter à la file de rendu (Cmd+M à confirmer ou script, §16.6) ; module QuickTime, Apple ProRes 4444, canaux **RVB + alpha**, profondeur la plus haute [À vérifier] ; **le Format ne se règle pas par script** (lisible, non modifiable [Doc lue]) : créer le module une fois à la main puis l'enregistrer comme modèle `ProRes4444_alpha_Cabezer` (`saveAsTemplate` existe par script). Alpha : partir de **Straight (Unmatted)** et tester. Rendu à la taille de la séquence (réponse du 12/10/2026). Rendre depuis AE, pas Media Encoder (alpha mal conservé selon des fils [Extrait]) ; repli : séquence PNG alpha. Nom `<Sujet>_<Element>_v<NN>.mov`, dossier `03_RENDUS`. Dans Premiere, vérifier l'alpha sur fond clair **et** foncé ; Clip > Modifier > Interpréter le métrage change l'interprétation [À vérifier].
 
 ### 14.3 Essential Graphics et MOGRT
 
@@ -532,7 +532,7 @@ Gratuits uniquement (skill §17, décisions d’harmonisation B3) ; télécharg�
 
 ## 21. Décisions à demander à Cabezer
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui fait foi.
 
 Réponses retenues, une par ancienne question :
 
