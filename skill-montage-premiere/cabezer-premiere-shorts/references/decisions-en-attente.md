@@ -1,6 +1,6 @@
 # Décisions en attente de Cabezer
 
-Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2026), dédupliquées. Les 20 questions prioritaires ont reçu une réponse le 12/10/2026 (tableau ci-dessous) ; elles priment sur les sections « Décisions à demander » des fiches. **Tant que Cabezer n'a pas répondu, Claude applique le défaut**, le note dans `Suivi/decisions.md` et ne pose la question qu'une fois, au moment où elle bloque. Une réponse de Cabezer devient une règle du SKILL.md (avec sa date) ; retirer alors la ligne d'ici.
+Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2026), dédupliquées. Les questions prioritaires ont reçu une réponse le 12/10/2026 (deux séries) (tableau ci-dessous) ; elles priment sur les sections « Décisions à demander » des fiches. **Tant que Cabezer n'a pas répondu, Claude applique le défaut**, le note dans `Suivi/decisions.md` et ne pose la question qu'une fois, au moment où elle bloque. Une réponse de Cabezer devient une règle du SKILL.md (avec sa date) ; retirer alors la ligne d'ici.
 
 ## Réponses de Cabezer du 12/10/2026 (appliquées dans le SKILL.md)
 
@@ -25,6 +25,12 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 | Identité food long | Charte à créer sur un extrait de 30 s |
 | Scripts de contrôle en lecture seule | Lancés sans redemander |
 | Repas offert, invitation, produit reçu | Signalé au brief, mention choisie par Cabezer à chaque fois |
+| Structure du skill | Format d'abord (long ou court), famille ensuite ; 5 familles : food, Story, tech, films/séries, Lifestyle |
+| Lifestyle (vlogs, prises de parole face caméra) | Long et court ; aucune musique ; SFX comme la dégustation ; cartes de lieu/date, speed ramps et transitions, textes et emojis de réaction ; face caméra selon le sujet ; identité à créer |
+| Identité en court | Propre au court pour chaque famille (C-Food = DA v2) |
+| Courts food | Dégustation, duel/classement, recette, vlog street food ; DA v2 ; aucune musique ; note à l'écran en dégustation et duel/classement seulement |
+| Courts Story, Tech, Films | Extraits ou tournés exprès selon le brief ; sous-titres mot à mot ; aucune musique ; punch-ins secs seulement ; jusqu'à 3 min |
+| Tous les courts | Hook demandé ; SFX comme la dégustation ; appel au commentaire en fin ; notation sur 10 (minimum 8) ; langue à l'étranger à demander |
 
 ## Questions encore ouvertes
 

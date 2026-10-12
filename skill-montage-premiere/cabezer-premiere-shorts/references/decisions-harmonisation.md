@@ -8,7 +8,7 @@
 - Le skill v3 suit cette numérotation (garder ces numéros dans les renvois « skill §N ») :
   §1 Priorités, portée, arbitrage, définition de l'animation, mode autonome · §2 Vue rapide par famille · §3 Flux de travail (étape 0 brief, pilotage, montage long) · §4 Dérush · §5 Dégustation (§5.1 habillage DA v2, §5.2 notation) · §6 Identité par famille (food long, films/séries PRISME, tech, Story) · §7 Zooms, mouvements, transitions · §8 Recherches, illustrations, droits · §9 Sous-titres · §10 Colorimétrie · §11 Audio · §12 Déclinaisons et multicam · §13 Export · §14 Contrôles avant livraison · §15 Boucle rétention · §16 After Effects, outils IA, outils tiers · §17 Plugins · §18 Apprendre de nouvelles références · §19 Fiches pro (index) · §20 Statut des méthodes et décisions en attente.
 - Fiches transversales : `pilotage-environnement-reprise.md` (pilotage de l'interface, exécution des scripts sur le Mac, contrôle d'environnement, reprise après incident) et `conformite-droits-accessibilite.md` (droit à l'image, mentions commerciales, extraits tiers, photosensibilité, typographie française à l'écran, identification des intervenants). Les autres fiches y renvoient au lieu de dupliquer.
-- Codes de famille communs : D dégustation, F food long, S Story, P films/séries (PRISME), T tech, H hors familles.
+- Codes de famille communs : D dégustation, F food long, S Story, P films/séries (PRISME), T tech, H hors familles. Depuis le 12/10/2026, le skill distingue le format puis la famille : D = C-Food (dégustation), F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; s'ajoutent C-Story, C-Tech, C-Films et la famille Lifestyle (L-Life, C-Life), régis par le SKILL §2.
 
 ## B. Définitions et politiques (s'appliquent partout)
 
@@ -63,3 +63,5 @@
 ## E. Réponses de Cabezer du 12/10/2026 (priment sur A à D)
 
 Voir le tableau en tête de `decisions-en-attente.md`. En particulier : D6 (respirations) est étendu aux films/séries et au verdict du food long ; D9 (hook) : au plus deux passes de retravail ; D10 (ambiance en D) : proposée au premier usage ; D11 (foley) : jamais ; sous-titres longs en France : SRT seul ; un rendu de sous-titres de dégustation par passage validé ; YouTube long en 4K quand les rushs sont en 4K ; composition musicale en S, F et T ; identité Story v15 et générique supprimés ; Tesseract et Higgsfield retirés.
+
+Série 2 (12/10/2026) : formats long et court distingués (SKILL §2), famille Lifestyle ajoutée ; tous les courts : hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, appel au commentaire, notation sur 10, identité propre au court.

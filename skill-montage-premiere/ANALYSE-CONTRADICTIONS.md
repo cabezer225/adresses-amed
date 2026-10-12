@@ -114,6 +114,30 @@ Il reste environ 70 questions techniques (libellés, seuils, outils) dans `refer
 
 ---
 
+## 4 bis. Formats long et court, famille Lifestyle (tes réponses du 12/10/2026, série 2)
+
+Le skill sépare maintenant **le format d'abord, la famille ensuite** (SKILL §2) : dix cas, chacun avec sa colonne.
+
+| | Food | Story | Tech | Films/séries | Lifestyle |
+|---|---|---|---|---|---|
+| **Long** | L-Food | L-Story | L-Tech | L-Films | L-Life |
+| **Court** | C-Food (dégustation, duel, recette, vlog street food) | C-Story | C-Tech | C-Films | C-Life |
+
+| Ta réponse | Règle dans le skill |
+|---|---|
+| Courts Story, Tech, Films : extraits du long et tournés exprès | Selon le brief, défaut : extrait (§2.3, §12) |
+| Courts food : dégustation, duel/classement, recette, vlog street food | Tous en DA v2, sans musique ; note à l'écran en dégustation et duel/classement seulement (§2.4) |
+| Nouvelle famille Lifestyle, long et court | Aucune musique ; SFX comme la dégustation ; vlog : cartes de lieu et de date, speed ramps et transitions, textes et emojis de réaction ; face caméra serré ou posé selon le sujet ; identité à créer (§2.5) |
+| Identité propre au court | Chaque famille a une identité de court distincte du long ; à créer sur extrait pour Story, Tech, Films et Lifestyle (§6) |
+| Notation sur 10 pour tous les courts | Barème adapté par famille (§5.2) |
+| Sous-titres mot à mot, aucune musique, punch-ins secs pour les courts Story, Tech, Films | §2.1, §2.3, §9, §11 |
+| Durée jusqu'à 3 min selon le sujet | Tous les courts (§2.1) |
+| Hook demandé, SFX comme la dégustation, appel au commentaire, langue à l'étranger à demander | Tous les courts (§2.1, §9) |
+
+À créer avec toi, sur des extraits à valider : les identités de court Story, Tech, Films et Lifestyle, l'identité Lifestyle longue, la charte food long et la nouvelle identité Story.
+
+---
+
 ## 5. À retirer ou déplacer (fait dans la v3)
 
 | Élément de la v2 | Pourquoi | Où c'est maintenant |

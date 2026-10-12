@@ -44,3 +44,9 @@ Ordre chronologique, de la plus ancienne à la plus récente (année 2026).
   - Composition musicale originale en Story, food long et tech ; respirations d'émotion gardées aussi en films/séries et au verdict du food long ; réservation de 5 à 20 s pour l'écran de fin YouTube en Story ; identification des intervenants à leur première apparition (hors dégustation).
   - Charte food long à créer sur un extrait de 30 s ; YouTube long en 4K quand les rushs sont en 4K ; réduction de bruit adaptée seulement sur une prise très bruyante ; scripts de contrôle en lecture seule lancés sans redemander.
   - SCANDALE FOOD n'existe plus ; Tesseract et Higgsfield/Higgsedit retirés du skill.
+- **12/10 (ter) — formats long et court distingués, famille Lifestyle ajoutée.**
+  - Le skill sépare le **format long** (L-Food, L-Story, L-Tech, L-Films, L-Life) du **format court** (C-Food, C-Story, C-Tech, C-Films, C-Life) : format d'abord, famille ensuite (SKILL §2).
+  - Nouvelle famille **Lifestyle** : vlogs et prises de parole face caméra, en long et en court ; aucune musique ; SFX comme la dégustation ; vlog avec cartes de lieu et de date, speed ramps et transitions, textes et emojis de réaction ; face caméra serré ou posé selon le sujet ; identité à créer.
+  - **Tous les formats courts** : hook demandé à chaque vidéo, sous-titres mot à mot, aucune musique, SFX comme la dégustation, appel au commentaire en fin, notation hook/rétention sur 10 (minimum 8), jusqu'à 3 min selon le sujet, langue à l'étranger à demander ; **identité propre au court** pour chaque famille.
+  - Courts Story, Tech, Films : extraits du long ou tournés exprès selon le brief ; punch-ins secs seulement.
+  - Courts food : dégustation, duel ou classement, recette ou préparation, vlog street food ou voyage, tous en DA Dégustation v2 et sans musique ; note sur 10 à l'écran seulement en dégustation et en duel/classement.

@@ -1,6 +1,6 @@
 ---
 name: "cabezer-premiere-shorts"
-description: "Monter les vidéos de Cabezer à un niveau professionnel dans Premiere Pro et After Effects : dégustations courtes (TikTok, Shorts, Reels), food long, Cabezer Story, films/séries (PRISME), tech et tout autre format. Couvre dérush, structure et rythme, habillage par famille (animations graphiques uniquement dans After Effects), sous-titres, étalonnage, audio et mixage, déclinaisons, export, contrôle qualité et reprise de projet. À utiliser pour tout montage ou partie de montage d'une vidéo de Cabezer. Pas pour la génération vidéo, les miniatures ou la publication seules."
+description: "Monter les vidéos de Cabezer à un niveau professionnel dans Premiere Pro et After Effects, en distinguant le format long (YouTube) et le format court (TikTok, Shorts, Reels) pour cinq familles : food (dégustation, duel, recette, vlog street food), Cabezer Story, tech, films/séries (PRISME) et Lifestyle (vlogs, prises de parole face caméra). Couvre dérush, structure et rythme, habillage par famille et par format (animations graphiques uniquement dans After Effects), sous-titres, étalonnage, audio et mixage, déclinaisons, export, contrôle qualité et reprise de projet. À utiliser pour tout montage ou partie de montage d'une vidéo de Cabezer. Pas pour la génération vidéo, les miniatures ou la publication seules."
 ---
 
 # Montage Cabezer — Premiere Pro et After Effects, niveau professionnel
@@ -16,7 +16,7 @@ Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches
 **Une seule règle d'arbitrage :** 1) brief du jour de Cabezer ; 2) exception de famille de ce skill ; 3) règle générale de ce skill ; 4) fiches de référence (`references/`, dont `references/pro/`) ; 5) plugins et tutoriels. À niveau égal, la consigne datée la plus récente l'emporte. Une valeur de tutoriel n'est jamais une règle universelle.
 
 - S'applique à tous les montages Cabezer, dans tous les dossiers et formats. Le nom historique « shorts » ne limite pas la portée. Ne pas imposer le vertical à une vidéo longue.
-- **Familles :** D dégustation courte, F food long, S Cabezer Story (société/documentaire), P films/séries (PRISME), T tech. Identifier la famille d'abord (tableau §2). **Hors familles (H)** — vlog, interview, pub, clip… : le dire à Cabezer, appliquer les règles générales (§3, §4, §7 à §14), n'appliquer aucune identité avant validation d'un extrait de 15 à 30 s, lire [adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md).
+- **Format, puis famille :** long (L) ou court (C), puis food, Story (société/documentaire), tech, films/séries (PRISME) ou Lifestyle (vlogs, prises de parole face caméra) : dix cas, tableaux §2. **Hors familles (H)** — interview d'un tiers, pub, clip… : le dire à Cabezer, appliquer les règles générales (§3, §4, §7 à §14), n'appliquer aucune identité avant validation d'un extrait de 15 à 30 s, lire [adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md).
 - **Premiere Pro = timeline maîtresse.** Ne jamais remplacer silencieusement Premiere par un autre éditeur.
 - **Animation : définition (consigne du 30/09/2026, précisée en v3).**
   - *Animation graphique* = tout élément créé : texte, pastille, prix, note, emoji, forme, schéma, carte, sous-titre animé, flash ou glitch graphique, transition graphique, parallaxe 2.5D. **Uniquement dans After Effects**, en calques natifs modifiables (« les animations se font uniquement par AE et non par génération comme avant »). Allers-retours avec Premiere sans redemander la permission. Détail §16.
@@ -24,28 +24,84 @@ Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches
   - Un script peut piloter AE (compositions, calques, clés) ; il ne fabrique jamais d'image hors d'AE. Les vrais emojis Apple rendus par macOS sont des sources autorisées.
 - Avant de modifier un montage existant : **Enregistrer sous** une nouvelle version. Tester d'abord sur une copie et un aperçu court quand Cabezer demande un essai sur un projet ouvert.
 - **Validations :** faire valider le dérush avant l'habillage, sauf autorisation explicite d'enchaîner (« fais ça de manière autonome », « export final direct »). Une autorisation d'enchaîner n'autorise jamais la publication.
-- **Mode autonome — défauts :** hook = son hook habituel, noté (§5.2) ; langue des sous-titres à l'étranger = anglais ; téléchargement = jamais sans accord (s'en passer) ; toute validation manquante est notée « en attente » dans `Suivi/decisions.md` et rappelée à la livraison.
+- **Mode autonome — défauts :** hook de tout format court = son hook habituel, noté (§5.2) ; langue des sous-titres à l'étranger = anglais ; téléchargement = jamais sans accord (s'en passer) ; toute validation manquante est notée « en attente » dans `Suivi/decisions.md` et rappelée à la livraison.
 - Distinguer toujours **appliqué / contrôlé / validé par Cabezer / publié**. Un import n'est pas un montage ; un export lancé n'est pas un export validé ; une méthode écrite n'est pas un preset créé. **Claude n'entend pas :** il contrôle par mesures, transcription et forme d'onde ; une mesure n'est jamais une écoute, et l'écoute finale revient à Cabezer.
 - **Payant :** gratuits uniquement par défaut. Tout outil, plugin, banque ou service payant est signalé (nom, prix connu ou « à vérifier ») et attend l'accord de Cabezer.
 
-## 2. Règles par famille — vue rapide
+## 2. Formats et familles : le format d'abord, la famille ensuite
 
-| Règle | D Dégustation (TikTok/Shorts/Reels) | F Food long | S Story | P Films/séries | T Tech |
+Les deux formats se montent différemment, et dans chaque format les cinq familles aussi. **Identifier d'abord le format (long ou court), puis la famille**, et appliquer la colonne correspondante. Un même sujet peut exister dans les deux formats : ce sont deux montages différents, pas un simple recadrage. Chaque famille a **une identité visuelle propre au court**, distincte de celle du long (réponse du 12/10/2026).
+
+| Format | Codes | Familles |
+|---|---|---|
+| **Long** — 16:9, YouTube | **L-Food**, **L-Story**, **L-Tech**, **L-Films**, **L-Life** | food ; Story (société/documentaire) ; tech ; films/séries (PRISME) ; Lifestyle (vlogs et prises de parole face caméra) |
+| **Court** — 9:16, TikTok, Shorts, Reels | **C-Food**, **C-Story**, **C-Tech**, **C-Films**, **C-Life** | mêmes familles ; C-Food regroupe dégustation, duel ou classement, recette ou préparation, vlog street food ou voyage (§2.4) |
+
+Dans les fiches pro, les anciens codes correspondent ainsi : D = C-Food (dégustation), F = L-Food, S = L-Story, P = L-Films, T = L-Tech ; Lifestyle n'y a pas de code (appliquer le §2 et la fiche [adaptation et genres](references/pro/adaptation-genres-analyse-de-style.md), vlog et interview). Pour les courts autres que la dégustation : forme selon le tableau 2.3 et [formats courts](references/pro/formats-courts-verticaux.md), fond (preuves, schémas, extraits) selon la fiche de la famille longue. **Hors familles (H)** existe dans les deux formats (§1).
+
+### 2.1 Ce qui change d'un format à l'autre
+
+| | Format long (L) | Format court (C), toutes familles |
+|---|---|---|
+| Image | 16:9 ; export 3840×2160 si les rushs sont en 4K, sinon 1920×1080 (§13) | 9:16 ; montage depuis les rushs 4K, jamais depuis un export 16:9 ; export 1080×1920 (§13) |
+| Durée | Selon le récit | Jusqu'à 3:00, selon le sujet (réponse du 12/10/2026) |
+| Ouverture | Promesse montrée ou dite avant 30 s, dans l'intro face caméra | **Hook demandé à Cabezer à chaque vidéo** : son hook habituel, un hook agressif d'extraits rapides, ou un teaser du moment fort (réponse du 12/10/2026) ; son dès la 1re image, texte lisible dès 0,2 s |
+| Structure | Question centrale, parties et chapitres, boucles ouvertes toutes refermées, fin avec 5 à 20 s pour l'écran de fin | Hook → contexte → tension → payoff → **appel au commentaire** dans les 5 dernières secondes (réponse du 12/10/2026) ; pas de chapitres |
+| Rythme | Le discours mène ; respirations d'émotion gardées ; plans tenus quand ils portent | Coupes franches ; blancs de plus de 0,25 s coupés dans les monologues ; un élément visuel nouveau au moins toutes les 6 s |
+| Sous-titres | France : SRT seul ; étranger : anglais incrusté, 2 lignes (§9) | **Incrustés mot à mot**, comme la dégustation ; à l'étranger, langue locale ou anglais à demander (réponse du 12/10/2026) (§9) |
+| Musique | Selon la famille (tableau 2.2) | **Aucune**, dans toutes les familles (réponse du 12/10/2026) |
+| SFX | Selon la famille (tableau 2.2) | **Comme la dégustation** : banque Pixabay, touche mème, sans mèmes vocaux ni boom, clairement audibles (réponse du 12/10/2026) |
+| Mouvements | Zoom façon Micode, seulement s'il sert le moment (§7) | Punch-ins secs ; shake, flash et whip seulement en C-Food ; transitions de vlog en C-Life (tableau 2.3) |
+| Contrôle | Promesse, boucles, relances, courbe de rétention (§15) | **Notation hook et rétention sur 10, minimum 8**, barème adapté à la famille (§5.2) (réponse du 12/10/2026) |
+| Fiches pro | Rétention YouTube long, documentaire, fondamentaux | Formats courts verticaux, fondamentaux |
+
+### 2.2 Format long — par famille
+
+| Règle | L-Food | L-Story | L-Tech | L-Films | L-Life |
 |---|---|---|---|---|---|
-| Sous-titres | Incrustés toujours ; **français** mot à mot en France et Belgique ; à l'étranger **langue locale ou anglais, à demander** (défaut anglais) ; masqués pendant les textes animés (§9) | France : SRT français seulement, rien d'incrusté (réponse du 12/10/2026) ; étranger : anglais incrusté, 2 lignes max | Idem F | Idem F | Idem F, vocabulaire accessible |
-| Musique | **Absente** (choix de Cabezer, sauf demande) | Selon émotion ; composition originale (§11) | Nappe continue ~24 dB sous la voix, silences de bascule ; composition originale (§11) | Bibliothèque perso | Selon émotion ; composition originale (§11) |
-| SFX | Banque Pixabay dédiée, liste de référence (§5), sans mèmes vocaux ni boom, audibles | Bibliothèque ouverte, audibles | Idem F ; aucun bruitage sans élément visuel correspondant | Idem F | Idem F |
-| Zoom facecam | Punch-ins secs 100/115 %, 120 % sur les bouchées ; shake + flash sur les gros moments ; whip entre deux lieux | Zoom avant/arrière façon Micode, seulement si pertinent | Idem F ; déplacements libres sur documents | Zoom Micode sur son visage seulement, jamais d'aller-retour continu (rejeté sur Dune) | Idem F |
-| Identité | DA Dégustation v2 (§5.1) | Charte à créer sur un extrait de 30 s à valider (§6) | Méthode Micode/Amistory ; identité visuelle à refaire entièrement (v15 supprimée le 12/10/2026) | PRISME v1 | Liquid Glass |
-| Durée | ~3:00 max en TikTok | Selon récit | Selon récit | Selon brief | Selon brief |
-| Blancs | Coupés au-delà de 0,25 s dans les monologues (§5) | Coupe au dernier mot ; respiration gardée au verdict (§4) | Respirations qui portent gardées (§6) | Coupe au dernier mot ; respirations d'émotion gardées (§4) | Coupe au dernier mot (§4) |
-| Coupe bouchée | Courte : arrivée en bouche → morsure → réaction ; hook et rétention notés /10, minimum 8 (§5.2) | Dégustation complète | — | — | — |
+| Sous-titres | France : SRT français seulement ; étranger : anglais incrusté, 2 lignes max | Idem | Idem, vocabulaire accessible | Idem ; passages non français traduits (§6) | Idem |
+| Musique | Selon l'émotion ; composition originale (§11) | Nappe continue ~24 dB sous la voix, silences de bascule ; composition originale (§11) | Selon l'émotion ; composition originale (§11) | Bibliothèque perso | **Aucune** (vlogs et face caméra) (réponse du 12/10/2026) |
+| SFX | Bibliothèque ouverte, audibles | Idem ; aucun bruitage sans élément visuel correspondant | Idem | Idem | **Comme la dégustation** (banque Pixabay, touche mème) (réponse du 12/10/2026) |
+| Zoom facecam | Façon Micode, seulement si pertinent | Idem ; déplacements libres sur documents | Idem | Façon Micode sur son visage seulement, jamais d'aller-retour continu (rejeté sur Dune) | Selon le sujet (§2.5) |
+| Identité | Charte à créer sur un extrait de 30 s (§6) | Méthode Micode/Amistory ; identité visuelle à refaire (v15 supprimée le 12/10/2026) | Liquid Glass | PRISME v1 | À créer sur un extrait (§6) |
+| Images | Vraies images (façades, menus, tickets) en caméra 3D ; duels et classements : 3 à 5 critères, verdict en dernier | Une image par idée, jamais par mot (§6) | Vraies captures et pages officielles, schémas construits dans AE | Extraits et affiches officiels, commentés et crédités (§8) | Vlog : cartes de lieu et de date, speed ramps et transitions, textes et emojis de réaction (§2.5) |
+| Blancs | Coupe au dernier mot ; respiration gardée au verdict (§4) | Respirations qui portent gardées (§6) | Coupe au dernier mot (§4) | Coupe au dernier mot ; respirations d'émotion gardées (§4) | Selon le sujet (§2.5) |
+| Dégustation | Complète, bouchée à vitesse réelle | — | — | — | — |
+| Fin | 5 à 20 s compatibles avec l'écran de fin | Regard silencieux, fondu au noir, accord final, puis 5 à 20 s (§6) | Comme L-Food | Comme L-Food | Comme L-Food |
+
+### 2.3 Format court — par famille
+
+Règles communes à tous les courts : §2.1 (hook demandé, sous-titres mot à mot, aucune musique, SFX comme la dégustation, appel au commentaire, notation sur 10).
+
+| Règle | C-Food | C-Story | C-Tech | C-Films | C-Life |
+|---|---|---|---|---|---|
+| Formats | Dégustation, duel ou classement, recette ou préparation, vlog street food ou voyage (§2.4) | Extrait d'une Story longue ou tourné exprès, selon le brief (défaut : extrait, §12) | Idem | Idem | Vlog ou prise de parole face caméra |
+| Identité | **DA Dégustation v2 pour tous les courts food** (réponse du 12/10/2026) (§5.1) | Identité propre au court, à créer sur un extrait | Idem | Idem | Idem |
+| Mouvements | Punch-ins secs 100/115 %, 120 % sur les bouchées ; shake + flash sur les gros moments ; whip entre deux lieux | **Punch-ins secs seulement**, sans shake ni flash (réponse du 12/10/2026) | Idem | Idem | Vlog : speed ramps et transitions (whip, match cut) ; face caméra : selon le sujet (§2.5) |
+| Note à l'écran | Dégustation et duel/classement : note sur 10 et verdict ; recette et vlog : pas de note (réponse du 12/10/2026) | — | — | — | — |
+| Particularités | Coupe courte de la bouchée (§5) | Une idée, une preuve forte, une chute | Une démonstration ou une info, avec sa preuve | Extraits courts, commentés, crédités ; risque Content ID signalé (§8) | Cartes de lieu et de date, textes et emojis de réaction sur les vrais moments |
+
+### 2.4 Les quatre formats courts food (C-Food)
+
+Tous : DA Dégustation v2, **aucune musique**, banque SFX Pixabay, sous-titres mot à mot, hook demandé, appel au commentaire, notation hook/rétention (réponse du 12/10/2026).
+- **Dégustation :** toutes les règles du §5 (bouchée courte, prix, intérieur, note sur 10, préparation sous la voix).
+- **Duel ou classement :** même grammaire que la dégustation, une note sur 10 par adresse ou produit, verdict en dernier ; bouchées en coupe courte (§5).
+- **Recette ou préparation :** gestes en plans serrés, speed ramps sur les inserts (§7), pas de note ; dégustation finale en coupe courte si elle est filmée.
+- **Vlog street food ou voyage :** étiquette de lieu (§5.1), whip entre deux lieux, bouchées en coupe courte ; pas de note sauf s'il la donne dans le rush.
+
+### 2.5 Famille Lifestyle (L-Life, C-Life)
+
+Vlogs et prises de parole face caméra, en long et en court (réponse du 12/10/2026).
+- **Musique :** aucune, ni en vlog ni en face caméra. **SFX :** comme la dégustation (banque Pixabay, touche mème, audibles, chaque SFX lié à un élément).
+- **Vlog :** cartes de lieu et de date (faites dans AE), speed ramps et transitions entre les lieux (whip, match cut sonorisés), textes et emojis de réaction sur les vrais moments ; pas de montage rapide calé sur une musique.
+- **Prise de parole face caméra :** style selon le sujet, précisé au brief. Conseil ou anecdote : serré (jump cuts, punch-ins secs, textes clés). Sujet personnel : posé (coupes au dernier mot, silences qui portent gardés, zoom façon Micode). En court, les blancs morts sont coupés dans les deux cas.
+- **Identité :** à créer sur un extrait, une pour le long et une pour le court (§6).
 
 ## 3. Flux de travail
 
 Créer au début une liste de suivi avec ces étapes **distinctes** ; ne jamais fusionner couleur et mixage dans une passe « finitions ».
 
-0. **Brief** (`Suivi/brief.md`) : famille ; destinations et formats ; durée cible ; promesse en une phrase ; ce que le spectateur doit comprendre ou ressentir ; partenariat, produit offert ou invitation (mention obligatoire, §8) ; personnes ou données à protéger ; références éventuelles ; échéance ; niveau d'autonomie. En dégustation, demander aussi le hook et la langue à l'étranger (§5).
+0. **Brief** (`Suivi/brief.md`) : **format (long ou court) et famille** (§2) ; destinations ; durée cible ; promesse en une phrase ; ce que le spectateur doit comprendre ou ressentir ; partenariat, produit offert ou invitation (mention obligatoire, §8) ; personnes ou données à protéger ; références éventuelles ; échéance ; niveau d'autonomie. En format court, demander aussi le hook et, à l'étranger, la langue des sous-titres (§2.1).
 1. **Préparation.** Copier les rushs d'une carte amovible avec vérification par somme de contrôle, conserver les originaux. Arborescence : `Media/` (Rushs/<caméra>, Assets, Audio, Proxys), `Projet/` (.prproj et .aep versionnés), `Exports/` (Brouillons, Final), `Controles/`, `Suivi/`. Lire chaque rush avec ffprobe : durée, cadence (variable ?), orientation, profil couleur (D-Log M, V-Log, HLG/Apple Log, Rec.709), audio (Cabezer enregistre en 32 bits flottant). Garder une séquence source et une séquence montée. Première session sur une machine : test de fumée et `Suivi/environnement-verifie.md` ([pilotage](references/pro/pilotage-environnement-reprise.md)).
 2. **Transcription et dérush** (§4). Transcrire le rush réel ; ne jamais prendre le script comme preuve de ce qui a été dit. Vérifier les faits (§8). → **Validation du dérush.**
 3. **Format.** Ratio et résolution selon la destination ; cadence de séquence = celle de la majorité des rushs, les autres conformées. Recadrer en protégeant yeux, mains, gestes et produit ; recadrer depuis les rushs 4K, jamais depuis un export 1080p.
@@ -93,7 +149,9 @@ Pour les dégustations, ranger le projet dans `/Users/cabezer225/Documents/ChatG
 
 Références : [techniques retenues](references/techniques-et-controles.md), [notes par vidéo](references/tutoriels-2026-09-12.md), [méthode antérieure](references/methode.md), [récit, regard et rythme — Aprilynne Alter](references/aprilynne-recit-regard-rythme.md), [audio, automatismes, motifs](references/tutoriels-2026-09-14.md), [fondamentaux pro](references/pro/fondamentaux-montage-narratif.md).
 
-## 5. Vidéos courtes de dégustation
+## 5. Format court food — dégustation (C-Food)
+
+Ce bloc est la référence de tout le format court food : duel ou classement, recette et vlog street food suivent la même DA v2 et les mêmes règles, avec les adaptations du §2.4. Les courts des autres familles en reprennent la forme (hook demandé, sous-titres mot à mot, aucune musique, SFX, appel au commentaire, notation) mais ni l'identité ni la coupe de la bouchée (§2.3).
 
 **Direction actuelle : DA Dégustation v2 (02/10/2026)**, fiche complète `/Users/cabezer225/Documents/ChatGPT/Tiktok degustation/Identite-Degustation/DA-Degustation-v2.md`, à lire avant chaque dégustation.
 - **Origine :** ses réponses au questionnaire du 02/10, après le rejet du Milan v01 (« SFX pas ouf, pops nuls, dérush pas dynamique, effets pas clean »), et l'analyse de 6 de ses reels (`Tiktok degustation/References-Cabezer/`).
@@ -174,15 +232,15 @@ Coupe courte sur tous les formats courts, y compris un Short ou Reel monté seul
 - Mouvements du cadre dans Premiere : punch-ins, whips et shakes par Mouvement / Transformation avec flou de mouvement.
 - Les scripts éprouvés sur Milan pilotent AE et génèrent le XML ; ils ne fabriquent aucune image. Ce sont des exemples à adapter, pas des gabarits à relancer tels quels ([liste](references/projets-cabezer.md)).
 
-### 5.2 Notation obligatoire : hook et rétention sur 10 (consigne du 02/10/2026)
+### 5.2 Notation obligatoire de tous les formats courts : hook et rétention sur 10 (consigne du 02/10/2026, étendue à tous les courts le 12/10/2026)
 
-Chaque dégustation est notée avant livraison. **Si une note est sous 8, retravailler puis renoter jusqu'à 8 minimum, et donner les deux notes à Cabezer.** Seule exception : si 8 est impossible sans contredire un choix de Cabezer (son hook, un passage qu'il a gardé, un appel non tourné), son choix prime : livrer avec la note réelle, dire ce qui bloque et proposer au plus deux variantes de hook en gardant le sien comme option. **Au plus deux passes de retravail** (réponse du 12/10/2026) : si la note reste sous 8, livrer avec la note réelle et ce qui bloque. Les notes sont une auto-évaluation de Claude, pas une validation. Barème complet : DA v2 §5.
+Chaque format court est noté avant livraison, quelle que soit sa famille ; le barème ci-dessous est adapté à la famille par les mentions entre parenthèses. **Si une note est sous 8, retravailler puis renoter jusqu'à 8 minimum, et donner les deux notes à Cabezer.** Seule exception : si 8 est impossible sans contredire un choix de Cabezer (son hook, un passage qu'il a gardé, un appel non tourné), son choix prime : livrer avec la note réelle, dire ce qui bloque et proposer au plus deux variantes de hook en gardant le sien comme option. **Au plus deux passes de retravail** (réponse du 12/10/2026) : si la note reste sous 8, livrer avec la note réelle et ce qui bloque. Les notes sont une auto-évaluation de Claude, pas une validation. Barème complet : DA v2 §5.
 
 **Hook (0–3 s) :**
 
 | Critère | Points |
 |---|---|
-| Produit ou bouchée dans la 1re seconde | 3 |
+| Sujet fort dans la 1re seconde (C-Food : produit ou bouchée ; Story/Films : preuve, image ou phrase choc ; Tech : objet ou démonstration ; Life : moment ou lieu fort) | 3 |
 | Enjeu ou promesse compris en 3 s | 3 |
 | Texte d'accroche lisible dès 0,2 s | 1 |
 | 2 changements de plan ou de cadre | 2 |
@@ -195,8 +253,8 @@ Chaque dégustation est notée avant livraison. **Si une note est sous 8, retrav
 | Au plus 6 blancs de 0,25 s ou plus par minute | 2 |
 | Aucune hésitation, correction ni redite restante | 2 |
 | Aucun passage de plus de 6 s sans élément visuel nouveau | 2 |
-| Produit avant 3 s et 1re bouchée avant la moitié | 2 |
-| Récompenses : prix, bouchée, intérieur, verdict, appel au commentaire | 1 |
+| Sujet avant 3 s et première récompense avant la moitié (C-Food : produit avant 3 s et 1re bouchée avant la moitié) | 2 |
+| Récompenses présentes (C-Food : prix, bouchée, intérieur, verdict ; Story/Films : révélation, preuve, chute ; Tech : démonstration, chiffre, verdict ; Life : moment fort, lieu, réaction) et appel au commentaire | 1 |
 | Appel au commentaire dans les 5 dernières secondes | 1 |
 
 - **Script :** `Tiktok degustation/Identite-Degustation/noter_hook_retention.py`.
@@ -205,10 +263,12 @@ Chaque dégustation est notée avant livraison. **Si une note est sous 8, retrav
 - **Clarté :** retranscrire l'export par fenêtres de 10 s qui se chevauchent (Whisper saute des passages sur un long fichier), puis refaire chaque zone douteuse à part.
 - **Test du son coupé :** sans le son, les 3 premières secondes doivent se résumer en une phrase.
 
-## 6. Identité visuelle par famille
+## 6. Identité visuelle par famille (formats long et court)
 
-Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9, quand elle est demandée, ajuste taille des textes, composition et zones sûres sans changer l'identité. Avant l'habillage, retrouver la charte et les montages validés de la famille ; ne pas recréer une direction à chaque vidéo ni transposer celle d'une autre famille. Le style par défaut d'un plugin ne définit pas l'identité.
+Chaque famille garde une identité reconnaissable **dans chaque format** : une identité pour le long, une **identité propre au court** (réponse du 12/10/2026). Le court food a la sienne (DA Dégustation v2) ; les courts Story, Tech, Films et Lifestyle ont chacun la leur, à créer sur un extrait de 15 à 30 s et à faire valider avant de décliner ; ne pas recadrer l'identité du long en attendant. Avant l'habillage, retrouver la charte et les montages validés de la famille ; ne pas recréer une direction à chaque vidéo ni transposer celle d'une autre famille. Le style par défaut d'un plugin ne définit pas l'identité.
 
+- **Courts food (C-Food) :** DA Dégustation v2 (§5.1) pour la dégustation, le duel ou classement, la recette et le vlog street food (réponse du 12/10/2026).
+- **Lifestyle (L-Life, C-Life) :** deux identités à créer sur extrait, une par format (§2.5).
 - **Dégustation :** DA Dégustation v2 (§5.1). Ni Johan Papz, ni Food dégustation v1 (Slak v27), ni les stickers et tampons du Milan v01 ne servent plus de modèle pour la dégustation.
 - **Food long :** **créer la charte** (réponse du 12/10/2026) : proposer 30 s habillées (couleurs, polices, titres de lieu, prix, notes, comparatifs) à faire valider ; la fiche validée (`references/identites-visuelles/`) devient la règle. [Food dégustation v1](references/identites-visuelles/food-degustation-v1.md) reste un repère de lisibilité, pas la charte. Animations faites dans AE comme la dégustation : titres de restaurant, cartes de lieu, prix, notes et comparatifs construits en calques AE, avec ses vraies images (façades, menus, tickets) explorées en caméra 3D plutôt que des cartes génériques. Duels et classements : 3 à 5 critères, une preuve à l'image par critère, verdict en dernier.
 - **Films/séries :** [PRISME v1](references/identites-visuelles/films-series-prisme-v1.md), validé sur Dune. Réservé à cette famille. Construit dans AE : titres, fiches de personnages et frises en calques natifs, extraits et affiches officiels explorés en caméra 3D. Pas d'affiche ni de visuel généré. Extraits : voir §8 et [documentaire et essai](references/pro/documentaire-essai-video-archives.md).
@@ -297,11 +357,11 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 
 **Langue :**
 
-| Lieu de tournage | Dégustation | Autres familles |
+| Lieu de tournage | Format court, toutes familles | Format long, toutes familles |
 |---|---|---|
 | France, Belgique francophone | Français mot à mot, incrustés | SRT français seulement, rien d'incrusté (réponse du 12/10/2026) |
-| Étranger | Langue locale ou anglais, **à demander à chaque vidéo** (défaut : anglais ; Milan : anglais) | Anglais incrusté, toujours (consigne du 28/09/2026, Maritozzo) |
-| Passages non français dans une vidéo française | Idem (§6) | Traduction française sur les passages surlignés (§6) |
+| Étranger | Langue locale ou anglais, **à demander à chaque vidéo** (défaut : anglais ; Milan : anglais) (réponse du 12/10/2026) | Anglais incrusté, toujours (consigne du 28/09/2026, Maritozzo) |
+| Passages non français dans une vidéo française | Traduction sur les passages surlignés (§6) | Traduction sur les passages surlignés (§6) |
 
 **Réalisation commune :**
 - La piste de légendes Premiere sert de transcription, de calage et d'export SRT. Les sous-titres incrustés finaux sont une **composition After Effects** à l'identité de la famille, entrée animée, texte resté éditable (un calque de texte, un mot ou un paquet par clé de Texte source), rendue en ProRes 4444 alpha. Livrer la composition, le rendu et le SRT. Plus de légendes Premiere au style générique (retour sur Maritozzo v09, 28/09/2026).
@@ -310,14 +370,14 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 - **Un rendu par passage validé** (réponse du 12/10/2026) : une composition AE et un rendu ProRes 4444 par séquence (passage) validée, calés sur ses coupes. Si Cabezer retouche une coupe, refaire seulement le rendu du passage touché, puis vérifier la synchro dans l'export.
 - Typographie française (espaces insécables, guillemets, nombres, prix, heures) : [conformité](references/pro/conformite-droits-accessibilite.md).
 
-**Dégustation — consigne du 02/10/2026 :**
+**Tous les formats courts — style de la dégustation (consigne du 02/10/2026, étendue à tous les courts le 12/10/2026) :** couleur d'accent et police de l'identité courte de la famille (C-Food : DA v2 ci-dessous).
 - **Style DA v2 :** Avenir Next Heavy en capitales, blanc, ombre courte et nette, sans contour épais ; vers 72–75 % de la hauteur, exemptés de la boîte de zones sûres (réponse du 12/10/2026) ; contrôler sur une capture de chaque application qu'ils ne sont pas masqués et signaler tout conflit ; mots clés (produit, prix, note, lieu) dans la couleur d'accent.
 - **Découpage :** en français, un mot à la fois ; en traduction, paquets de 1 à 3 mots, 18 caractères au plus, les petits mots collés au mot qui suit.
 - **Entrée :** pop en 4 images ; sortie sèche au paquet suivant.
 - Un paquet qui tombe sous un pop-up, un prix, la note ou l'appel au commentaire attend la fin de l'animation, sinon il est retiré.
 
-**Autres familles (y compris tournées à l'étranger) — la dégustation reste régie par le bloc ci-dessus :**
-- **Deux lignes maximum réellement affichées**, pour chaque bloc. Coupures de ligne explicites, jamais de retour automatique (Premiere ajoutait une 3ᵉ ligne) : ≤ 24 caractères par ligne en 9:16 à ~70 px sur 1080 ; en 16:9, viser ≤ 42 caractères par ligne. Blocs trop longs découpés en sous-titres successifs équilibrés, par groupes de sens, sans mot isolé ; ne pas réduire la police ponctuellement.
+**Format long (y compris tourné à l'étranger) — les formats courts restent régis par le bloc ci-dessus :**
+- **Deux lignes maximum réellement affichées**, pour chaque bloc. Coupures de ligne explicites, jamais de retour automatique (Premiere ajoutait une 3ᵉ ligne) : en 16:9, viser ≤ 42 caractères par ligne. Blocs trop longs découpés en sous-titres successifs équilibrés, par groupes de sens, sans mot isolé ; ne pas réduire la police ponctuellement.
 - Traduire le sens oral de Cabezer (ton naturel, pas mot à mot), y compris les échanges avec les vendeurs ; garder les noms propres et le mot exact de l'appel au commentaire. Corriger noms, chiffres et ponctuation.
 - **Style :** identité de la famille, entrée animée au moins (pop léger + mots révélés un à un, sortie courte). Respecter taille, marges et zones sûres de l'identité ; éviter l'interface mobile et le visage.
 - Un SRT correct ou une mesure hors Premiere ne suffit pas : vérifier dans Premiere puis dans le MP4 exporté après tout import, changement de style ou déclinaison. Ne pas annoncer les sous-titres contrôlés tant qu'un bloc sur trois lignes existe.
@@ -352,7 +412,7 @@ Lire [audio pro](references/pro/audio-dialogue-sound-design-mixage.md).
 
 **Organisation des pistes :** A1–A2 voix, A3–A4 SFX, A5 musique ; ajouter une piste ambiances si utilisée.
 
-**SFX.** Dégustation : banque Pixabay et liste de référence (§5). Autres familles : **bibliothèque ouverte**, choisie selon le sujet et l'animation. Clics, caisses, whooshes et accents doivent être **clairement audibles** dans le mix final sous une voix intelligible, sans être envahissants ; un son inaudible ne remplit pas sa fonction. Ne pas multiplier les accents ni recouvrir bouchées et réactions. Aucun bruitage sans élément visuel correspondant à l'écran. Refuser les SFX synthétisés ou génériques peu pertinents : sources = fichiers de Cabezer, ses bibliothèques **Cabezer-Sons-Vol1** et **Cabezer-Ajouts-Food-Lifestyle** (WAV 24 bits/48 kHz), Adobe Stock via son compte (licence payante : à signaler), ou toute source dont la licence couvre l'usage. Ne jamais prélever les sons d'une vidéo TikTok ou d'un tutoriel. Consigner provenance, licence, crédits, fichier ; ne pas inventer une licence. Bruitages Story retenus (30/09/2026) : tampon, impression de ticket, coche au feutre, vraie déchirure de papier (CC0).
+**SFX.** Tous les formats courts et le Lifestyle long : banque Pixabay et liste de référence, comme la dégustation (§5) (réponse du 12/10/2026). Autres formats longs : **bibliothèque ouverte**, choisie selon le sujet et l'animation. Clics, caisses, whooshes et accents doivent être **clairement audibles** dans le mix final sous une voix intelligible, sans être envahissants ; un son inaudible ne remplit pas sa fonction. Ne pas multiplier les accents ni recouvrir bouchées et réactions. Aucun bruitage sans élément visuel correspondant à l'écran. Refuser les SFX synthétisés ou génériques peu pertinents : sources = fichiers de Cabezer, ses bibliothèques **Cabezer-Sons-Vol1** et **Cabezer-Ajouts-Food-Lifestyle** (WAV 24 bits/48 kHz), Adobe Stock via son compte (licence payante : à signaler), ou toute source dont la licence couvre l'usage. Ne jamais prélever les sons d'une vidéo TikTok ou d'un tutoriel. Consigner provenance, licence, crédits, fichier ; ne pas inventer une licence. Bruitages Story retenus (30/09/2026) : tampon, impression de ticket, coche au feutre, vraie déchirure de papier (CC0).
 
 | SFX de base | Fichier |
 |---|---|
@@ -368,7 +428,9 @@ Provenance et empreintes : [manifeste](assets/sfx-cabezer/manifest.json) (pas un
 - Toujours sous la voix, jamais au détriment des bouchées ; ce n'est pas une musique de fond. En dégustation : voir §5.
 - Fondus d'entrée/sortie aux changements de séquence ; ne pas laisser une ambiance couper net sur une coupe.
 
-**Musique (hors dégustation) :** choisir, maintenir, changer ou retirer selon l'émotion réelle (question, découverte, doute, verdict, moment drôle), pas à chaque changement de produit. Changements aux articulations naturelles, avec fondus ou silences maîtrisés ; fondu exponentiel en fin de morceau. Ne pas déplacer une réaction pour suivre la musique. Un morceau fini garde sa vitesse d'origine. Ducking : valeurs de départ de la fiche audio, retouchées à la main.
+**Musique — formats concernés :** aucune musique dans **tous les formats courts** ni en **Lifestyle** (long et court) (réponse du 12/10/2026). Les règles suivantes valent pour L-Food, L-Story, L-Tech et L-Films.
+
+**Musique (formats longs) :** choisir, maintenir, changer ou retirer selon l'émotion réelle (question, découverte, doute, verdict, moment drôle), pas à chaque changement de produit. Changements aux articulations naturelles, avec fondus ou silences maîtrisés ; fondu exponentiel en fin de morceau. Ne pas déplacer une réaction pour suivre la musique. Un morceau fini garde sa vitesse d'origine. Ducking : valeurs de départ de la fiche audio, retouchées à la main.
 - Films/séries : `/Users/cabezer225/Downloads/MUSIQUES` et `/Users/cabezer225/Documents/ChatGPT/Film/musique`, après écoute réelle des extraits par Cabezer ou sur sa validation.
 - Compositions originales : [bibliothèque originale Cabezer](references/musiques-originales-cabezer.md) (Cédric Grolet notamment) ; ne pas confondre avec les achats Halal Beats. Ne pas garantir l'absence de revendications.
 - Distinguer sélection proposée, employée, approuvée. Présence locale ≠ licence.
@@ -395,14 +457,14 @@ Provenance et empreintes : [manifeste](assets/sfx-cabezer/manifest.json) (pas un
 
 Une demande de terminer musique, SFX, mixage et couleur supprime seulement les validations intermédiaires : les passes restent distinctes et consignées séparément.
 
-## 12. Déclinaisons et tournages multi-caméras
+## 12. Formats courts tirés d'une vidéo longue, déclinaisons et multicam
 
-**Du format long aux Shorts** *(méthode du 28/09/2026, à proposer au premier usage, §20)* — pour Story et food long :
+**Du format long aux Shorts** *(méthode du 28/09/2026, à proposer au premier usage, §20)* — pour toutes les familles longues (Story, food, tech, films/séries, Lifestyle) :
 1. Repérer les passages **autonomes** : une idée complète, compréhensible sans le reste, avec une chute ou un verdict.
 2. Écrire un nouveau hook à partir des paroles existantes (réordonner des prises, jamais recomposer une phrase pour changer son sens).
 3. Recadrer 16:9 → 9:16 depuis les rushs 4K : Auto Reframe comme point de départ, puis correction manuelle des images clés pour garder visage, produit ou document lisibles. Refaire les textes à l'échelle verticale selon l'identité de la famille.
-4. Appliquer les règles du format court de la famille : dégustation (§5, §9) ; pour S et F, sous-titres de la famille adaptés au 9:16 (2 lignes, ≤ 24 caractères) **[Q]** (défaut : oui).
-5. Fin qui renvoie à la vidéo longue ou qui boucle sur le début.
+4. Appliquer toutes les règles du format court (§2.1, §2.3) : hook demandé à Cabezer, sous-titres mot à mot, aucune musique (retirer celle du long), SFX comme la dégustation, punch-ins secs, identité propre au court de la famille, notation sur 10 (réponse du 12/10/2026).
+5. Fin sur l'appel au commentaire s'il a été tourné (réponse du 12/10/2026) ; sinon, le signaler à Cabezer (jamais l'inventer) et proposer un renvoi vers la vidéo longue.
 6. Une séquence par Short dans le même projet, nommée d'après le passage.
 
 **Déclinaison du même montage court** (TikTok → Shorts/Reels) : conserver coupes et durée validées ; adapter seulement les zones sûres si besoin.
@@ -431,12 +493,12 @@ Exporter en MP4 H.264 (ou H.265 si demandé) au ratio, à la résolution et à l
 - Dérush/raccords : aucun mot coupé (lister les coupes, retranscrire 1 s autour des coupes suspectes), aucun blanc résiduel non voulu, « Bref, c'est partiiii » entier, appel au commentaire présent et entier.
 - Cadrage, zones sûres (boîte de test), illustrations (sources et crédits dans `licences.csv`).
 - Habillage ; sous-titres : langue selon §9, jamais trois lignes, masqués pendant les textes animés, typographie française.
-- **Dégustation :** notes hook et rétention ≥ 8, ou note réelle expliquée si un choix de Cabezer l'empêche (§5.2) ; aucun reste de phrase coupée ni plan muet qui traîne ; pas de SFX orphelin d'un élément retiré ; pas d'audio d'insert résiduel.
+- **Formats courts :** notes hook et rétention ≥ 8, ou note réelle expliquée (§5.2) ; aucune musique ; sous-titres mot à mot ; appel au commentaire ; **dégustation :** aucun reste de phrase coupée ni plan muet qui traîne ; pas de SFX orphelin d'un élément retiré ; pas d'audio d'insert résiduel.
 - Musique / SFX / ambiances : présents, dosés, whooshes synchronisés (mesure) ; écoute demandée à Cabezer.
 - **Colorimétrie** faite et comparée ; balises du MP4.
 - **Mixage** fait et mesuré (ebur128, crête vraie, mono) ; validation auditive de Cabezer : faite ou « en attente ».
 - **Conformité :** tiers identifiables traités selon sa décision, mention de partenariat si besoin, flashs et secousses dans les limites, extraits tiers crédités.
-- Début/fin, durée (≤ 3:00 en TikTok dégustation), pas de noirs ni d'images figées involontaires, pas de médias hors ligne.
+- Début/fin, durée (≤ 3:00 en format court), pas de noirs ni d'images figées involontaires, pas de médias hors ligne.
 - AE : compositions liées/rendues, alpha correct (yuva444p12le, pas de frange), pas d'audio guide en doublon, `.aep` et sources conservés.
 
 **Pièges vérifiés (Milan, 02/10/2026) :**
@@ -528,6 +590,8 @@ Une méthode « à proposer au premier usage » est présentée à Cabezer avant
 | Boucle rétention (§15) | 28/09/2026 | À proposer au premier usage |
 | Identité Story v15 rose et générique « Amed Story 🧢 » v01 (§6) | 30/09/2026 | **Supprimés le 12/10/2026, à refaire en entier** |
 | Charte food long (§6) | 12/10/2026 | À créer sur un extrait de 30 s à valider |
+| Identités propres au court : C-Story, C-Tech, C-Films, C-Life (§2.3, §6) | 12/10/2026 | À créer sur un extrait à valider |
+| Identité Lifestyle long (§2.5) | 12/10/2026 | À créer sur un extrait à valider |
 
 **Réponses de Cabezer du 12/10/2026 :** appliquées dans ce texte (mention « réponse du 12/10/2026 ») ; elles priment sur les sections « Décisions à demander » des fiches. Tableau récapitulatif en tête du registre ci-dessous.
 
