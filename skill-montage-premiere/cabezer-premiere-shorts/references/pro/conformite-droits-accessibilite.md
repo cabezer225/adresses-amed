@@ -203,7 +203,7 @@ Une fois la formule et la durée choisies par Cabezer :
 - **Seuil de passage** : au plus **3 flashs généraux et au plus 3 flashs rouges dans toute période d'une seconde**, **ou** surface cumulée des flashs simultanés d'au plus 0,006 stéradian, soit 25 % d'un champ de 10 degrés [Lu].
 - **Exception** : motif fin et équilibré (bruit blanc, damier aux carrés de moins de 0,1 degré) [Lu].
 - **Flash rouge saturé** : transition vers ou depuis un état dont R/(R+G+B) ≥ 0,8, avec un écart de chromaticité > 0,2 dans le diagramme CIE 1976 UCS [Lu].
-- **Niveau AAA (2.3.2, « Three Flashes »)** : aucun flash de plus de 3 par seconde, **quelle que soit la taille ou la luminosité** [Lu : Understanding]. Les limites maison de §6.3 (aire non exemptée, au plus 2 par seconde) respectent aussi ce critère.
+- **Niveau AAA (2.3.2, « Three Flashes »)** : aucun flash de plus de 3 par seconde, **quelle que soit la taille ou la luminosité** [Lu : Understanding]. Les repères maison de §6.3 (aire non exemptée, au plus 2 par seconde) respectent aussi ce critère.
 - **Portée.** WCAG vise le web ; les plateformes ne l'appliquent pas telle quelle. C'est un **repère de sécurité facultatif**, pas une obligation légale établie ni une règle du skill [Pratique].
 - **Export SDR Rec.709** : la définition en luminance relative suffit. La formulation de l'UIT-R BT.1702 (20 cd/m² d'écart quand le côté sombre est sous 160 cd/m²) est citée par WCAG et n'a pas été lue directement [Lu par citation].
 
@@ -423,30 +423,26 @@ Arguments : temps en secondes, x, y, largeur, hauteur de la zone, couleur du tex
 
 **Brief et dérush**
 - [ ] Question du brief posée et consignée : plat offert, invitation, partenariat, affiliation, annonceur ; ou « en attente ».
-- [ ] Personnes, enfants, plaques, tickets, écrans, reflets et voix de tiers listés au dérush ; décisions de Cabezer notées dans `decisions.md`.
+- [ ] Personnes, enfants, plaques, tickets, écrans, reflets et voix de tiers listés au dérush et signalés à Cabezer ; ses décisions notées dans `decisions.md`.
 
 **Personnes et données (§2)**
-- [ ] Chaque personne reconnaissable a un accord écrit noté, ou est floutée, recadrée ou coupée.
-- [ ] Aucun enfant identifiable sans accord des parents ; aucun prénom d'enfant dit ni sous-titré.
-- [ ] Plaques, numéros de carte, noms, adresses, onglets, e-mails et notifications masqués.
-- [ ] Floutages vérifiés image par image à 100 % puis sur le MP4, y compris après les punch-ins et les retouches de Cabezer ; masquages notés au rapport.
+- [ ] Chaque personne reconnaissable, plaque, ticket ou écran signalé a reçu une décision de Cabezer (flou, recadrage, coupe ou rien), notée dans `decisions.md` ; les mineurs ont été signalés en priorité.
+- [ ] Les floutages décidés par Cabezer sont vérifiés image par image à 100 % puis sur le MP4, y compris après les punch-ins et les retouches ; masquages notés au rapport.
 
 **Contenu commercial (§3)**
-- [ ] Si contrepartie : mention « Collaboration commerciale » ou « Publicité » à l'image dès le début, lisible à 270 × 480, dans la boîte sûre, jamais masquée par un sous-titre, maintenue ; case plateforme rappelée à Cabezer.
+- [ ] Si contrepartie : signalée au brief ; mention dont Cabezer a choisi la formule et la durée, posée à l'image, lisible à 270 × 480, dans la boîte sûre, jamais masquée par un sous-titre ; case plateforme rappelée à Cabezer.
 - [ ] Seuil de 1 000 € HT signalé si Cabezer cite un montant ou un avantage.
 
 **Extraits et licences (§4, §5)**
-- [ ] Extraits : durée minimale, commentés, source affichée, ligne dans `licences.csv` (`citation (à valider)`), risque Content ID signalé.
-- [ ] Chaque piste, son, image, police : ligne dans `licences.csv` avec preuve ; aucun fichier téléchargé sans accord.
+- [ ] Extraits : durée utile, commentés, source affichée au moins 3 s, ligne dans `licences.csv` (`citation (à valider)`), risque Content ID signalé.
+- [ ] Chaque piste, son, image, police : ligne dans `licences.csv` avec preuve ; aucun fichier téléchargé sans accord, sauf les plans vidéo stock libres de droits (accord général, signalés).
 
-**Photosensibilité (§6)**
-- [ ] Décompte par seconde fait ; aucune fenêtre d'une seconde à plus de 2 événements lumineux (limite maison) et jamais plus de 3 (WCAG 2.3.1).
-- [ ] `flash-check.py` lancé sur l'export de contrôle (grille adaptée au ratio), verdict et limites au rapport ; **échec à 3 = bloquant**.
-- [ ] Un gros moment par seconde au plus, une seconde de répit autour ; aucun plan sombre/clair de moins de 8 images ; aucun clignotement plein cadre en rouge ; rushs à néon ou LED examinés.
+**Photosensibilité (§6) : seulement si Cabezer demande un test**
+- [ ] Par défaut, rien à cocher. Sur demande : décompte par seconde fait, `flash-check.py` lancé sur l'export de contrôle (grille adaptée au ratio), verdict et limites au rapport ; un échec à 3 est signalé à Cabezer, qui décide.
 
 **Typographie, intervenants, contraste (§7, §8)**
-- [ ] `lint-fr.py` et `lint-srt.py` sans ligne à corriger ; glyphes des espaces insécables présents ; heures et prix écrits comme Cabezer, de façon cohérente.
-- [ ] Cartouches d'intervenants : première apparition, orthographe vérifiée à la source, durée selon la formule, hors visage et interface, accord de la personne.
+- [ ] `lint-fr.py` et `lint-srt.py` sans ligne à corriger ; glyphes des espaces insécables présents ; heures et prix écrits « 19h30 » et « 12,50 € », de façon cohérente.
+- [ ] Cartouches d'intervenants (hors courts food) : première apparition seulement, orthographe vérifiée à la source, durée selon la formule, hors visage et interface.
 - [ ] Contraste ≥ 4,5:1 (3:1 grand texte) pour le texte coloré et les cartouches, mesuré sur le fond le plus clair.
 
 **Rapport**
@@ -456,28 +452,28 @@ Arguments : temps en secondes, x, y, largeur, hauteur de la zone, couleur du tex
 
 ## 13. Décisions à demander
 
-> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
+> **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur le reste de cette fiche.
 
-Regroupées dans le brief ou le message de livraison, au plus cinq par message, avec l'option par défaut ; chaque réponse va dans `Suivi/decisions.md` et ne se redemande pas.
+Les réponses sont consignées dans `Suivi/decisions.md` et ne se redemandent pas, sauf la mention commerciale, que Cabezer choisit à chaque vidéo.
 
-| N° | Question | Défaut en attendant |
+| N° | Question | Réponse de Cabezer |
 |---|---|---|
-| Q1 | Personnes reconnaissables : accord écrit systématique ou flou par défaut ? | Flou ou exclusion sans accord écrit |
-| Q2 | Employés de l'établissement : accord écrit ou flou ? | Flou du visage et du badge sans accord écrit |
-| Q3 | Mineurs identifiables | Flou ou exclusion ; publication identifiante seulement avec accord des parents |
-| Q4 | Mention commerciale : formule (« Collaboration commerciale » ou « Publicité ») et durée (toute la vidéo ou le début) | « Collaboration commerciale » pour repas ou produit offert, « Publicité » si diffusion payée ; de la première seconde jusqu'à la fin |
-| Q5 | Repas offerts, invitations, produits reçus : traités comme collaboration commerciale ? | Oui, si la remise est liée à la vidéo ; question posée au brief, jamais de mention ajoutée sans confirmation |
-| Q6 | Suivi du seuil de contrat (1 000 € HT) | Claude signale quand un montant ou un avantage est cité ; il ne tient aucun registre |
-| Q7 | Test de flash avant export | Obligatoire, bloquant à 3 par seconde, signalé à 2 |
-| Q8 | Durée maximale d'un extrait tiers et source affichée | Durée strictement utile ; source au moins 3 s |
-| Q9 | Critique nommée d'un établissement | Aucun jugement factuel non vérifié ; nom et adresse sans affirmation invérifiable |
-| Q10 | Écriture des heures et des prix (« 19h30 » ou « 19 h 30 » ; « 12€ » ou « 12,50 € ») | Son usage (« 19h30 »), cohérent dans la vidéo ; sinon forme normative avec U+00A0 |
-| Q11 | Limites maison de photosensibilité (au plus 2 par seconde, 15 images entre flashs, plafond de shake 4 %, plan de 8 images minimum) | Appliquées telles quelles |
-| Q12 | Exception d'identification d'un intervenant au point 7 du skill §6 | Cartouche à la première apparition seulement, « en attente de validation » |
-| Q13 | Nom d'un particulier ou d'un employé à l'écran | Seulement avec son accord |
-| Q14 | Où consigner accords et masquages (fichier dédié ou type `accord` de `licences.csv`) | Section « Personnes et données » de `Suivi/decisions.md` |
-| Q15 | Exploration en caméra 3D d'un extrait officiel (droit moral) | Permise, sans déformation ni changement de sens |
-| Q16 | Déclaration SACEM / licence de diffusion des musiques | Aucune action ; signaler à Cabezer qu'elle n'a pas été étudiée |
+| Q1 | Personnes reconnaissables : accord écrit systématique ou flou par défaut ? | Claude signale au dérush, Cabezer décide du floutage |
+| Q2 | Employés de l'établissement : accord écrit ou flou ? | Même règle : Claude signale, Cabezer décide |
+| Q3 | Mineurs identifiables | Même règle, mineurs signalés en priorité |
+| Q4 | Mention commerciale : formule et durée | Formule et durée choisies par Cabezer à chaque vidéo |
+| Q5 | Repas offerts, invitations, produits reçus : traités comme collaboration commerciale ? | Signalés au brief ; mention choisie par Cabezer à chaque fois, rien ajouté sans sa validation |
+| Q6 | Suivi du seuil de contrat (1 000 € HT) | Pas de réponse particulière : Claude signale quand un montant ou un avantage est cité et ne tient aucun registre |
+| Q7 | Test de flash avant export | Non : pas de test de photosensibilité ; `flash-check.py` seulement à sa demande |
+| Q8 | Durée d'un extrait tiers et source affichée | Durée utile ; source au moins 3 s ; Content ID signalé |
+| Q9 | Critique nommée d'un établissement | Pas de réponse particulière : aucun jugement factuel non vérifié (SKILL §8) |
+| Q10 | Écriture des heures et des prix | « 19h30 » et « 12,50 € » |
+| Q11 | Limites maison de photosensibilité | Sans objet sans test : simples repères facultatifs (§6.3) |
+| Q12 | Exception d'identification d'un intervenant au point 7 du skill §6 | Oui : nom et fonction à la première apparition, hors courts food |
+| Q13 | Nom d'un particulier ou d'un employé à l'écran | Couvert par Q12 : Claude signale l'absence d'accord connu, Cabezer décide |
+| Q14 | Où consigner accords et masquages | Section « Personnes et données » de `Suivi/decisions.md` |
+| Q15 | Exploration en caméra 3D d'un extrait officiel | Permise, sans déformation ni changement de sens |
+| Q16 | Déclaration SACEM / licence de diffusion des musiques | Pas de réponse particulière : aucune action ; signaler que la SACEM n'a pas été étudiée |
 
 ---
 

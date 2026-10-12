@@ -256,7 +256,7 @@ Les valeurs ci-dessous sont des **points de départ à régler à l'œil**, jama
 
 - **Problème** : la saturation « primaire » fait monter la luminance et donne un rendu « numérique » [Tuto : Mostyn 9:10] ; observation faite dans Resolve : dans Lumetri, **mesurer au waveform avant et après**.
 - **Alternatives** : saturation sélective par teinte (Courbes teinte/saturation), vibrance, densité plutôt que saturation pour les rouges (plan avec un pic rouge : le rendre plus foncé) [Tuto : Mostyn 10:07 à 10:37 ; Levine 40:38].
-- **En gamut large**, la saturation est plus stable ; en espace étroit, elle casse bords et ciels (Resolve) [Tuto : 896vcqJijtQ 10:09 à 11:10]. À tester dans Lumetri.
+- En espace étroit (Direct Rec.709), la saturation casse bords et ciels (Resolve) [Tuto : 896vcqJijtQ 10:09 à 11:10] : l'augmenter par petites touches et mesurer au vectorscope dans Lumetri.
 
 | Technique | Quand | Éviter | Familles |
 |---|---|---|---|
@@ -270,12 +270,12 @@ Les valeurs ci-dessous sont des **points de départ à régler à l'œil**, jama
 
 - **Placer le look en bout de chaîne**, après les corrections de base, avec l'espace couleur du clip déclaré [Tuto Adobe : Druss 24:43 à 26:18]. Un look de pellicule émulée se place avant la sortie et reste constant sur toute la vidéo [Tuto : Mostyn 896vcqJijtQ 12:44]. Dehancer, outil de cet exemple, est payant (prix non relevé) : ne pas l'installer.
 - **Doser** : regarder à 100 %, puis baisser l'intensité (« wet/dry » [Tuto : Levine 34:00]). Un LUT de film est souvent trop contrasté : baisser l'intensité, relever les ombres [Tuto : Levine 35:31 ; Druss 25:47].
-- **Skill §10 : LUT Exterior Cinema ou Doux, dosés sur les plans réels.** Un look ne remplace pas une bonne exposition.
+- **Skill §10 : LUT Exterior Cinema ou Doux, dosés sur les plans réels, réservée au Pocket 3.** iPhone et Panasonic ne reçoivent pas ce LUT : ils sont harmonisés à la main (exposition, balance sur la peau, §9). Un look ne remplace pas une bonne exposition.
 - **LUT du marché** : beaucoup sont payants. Signaler chaque fois ; ne rien installer sans l'accord de Cabezer (skill §17).
 
 | Famille | Look conseillé | À éviter |
 |---|---|---|
-| D | Cohérence produit et peau d'un plan à l'autre ; look léger (Exterior dosé) | Dominante qui change le produit ; look hors de l'identité DA v2 |
+| D | Cohérence produit et peau d'un plan à l'autre ; look léger (Exterior dosé sur le Pocket 3 seulement) | Dominante qui change le produit ; look hors de l'identité DA v2 |
 | F | Chaleur du plat, fond propre | Plat gris ou orange |
 | S | Sobre, documentaire ; cohérence entre sources variées | Look fort sur documents, captures, archives |
 | P | Look propre au film ou à la série ; extraits officiels à part (skill §10) | Look facecam sur un extrait de film |
@@ -319,7 +319,7 @@ Caler un plan de référence sur la peau ; copier le réglage sur le plan voisin
 - **Ligne de chair = repère de contrôle (skill §10), pas une cible.** Regarder où tombe la trace de la peau par rapport à la ligne ; si elle s'en écarte mais que l'image paraît naturelle et reste cohérente d'un plan à l'autre, ne pas la déplacer sur la seule foi du scope. Une peau très éloignée de la ligne sur un seul plan signale une balance ou une dominante à revoir.
 - **Ne pas keyer la peau.** Si la peau paraît fausse, revenir à la balance de base [Tuto : Mostyn 13:13].
 - **Peau visiblement fausse** : courbe teinte/teinte, petit décalage vers la ligne sans exagérer [Tuto : Qazi 8:19 à 8:50].
-- **Diversité des teints** : aucune source dédiée n'a été lue. Ne pas imposer une valeur de luminance unique ni caler tous les visages sur la même position. Juger plan par plan, laisser la cohérence interne de la scène primer [I]. Question 11 (§18).
+- **Diversité des teints** : aucune source dédiée n'a été lue. Ne pas imposer une valeur de luminance unique ni caler tous les visages sur la même position. Juger plan par plan, laisser la cohérence interne de la scène primer [I].
 
 **Lissage de peau.** Mostyn utilise l'outil Beauty de Resolve, limité par un masque suivi et mélangé à l'original [Tuto : g4K1NPIA4vY]. Aucun équivalent natif de Premiere n'est documenté. Règle : **ne pas lisser les visages sans demande de Cabezer** ; tester d'abord les outils natifs ; tout outil de génération ou de reconstruction de pixels (Firefly et assimilés) n'est utilisé que sur demande explicite ; signaler tout plugin payant.
 
@@ -352,11 +352,11 @@ Caler un plan de référence sur la peau ; copier le réglage sur le plan voisin
 
 ## 12. iPhone, HLG, Apple Log et HDR
 
-**Pourquoi** : Cabezer mélange Pocket 3, iPhone et Panasonic (skill §12). Un iPhone livre du SDR, du HDR en HLG ou du log (Apple Log) ; chaque cas se traite différemment et l'erreur ne se voit souvent qu'à l'export (image trop claire, fichier étiqueté HDR). Livraison : **SDR Rec.709** sauf brief contraire (skill §13) [Tuto : Mario So 10:44].
+**Pourquoi** : Cabezer mélange Pocket 3, iPhone et Panasonic (skill §12). Un iPhone livre du SDR, du HDR en HLG ou du log (Apple Log) ; chaque cas se traite différemment et l'erreur ne se voit souvent qu'à l'export (image trop claire, fichier étiqueté HDR). Livraison : **toujours SDR Rec.709**, y compris pour les rushs HDR de l'iPhone (réponse du 12/10/2026, skill §10) [Tuto : Mario So 10:44].
 
 ### 12.1 Ce que disent les sources
 
-- **Druss** : Apple figure parmi les fabricants gérés nativement ; Rec.709, Rec.2020 et HLG aussi, HLG étant « ce qui sort de l'iPhone en HDR » [Tuto Adobe : 11:18 à 11:49]. Séquence 100 % HLG : Direct HLG. Séquence mixte : gamut large, conversion par clip [14:23 à 14:53].
+- **Druss** : Apple figure parmi les fabricants gérés nativement ; Rec.709, Rec.2020 et HLG aussi, HLG étant « ce qui sort de l'iPhone en HDR » [Tuto Adobe : 11:18 à 11:49]. Séquence 100 % HLG : Direct HLG. Séquence mixte : gamut large, conversion par clip [14:23 à 14:53]. Ces deux préconisations ne sont pas retenues : la séquence de Cabezer est en Direct Rec.709 et la livraison en SDR.
 - **Apple, documentation pour les développeurs (AVCaptureColorSpace)** [Doc lue] : « HLG_BT2020 » = primaires BT.2020, blanc D65, transfert HLG ; « appleLog » = primaires BT.2020 + courbe Apple Log ; « appleLog2 » = primaires « Apple Gamut » + courbe Apple Log. **Conséquence [I]** : un réglage, un LUT ou une conversion conçu pour Apple Log en Rec.2020 ne convient pas à Apple Log 2 (gamut différent). Savoir lequel des deux l'iPhone de Cabezer produit avant de choisir quoi que ce soit.
 - **Courbe Apple Log** [Doc lue : colour-science `apple_log_profile.py`, qui cite le livre blanc Apple 2023, et la transformation ACES AMPAS `IDT.Apple.AppleLog_BT2020`] : un gris 18 % linéaire donne environ 0,488 codé (recalculé [Mesuré]). Contrôle de cohérence d'un outil, pas un réglage. Le livre blanc Apple n'a pas été atteint.
 - **Adobe, annonce de la bêta « automatic iPhone ProRes Log support »** [S : extrait de recherche, page non lue ; février 2024] : l'option « Auto Detect Log Video Color Space » classe un clip ProRes Log d'iPhone en « Apple Log / Rec 2020 » dans Lumetri, avec mappage de tons automatique vers Rec.709 ou HLG/PQ, **sans LUT** ; le texte concerne le ProRes Log, pas le HEVC Log ; pour utiliser son propre LUT, désactiver la détection ou forcer le clip en Rec.709. **À vérifier sur sa version** (version d'arrivée du réglage non fiable).
@@ -384,10 +384,10 @@ Syntaxe vérifiée sur un fichier de test [Mesuré]. Noms ffmpeg des valeurs : `
 
 3. **HLG vers séquence SDR Rec.709.** Vérifier dans Modifier > Couleur que Premiere lit le clip comme HLG et que le mappage de tons automatique est actif (libellé à confirmer). Au waveform, la peau ne doit pas être collée au plafond ni le clip « brûlé ». Si le clip est nettement trop clair, essayer le remède du forum (remplacer l'espace par Rec.709, au clip) et **comparer** à la référence ffmpeg (12.3) et à un clip voisin du Pocket 3. Garder l'option qui conserve le plus de détail dans les hautes lumières et la noter dans `Suivi/journal.md`.
 4. **Apple Log.** Détection automatique des médias log active (§3.2) ; vérifier l'espace affiché (Rec.2020 pour Apple Log, Apple Gamut pour Apple Log 2). **Aucun LUT** : une seule conversion (skill §10). Si le clip n'est pas détecté (proxy, copie transcodée, HEVC), Remplacer l'espace colorimétrique du média > Apple Log. Si Apple Log 2 n'est pas proposé, ne pas prendre un espace voisin : décrire le blocage à Cabezer.
-5. **Look.** Aucune LUT D-Log M sur un clip HLG ou Apple Log (skill §10). Le LUT Exterior sur un iPhone n'est pas prévu par le skill : défaut, ne pas l'appliquer sans accord (question 8, §18) ; harmoniser avec le Pocket 3 par l'exposition et la balance sur la peau (§9).
+5. **Look.** Aucune LUT D-Log M sur un clip HLG ou Apple Log (skill §10). Le LUT Exterior est réservé au Pocket 3 (réponse du 12/10/2026) : ne pas l'appliquer à l'iPhone ; harmoniser avec le Pocket 3 à la main, par l'exposition et la balance sur la peau (§9).
 6. **Contrôler l'export** : balises `bt709` sur les trois champs (voir §14 et `organisation-livraison-qc.md §6`). Un fichier qui sort en `arib-std-b67` est un export HDR par erreur : recommencer avec un préréglage sans HLG ni PQ dans son nom [S].
 
-**Rendu moins lumineux attendu.** Un clip d'iPhone HDR lu dans l'application Photos paraît plus lumineux que sa version SDR : perte de dynamique attendue, pas une erreur. Le dire à Cabezer quand il compare (question 9, §18).
+**Rendu moins lumineux attendu.** Un clip d'iPhone HDR lu dans l'application Photos paraît plus lumineux que sa version SDR : perte de dynamique attendue, pas une erreur. Cabezer a accepté cette perte : la livraison est toujours en SDR Rec.709 ; le rappeler quand il compare.
 
 ### 12.3 Image de référence HLG vers SDR avec ffmpeg (approximative)
 
