@@ -513,7 +513,7 @@ Gratuits uniquement (skill §17, décisions d’harmonisation B3) ; télécharg�
 7. Précomp dupliquée pour la rendre différente → dupliquer la composition source.
 8. Alpha rendu via Media Encoder → rendu AE direct, alpha testé sur fond clair et foncé. Clip déplacé après Dynamic Link → verrouiller le montage avant.
 9. Croire que `/ Math.exp(...)` « déborde » → les deux écritures sont valides (§10.4).
-10. Roto ou remplissage par IA sans demander → §3. Retouche de contenu sur photo réelle → exclue (§11).
+10. Object Matte, Object Mask ou remplissage par IA → interdits ou sur demande seulement (§3). Retouche de contenu sur photo réelle → jamais (§11). Rebond ou écrasement-étirement sans demande → pas de rebond (§10.4-5).
 11. Script lancé sur le projet de travail → copie, test de fumée, journal (§16.1).
 12. Mauvais nombre d'objets `KeyframeEase` → 1 pour Position et valeurs simples, 3 pour l'échelle (§16.4).
 13. Confondre le curseur de CPU réservé et le paramètre de script → deux sens opposés (§14.4).
@@ -524,7 +524,7 @@ Gratuits uniquement (skill §17, décisions d’harmonisation B3) ; télécharg�
 
 ## 20. Liste de contrôle
 
-**Avant le rendu** : version AE lue, projet enregistré sous une nouvelle version, script lancé sur copie · taille et cadence = séquence, durée = élément + marge · polices, emojis, couleurs du skill · easing travaillé (ou vitesse constante signalée), timing en images, un seul élément principal · texte éditable, pastilles liées, contrôleurs nommés, sous-titres en voie unique · marqueurs d'attaque posés pour chaque SFX · flashs comptés et export testé (`conformite-droits-accessibilite.md §6`) · aucun outil génératif, outil « à demander » non employé · plugin ou script tiers gratuit, licence consignée.
+**Avant le rendu** : version AE lue, projet enregistré sous une nouvelle version, script lancé sur copie · taille et cadence = séquence, durée = élément + marge · polices, emojis, couleurs du skill · easing travaillé (ou vitesse constante signalée), timing en images, un seul élément principal · texte éditable, pastilles liées, contrôleurs nommés, sous-titres en voie unique · marqueurs d'attaque posés pour chaque SFX · flash blanc fait en calque AE, sans test de photosensibilité automatique · aucun outil génératif ni outil interdit (Object Matte, Object Mask, MOGRT), outil « sur demande » (rebond, parallaxe en S et P) non employé sans demande · plugin ou script tiers gratuit, licence consignée.
 
 **Après le rendu** : `ffprobe` (codec, `yuva444p12le`, taille, cadence, images) · courbe mesurée ou planche conforme · couleur de marque à ±2 · import Premiere à la bonne cadence, alpha propre sur fond clair et foncé, aucun hors ligne · sous-titres masqués pendant l'élément, SFX calé sur l'attaque · visionnage à vitesse réelle sur téléphone · `.aep` et sources conservés, état noté (appliqué / contrôlé / validé).
 
@@ -534,19 +534,19 @@ Gratuits uniquement (skill §17, décisions d’harmonisation B3) ; télécharg�
 
 > **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
 
-Défaut en attendant sa réponse entre parenthèses.
+Réponses retenues, une par ancienne question :
 
-1. **Object Matte** permis comme aide vérifiée ? (Non, ne pas l'utiliser.)
-2. **Taille des éléments rendus** : taille de la séquence (2160 × 3840 pour Milan, lourd) ou FHD ? (Taille de la séquence lue, durée la plus courte.)
-3. **Retouche de contenu sur photo réelle** (tampon de duplication, Liquify, marionnette sur une personne) : jamais ou cas par cas ? (Exclue, surtout S et P.)
-4. **Profondeur de champ ou flou simulé sur plans filmés** (S, P) ? (Non ; calques créés dans AE seulement.)
-5. **Parallaxe 2.5D** sur photos et documents en S et P ? (Non sans accord.)
-6. **Rebond d'inertie et écrasement-étirement** : jamais ou F et T ? (Jamais sans accord.)
-7. **Interface d'AE en anglais** ? (Non, rien n'est changé.)
-8. **Fiche Liquid Glass** à fournir avant toute animation tech. (Aucune animation T.)
-9. **MOGRT** pour changer le texte dans Premiere ? (Non, rendus alpha.)
-10. **Papier plié (T10) et fichiers d'expressions tiers (T6)** : accord et licence ? (Non utilisés.)
-11. **Repli sans AE** pour les sous-titres (« repli non animé ») ? (Non.)
+1. **Object Matte et Object Mask** : interdits. Masques manuels, suivi et Roto Brush vérifié.
+2. **Taille des éléments rendus** : la taille de la séquence (2160 × 3840 pour Milan).
+3. **Retouche de contenu sur photo réelle** (tampon de duplication, Liquify, marionnette sur une personne) : jamais.
+4. **Profondeur de champ ou flou simulé** : interdits sur un rush ; seulement sur des calques 3D créés dans AE.
+5. **Parallaxe 2.5D** en Story et films/séries : seulement sur demande explicite.
+6. **Rebond d'inertie et écrasement-étirement** : seulement sur demande, jamais en dégustation ni en films (la pop de la DA v2 n'est pas concernée).
+7. **Interface d'AE** : en anglais (comme celle de Premiere).
+8. **Liquid Glass** : n'existe plus ; identité tech à recréer sur un extrait validé.
+9. **MOGRT** : non ; rendus AE ProRes 4444 alpha.
+10. **Papier plié (T10) et fichiers d'expressions tiers (T6)** : licence non claire, non utilisés.
+11. **Repli sans AE** pour les sous-titres : non ; décrire le blocage et attendre.
 
 ---
 

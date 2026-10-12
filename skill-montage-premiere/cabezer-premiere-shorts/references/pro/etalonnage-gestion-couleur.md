@@ -485,7 +485,7 @@ Claude ne peut pas voir le téléphone. Noter dans `Suivi/retours.md` : « contr
 - [ ] Version de Premiere relevée et consignée dans `Suivi/environnement-verifie.md`. Pas de mode Color mélangé avec Lumetri (sinon s'arrêter et demander).
 - [ ] Gestion des couleurs d'affichage activée ; gamma de travail noté.
 - [ ] Projet : détection auto log/RAW et effets conscients de l'espace couleur cochés.
-- [ ] Séquence : preset de couleur noté (Direct Rec.709 par défaut) ; Rec.709 en sortie.
+- [ ] Séquence : preset Direct Rec.709 ; Rec.709 en sortie (livraison toujours SDR).
 - [ ] Chaque clip : un seul mécanisme de conversion (Modifier > Couleur vérifié).
 - [ ] Clips d'iPhone : balises lues, nature classée (SDR, HLG, Apple Log), aucun LUT D-Log M (§12).
 - [ ] Exposition, puis contraste, puis balance : dans cet ordre, scopes à pleine résolution.
@@ -505,20 +505,20 @@ Claude ne peut pas voir le téléphone. Noter dans `Suivi/retours.md` : « contr
 
 > **Toutes ces questions ont reçu une réponse de Cabezer le 12/10/2026** : voir `../decisions-en-attente.md`, qui prime sur les défauts ci-dessous.
 
-Défaut en attendant : appliquer la valeur indiquée, ne jamais présenter l'alternative comme une règle.
+Réponses appliquées dans la fiche ; ne jamais présenter une alternative comme une règle.
 
-1. **Gamma de travail** : 2.4 partout, ou 2.2 pour ce qui part sur téléphone ? Défaut : 2.4, validation sur téléphone.
-2. **Preset de séquence (Pocket 3, séquences mixtes)** : Direct Rec.709 + conversion unique + LUT Exterior, ou gamut large (test à trois plans, §3.3) ? Défaut : Direct Rec.709 ; gamut large = essai sur copie.
-3. **Pocket 3 : D-Log M ou HLG au tournage** ? Les sources divergent. Défaut : D-Log M (skill §10) ; essai HLG seulement à sa demande.
-4. **Ordre exposition / conversion du skill §10** : l'intention est-elle de régler l'exposition avant la conversion (littéral) ? Défaut : diagnostic de l'exposition, conversion unique, puis exposition et blancs dans Lumetri avant le LUT Exterior (§5).
-5. **Noirs** : écrasement de décor autorisé en style, ou détail conservé partout ? Défaut : détail conservé partout.
-6. **Lissage de peau** : jamais, ou seulement à sa demande ? Défaut : seulement à sa demande, outils natifs d'abord, aucune génération de pixels.
-7. **iPhone au tournage** : SDR, HDR (HLG) ou Apple Log ? Apple Log ou Apple Log 2 ? Défaut : aucune consigne imposée ; chaque clip est traité selon son tag (§12).
-8. **LUT Exterior sur iPhone et Panasonic** ? Défaut : non, sans accord.
-9. **Perte du HDR de l'iPhone à l'export SDR** : acceptée ? Défaut : oui (skill §13).
-10. **Étalonnage et graphismes AE** : seulement les plans vidéo, jamais un calque d'ajustement global sur l'habillage ? Défaut : oui (§13).
-11. **Ligne de chair** : repère avec validation visuelle ? Défaut : oui, sans déplacer une peau naturelle et cohérente (§10).
-12. **Contrôle sur téléphone** (§15) : procédure acceptable ? Défaut : proposée à chaque projet, jamais bloquante.
+1. **Gamma de travail** : 2.4, validation sur téléphone (§4).
+2. **Preset de séquence** : Direct Rec.709, conversion unique, puis LUT Exterior pour le Pocket 3 ; pas de gamut large à tester (§3.3).
+3. **Tournage Pocket 3** : D-Log M (skill §10).
+4. **Ordre du Pocket 3** : diagnostic de l'exposition, conversion unique, puis exposition et blancs dans Lumetri avant le LUT Exterior (§5).
+5. **Noirs** : détail gardé partout ; un noir plus profond sur un décor est proposé plan par plan (§7.3).
+6. **Lissage de peau** : seulement sur demande, outils natifs d'abord, aucune génération de pixels (§10).
+7. **iPhone au tournage** : chaque clip est traité selon son profil et son tag (§12).
+8. **LUT Exterior** : réservée au Pocket 3 ; iPhone et Panasonic harmonisés à la main (§8, §12.2).
+9. **HDR de l'iPhone** : livraison toujours en SDR Rec.709, la perte de dynamique est acceptée (§12.4).
+10. **Étalonnage et graphismes AE** : seulement les plans vidéo, jamais un calque d'ajustement global sur l'habillage (skill §10, §13).
+11. **Ligne de chair** : repère de contrôle de la carnation (skill §10), sans déplacer une peau naturelle et cohérente (§10).
+12. **Contrôle sur téléphone** : plan test de 10 s proposé à chaque projet, jamais bloquant (§15).
 
 ---
 
