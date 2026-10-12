@@ -32,12 +32,14 @@ Registre unique des questions ouvertes du skill v3 et des 13 fiches pro (12/10/2
 | Question | Défaut |
 |---|---|
 | ★ « Short/Reel monté seul = dégustation complète » : l'exception existe-t-elle encore ? | Oui |
-| ★ Ambiance discrète du lieu sous un insert muet ? | Non (ni ambiance ni musique) |
+| ★ Ambiance discrète du lieu sous un insert muet ? | Méthode à proposer au premier usage ; sans ton accord, aucune (ni ambiance continue ni musique) |
 | ★ Foley d'aliment (craquement, friture) sur un insert muet de préparation ? | Non, dans toutes les familles ; jamais sur une bouchée ni une réaction |
 | Plan stock de préparation : accord général pour Pexels/Pixabay, ou à chaque vidéo ? | À chaque vidéo ; sans accord, s'en passer |
 | Essai A/B du calage des SFX (−1, 0, +1 image) ? | Non : attaque, swoosh sur son pic |
-| Riser ou drone hors de la liste fermée de SFX ? | Non |
+| Riser ou drone hors de la liste de référence de SFX ? | Non |
+| Notation : limiter le travail à deux itérations quand 8 n'est pas atteint ? | Pas de limite tant qu'une piste d'amélioration existe ; si ton choix empêche 8, livrer avec la note réelle |
 | Arrêt sur image pour montrer un ticket ou un prix ? | Non : punch-in sec et pop |
+| Long → Shorts en S et F : sous-titres de la famille adaptés au 9:16 (2 lignes, ≤ 24 caractères) ? | Oui |
 | Durée minimale d'un paquet de sous-titres traduits ? | Rythme de la parole, plancher 0,25 s, vérifié sur téléphone |
 
 ## D. Sous-titres et texte à l'écran

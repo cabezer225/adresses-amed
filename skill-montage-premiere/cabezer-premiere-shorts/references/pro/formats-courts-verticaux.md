@@ -39,7 +39,7 @@ Le hook est le premier plan qui annonce un enjeu, une question ou une promesse, 
 Le skill demande son hook à Cabezer à chaque dégustation (§5). Séquence qui prime sur toute grammaire de genre :
 
 1. Noter **son hook choisi** avec le barème du skill §5.2 et donner la note.
-2. Note **sous 8** : proposer **au plus deux variantes**, son hook restant une option. **Son choix prime.** Au plus deux itérations.
+2. Note **sous 8** : retravailler jusqu'à 8 (consigne de Cabezer). Si son hook l'empêche, **son choix prime** : livrer avec la note réelle et proposer **au plus deux variantes**, son hook restant une option. Limite de deux itérations : question ouverte (défaut : pas de limite).
 3. Les idées d'autres grammaires (un seul axe, boucle ouverte, écart de curiosité) ne s'appliquent qu'après validation par le barème.
 4. Mode autonome (skill §1) : hook = son hook habituel, noté ; validation consignée « en attente ».
 
@@ -280,7 +280,7 @@ Learn By Leo (10:18–13:54) [Tuto] : whoosh sur un mouvement, riser avant une i
 
 **Application par famille :**
 
-- **D** : banque Pixabay dédiée et **liste fermée** du skill (swoosh, pop, ding, boing, scratch, caisse, photo, scintillement), chacun lié à un élément, aucune musique. Pas de mème vocal ni de boom (retiré le 02/10). Riser et drone sont hors liste (question §14).
+- **D** : banque Pixabay dédiée et **liste de référence** du skill (swoosh, pop, ding, boing, scratch, caisse, photo, scintillement), chacun lié à un élément, aucune musique. Pas de mème vocal ni de boom (retiré le 02/10). Riser et drone sont hors liste (question §14).
 - **F, S, T, P** : bibliothèque ouverte, licence dans `Suivi/licences.csv`, audible sous la voix. Whoosh sur mouvement rapide ou transition marquée ; riser seulement si un vrai enjeu suit. **S** : nappe basse continue (environ 24 dB sous la voix, `audio-dialogue-sound-design-mixage.md §5.5`), silence de 1 à 2 s avant une bascule, pas de hit ni de bruitage d'objet gratuit. **P** : musique de la bibliothèque personnelle, pas de musique tendance.
 - **D, par défaut** : aucune ambiance continue, aucun bruitage d'aliment sur une bouchée ou une réaction ; ambiance sous insert muet et foley sont des questions ouvertes portées par `audio-dialogue-sound-design-mixage.md` (défaut : non).
 
@@ -414,7 +414,7 @@ Boucle du skill (§15) : repérer la chute sur la courbe (YouTube Studio, statis
 
 - **Autorisés comme aides, résultat vérifié** : transcription (Speech to Text) ; montage par le texte pour repérer et pré-découper ; détection des scènes ; Auto Reframe comme point de départ ; Roto Brush et suivi sur un vrai plan ; traduction automatique de légendes **relue**.
 - **Seulement sur demande explicite de Cabezer** : Morph Cut ; Remplissage d'après le contenu (Content-Aware Fill) ; Generative Extend ; tout outil Firefly ou de génération/reconstruction de pixels (dont le remplissage génératif pour effacer un texte).
-- **Interdits par défaut (règle de Cabezer)** : « Améliorer la parole » (Enhance Speech) ; Correspondance automatique et « Dynamique » d'Essential Sound ; voix ou musique générées ; images ou animations générées par IA.
+- **Interdits par défaut (règle de Cabezer)** : « Améliorer la parole » (Enhance Speech) ; Correspondance automatique et « Dynamique » d'Essential Sound ; images ou animations générées par IA (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16).
 
 Hors tableau : la **suppression d'arrière-plan par un service en ligne** n'est pas utilisée (rushs hors de la machine, offre souvent payante, détourage proche des stickers refusés en DA v2) ; détourer ou suivre sur le vrai plan dans AE ou Premiere. **Object Mask** de Premiere n'est pas nommé dans les décisions : défaut, masques manuels (question §14).
 
@@ -489,7 +489,7 @@ Chaque question donne le **défaut appliqué en attendant** ; l'alternative n'es
 1. **Sous-titres de D et boîte de zones sûres.** Garder 72–75 % de la hauteur (sa base), bien que cette bande tombe dans la zone interdite basse ? *Défaut :* oui, exemptés de la boîte, test sur son téléphone pour vérifier qu'ils ne sont pas masqués.
 2. **Captures d'écran des applications** (TikTok, Reels, Shorts, interface visible). *Défaut :* boîte provisoire du §6.2.
 3. **Object Mask de Premiere** (masque assisté) accepté ? *Défaut :* non, masques manuels et suivi ; Roto Brush et suivi restent autorisés, résultat vérifié.
-4. **Riser et drone en dégustation**, hors de la liste fermée : les essayer sur un Short ? *Défaut :* non.
+4. **Riser et drone en dégustation**, hors de la liste de référence : les essayer sur un Short ? *Défaut :* non.
 5. **Sous-titres hors D** : une ligne de 20 à 24 caractères ou deux lignes ? *Défaut :* deux lignes, ≤ 24 caractères par ligne en 9:16 (skill).
 6. **Fin de dégustation** : couper juste après l'appel au commentaire ou garder une courte image finale ? *Défaut :* coupe après l'extinction réelle de la voix (skill §4).
 7. **Repli non animé des sous-titres** (légendes Premiere au style de la famille) si AE est indisponible ? *Défaut :* non ; décrire le blocage et attendre.

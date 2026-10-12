@@ -169,7 +169,7 @@ Traitements de plan (Premiere), d'après Raymond [T, 5:12–7:15] : **fond flou*
 
 ### 6.4 Mouvement sur une image fixe (« Ken Burns », photomation)
 
-**Règle commune (décision canonique, skill §6, Story, point 11).** Un mouvement sur une image fixe **désigne un détail ou présente un visage**. Il laisse un temps fixe avant et après, suit une courbe douce, et ne s'exécute **jamais sur un plan qui porte un texte à lire**. La dérive purement décorative est exclue dans toutes les familles. Raymond l'applique à toute photo contre l'effet diaporama [T, 0:08] : pratique non reprise.
+**Règle commune (décisions d’harmonisation D2, skill §6 point 11 et §7).** Un mouvement sur une image fixe **désigne un détail ou présente un visage**. Il laisse un temps fixe avant et après, suit une courbe douce, et ne s'exécute **jamais sur un plan qui porte un texte à lire**. La dérive purement décorative est exclue dans toutes les familles. Raymond l'applique à toute photo contre l'effet diaporama [T, 0:08] : pratique non reprise.
 
 **Statut.** Le mouvement sur une photo qui désigne un détail est un traitement de plan : **Premiere** (Mouvement). Le cercle ou le surlignage qui désigne est une animation graphique : AE (§5.1). Un document à lire s'explore dans AE (§5.2).
 
@@ -301,7 +301,7 @@ Nerdwriter refait une scène avec sa propre bande-son pour montrer ce que l'orig
 
 ### 10.4 Citer un extrait de film ou d'émission (extraits tiers, P et S)
 
-Règle canonique : **durée minimale nécessaire, extrait commenté, source affichée ; un crédit n'est pas une autorisation ; risque Content ID signalé avant publication** (cadre juridique : §12 et `conformite-droits-accessibilite.md`).
+Règle d’harmonisation : **durée minimale nécessaire, extrait commenté, source affichée ; un crédit n'est pas une autorisation ; risque Content ID signalé avant publication** (cadre juridique : §12 et `conformite-droits-accessibilite.md`).
 1. **Fonction :** l'extrait est une preuve, pas un remplissage. Écrire la phrase de thèse qu'il prouve ; sans commentaire proche, le retirer.
 2. **Quantité :** aucun seuil de secondes dans le texte de loi [X]. Règle de travail [Choix] : le plan nécessaire à la démonstration ; couper dès que la preuve est faite ; pas de scène entière sans la voix de Cabezer par-dessus.
 3. **Source à l'écran :** titre, auteur ou réalisateur, source, pendant l'extrait (§11.4 ; skill §8).

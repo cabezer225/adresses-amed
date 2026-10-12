@@ -54,7 +54,7 @@ Sur téléphone, une voix claire est claire partout (Levine) ; un plugin de rest
 |---|---|
 | Autorisés comme aides, résultat vérifié | Transcription (Speech to Text), montage par le texte pour repérer et pré-découper |
 | Sur demande explicite de Cabezer seulement | Tout outil de génération ou de reconstruction de son |
-| Interdits par défaut (règle de Cabezer) | « Améliorer la parole » (Enhance Speech, change le timbre), « Correspondance automatique » (Auto Match), curseur « Dynamique » d'Essential Sound, voix ou musique générées |
+| Interdits par défaut (règle de Cabezer) | « Améliorer la parole » (Enhance Speech, change le timbre), « Correspondance automatique » (Auto Match), curseur « Dynamique » d'Essential Sound ; voix ou musique d'un modèle génératif : seulement sur demande explicite (skill §16) |
 
 **Claude n'entend pas.** Il contrôle par mesures (ebur128, crêtes, spectre), transcription et forme d'onde. Ne jamais écrire « écouté » pour une mesure.
 
@@ -369,7 +369,7 @@ Vrai silence avant une bascule : couper la **musique** (descente rapide, Bézier
 
 - **Un SFX appartient à un élément** : si l'élément disparaît, le SFX aussi (skill §5). Le plus gros mouvement reçoit le son le plus marqué.
 - **Audibles mais pas envahissants**, réglés dans le mix complet ; ni sur les bouchées et réactions ni en accents multipliés (skill §11).
-- **Sources** : D = banque Pixabay dédiée (`Tiktok degustation/SFX-Pixabay/`, licences dans `LICENCES-SFX.md`) et **liste fermée** du skill (swoosh, pop, ding, boing, scratch, caisse, photo, scintillement), ni mèmes vocaux ni boom. F, S, P, T = bibliothèque ouverte (Cabezer-Sons-Vol1, Cabezer-Ajouts-Food-Lifestyle, Adobe Stock, toute source sous licence). Chaque son va dans `Suivi/licences.csv` ; jamais de son prélevé d'une vidéo TikTok ou d'un tutoriel.
+- **Sources** : D = banque Pixabay dédiée (`Tiktok degustation/SFX-Pixabay/`, licences dans `LICENCES-SFX.md`) et **liste de référence** du skill (swoosh, pop, ding, boing, scratch, caisse, photo, scintillement), ni mèmes vocaux ni boom. F, S, P, T = bibliothèque ouverte (Cabezer-Sons-Vol1, Cabezer-Ajouts-Food-Lifestyle, Adobe Stock, toute source sous licence). Chaque son va dans `Suivi/licences.csv` ; jamais de son prélevé d'une vidéo TikTok ou d'un tutoriel.
 
 ### 6.2 Caler un SFX sur une image dans Premiere
 
@@ -500,7 +500,7 @@ Aucun libellé de cette fiche n'a été lu sur la machine de Cabezer ; l'interfa
 
 ## 12. Application par famille
 
-- **D** : coupes serrées via `affiner_bords.py`, blancs de plus de 0,25 s coupés, « Bref, c'est partiiii » entier ; musique absente ; SFX Pixabay de la liste fermée ; aucune ambiance ni foley ; pas de J/L sur la bouchée ni la réaction.
+- **D** : coupes serrées via `affiner_bords.py`, blancs de plus de 0,25 s coupés, « Bref, c'est partiiii » entier ; musique absente ; SFX Pixabay de la liste de référence ; aucune ambiance ni foley ; pas de J/L sur la bouchée ni la réaction.
 - **F** : règle de coupe du skill §4 ; J/L possibles ; musique selon l'émotion, ducking automatique puis retouche ; bibliothèque SFX ouverte ; ambiance par lieu possible.
 - **S** : pauses qui portent gardées ; voix uniforme ; nappe à environ 24 dB sous la voix mesurée (§5.5), silences avant bascule, fin sur accord, courbe tracée à la main ; chapitre = carton seul ~3 s avec signature musicale ; pas de bruitage d'objet gratuit.
 - **P** : J/L fréquents, ambiances de scène ; bibliothèque perso après écoute ; sound design pour un moment dramatique.

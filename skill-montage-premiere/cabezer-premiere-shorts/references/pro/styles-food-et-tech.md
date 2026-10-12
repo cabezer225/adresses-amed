@@ -61,7 +61,7 @@ Elle ne remplace jamais le brief de Cabezer ni le skill (§1 : brief, skill, fic
 
 **P3. Le mouvement a une courbe.** L'easing est « une des marques les plus visibles entre un amateur et un pro » [S1 17:20] ; une rampe de vitesse suit la même logique [S10 2:01 ; S11 0:33]. Un mouvement progressif n'est jamais linéaire (skill §7) ; un punch-in sec est instantané ; la vitesse constante reste permise pour rotation continue, défilement, compteur, boucle.
 
-**P4. Le silence n'est jamais du silence.** Un trou numérique paraît faux : on le comble avec le silence de la pièce du même rush ou une ambiance [S1 33:11–35:21 ; skill §4, room tone]. En D, les inserts restent muets de leur son source (skill §5.1) et aucune ambiance continue n'est posée par défaut (§3.5) : la continuité vient de la voix.
+**P4. Le silence n'est jamais du silence.** Un trou numérique paraît faux : on le comble avec le silence de la pièce du même rush ou une ambiance [S1 33:11–35:21 ; skill §4, room tone]. En D, les inserts restent muets de leur son source (skill §5) et aucune ambiance continue n'est posée par défaut (§3.5) : la continuité vient de la voix.
 
 **P5. Moins de texte, plus de poids** [S2 24:33] (skill §6). **P6. Les transitions servent un changement** : la créatrice food de la session Adobe n'en met pas dans ses vidéos d'une minute [S9 55:43] ; une rampe joue ce rôle [S10 3:02] (skill §7).
 
@@ -126,7 +126,7 @@ Quand Cabezer annonce le produit (« on va tester les… »), un plan de prépar
 **Sources.** Le foley reste discret, « de l'assaisonnement » [S8 0:31–3:34] ; en street food, le son du lieu fait partie du plat [S3 2:01].
 
 **SFX par famille** (détail : `audio-dialogue-sound-design-mixage.md §6`) :
-- **D** : banque Pixabay dédiée (`Tiktok degustation/SFX-Pixabay/`, licences dans `LICENCES-SFX.md`) et **liste fermée** du skill : swoosh, pop, ding, boing, scratch, caisse, photo, scintillement ; ni mème vocal ni boom. Un SFX appartient à un élément : élément retiré, SFX retiré. Calage par défaut **à l'attaque** (swoosh sur son pic) ; un essai A/B de −1, 0 et +1 image n'est adopté que s'il gagne à l'écoute de Cabezer (§12).
+- **D** : banque Pixabay dédiée (`Tiktok degustation/SFX-Pixabay/`, licences dans `LICENCES-SFX.md`) et **liste de référence** du skill : swoosh, pop, ding, boing, scratch, caisse, photo, scintillement ; ni mème vocal ni boom. Un SFX appartient à un élément : élément retiré, SFX retiré. Calage par défaut **à l'attaque** (swoosh sur son pic) ; un essai A/B de −1, 0 et +1 image n'est adopté que s'il gagne à l'écoute de Cabezer (§12).
 - **F, S, P, T** : bibliothèque ouverte, licence consignée dans `Suivi/licences.csv`. S : pas de bruitage d'objet gratuit.
 - Jamais de son prélevé d'une vidéo TikTok ou d'un tutoriel.
 
@@ -185,7 +185,7 @@ Un accéléré comprime un geste long (pâte qui lève, cuisson, dressage, insta
 3. Cocher « Montage par ondulation, déplacer les clips suivants » (Ripple Edit, Shifting Trailing Clips) pour ne laisser aucun trou [Extrait].
 4. **Audio** : en D, retirer l'audio de l'insert (skill §5.1). Ailleurs, le couper ou le remplacer ; s'il est gardé, « Conserver la hauteur audio » (Maintain Audio Pitch) [Extrait].
 5. Interpolation : échantillonnage de trames par défaut ; à forte vitesse, le mélange crée des fantômes [À vérifier à l'œil]. Si le geste devient saccadé, préférer deux coupes sèches sur les moments clés.
-6. Un accéléré marqué est un mouvement rapide : un whoosh peut le souligner (swoosh de la liste fermée en D), calé sur le mouvement, sous la voix (skill §7).
+6. Un accéléré marqué est un mouvement rapide : un whoosh peut le souligner (swoosh de la liste de référence en D), calé sur le mouvement, sous la voix (skill §7).
 7. **Signalement.** Si l'accéléré peut tromper sur la durée réelle, le dire à Cabezer ; rien n'est ajouté à l'écran sans son accord (aucun texte non demandé : skill §5.1).
 
 **Time-lapse.** Une vidéo à intervalle issue de la caméra a déjà la cadence de son résultat : relever cadence et durée (`ffprobe`), sans flux optique. Pour juger un rendu, `-vf "framestep=20,setpts=N/(30*TB)" -r 30` garde une image sur vingt : 600 images deviennent 30, soit 1 s à 30 i/s [Mesure ; filtres lus dans la doc d'ffmpeg]. La vitesse finale se fait dans Premiere.
@@ -417,7 +417,7 @@ Après le montage :
 - **Rampes, accélérés, arrêts sur image** : cadence vérifiée ; images clés étirées ; flou limité à la rampe ; rien sur la voix ni la bouchée ; image figée nette, voix continue ; images dupliquées contrôlées (§7.2).
 - **Plans de préparation** : stock seulement avec accord ; licence dans `Suivi/licences.csv` ; muet ; conforme à la séquence ; jamais présenté comme le plat servi.
 - **Plats** : couleur naturelle comparée au ticket ; aucune haute lumière écrêtée ; aucun stylisme ajouté.
-- **Sons** : chaque SFX a un élément ; D : liste fermée, calé à l'attaque, aucune ambiance ni foley non validés ; autres familles : ambiance sous la voix avec fondus ; sources consignées ; mesures faites (écoute finale par Cabezer).
+- **Sons** : chaque SFX a un élément ; D : liste de référence, calé à l'attaque, aucune ambiance ni foley non validés ; autres familles : ambiance sous la voix avec fondus ; sources consignées ; mesures faites (écoute finale par Cabezer).
 - **Texte et chiffres** : temps de lecture respecté ; chiffre affiché = chiffre prononcé ; prix seulement aux vraies annonces.
 - **Captures et tickets** : texte lisible, zoom sur le mot ; données personnelles masquées.
 - **Plugins** : natifs ou gratuits ; tout outil payant signalé.

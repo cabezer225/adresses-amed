@@ -56,7 +56,7 @@ Table de référence : **skill §16**. Application dans Premiere :
 
 - **Aides autorisées, résultat toujours vérifié** : transcription et montage par le texte (§5.1), détection des changements de plan (§5.2), recherche Media Intelligence (§5.3), Auto Reframe comme point de départ (§8.1), suivi et Roto Brush sur un vrai plan (§8.4), Stabilisation de la déformation (§7 bis, traitement d'un plan filmé), traduction de légendes **relue**. Paper Edit (construit une séquence depuis des lignes du panneau Texte [Adobe : notes de version, extrait]) relève du montage par le texte.
 - **Seulement sur demande explicite de Cabezer** : Morph Cut, Remplissage d'après le contenu (Content-Aware Fill), Generative Extend, Generative Media Tool, tout outil Firefly ou de génération ou reconstruction de pixels. Generative Extend génère jusqu'à 2 s d'images ou 10 s d'audio au bord d'un clip, consomme des crédits [Adobe : FAQ, extrait] et envoie un extrait hors de la machine : le consigner si Cabezer l'autorise.
-- **Interdits par défaut (règle de Cabezer)** : « Améliorer la parole » (Enhance Speech, change le timbre), Correspondance automatique, « Dynamique » d'Essential Sound (Clarity en est l'équivalent, §11), voix ou musique générées, images ou animations générées par IA.
+- **Interdits par défaut (règle de Cabezer)** : « Améliorer la parole » (Enhance Speech, change le timbre), Correspondance automatique, « Dynamique » d'Essential Sound (Clarity en est l'équivalent, §11), images ou animations générées par IA (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16).
 - **Statut non tranché, défaut : ne pas utiliser sans accord** : Object Mask (masque suivi cliqué, calculé sur l'appareil [Presse]) et flux optique (interpole des images à partir d'images existantes). Question en §16.
 
 **Si un plan manque d'une demi-seconde**, utiliser dans cet ordre : un autre plan réel, un arrêt sur image sur une image réelle (§7.3), un ralenti d'insert en mélange de trames, un fondu. Une image absente des rushs ferait passer du faux pour du réel (skill §8).
@@ -158,7 +158,7 @@ Préférences > Analyse des médias et transcription ; panneau de recherche, fil
 ### 5.4 Masquer un jump cut : hiérarchie
 
 1. **Coupe franche assumée** ou **punch-in sec** à la coupe (D) : changement instantané, 100 → 115 % par clé maintenue ou deux clips (§8.2).
-2. **Plan de coupe** qui apporte quelque chose, posé avant la coupe (skill §8 : jamais un B-roll qui répète).
+2. **Plan de coupe** qui apporte quelque chose, posé avant la coupe (skill §6 point 10 : jamais un B-roll qui répète).
 3. **Second angle synchronisé** (§6).
 4. **Animation** seulement si un titre était déjà prévu (skill §5.1 : aucun élément ajouté pour relancer l'image).
 
@@ -293,7 +293,7 @@ Définition unique : skill §1, §16. Éléments **graphiques** (étiquette, pri
 - **Zoom façon Micode** (F, S, P, T) : progressif, Bézier, centré sur le visage, seulement si le moment le sert (skill §7).
 - **Whip entre deux lieux** (D) : 4 à 6 images, échelle jusqu'à 130 %, glissement de 12 %, flou de mouvement, swoosh (skill §5.1). Dans Transformation : décocher « Utiliser le rapport de forme composite » si l'échelle étire l'image.
 - **Shake du cadre** d'un plan filmé : dans Premiere. Le shake d'une étiquette ou d'un prix : dans AE.
-- **Mouvement sur une photo ou un document fixe** : seulement pour désigner un détail ou présenter un visage, avec un temps avant et après, courbe douce ; jamais de dérive décorative ; jamais sur un plan qui porte un texte à lire (skill §6 point 11).
+- **Mouvement sur une photo ou un document fixe** : seulement pour désigner un détail ou présenter un visage, avec un temps avant et après, courbe douce ; jamais de dérive décorative ; jamais sur un plan qui porte un texte à lire (skill §6 point 11 et §7, « Mouvement sur image fixe »).
 - La vitesse constante reste permise pour rotation continue, défilement, compteur, boucle.
 
 ### 8.3 Sous-titres et légendes

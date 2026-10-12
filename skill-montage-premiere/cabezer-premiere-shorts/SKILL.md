@@ -7,7 +7,7 @@ description: "Monter les vidéos de Cabezer à un niveau professionnel dans Prem
 
 Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches pro** (§19). Version 3 du 12/10/2026 : contradictions de la v2 résolues, règles restées dans l'historique remontées dans le corps, méthodes de monteurs professionnels ajoutées. Les consignes datées et leur chronologie sont dans [l'historique](references/historique.md) ; les détails propres à des projets passés sont dans [projets Cabezer](references/projets-cabezer.md).
 
-**[Q]** marque une décision qui attend Cabezer : appliquer le défaut écrit, le noter dans `Suivi/decisions.md`, poser la question une fois (§20).
+**[Q]** marque une décision qui attend Cabezer : appliquer le défaut (écrit dans le texte ou dans le registre, §20), le noter dans `Suivi/decisions.md`, poser la question une fois, seulement quand elle bloque.
 
 **Fichiers cités introuvables :** le dire, demander le fichier, continuer avec le résumé de ce skill marqué « non vérifié ». Ne jamais deviner le contenu d'une fiche absente.
 
@@ -35,12 +35,12 @@ Ce fichier contient les **règles actuelles** de Cabezer et l'index des **fiches
 |---|---|---|---|---|---|
 | Sous-titres | Incrustés toujours ; **français** mot à mot en France et Belgique ; à l'étranger **langue locale ou anglais, à demander** (défaut anglais) ; masqués pendant les textes animés (§9) | France : SRT français livré, incrustation selon brief **[Q]** ; étranger : anglais incrusté, 2 lignes max | Idem F | Idem F | Idem F, vocabulaire accessible |
 | Musique | **Absente** (choix de Cabezer, sauf demande) | Selon émotion | Nappe continue ~24 dB sous la voix, silences de bascule (§11) | Bibliothèque perso | Selon émotion |
-| SFX | Banque Pixabay dédiée, liste fermée, sans mèmes vocaux ni boom, audibles (§5) | Bibliothèque ouverte, audibles | Idem F ; aucun bruitage sans élément visuel correspondant | Idem F | Idem F |
+| SFX | Banque Pixabay dédiée, liste de référence (§5), sans mèmes vocaux ni boom, audibles | Bibliothèque ouverte, audibles | Idem F ; aucun bruitage sans élément visuel correspondant | Idem F | Idem F |
 | Zoom facecam | Punch-ins secs 100/115 %, 120 % sur les bouchées ; shake + flash sur les gros moments ; whip entre deux lieux | Zoom avant/arrière façon Micode, seulement si pertinent | Idem F ; déplacements libres sur documents | Zoom Micode sur son visage seulement, jamais d'aller-retour continu (rejeté sur Dune) | Idem F |
 | Identité | DA Dégustation v2 (§5.1) | À valider sur extrait ; repère Food dégustation v1 **[Q]** | Méthode Micode/Amistory ; identité rose v15 à valider **[Q]** | PRISME v1 | Liquid Glass |
-| Durée | ≤ 3:00 | Selon récit | Selon récit | Selon brief | Selon brief |
+| Durée | ~3:00 max en TikTok | Selon récit | Selon récit | Selon brief | Selon brief |
 | Blancs | Coupés au-delà de 0,25 s dans les monologues (§5) | Coupe au dernier mot (§4) | Respirations qui portent gardées (§6) | Coupe au dernier mot (§4) | Coupe au dernier mot (§4) |
-| Coupe bouchée | Courte : arrivée en bouche → morsure → réaction ; hook et rétention notés /10, objectif 8 (§5.2) | Dégustation complète | — | — | — |
+| Coupe bouchée | Courte : arrivée en bouche → morsure → réaction ; hook et rétention notés /10, minimum 8 (§5.2) | Dégustation complète | — | — | — |
 
 ## 3. Flux de travail
 
@@ -56,7 +56,7 @@ Créer au début une liste de suivi avec ces étapes **distinctes** ; ne jamais 
 7. **Musique, SFX, ambiances, mixage** (§11).
 8. **Sous-titres** (§9).
 9. **Contrôles avant export** (§14) puis export (§13).
-10. **Revue du MP4 exporté** : visionnage image par image aux points sensibles, mesures après encodage, transcription de contrôle ; aperçu à Cabezer pour le visionnage et l'écoute, avec les limites réelles du contrôle.
+10. **Revue du MP4 exporté** : visionnage intégral du MP4, image par image aux points sensibles, mesures après encodage, transcription de contrôle ; aperçu à Cabezer pour le visionnage et l'écoute, avec les limites réelles du contrôle.
 11. **Après publication** : boucle rétention (§15) quand les données existent.
 
 Pour les dégustations, ranger le projet dans `/Users/cabezer225/Documents/ChatGPT/Tiktok degustation/<Sujet>/` (médias, versions, exports, contrôles, suivi ; `Publication/` si couverture et textes sont demandés). Pour le package de publication, utiliser `cabezer-shorts-publication` ou `youtube-publication-package`.
@@ -139,9 +139,9 @@ Un Short ou Reel monté seul pour une autre destination garde la dégustation co
 - **Sources :** vidéos originales, pas de photos ; produits et bouchées toujours visibles sous les textes.
 
 **Son :**
-- Pas de musique (noter « musique : absente par choix »). Pas d'ambiance continue ; ambiance discrète du lieu sous un insert muet **[Q]** (défaut : non). Aucun foley d'aliment, jamais sur une bouchée ni une réaction **[Q pour un insert muet]**.
+- Pas de musique (noter « musique : absente par choix »). Pas d'ambiance continue ; une ambiance discrète du lieu sous un insert muet (§11, « ne contredit pas la règle dégustation ») est une méthode à proposer au premier usage : sans son accord, aucune. Aucun foley d'aliment, jamais sur une bouchée ni une réaction **[Q pour un insert muet]**.
 - SFX tendance TikTok + touche mème, banque Pixabay `Tiktok degustation/SFX-Pixabay/` (licences dans `LICENCES-SFX.md`) ; « tendance » désigne un style de son, jamais un son prélevé :
-  - swoosh, pop, ding, boing, scratch, caisse, photo, scintillement ;
+  - liste de référence : swoosh, pop, ding, boing, scratch, caisse, photo, scintillement ; un autre son de la banque (riser, drone…) seulement avec son accord **[Q]** (défaut : non) ;
   - **pas de mèmes vocaux**, **plus de boom** (retiré le 02/10 : « tu l'utilises mal ») ;
   - clairement audibles, sans en mettre partout ;
   - recadrés sur leur attaque ; le swoosh est calé sur son pic.
@@ -175,7 +175,7 @@ Un Short ou Reel monté seul pour une autre destination garde la dégustation co
 
 ### 5.2 Notation obligatoire : hook et rétention sur 10 (consigne du 02/10/2026)
 
-Chaque dégustation est notée avant livraison et les deux notes sont données à Cabezer. **Objectif : 8 minimum.** Sous 8, retravailler et renoter, **au plus deux itérations**. Si 8 est impossible sans contredire un choix de Cabezer (son hook, un passage qu'il a gardé, un appel non tourné), livrer avec la note réelle et dire ce qui bloque ; proposer au plus deux variantes de hook en gardant le sien comme option. Les notes sont une auto-évaluation de Claude, pas une validation. Barème complet : DA v2 §5.
+Chaque dégustation est notée avant livraison. **Si une note est sous 8, retravailler puis renoter jusqu'à 8 minimum, et donner les deux notes à Cabezer.** Seule exception : si 8 est impossible sans contredire un choix de Cabezer (son hook, un passage qu'il a gardé, un appel non tourné), son choix prime : livrer avec la note réelle, dire ce qui bloque et proposer au plus deux variantes de hook en gardant le sien comme option. Limiter le travail à deux itérations **[Q]** (défaut : pas de limite tant qu'une piste d'amélioration existe). Les notes sont une auto-évaluation de Claude, pas une validation. Barème complet : DA v2 §5.
 
 **Hook (0–3 s) :**
 
@@ -268,7 +268,7 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 - Garder son regard silencieux à la caméra quelques secondes, en le vérifiant à l'image dans le rush : fondre au noir **avant** qu'il bouge ou se lève.
 - Laisser la musique conclure sur un vrai accord qui s'éteint sur le noir.
 - Aucun bruitage sur le fondu, pas de carton d'abonnement.
-- Prévoir la place de l'écran de fin YouTube (5 à 20 s de noir et de musique qui s'éteint, sans information utile) **[Q]**.
+- Prévoir la place de l'écran de fin YouTube (5 à 20 s de noir et de musique qui s'éteint, sans information utile) **[Q]** (défaut : oui).
 
 **Après validation :** une fiche par famille dans `references/identites-visuelles/` : couleurs exactes, polices et graisses, hiérarchie, marges et zones sûres, styles de texte, règles d'animation, MOGRT/presets réellement disponibles, projet modèle, aperçu approuvé, version et preuve de validation. Une refonte devient une nouvelle version.
 
@@ -310,7 +310,7 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 |---|---|---|
 | France, Belgique francophone | Français mot à mot, incrustés | SRT français livré ; incrustation selon brief **[Q]** |
 | Étranger | Langue locale ou anglais, **à demander à chaque vidéo** (défaut : anglais ; Milan : anglais) | Anglais incrusté, toujours (consigne du 28/09/2026, Maritozzo) |
-| Passages non français dans une vidéo française | — | Traduction française sur les passages surlignés (§6) |
+| Passages non français dans une vidéo française | Idem (§6) | Traduction française sur les passages surlignés (§6) |
 
 **Réalisation commune :**
 - La piste de légendes Premiere sert de transcription, de calage et d'export SRT. Les sous-titres incrustés finaux sont une **composition After Effects** à l'identité de la famille, entrée animée, texte resté éditable (un calque de texte, un mot ou un paquet par clé de Texte source), rendue en ProRes 4444 alpha. Livrer la composition, le rendu et le SRT. Plus de légendes Premiere au style générique (retour sur Maritozzo v09, 28/09/2026).
@@ -320,12 +320,12 @@ Chaque famille garde une identité reconnaissable. Une déclinaison 9:16 ou 16:9
 - Typographie française (espaces insécables, guillemets, nombres, prix, heures) : [conformité](references/pro/conformite-droits-accessibilite.md).
 
 **Dégustation — consigne du 02/10/2026 :**
-- **Style DA v2 :** Avenir Next Heavy en capitales, blanc, ombre courte et nette, sans contour épais ; vers 72–75 % de la hauteur (contrôler sur téléphone qu'ils ne sont pas masqués par l'interface) ; mots clés (produit, prix, note, lieu) dans la couleur d'accent.
+- **Style DA v2 :** Avenir Next Heavy en capitales, blanc, ombre courte et nette, sans contour épais ; vers 72–75 % de la hauteur, exemptés de la boîte de zones sûres **[Q]** (défaut : oui ; contrôler sur téléphone qu'ils ne sont pas masqués par l'interface) ; mots clés (produit, prix, note, lieu) dans la couleur d'accent.
 - **Découpage :** en français, un mot à la fois ; en traduction, paquets de 1 à 3 mots, 18 caractères au plus, les petits mots collés au mot qui suit.
 - **Entrée :** pop en 4 images ; sortie sèche au paquet suivant.
 - Un paquet qui tombe sous un pop-up, un prix, la note ou l'appel au commentaire attend la fin de l'animation, sinon il est retiré.
 
-**Autres familles et vidéos tournées à l'étranger :**
+**Autres familles (y compris tournées à l'étranger) — la dégustation reste régie par le bloc ci-dessus :**
 - **Deux lignes maximum réellement affichées**, pour chaque bloc. Coupures de ligne explicites, jamais de retour automatique (Premiere ajoutait une 3ᵉ ligne) : ≤ 24 caractères par ligne en 9:16 à ~70 px sur 1080 ; en 16:9, viser ≤ 42 caractères par ligne. Blocs trop longs découpés en sous-titres successifs équilibrés, par groupes de sens, sans mot isolé ; ne pas réduire la police ponctuellement.
 - Traduire le sens oral de Cabezer (ton naturel, pas mot à mot), y compris les échanges avec les vendeurs ; garder les noms propres et le mot exact de l'appel au commentaire. Corriger noms, chiffres et ponctuation.
 - **Style :** identité de la famille, entrée animée au moins (pop léger + mots révélés un à un, sortie courte). Respecter taille, marges et zones sûres de l'identité ; éviter l'interface mobile et le visage.
@@ -340,10 +340,10 @@ Passe distincte et obligatoire. Consigner version, réglages, contrôle, limites
 **Chaîne technique selon la caméra** — confirmer le profil réel du rush (ffprobe et métadonnées) ; **une seule conversion par plan**, jamais conversion automatique + LUT technique cumulées :
 - **DJI Osmo Pocket 3, D-Log M :** exposition/blancs → conversion DJI D-Log M → Rec.709 **une seule fois** → **Exterior Cinema** ou **Exterior Doux**, dosé sur les plans réels. Fichiers : [chaîne Pocket 3 et LUT Cabezer](references/dji-osmo-pocket-3-luts.md), `assets/luts/dji-osmo-pocket-3/`.
 - **Panasonic V-Log/V-Gamut :** conversion Panasonic → Rec.709, **jamais la LUT DJI**.
-- **iPhone HLG/HDR ou Apple Log :** convertir vers Rec.709 SDR (gestion des couleurs de Premiere ou LUT Apple Log officielle, pas les deux) avant toute correction ; jamais de LUT D-Log M dessus.
+- **iPhone HLG/HDR ou Apple Log :** convertir vers Rec.709 SDR (gestion des couleurs de Premiere ou LUT Apple Log officielle, pas les deux) avant les corrections ; jamais de LUT D-Log M dessus.
 - **Source déjà Rec.709 :** pas de conversion technique.
 
-**Ordre :** normaliser → exposition → contraste → balance → harmonisation entre plans → look → secondaires. Lire les scopes à l'arrêt : forme d'onde pour la luminance, parade pour la balance, vectorscope pour la saturation et la peau.
+**Ordre :** réglage d'exposition et de blancs d'entrée si la chaîne caméra le prévoit (Pocket 3) → conversion unique → exposition → contraste → balance → harmonisation entre plans → look → secondaires. Lecture exacte de l'ordre Pocket 3 **[Q]** (défaut : diagnostic de l'exposition, conversion unique, puis exposition et blancs dans Lumetri avant la LUT Exterior). Lire les scopes à l'arrêt : forme d'onde pour la luminance, parade pour la balance, vectorscope pour la saturation et la peau.
 
 **Correction primaire :** exposition, balance des blancs, contraste, carnation ; comparer avant/après sur plusieurs prises et harmoniser ; viser la constance de la peau entre plans. Traiter à part captures d'écran, graphiques et extraits de films (pas de look facecam dessus). Ne jamais étalonner les graphismes AE : pas de calque de réglage global au-dessus de l'habillage.
 
@@ -361,7 +361,7 @@ Lire [audio pro](references/pro/audio-dialogue-sound-design-mixage.md).
 
 **Organisation des pistes :** A1–A2 voix, A3–A4 SFX, A5 musique ; ajouter une piste ambiances si utilisée.
 
-**SFX.** Dégustation : banque Pixabay et liste fermée (§5). Autres familles : **bibliothèque ouverte**, choisie selon le sujet et l'animation. Clics, caisses, whooshes et accents doivent être **clairement audibles** dans le mix final sous une voix intelligible, sans être envahissants ; un son inaudible ne remplit pas sa fonction. Ne pas multiplier les accents ni recouvrir bouchées et réactions. Aucun bruitage sans élément visuel correspondant à l'écran. Refuser les SFX synthétisés ou génériques peu pertinents : sources = fichiers de Cabezer, ses bibliothèques **Cabezer-Sons-Vol1** et **Cabezer-Ajouts-Food-Lifestyle** (WAV 24 bits/48 kHz), Adobe Stock via son compte (licence payante : à signaler), ou toute source dont la licence couvre l'usage. Ne jamais prélever les sons d'une vidéo TikTok ou d'un tutoriel. Consigner provenance, licence, crédits, fichier ; ne pas inventer une licence. Bruitages Story retenus (30/09/2026) : tampon, impression de ticket, coche au feutre, vraie déchirure de papier (CC0).
+**SFX.** Dégustation : banque Pixabay et liste de référence (§5). Autres familles : **bibliothèque ouverte**, choisie selon le sujet et l'animation. Clics, caisses, whooshes et accents doivent être **clairement audibles** dans le mix final sous une voix intelligible, sans être envahissants ; un son inaudible ne remplit pas sa fonction. Ne pas multiplier les accents ni recouvrir bouchées et réactions. Aucun bruitage sans élément visuel correspondant à l'écran. Refuser les SFX synthétisés ou génériques peu pertinents : sources = fichiers de Cabezer, ses bibliothèques **Cabezer-Sons-Vol1** et **Cabezer-Ajouts-Food-Lifestyle** (WAV 24 bits/48 kHz), Adobe Stock via son compte (licence payante : à signaler), ou toute source dont la licence couvre l'usage. Ne jamais prélever les sons d'une vidéo TikTok ou d'un tutoriel. Consigner provenance, licence, crédits, fichier ; ne pas inventer une licence. Bruitages Story retenus (30/09/2026) : tampon, impression de ticket, coche au feutre, vraie déchirure de papier (CC0).
 
 | SFX de base | Fichier |
 |---|---|
@@ -410,7 +410,7 @@ Une demande de terminer musique, SFX, mixage et couleur supprime seulement les v
 1. Repérer les passages **autonomes** : une idée complète, compréhensible sans le reste, avec une chute ou un verdict.
 2. Écrire un nouveau hook à partir des paroles existantes (réordonner des prises, jamais recomposer une phrase pour changer son sens).
 3. Recadrer 16:9 → 9:16 depuis les rushs 4K : Auto Reframe comme point de départ, puis correction manuelle des images clés pour garder visage, produit ou document lisibles. Refaire les textes à l'échelle verticale selon l'identité de la famille.
-4. Appliquer les règles du format court de la famille : dégustation (§5, §9) ; pour S et F, sous-titres de la famille adaptés au 9:16 (2 lignes, ≤ 24 caractères) **[Q]**.
+4. Appliquer les règles du format court de la famille : dégustation (§5, §9) ; pour S et F, sous-titres de la famille adaptés au 9:16 (2 lignes, ≤ 24 caractères) **[Q]** (défaut : oui).
 5. Fin qui renvoie à la vidéo longue ou qui boucle sur le début.
 6. Une séquence par Short dans le même projet, nommée d'après le passage.
 
@@ -427,7 +427,7 @@ Exporter en MP4 H.264 (ou H.265 si demandé) au ratio, à la résolution et à l
 
 | Destination | Format de base | Repères à vérifier |
 |---|---|---|
-| TikTok / Reels / Shorts | **FHD 1080×1920 exporté directement de Premiere** (consigne du 02/10/2026) : taille d'image personnalisée 1080 × 1920, « Utiliser la qualité de rendu maximale » coché (utile pour la réduction 4K → 1080), « Rendu à la profondeur maximale » selon les effets (libellés à confirmer ; le skill écrivait « Rendu à la résolution maximale »), H.264 VBR 1 passage environ 20 Mbit/s, AAC 320 ; cadence de la séquence ; master 4K seulement sur demande | Zones sûres : texte clé dans la boîte de test de [formats courts](references/pro/formats-courts-verticaux.md) (hors du bas et du bord droit) ; contrôle sur capture réelle des applications |
+| TikTok / Reels / Shorts | **FHD 1080×1920 exporté directement de Premiere** (consigne du 02/10/2026) : taille d'image personnalisée 1080 × 1920, « Utiliser la qualité de rendu maximale » coché (utile pour la réduction 4K → 1080), « Rendu à la profondeur maximale » selon les effets (libellés à confirmer ; le skill écrivait « Rendu à la résolution maximale »), H.264 VBR 1 passage environ 20 Mbit/s, AAC 320 ; cadence de la séquence ; master 4K seulement sur demande | Zones sûres : textes hors du bas (légende, boutons) et du bord droit ; texte clé dans le tiers central et dans la boîte de test de [formats courts](references/pro/formats-courts-verticaux.md) ; contrôle sur capture réelle des applications |
 | YouTube long | 1920×1080 par défaut ; 3840×2160 sur demande et seulement depuis des rushs 4K **[Q]** ; cadence de la séquence ; H.264 VBR 2 passages, débit de départ dans la fiche (repères YouTube à vérifier), AAC 48 kHz 320 kbit/s | Chapitres ; 5 à 20 s de fin compatibles avec l'écran de fin |
 
 **Loudness :** les plateformes normalisent le volume ; YouTube est généralement cité autour de −14 LUFS intégrés. C'est un **repère de contrôle (±1), pas une cible imposée** : le mix se valide à l'écoute de Cabezer, puis se mesure sur le MP4 exporté. **Crête vraie du MP4 ≤ −1 dBTP** (l'encodage AAC relève les crêtes) ; si elle dépasse, baisser d'abord la source fautive. Consigner les mesures réelles.
@@ -440,12 +440,12 @@ Exporter en MP4 H.264 (ou H.265 si demandé) au ratio, à la résolution et à l
 - Dérush/raccords : aucun mot coupé (lister les coupes, retranscrire 1 s autour des coupes suspectes), aucun blanc résiduel non voulu, « Bref, c'est partiiii » entier, appel au commentaire présent et entier.
 - Cadrage, zones sûres (boîte de test), illustrations (sources et crédits dans `licences.csv`).
 - Habillage ; sous-titres : langue selon §9, jamais trois lignes, masqués pendant les textes animés, typographie française.
-- **Dégustation :** notes hook et rétention données (objectif 8, §5.2) ; aucun reste de phrase coupée ni plan muet qui traîne ; pas de SFX orphelin d'un élément retiré ; pas d'audio d'insert résiduel.
+- **Dégustation :** notes hook et rétention ≥ 8, ou note réelle expliquée si un choix de Cabezer l'empêche (§5.2) ; aucun reste de phrase coupée ni plan muet qui traîne ; pas de SFX orphelin d'un élément retiré ; pas d'audio d'insert résiduel.
 - Musique / SFX / ambiances : présents, dosés, whooshes synchronisés (mesure) ; écoute demandée à Cabezer.
 - **Colorimétrie** faite et comparée ; balises du MP4.
 - **Mixage** fait et mesuré (ebur128, crête vraie, mono) ; validation auditive de Cabezer : faite ou « en attente ».
 - **Conformité :** tiers identifiables traités selon sa décision, mention de partenariat si besoin, flashs et secousses dans les limites, extraits tiers crédités.
-- Début/fin, durée (≤ 3:00 en dégustation), pas de noirs ni d'images figées involontaires, pas de médias hors ligne.
+- Début/fin, durée (≤ 3:00 en TikTok dégustation), pas de noirs ni d'images figées involontaires, pas de médias hors ligne.
 - AE : compositions liées/rendues, alpha correct (yuva444p12le, pas de frange), pas d'audio guide en doublon, `.aep` et sources conservés.
 
 **Pièges vérifiés (Milan, 02/10/2026) :**
@@ -478,8 +478,8 @@ Ne jamais présenter une hypothèse comme une cause prouvée ; la rétention dé
 | Statut | Outils |
 |---|---|
 | Autorisés comme aides, résultat vérifié | Transcription, montage par le texte (repérage et pré-découpe), détection des scènes, Auto Reframe (point de départ), recherche dans les médias, Roto Brush et suivi sur un vrai plan, traduction automatique de légendes relue |
-| Seulement sur demande explicite de Cabezer | Morph Cut, flux optique sur un plan clé, Remplissage d'après le contenu, Generative Extend et tout outil de génération ou de reconstruction de pixels |
-| Interdits | « Améliorer la parole », Correspondance automatique et curseur « Dynamique » d'Essential Sound ; voix, musique, images ou animations générées par IA |
+| Seulement sur demande explicite de Cabezer | Morph Cut, flux optique sur un plan clé, Remplissage d'après le contenu, Generative Extend et tout outil de génération ou de reconstruction de pixels ; voix ou musique produites par un modèle génératif (la composition jouée avec les instruments échantillonnés d'Apple, §11, reste la méthode Story) |
+| Interdits (règles de Cabezer) | « Améliorer la parole », Correspondance automatique et curseur « Dynamique » d'Essential Sound ; images ou animations générées par IA ; musique synthétisée note à note |
 
 - **Tesseract :** animations ou transitions demandées nommément seulement ; jamais dérush ni montage final. Rendre, importer, vérifier dans Premiere ; conserver le `.tsrct` et son rendu à part. [Échange Premiere ↔ Tesseract](references/premiere-tesseract.md). Statut gratuit/payant à vérifier.
 - **Higgsfield/Higgsedit :** comme moteur de montage seulement sur demande nominative, avec les mêmes règles éditoriales ; [méthode intégrée](references/montage-higgsfield.md) (entrée/maintien/sortie, textes animés, synchronisation, coupes ciblées, contrôle du rendu). Pas de génération IA, d'abonnement ou de transfert de rushs imposés.
@@ -539,4 +539,4 @@ Une méthode « à proposer au premier usage » est présentée à Cabezer avant
 | Identité Story v15 rose (§6) | 30/09/2026 | En attente de validation **[Q]** |
 | Générique « Amed Story 🧢 » v01 (§6) | 30/09/2026 | En attente de validation **[Q]** |
 
-**Décisions en attente :** chaque **[Q]** du texte donne son défaut. Registre complet, dédupliqué et classé par thème (les questions prioritaires marquées ★) : [décisions en attente](references/decisions-en-attente.md). Poser une question seulement quand elle bloque, une fois, avec le défaut proposé ; une réponse de Cabezer devient une règle datée de ce skill.
+**Décisions en attente :** chaque **[Q]** donne son défaut dans le texte ou dans le registre. Registre complet, dédupliqué et classé par thème (les questions prioritaires marquées ★) : [décisions en attente](references/decisions-en-attente.md). Poser une question seulement quand elle bloque, une fois, avec le défaut proposé ; une réponse de Cabezer devient une règle datée de ce skill.

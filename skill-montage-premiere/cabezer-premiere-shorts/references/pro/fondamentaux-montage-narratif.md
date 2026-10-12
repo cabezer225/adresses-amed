@@ -69,7 +69,7 @@ Aucun montage ne commence sans brief écrit. Lire `Suivi/brief.md`, ou le créer
 1. **Famille** (ou « hors famille ») : elle donne les exceptions du skill et la colonne du §19. Famille sans identité validée : prévoir l'extrait de 15 à 30 s à faire valider (skill §6).
 2. **Promesse en une phrase** : « le spectateur a cliqué pour voir ___ ». Elle sert de critère « histoire » (§2). Sujet et promesse sont confirmés avant la 30e seconde (avant le générique en Story) ; l'enjeu peut être rappelé ensuite (`retention-youtube-long.md` §2).
 3. **Durée cible et plateformes.**
-4. **Hook (D)** : le demander à chaque vidéo. Noter le hook choisi avec le barème du skill §5.2 et donner la note ; sous 8, proposer au plus deux variantes en gardant son hook comme option ; son choix prime ; au plus deux itérations.
+4. **Hook (D)** : le demander à chaque vidéo. Noter le hook choisi avec le barème du skill §5.2 et donner la note ; sous 8, retravailler jusqu'à 8 ; si son hook l'empêche, son choix prime : note réelle livrée et au plus deux variantes proposées, son hook restant une option.
 5. **Niveau d'autonomie** : valider le dérush avant l'habillage, sauf autorisation d'enchaîner ; elle n'autorise jamais la publication (skill §1).
 6. **Contraintes** : langue des sous-titres à l'étranger, références de style et accord de téléchargement, contraintes légales (`conformite-droits-accessibilite.md`).
 
@@ -202,7 +202,7 @@ La sélection liée peut se désactiver après une coupe : la revérifier avant 
 2. Il apporte une information nouvelle ou masque une coupe voulue ; sinon rester sur le visage.
 3. **Temps de lecture :** appliquer `documentaire-essai-video-archives.md` §5.3 (formule du skill) aux textes d'habillage, cartons, traductions et blocs de sous-titres des familles longues. Elle ne vise ni les sous-titres mot à mot de D ni les coupes rapides nommées de 0,4 à 0,8 s (accumulation sans texte à lire). Image sans texte : 2 s au moins ; univers visuel suivi : 2 à 3 s.
 4. Plan muet : sans son source (skill §5).
-5. **Mouvement sur une image fixe ou un document :** seulement pour désigner un détail ou présenter un visage, avec un temps avant et après et une courbe douce ; jamais de dérive décorative, jamais sur un plan qui porte un texte à lire (skill §6 point 11).
+5. **Mouvement sur une image fixe ou un document :** seulement pour désigner un détail ou présenter un visage, avec un temps avant et après et une courbe douce ; jamais de dérive décorative, jamais sur un plan qui porte un texte à lire (skill §6 point 11 et §7, « Mouvement sur image fixe »).
 6. **Plan stock de préparation (D) :** seulement avec l'accord de Cabezer et la licence consignée ; une préparation du même type de produit, jamais présentée comme le plat servi, sans logo ni lieu identifiable (skill §5).
 7. **Extrait tiers (P, S) :** durée minimale nécessaire, commenté, source affichée ; un crédit n'est pas une autorisation ; signaler le risque Content ID avant publication (`conformite-droits-accessibilite.md`).
 
@@ -298,7 +298,7 @@ Murch place la coupe, ajoute ou retire des images, relit (la fenêtre de trim af
 Le son est la moitié de l'histoire (Hamilton). **Contrôler le rythme visuel sans le son** une fois : un bon son cache un rythme faible (Claude lit planche d'images et durées, §18 ; Cabezer regarde l'aperçu muet).
 
 ### 13.2 Compatibilité avec le skill
-D : pas de musique, aucune ambiance continue par défaut, SFX audibles (skill §5, liste fermée) ; le « silence composé » ne s'y applique pas. Ambiance sous un insert muet et foley d'aliment : décisions en attente, `audio-dialogue-sound-design-mixage.md` §15. S : nappe continue et vrai silence de 1 à 2 s avant une bascule (skill §11 ; valeurs dans `audio-dialogue-sound-design-mixage.md` §5.5), qui recouvre les silences de Baxter.
+D : pas de musique, aucune ambiance continue par défaut, SFX audibles (skill §5, liste de référence) ; le « silence composé » ne s'y applique pas. Ambiance sous un insert muet et foley d'aliment : décisions en attente, `audio-dialogue-sound-design-mixage.md` §15. S : nappe continue et vrai silence de 1 à 2 s avant une bascule (skill §11 ; valeurs dans `audio-dialogue-sound-design-mixage.md` §5.5), qui recouvre les silences de Baxter.
 
 ### 13.3 Éviter les clics aux raccords audio
 Nedomansky pose un fondu enchaîné de 2 images aux bords des clips de dialogue (il dit « 2 images » puis « une image » : valeur à confirmer). **La version ciblée de `audio-dialogue-sound-design-mixage.md` §3.2 fait foi :**
@@ -348,7 +348,7 @@ Réservé aux inserts (skill §7), jamais sur la parole ni la bouchée retenue. 
 Le skill §16 fait foi ; ne sont rappelées que les fonctions qui touchent le montage narratif.
 - **Aides autorisées, résultat vérifié :** transcription (Speech to Text), montage par le texte pour repérer et pré-découper (§8.4), détection des changements de plan, recherche Media Intelligence, Auto Reframe comme point de départ, détection de mots de remplissage (repérage, jamais suppression automatique).
 - **Seulement sur demande explicite de Cabezer :** Extension générative (Generative Extend), Morph Cut, Remplissage d'après le contenu, tout outil Firefly. Si un plan manque d'une demi-seconde : un autre plan réel, un ralenti d'insert, un fondu, un plan de coupe, dans cet ordre.
-- **Interdits par défaut (règle de Cabezer) :** Améliorer la parole (Enhance Speech), Correspondance automatique et « Dynamique » d'Essential Sound, voix ou musique générées, images ou animations générées par IA. Si une fonction manque dans sa version, le dire.
+- **Interdits par défaut (règle de Cabezer) :** Améliorer la parole (Enhance Speech), Correspondance automatique et « Dynamique » d'Essential Sound, images ou animations générées par IA (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16). Si une fonction manque dans sa version, le dire.
 
 ---
 

@@ -361,7 +361,7 @@ Règle d'arbitrage commune : l'émotion voulue passe avant le rythme, le rythme 
 
 **Coupe au noir : aucune source.** Pas de règle. Si Cabezer la demande, monter deux versions (avec et sans noir de 3 à 6 images) sur un extrait et les lui faire comparer.
 
-**Quand l'utiliser :** D (la « touche mème » du skill passe par des SFX de la liste fermée bien placés et un punch-in sec, sans mèmes vocaux ni boom) ; F (moments drôles) ; H sur brief. **Quand l'éviter :** S et P sérieux, sauf demande : une coupe pour le gag qui casse le ton viole le critère 1 de Murch.
+**Quand l'utiliser :** D (la « touche mème » du skill passe par des SFX de la liste de référence bien placés et un punch-in sec, sans mèmes vocaux ni boom) ; F (moments drôles) ; H sur brief. **Quand l'éviter :** S et P sérieux, sauf demande : une coupe pour le gag qui casse le ton viole le critère 1 de Murch.
 
 **Pièges :** trop de gags (le rythme devient un tic) ; SFX mal calé ; SFX synthétisé ou générique (skill §11).
 
@@ -413,7 +413,7 @@ Le skill contient déjà une méthode validée (§6 : « une image par idée, ja
 | Montage sur musique (6.3) | SFX seulement | Passages montés | Montées, générique | Oui | Passages montés | Oui |
 | Vlog voyage (6.4) | Whip entre lieux (skill) | Oui | Selon récit | Non | Non | Oui |
 | Interview / podcast (6.5) | Non | Oui | Oui | Oui | Oui | Oui |
-| Comédie (6.6) | SFX liste fermée, punch-in | Moments drôles | Rare | Non | Rare | Brief |
+| Comédie (6.6) | SFX liste de référence, punch-in | Moments drôles | Rare | Non | Rare | Brief |
 | Aftermovie / hype (6.7) | Non | Rare, brief | Non | Rare, brief | Non | Brief, extrait à valider |
 | Court métrage (6.8) | Non | Non | Non | Oui | Non | Oui |
 | Documentaire de société (6.9) | Non | Non | Méthode du skill | Non | Non | Non |
@@ -440,7 +440,7 @@ Un montage « dans le style de » est réussi quand il **ressemble par la gramma
 - **Outils IA, trois statuts (skill §16 ; `premiere-pro-avance.md` §2) :**
   - aides autorisées, résultat vérifié : transcription, montage par le texte, détection des scènes, Auto Reframe comme point de départ, Media Intelligence, Roto Brush et suivi sur un vrai plan ;
   - seulement sur demande explicite : Morph Cut, Remplissage d'après le contenu, **Generative Extend** (crée des images absentes des rushs), tout outil Firefly ou de génération de pixels ;
-  - interdits par défaut : « Améliorer la parole », Correspondance automatique, « Dynamique » d'Essential Sound, voix ou musique générées, images ou animations générées.
+  - interdits par défaut : « Améliorer la parole », Correspondance automatique, « Dynamique » d'Essential Sound, images ou animations générées (voix ou musique produites par un modèle génératif : seulement sur demande explicite, skill §16).
 - **Plugins :** gratuits uniquement par défaut ; tout outil payant est signalé (nom, prix connu ou « à vérifier ») et attend l'accord de Cabezer (6.3).
 - **Analyse :** `ffmpeg`/`ffprobe` suffisent ; aucune installation (PySceneDetect facultatif) sur le Mac de Cabezer sans son accord.
 

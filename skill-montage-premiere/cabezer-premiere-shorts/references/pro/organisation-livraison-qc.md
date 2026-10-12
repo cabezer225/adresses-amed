@@ -281,7 +281,7 @@ H.265 : sur demande seulement (skill §13) ; tester la lecture sur téléphone e
 
 **Quand** : toute vidéo longue horizontale. **Éviter** : 4K sans source 4K ou sans demande (skill §13).
 
-Base (skill §13) : 1920×1080 ou 3840×2160, cadence de la source, SDR Rec.709. Pour les envois SDR, YouTube recommande [Extrait de sa page d'aide, non ouverte] H.264 profil High, progressif, 4:2:0, audio AAC-LC 48 kHz ; aucune limite de débit imposée, seulement des repères :
+Base (skill §13) : 1920×1080 par défaut, 3840×2160 sur demande depuis des rushs 4K [Q], cadence de la séquence, SDR Rec.709. Pour les envois SDR, YouTube recommande [Extrait de sa page d'aide, non ouverte] H.264 profil High, progressif, 4:2:0, audio AAC-LC 48 kHz ; aucune limite de débit imposée, seulement des repères :
 
 | Résolution | 24, 25, 30 i/s : repère YouTube | départ de la fiche | 48, 50, 60 i/s : repère YouTube | départ de la fiche |
 |---|---|---|---|---|
