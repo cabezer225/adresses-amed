@@ -4,14 +4,15 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const NETS = { tiktok: "TikTok", instagram: "Instagram", youtube: "YouTube" };
-  const NET_SHORT = { tiktok: "TT", instagram: "IG", youtube: "YT" };
   const PARTNER = { pub: "Pub", "produits-offerts": "Produits offerts", invitation: "Invitation" };
-  const CAT_EMOJI = { tendances: "🔥", "fast-food": "🍔", "patisserie-glacier": "🧁", "street-food-etranger": "🌍" };
-  const PAGE = 24;
+  const CAT_EMOJI = { "fast-food": "🍔", "patisserie-glacier": "🧁", "street-food-etranger": "🌍" };
+  const CAT_ICON = { "fast-food": "burger", "patisserie-glacier": "cake", "street-food-etranger": "globe" };
+  const PAGE = 30;
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const finePointer = matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-  const state = { lieux: [], cats: {}, q: "", cat: "", ville: "", type: "", note: 0, rated: false, sort: "note", view: "home", shown: PAGE };
-  let map = null, markers = null;
+  const state = { lieux: [], byId: new Map(), cats: {}, q: "", cat: "", ville: "", type: "", note: 0, rated: false, sort: "note", view: "home", shown: PAGE };
+  let map = null, markers = null, mapKey = "";
 
   // ───────── helpers ─────────
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -19,12 +20,14 @@
   const fmtNote = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1).replace(".", ","));
   const fmtPrix = (p) => (p == null || p === "" ? "" : typeof p === "number" ? p.toFixed(2).replace(".", ",").replace(",00", "") + " €" : esc(p));
   const fmtDate = (d, short) => (d ? new Date(d + "T12:00:00").toLocaleDateString("fr-FR", short ? { day: "numeric", month: "short", year: "numeric" } : { day: "numeric", month: "long", year: "numeric" }) : "");
-  const color = (n) => (n == null ? "var(--none)" : n >= 7.5 ? "var(--good)" : n >= 5 ? "var(--mid)" : "var(--bad)");
+  const tone = (n) => (n == null ? "none" : n >= 7.5 ? "good" : n >= 5 ? "mid" : "bad");
+  const scoreEmoji = (n) => (n >= 9.5 ? "🔥" : n >= 8 ? "😋" : n >= 6.5 ? "👍" : n >= 5 ? "😐" : "😬");
   const plural = (n, w) => `${n} ${w}${n > 1 ? "s" : ""}`;
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch (_) { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (_) { /* stockage indisponible */ } },
   };
+  const icon = (id) => `<svg aria-hidden="true"><use href="#i-${id}"/></svg>`;
 
   function emojiFor(l) {
     const t = norm([l.specialite, l.nom].join(" "));
@@ -38,29 +41,29 @@
     return CAT_EMOJI[l.categorie] || "🍽️";
   }
 
-  function gradientFor(id) {
-    const g = [["#1F5EFF", "#6CC6FF"], ["#3B28CC", "#7C9CFF"], ["#0EA5E9", "#22D3EE"], ["#2563EB", "#A78BFA"], ["#0B3BFF", "#38BDF8"], ["#1D4ED8", "#60A5FA"]];
-    let h = 0;
-    for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0;
-    const [a, b] = g[h % g.length];
-    return `linear-gradient(135deg, ${a}, ${b})`;
-  }
+  // Initials for places without a logo, like the monogram tiles of the sketch.
+  const initials = (nom) => {
+    const w = String(nom).replace(/['’]/g, " ").split(/[\s\-–·&]+/).filter((x) => /^[\p{L}\d]/u.test(x) && !/^(le|la|les|de|du|des|et|l|d|chez|the)$/i.test(x));
+    return ((w[0]?.[0] || "") + (w[1]?.[0] || w[0]?.[1] || "")).toUpperCase();
+  };
 
-  // Restaurant logo on a white tile; falls back to an emoji on a blue gradient when there is no logo.
-  function thumbHTML(l) {
-    const nets = `<span class="thumb__net">${l.nets.map((n) => `<i title="${NETS[n]}">${NET_SHORT[n]}</i>`).join("")}</span>`;
-    if (l.logo) {
-      return `<span class="thumb thumb--logo" data-emoji="${l.emoji}" style="--g:${gradientFor(l.id)}"><span class="logo-tile"><img src="${esc(l.logo)}" alt="Logo ${esc(l.nom)}" loading="lazy" decoding="async" onerror="const t=this.closest('.thumb');t.classList.replace('thumb--logo','thumb--emoji');t.style.background=t.style.getPropertyValue('--g');this.parentNode.replaceWith(t.dataset.emoji)"></span>${nets}</span>`;
-    }
-    return `<span class="thumb thumb--emoji" style="background:${gradientFor(l.id)}" aria-hidden="true">${l.emoji}${nets}</span>`;
+  // Logo on a white tile in relief; a monogram tile when there is no logo or it fails to load.
+  function tileHTML(l, size) {
+    const s = size ? ` style="--s:${size}px"` : "";
+    if (l.logo) return `<span class="tile"${s}><img src="${esc(l.logo)}" alt="" width="256" height="256" loading="lazy" decoding="async" data-mono="${esc(l.mono)}"></span>`;
+    return `<span class="tile tile--mono"${s} aria-hidden="true">${esc(l.mono)}</span>`;
   }
+  document.addEventListener("error", (e) => {
+    const img = e.target;
+    if (img.tagName !== "IMG" || !img.dataset.mono) return;
+    const t = img.parentNode; t.classList.add("tile--mono"); t.textContent = img.dataset.mono;
+  }, true);
 
-  function ringHTML(n, size = "") {
-    if (n == null) return `<span class="ring ring--none ${size}" aria-label="Note à venir"><svg viewBox="0 0 36 36"><circle class="track" cx="18" cy="18" r="15.5"/></svg><b>Note<br>à venir</b></span>`;
-    return `<span class="ring ${size}" style="--p:${n * 10};--c:${color(n)}" aria-label="${fmtNote(n)} sur 10"><svg viewBox="0 0 36 36"><circle class="track" cx="18" cy="18" r="15.5"/><circle class="bar" cx="18" cy="18" r="15.5" pathLength="100"/></svg><b>${fmtNote(n)}</b></span>`;
+  // The verdict stamp, as in the videos: big score, small "/10", optional emoji.
+  function stampHTML(n, size = "", emoji = false) {
+    if (n == null) return `<span class="stamp stamp--none ${size}">Note<br>à venir</span>`;
+    return `<span class="stamp stamp--${tone(n)} ${size}" aria-label="${fmtNote(n)} sur 10">${fmtNote(n)}<small>/10</small>${emoji ? `<span class="emo" aria-hidden="true">${scoreEmoji(n)}</span>` : ""}</span>`;
   }
-
-  const pillNote = (n) => (n == null ? `<span class="pillnote pillnote--none">—</span>` : `<span class="pillnote" style="--c:${color(n)}">${fmtNote(n)}</span>`);
 
   // A place's score is the average of its rated dishes; a dish tested twice counts with its latest score.
   function enrich(lieu) {
@@ -75,77 +78,49 @@
     const pool = rated.length ? rated.map((p) => p.note) : globales;
     const note = pool.length ? Math.round((pool.reduce((s, n) => s + n, 0) / pool.length) * 10) / 10 : null;
     const nets = [...new Set(visites.flatMap((v) => (v.videos || []).map((x) => x.platform)))].filter((n) => NETS[n]);
-    const l = { ...lieu, visites, note, rated, nets, derniere: visites[0]?.date || "" };
+    // The dish shown on the label: the best rated one, else the first one with a price.
+    const allPlats = visites.flatMap((v) => v.plats || []);
+    const best = [...rated].sort((a, b) => b.note - a.note)[0] || allPlats.find((p) => p.prix != null) || allPlats[0] || null;
+    const l = { ...lieu, visites, note, rated, nets, best, derniere: visites[0]?.date || "" };
     l.emoji = emojiFor(l);
+    l.mono = initials(l.nom);
     l.haystack = norm([l.nom, l.ville, l.specialite, l.adresse, ...visites.flatMap((v) => [v.titre, ...(v.plats || []).map((p) => p.nom)])].join(" "));
+    l.metaLine = [l.specialite, l.type === "chaine" ? "Chaîne" : l.ville].filter(Boolean).join(" · ");
     return l;
   }
 
-  // ───────── reveal + rings ─────────
-  const io = "IntersectionObserver" in window && !reduceMotion
-    ? new IntersectionObserver((entries) => {
-      for (const e of entries) if (e.isIntersecting) { e.target.classList.add("is-in"); $$(".ring", e.target).forEach((r) => r.classList.add("is-in")); io.unobserve(e.target); }
-    }, { rootMargin: "0px 0px -6% 0px" })
-    : null;
-
-  function reveal(root) {
-    $$(".reveal:not(.is-in)", root).forEach((el, i) => {
-      el.style.setProperty("--d", `${Math.min(i, 8) * 45}ms`);
-      if (io) io.observe(el); else { el.classList.add("is-in"); $$(".ring", el).forEach((r) => r.classList.add("is-in")); }
-    });
-    $$(".ring:not(.is-in)", root).forEach((r) => { if (!r.closest(".reveal")) requestAnimationFrame(() => r.classList.add("is-in")); });
-  }
-
-  function countUp(el, to) {
-    if (reduceMotion || to < 2 || document.hidden) { el.textContent = to; return; }
-    const t0 = performance.now(), dur = 1100;
-    const step = (t) => {
-      const k = Math.min(1, (t - t0) / dur);
-      el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
-      if (k < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  }
+  const dishLabel = (p) => (p ? `<span class="label"><span class="label__t">${esc(p.nom)}</span>${p.prix != null && p.prix !== "" ? `<b>· ${fmtPrix(p.prix)}</b>` : ""}</span>` : "");
 
   // ───────── load ─────────
   async function load() {
-    $("#cards").innerHTML = Array.from({ length: 4 }, () => `<li class="skeleton" style="height:98px"></li>`).join("");
-    $("#latest").innerHTML = Array.from({ length: 3 }, () => `<div class="skeleton" style="height:240px"></div>`).join("");
+    $("#featured").innerHTML = `<div class="skeleton" style="height:190px"></div>`;
+    $("#cards").innerHTML = Array.from({ length: 4 }, () => `<li class="skeleton" style="height:84px"></li>`).join("");
     try {
       const res = await fetch("data/guide.json", { cache: "no-cache" });
       if (!res.ok) throw new Error(res.status);
       const data = await res.json();
       state.cats = data.meta?.categories || {};
       state.lieux = (data.lieux || []).map(enrich);
-      $("#maj").textContent = data.meta?.maj ? `Dernière mise à jour : ${fmtDate(data.meta.maj)}.` : "";
-    } catch (e) {
+      for (const l of state.lieux) state.byId.set(l.id, l);
+      const maj = data.meta?.maj ? `Dernière mise à jour : ${fmtDate(data.meta.maj)}.` : "";
+      $$(".footer").forEach((f) => { f.replaceChildren($("#footer-tpl").content.cloneNode(true)); $(".maj", f).textContent = maj; });
+          } catch (e) {
+      $("#featured").innerHTML = "";
       $("#cards").innerHTML = "";
-      $("#latest").innerHTML = "";
       $("#count").textContent = "Impossible de charger le guide pour le moment. Réessaie dans un instant.";
       return;
     }
-    renderStats();
     renderCats();
     renderVilles();
-    readHash();
     render();
     renderTop();
-  }
-
-  function renderStats() {
-    const plats = state.lieux.reduce((s, l) => s + l.visites.reduce((t, v) => t + (v.plats || []).length, 0), 0);
-    const videos = state.lieux.reduce((s, l) => s + l.visites.reduce((t, v) => t + (v.videos || []).length, 0), 0);
-    $("#stats").innerHTML = [[state.lieux.length, "adresses"], [plats, "plats goûtés"], [videos, "vidéos"]]
-      .map(([n, l]) => `<li><b data-n="${n}">0</b><span>${l}</span></li>`).join("");
-    $$("#stats b").forEach((b) => countUp(b, Number(b.dataset.n)));
+    readHash();
   }
 
   function renderCats() {
     const keys = Object.keys(state.cats).filter((k) => state.lieux.some((l) => l.categorie === k));
-    const tendances = state.lieux.some((l) => l.tendance) ? [["tendances", "Tendances", "🔥"]] : [];
-    const all = [["", "Tout", "✨"], ...tendances, ...keys.map((k) => [k, state.cats[k], CAT_EMOJI[k] || "🍽️"])];
-    $("#cats").innerHTML = all.map(([k, label, e]) => `<button class="pill" role="tab" data-cat="${esc(k)}" aria-selected="${state.cat === k}"><span aria-hidden="true">${e}</span>${esc(label)}</button>`).join("");
-    $("#cats").hidden = keys.length < 2;
+    const all = [["", "Tout", ""], ...(state.lieux.some((l) => l.tendance) ? [["tendances", "Tendances", icon("flame")]] : []), ...keys.map((k) => [k, state.cats[k], CAT_ICON[k] ? icon(CAT_ICON[k]) : ""])];
+    $("#cats").innerHTML = all.map(([k, label, ic]) => `<button class="pill" data-cat="${esc(k)}" aria-pressed="${state.cat === k}">${ic}${esc(label)}</button>`).join("");
   }
 
   function renderVilles() {
@@ -174,37 +149,52 @@
   const activeFilters = () => [state.ville, state.type, state.note, state.rated].filter(Boolean).length;
 
   // ───────── home ─────────
-  function slideHTML(l, v) {
-    const sub = [v.titre, fmtDate(v.date, true)].filter(Boolean).join(" · ");
-    return `<button class="slide reveal" data-id="${esc(l.id)}">
-      ${thumbHTML(l)}
-      ${ringHTML(l.note, "ring--sm")}
-      <span class="slide__body"><span class="slide__name">${esc(l.nom)}</span><span class="slide__meta">${esc(sub)}</span></span>
+  function featureHTML(l, v) {
+    const vid = (v.videos || []).find((x) => NETS[x.platform]);
+    const plat = (v.plats || []).find((p) => typeof p.note === "number") || (v.plats || [])[0] || l.best;
+    const avis = v.avis || l.avis;
+    return `<article class="feature lift">
+      <button class="feature__hit" data-id="${esc(l.id)}" aria-label="${esc(l.nom)} : ouvrir la fiche"></button>
+      ${tileHTML(l)}
+      <span><span class="feature__name">${esc(l.nom)}</span><span class="feature__meta">${esc(l.metaLine)}</span><span class="feature__meta">${esc(fmtDate(v.date))}</span></span>
+      ${stampHTML(l.note, "stamp--lg", true)}
+      <span class="feature__low">${dishLabel(plat)}${vid ? `<a class="watch" href="${esc(vid.url)}" target="_blank" rel="noopener">${icon("play")}Voir la vidéo</a>` : ""}</span>
+      ${avis ? `<span class="feature__quote">« ${esc(avis.length > 150 ? avis.slice(0, 147).replace(/\s+\S*$/, "") + "…" : avis)} »</span>` : ""}
+    </article>`;
+  }
+
+  function slideHTML(l, meta, hot) {
+    return `<button class="slide lift" data-id="${esc(l.id)}">
+      <span class="slide__top">${tileHTML(l)}${hot ? `<span class="hot">${icon("flame")}Tendance</span>` : ""}${stampHTML(l.note, "stamp--sm")}</span>
+      <span class="slide__body"><span class="slide__name">${esc(l.nom)}</span><span class="slide__meta">${esc(meta)}</span></span>
     </button>`;
   }
 
-  function hotHTML(l) {
-    return `<button class="slide slide--hot reveal" data-id="${esc(l.id)}">
-      ${thumbHTML(l)}
-      ${ringHTML(l.note, "ring--sm")}
-      <span class="slide__body"><span class="slide__name">${esc(l.nom)}</span><span class="slide__meta">🔥 ${esc(l.tendance)}</span></span>
-    </button>`;
-  }
-
-  function cardHTML(l, i) {
-    const meta = [l.specialite, l.type === "chaine" ? "Chaîne" : l.ville].filter(Boolean).join(" · ") || state.cats[l.categorie] || "";
+  function rowHTML(l) {
     const tags = [];
-    if (state.sort === "note" && l.note != null && i < 3) tags.push(`<span class="tag tag--rank">#${i + 1}</span>`);
-    if (l.visites.length > 1) tags.push(`<span class="tag">${plural(l.visites.length, "visite")}</span>`);
-    if (l.derniere) tags.push(`<span class="tag">${fmtDate(l.derniere, true)}</span>`);
-    if (l.visites.some((v) => v.partenariat)) tags.push(`<span class="tag tag--gift"><svg><use href="#i-gift"/></svg>Offert</span>`);
-    if (l.tendance) tags.unshift(`<span class="tag tag--hot">🔥 Tendance</span>`);
-    if (l.statut === "ferme-definitivement") tags.unshift(`<span class="tag tag--closed">Fermé</span>`);
-    return `<li class="reveal"><button class="card" data-id="${esc(l.id)}" aria-label="${esc(l.nom)}, ${l.note == null ? "note à venir" : fmtNote(l.note) + " sur 10"}">
-      ${thumbHTML(l)}
-      <span class="card__txt"><span class="card__name">${esc(l.nom)}</span><span class="card__meta">${esc(meta)}</span><span class="card__tags">${tags.join("")}</span></span>
-      ${ringHTML(l.note)}
-    </button></li>`;
+    if (l.statut === "ferme-definitivement") tags.push(`<span class="tag tag--closed">Fermé</span>`);
+    if (l.tendance) tags.push(`<span class="tag tag--hot">${icon("flame")}Tendance</span>`);
+    if (l.best) tags.push(dishLabel(l.best).replace('class="label"', 'class="label label--soft"'));
+    if (l.visites.some((v) => v.partenariat)) tags.push(`<span class="tag tag--gift">${icon("gift")}Offert</span>`);
+    return `<button class="row lift" data-id="${esc(l.id)}" aria-label="${esc(l.nom)}, ${l.note == null ? "note à venir" : fmtNote(l.note) + " sur 10"}">
+      ${tileHTML(l)}
+      <span class="row__txt"><span class="row__name">${esc(l.nom)}</span><span class="row__meta">${esc(l.metaLine || state.cats[l.categorie] || "")}</span>${tags.length ? `<span class="row__tags">${tags.join("")}</span>` : ""}</span>
+      ${stampHTML(l.note)}
+    </button>`;
+  }
+
+  // Each row is built once and reused: filtering only moves existing nodes, so typing stays instant.
+  const rowCache = new Map();
+  function rowNode(l) {
+    let li = rowCache.get(l.id);
+    if (!li) { li = document.createElement("li"); li.innerHTML = rowHTML(l); rowCache.set(l.id, li); }
+    return li;
+  }
+
+  const rendered = { featured: "", latest: "", hot: "" };
+  function setOnce(slot, key, el, html) {
+    if (rendered[slot] === key) return;
+    rendered[slot] = key; el.innerHTML = html(); el.scrollLeft = 0;
   }
 
   function render() {
@@ -212,149 +202,277 @@
     const n = activeFilters();
     $("#filter-count").hidden = !n;
     $("#filter-count").textContent = n;
-    $$("#cats .pill").forEach((p) => p.setAttribute("aria-selected", String(p.dataset.cat === state.cat)));
+    $$("#cats .pill").forEach((p) => p.setAttribute("aria-pressed", String(p.dataset.cat === state.cat)));
     $$("#sort button").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.sort === state.sort)));
 
     const searching = !!state.q.trim() || n > 0;
     $("#sec-new").hidden = searching;
+    if (!searching) {
+      const visits = filtered({}).flatMap((l) => l.visites.map((v) => ({ l, v }))).sort((a, b) => (b.v.date || "").localeCompare(a.v.date || "")).slice(0, 11);
+      $("#sec-new").hidden = !visits.length;
+      const key = visits.map(({ l, v }) => l.id + v.date).join("|");
+      if (visits.length) {
+        setOnce("featured", key, $("#featured"), () => featureHTML(visits[0].l, visits[0].v));
+        setOnce("latest", key, $("#latest"), () => visits.slice(1).map(({ l, v }) => slideHTML(l, [v.titre, fmtDate(v.date, true)].filter(Boolean).join(" · "))).join(""));
+      }
+    }
     // Trending carousel: on the home page only, when no search, filter or category narrows the list.
     const hot = !searching && !state.cat ? state.lieux.filter((l) => l.tendance).sort((a, b) => (b.note ?? -1) - (a.note ?? -1) || b.derniere.localeCompare(a.derniere)) : [];
     $("#sec-hot").hidden = !hot.length;
-    $("#hot").innerHTML = hot.map((l) => hotHTML(l)).join("");
-    if (!searching) {
-      const visits = filtered({}).flatMap((l) => l.visites.map((v) => ({ l, v }))).sort((a, b) => (b.v.date || "").localeCompare(a.v.date || "")).slice(0, 10);
-      $("#latest").innerHTML = visits.map(({ l, v }) => slideHTML(l, v)).join("");
-      $("#sec-new").hidden = !visits.length;
-    }
+    if (hot.length) setOnce("hot", hot.map((l) => l.id).join("|"), $("#hot"), () => hot.map((l) => slideHTML(l, l.tendance, true)).join(""));
 
-    $("#list-title").textContent = searching ? "Résultats" : state.cat === "tendances" ? "Les adresses tendances 🔥" : state.cat ? state.cats[state.cat] : "Toutes les adresses";
+    $("#list-title").textContent = searching ? "Résultats" : state.cat === "tendances" ? "Les adresses tendances" : state.cat ? state.cats[state.cat] : "Toutes les adresses";
     $("#count").textContent = plural(list.length, "adresse");
-    $("#cards").innerHTML = list.slice(0, state.shown).map(cardHTML).join("");
+    $("#cards").replaceChildren(...list.slice(0, state.shown).map(rowNode));
     $("#more").hidden = list.length <= state.shown;
     $("#more").textContent = `Voir plus d'adresses (${list.length - state.shown})`;
     $("#empty").hidden = list.length > 0;
-    reveal($("#view-home"));
     if (state.view === "map") renderMap();
   }
 
+  // Coalesce bursts of input (typing, dragging the slider) into one render per frame.
+  let raf = 0;
+  const scheduleRender = () => {
+    if (raf) return;
+    const run = () => { raf = 0; render(); };
+    raf = document.hidden ? setTimeout(run, 16) : requestAnimationFrame(run);
+  };
+
   // ───────── classement ─────────
-  function rankItem(l, i, sub, n) {
-    return `<li class="reveal"><button data-id="${esc(l.id)}"><span class="rank__pos">${i + 1}</span><span class="rank__txt"><b>${esc(l.nom)}</b><span>${esc(sub)}</span></span>${pillNote(n)}</button></li>`;
+  function rankRow(l, i, title, sub, n) {
+    return `<li><button class="row lift" data-id="${esc(l.id)}"><span class="rank-pos">${i + 1}</span><span class="row__txt"><span class="row__name">${esc(title)}</span><span class="row__meta">${esc(sub)}</span></span>${stampHTML(n, "stamp--sm")}</button></li>`;
   }
 
   function renderTop() {
     const rated = state.lieux.filter((l) => l.note != null);
-    const sub = (l) => [l.specialite, l.type === "chaine" ? "Chaîne" : l.ville].filter(Boolean).join(" · ");
     const top = [...rated].sort((a, b) => b.note - a.note || b.rated.length - a.rated.length);
     const podium = top.slice(0, 3);
-    const order = [1, 0, 2].filter((i) => podium[i]);
-    $("#podium").innerHTML = podium.length
-      ? order.map((i) => `<button class="podium__step podium__step--${i + 1} reveal" data-id="${esc(podium[i].id)}"><span class="podium__medal">${["🥇", "🥈", "🥉"][i]}</span>${ringHTML(podium[i].note, i === 0 ? "" : "ring--sm")}<span class="podium__name">${esc(podium[i].nom)}</span></button>`).join("")
-      : "";
-    $("#top").innerHTML = top.slice(0, 10).map((l, i) => rankItem(l, i, sub(l), l.note)).join("") || `<li class="rank-empty">Les notes arrivent bientôt.</li>`;
+    const H = [128, 92, 70];
+    $("#podium").innerHTML = [1, 0, 2].filter((i) => podium[i]).map((i) => `
+      <button class="step step--${i + 1}" data-id="${esc(podium[i].id)}">
+        ${tileHTML(podium[i], i === 0 ? 60 : 52)}
+        <span class="step__name">${esc(podium[i].nom)}</span>
+        ${stampHTML(podium[i].note, "stamp--sm")}
+        <span class="step__block" style="--h:${H[i]}px" aria-hidden="true"><span class="step__top"></span><span class="step__front">${i + 1}</span></span>
+      </button>`).join("");
+    $("#top").innerHTML = top.slice(0, 10).map((l, i) => rankRow(l, i, l.nom, l.metaLine, l.note)).join("") || `<li class="rank-empty">Les notes arrivent bientôt.</li>`;
     const plats = state.lieux.flatMap((l) => l.rated.map((p) => ({ ...p, lieu: l }))).sort((a, b) => b.note - a.note).slice(0, 10);
-    $("#top-plats").innerHTML = plats.map((p, i) => rankItem(p.lieu, i, `${p.lieu.nom}${p.prix != null ? " · " + fmtPrix(p.prix) : ""}`, p.note).replace(`<b>${esc(p.lieu.nom)}</b>`, `<b>${esc(p.nom)}</b>`)).join("") || `<li class="rank-empty">Les notes arrivent bientôt.</li>`;
+    $("#top-plats").innerHTML = plats.map((p, i) => rankRow(p.lieu, i, p.nom, `${p.lieu.nom}${p.prix != null ? " · " + fmtPrix(p.prix) : ""}`, p.note)).join("") || `<li class="rank-empty">Les notes arrivent bientôt.</li>`;
     const flop = [...rated].sort((a, b) => a.note - b.note).filter((l) => l.note < 5).slice(0, 5);
-    $("#flop").innerHTML = flop.map((l, i) => rankItem(l, i, sub(l), l.note)).join("") || `<li class="rank-empty">Aucune vraie déception pour l'instant 🙌</li>`;
-    reveal($("#view-top"));
+    $("#flop").innerHTML = flop.map((l, i) => rankRow(l, i, l.nom, l.metaLine, l.note)).join("") || `<li class="rank-empty">Aucune vraie déception pour l'instant.</li>`;
   }
 
   // ───────── map ─────────
-  function renderMap() {
-    if (!window.L) { $("#map-note").textContent = "La carte n'a pas pu se charger."; return; }
-    if (!map) {
-      map = L.map("map", { zoomControl: false, attributionControl: true }).setView([48.8566, 2.3522], 10);
+  // Google Maps when a key is set, Leaflet + OpenStreetMap otherwise. Either library loads on the
+  // first visit to the map, so the home page never waits for it.
+  // The key is public by design: restrict it to cabezer225.github.io/* in Google Cloud Console.
+  const GMAPS_KEY = "AIzaSyACHKIr0onQLIlw2fV5m_jYs_Ah1G2rBA8";
+  const GMAPS_MAP_ID = "1924677edcdcbec2dce20612";
+  const useGoogle = !!GMAPS_KEY;
+  let mapLib = null, gInfo = null;
+  const addScript = (src, attrs = {}) => new Promise((ok, ko) => {
+    const js = Object.assign(document.createElement("script"), { src, async: true, ...attrs });
+    js.onload = ok; js.onerror = ko; document.head.append(js);
+  });
+  function loadMapLib() {
+    if (mapLib) return mapLib;
+    if (useGoogle) {
+      const cb = "__gmapsReady";
+      mapLib = new Promise((ok, ko) => {
+        window[cb] = ok;
+        window.gm_authFailure = () => ko(new Error("auth"));
+        addScript(`https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(GMAPS_KEY)}&v=weekly&language=fr&region=FR&loading=async&callback=${cb}`).catch(ko);
+      }).then(() => Promise.all([google.maps.importLibrary("maps"), google.maps.importLibrary("marker")]));
+    } else {
+      document.head.append(Object.assign(document.createElement("link"), { rel: "stylesheet", href: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css", integrity: "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=", crossOrigin: "" }));
+      mapLib = addScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js", { integrity: "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=", crossOrigin: "" });
+    }
+    return mapLib;
+  }
+
+  const pinHTML = (l) => `<div class="pin${l.note == null ? " pin--none" : ""}" style="--c:${l.note == null ? "" : `var(--${tone(l.note)})`}">${l.note == null ? esc(l.mono) : fmtNote(l.note)}</div>`;
+  const popupHTML = (l, label) => `<div class="popup"><b>${esc(l.nom)}</b><br>${esc(label)}<br><button class="popup-btn" data-pop="${esc(l.id)}">Voir la fiche</button></div>`;
+
+  function createMap() {
+    if (useGoogle) {
+      map = new google.maps.Map($("#map"), {
+        center: { lat: 48.8566, lng: 2.3522 }, zoom: 11, mapId: GMAPS_MAP_ID,
+        colorScheme: google.maps.ColorScheme ? google.maps.ColorScheme.FOLLOW_SYSTEM : undefined,
+        disableDefaultUI: true, zoomControl: true, gestureHandling: "greedy", clickableIcons: false,
+      });
+      gInfo = new google.maps.InfoWindow();
+      markers = [];
+    } else {
+      map = L.map("map", { zoomControl: false }).setView([48.8566, 2.3522], 11);
       L.control.zoom({ position: "bottomright" }).addTo(map);
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }).addTo(map);
       markers = L.layerGroup().addTo(map);
-      map.on("popupopen", (e) => {
-        const b = e.popup.getElement().querySelector("[data-pop]");
-        if (b) b.addEventListener("click", () => openDetail(b.dataset.pop));
+    }
+    // One delegated listener serves the popups of both engines.
+    $("#map").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-pop]");
+      if (b) openDetail(b.dataset.pop);
+    });
+  }
+
+  function drawMarkers(spots) {
+    if (useGoogle) {
+      for (const m of markers) m.map = null;
+      markers = spots.map(({ l, c, label }) => {
+        const tpl = document.createElement("template");
+        tpl.innerHTML = pinHTML(l);
+        const m = new google.maps.marker.AdvancedMarkerElement({ map, position: { lat: c[0], lng: c[1] }, content: tpl.content.firstElementChild, title: l.nom, gmpClickable: true });
+        m.addEventListener("gmp-click", () => { gInfo.setContent(popupHTML(l, label)); gInfo.open({ map, anchor: m }); });
+        return m;
       });
-    }
-    markers.clearLayers();
-    const list = filtered();
-    const pts = [];
-    let k = 0;
-    for (const l of list) {
-      const spots = [];
-      if (Array.isArray(l.coords)) spots.push({ c: l.coords, label: l.adresse || l.ville || "" });
-      for (const v of l.visites) if (Array.isArray(v.coords)) spots.push({ c: v.coords, label: v.adresse || "" });
-      for (const s of spots) {
-        const icon = L.divIcon({ className: "", html: `<div class="pin" style="--c:${color(l.note)};--d:${Math.min(k++, 30) * 25}ms">${l.note == null ? l.emoji : fmtNote(l.note)}</div>`, iconSize: [40, 40], iconAnchor: [20, 20], popupAnchor: [0, -18] });
-        L.marker(s.c, { icon, title: l.nom }).bindPopup(`<b>${esc(l.nom)}</b><br>${esc(s.label)}<br><button class="popup-btn" data-pop="${esc(l.id)}">Voir la fiche</button>`).addTo(markers);
-        pts.push(s.c);
+      if (spots.length) {
+        const bounds = new google.maps.LatLngBounds();
+        for (const s of spots) bounds.extend({ lat: s.c[0], lng: s.c[1] });
+        map.fitBounds(bounds, 40);
+        google.maps.event.addListenerOnce(map, "idle", () => { if (map.getZoom() > 14) map.setZoom(14); });
       }
+    } else {
+      markers.clearLayers();
+      for (const { l, c, label } of spots) {
+        const icon = L.divIcon({ className: "", html: pinHTML(l), iconSize: [44, 34], iconAnchor: [22, 17], popupAnchor: [0, -16] });
+        L.marker(c, { icon, title: l.nom }).bindPopup(popupHTML(l, label)).addTo(markers);
+      }
+      if (spots.length) requestAnimationFrame(() => map.fitBounds(spots.map((s) => s.c), { padding: [40, 40], maxZoom: 14, animate: false }));
     }
+  }
+
+  function renderMap() {
+    if (!map && !(useGoogle ? window.google?.maps?.marker : window.L)) {
+      $("#map-note").textContent = "Chargement de la carte…";
+      loadMapLib().then(() => { if (state.view === "map") renderMap(); }, () => { mapLib = null; $("#map-note").textContent = "La carte n'a pas pu se charger. Vérifie ta connexion."; });
+      return;
+    }
+    if (!map) createMap();
+    const list = filtered();
+    const key = list.map((l) => l.id).join("|");
+    if (!useGoogle) requestAnimationFrame(() => map.invalidateSize());
+    if (key === mapKey) return;   // same places: keep the markers and the current view
+    mapKey = key;
+    const spots = [];
+    for (const l of list) {
+      if (Array.isArray(l.coords)) spots.push({ l, c: l.coords, label: l.adresse || l.ville || "" });
+      for (const v of l.visites) if (Array.isArray(v.coords)) spots.push({ l, c: v.coords, label: v.adresse || "" });
+    }
+    drawMarkers(spots);
     const missing = list.filter((l) => !Array.isArray(l.coords) && !l.visites.some((v) => Array.isArray(v.coords))).length;
-    $("#map-note").textContent = !pts.length
+    $("#map-note").textContent = !spots.length
       ? "Les emplacements arrivent bientôt sur la carte."
-      : missing ? `${plural(pts.length, "adresse")} sur la carte · ${missing} sans emplacement précis (souvent des chaînes)` : "";
-    setTimeout(() => { map.invalidateSize(); if (pts.length) map.fitBounds(pts, { padding: [50, 50], maxZoom: 14 }); }, 60);
+      : `${plural(spots.length, "adresse")} sur la carte${missing ? ` · ${missing} sans emplacement précis (souvent des chaînes)` : ""}`;
   }
 
   // ───────── views ─────────
+  const scrollMemo = {};
   function setView(view) {
     if (view === state.view) { window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }); return; }
-    const go = () => {
-      state.view = view;
-      $$(".tab").forEach((t, i) => {
-        const on = t.dataset.view === view;
-        t.classList.toggle("is-active", on);
-        if (on) { t.setAttribute("aria-current", "page"); $(".tabbar").style.setProperty("--i", i); } else t.removeAttribute("aria-current");
-      });
-      for (const v of ["home", "map", "top"]) {
-        const el = $("#view-" + v);
-        el.hidden = v !== view;
-        if (v === view) { el.classList.remove("is-entering"); void el.offsetWidth; el.classList.add("is-entering"); }
-      }
-      $(".footer").hidden = view === "map";
-      window.scrollTo(0, 0);
-      if (view === "map") renderMap();
-      if (view === "top") reveal($("#view-top"));
-    };
-    if (document.startViewTransition && !reduceMotion && document.visibilityState === "visible") {
-      const t = document.startViewTransition(go);
-      t.ready.catch(() => {}); t.finished.catch(() => {});
-    } else go();
+    scrollMemo[state.view] = window.scrollY;
+    state.view = view;
+    $$(".tab").forEach((t, i) => {
+      const on = t.dataset.view === view;
+      t.classList.toggle("is-active", on);
+      if (on) { t.setAttribute("aria-current", "page"); $(".tabbar").style.setProperty("--i", i); } else t.removeAttribute("aria-current");
+    });
+    for (const v of ["home", "map", "top"]) {
+      const el = $("#view-" + v);
+      el.hidden = v !== view;
+      el.classList.toggle("is-entering", v === view && !reduceMotion);
+    }
+    window.scrollTo(0, scrollMemo[view] || 0);
+    if (view === "map") renderMap();
+  }
+  $$(".view").forEach((v) => v.addEventListener("animationend", () => v.classList.remove("is-entering")));
+
+  // ───────── press-to-lift (light 3D) ─────────
+  function tilt(card, e, k) {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+    card.style.setProperty("--rx", `${(-y * k).toFixed(2)}deg`);
+    card.style.setProperty("--ry", `${(x * k).toFixed(2)}deg`);
+  }
+  function untilt(card) { card.classList.remove("is-pressed", "is-tilt"); card.style.removeProperty("--rx"); card.style.removeProperty("--ry"); }
+  if (!reduceMotion) {
+    let pressed = null, timer = 0;
+    const release = () => { clearTimeout(timer); if (pressed) { untilt(pressed); pressed = null; } };
+    document.addEventListener("pointerdown", (e) => {
+      const card = e.target.closest(".lift");
+      if (!card || e.target.closest("a")) return;
+      release();
+      // A short delay, so a scroll that starts on a card does not make it twitch.
+      timer = setTimeout(() => { pressed = card; card.classList.add("is-pressed"); tilt(card, e, 7); }, 90);
+    }, { passive: true });
+    ["pointerup", "pointercancel", "dragstart"].forEach((t) => document.addEventListener(t, () => setTimeout(release, 60), { passive: true }));
+    window.addEventListener("scroll", release, { passive: true, capture: true });
+    if (finePointer) {
+      let hovered = null, frame = 0, last = null;
+      document.addEventListener("pointermove", (e) => {
+        last = e;
+        if (frame) return;
+        frame = requestAnimationFrame(() => {
+          frame = 0;
+          const card = last.target.closest?.(".lift");
+          if (hovered && hovered !== card) { hovered.classList.remove("is-tilt"); untilt(hovered); }
+          hovered = card;
+          if (card) { card.classList.add("is-tilt"); tilt(card, last, 5); }
+        });
+      }, { passive: true });
+    }
   }
 
   // ───────── sheets ─────────
+  const app = $("#app");
+  const narrow = () => innerWidth < 760;
   function openSheet(dlg) {
     if (!dlg.open) dlg.showModal();
-    requestAnimationFrame(() => requestAnimationFrame(() => dlg.classList.add("is-open")));
+    app.style.setProperty("--origin-y", `${window.scrollY + innerHeight / 2}px`);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      dlg.classList.add("is-open");
+      if (narrow()) app.classList.add("is-behind");
+    }));
   }
 
   function closeSheet(dlg) {
     if (!dlg.open) return;
     dlg.classList.remove("is-open");
+    app.classList.remove("is-behind");
     dlg.style.removeProperty("--drag");
-    const done = () => { dlg.close(); dlg.removeEventListener("transitionend", done); };
-    if (reduceMotion) done(); else { dlg.addEventListener("transitionend", done); setTimeout(() => dlg.open && done(), 600); }
+    let done = false;
+    const finish = () => { if (done) return; done = true; dlg.close(); dlg.removeEventListener("transitionend", onEnd); };
+    const onEnd = (e) => { if (e.target === dlg && e.propertyName === "transform") finish(); };
+    if (reduceMotion) finish(); else { dlg.addEventListener("transitionend", onEnd); setTimeout(finish, 600); }
   }
 
-  // Drag the sheet down from its top area to close it.
+  // Drag the sheet down by its top zone ([data-drag]) to close it. Pointer capture keeps the gesture
+  // even when the finger leaves the zone; cancel always resets, so the sheet never stays stuck.
   function enableDrag(dlg) {
-    let y0 = null, dy = 0;
+    let id = null, y0 = 0, dy = 0, t0 = 0;
     dlg.addEventListener("pointerdown", (e) => {
-      const body = $(".sheet__body", dlg);
-      const fromTop = e.clientY - dlg.getBoundingClientRect().top;
-      if (body.scrollTop > 0 || fromTop > 120 || e.target.closest("button, a, input")) return;
-      y0 = e.clientY; dy = 0; dlg.classList.add("is-dragging");
+      const zone = e.target.closest("[data-drag]");
+      if (!zone || e.target.closest("button, a, input") || !narrow()) return;
+      id = e.pointerId; y0 = e.clientY; dy = 0; t0 = performance.now();
+      zone.setPointerCapture(id);
+      dlg.classList.add("is-dragging");
     });
-    window.addEventListener("pointermove", (e) => {
-      if (y0 == null) return;
+    dlg.addEventListener("pointermove", (e) => {
+      if (e.pointerId !== id) return;
       dy = Math.max(0, e.clientY - y0);
       dlg.style.setProperty("--drag", dy + "px");
     });
-    window.addEventListener("pointerup", () => {
-      if (y0 == null) return;
-      y0 = null; dlg.classList.remove("is-dragging");
-      if (dy > 110) closeSheet(dlg); else dlg.style.setProperty("--drag", "0px");
-    });
+    const end = (e) => {
+      if (e.pointerId !== id) return;
+      id = null; dlg.classList.remove("is-dragging");
+      const fast = dy > 40 && dy / (performance.now() - t0) > 0.6;
+      if (dy > 120 || fast) closeSheet(dlg); else dlg.style.setProperty("--drag", "0px");
+    };
+    dlg.addEventListener("pointerup", end);
+    dlg.addEventListener("pointercancel", end);
+    dlg.addEventListener("lostpointercapture", end);
     dlg.addEventListener("cancel", (e) => { e.preventDefault(); closeSheet(dlg); });
     dlg.addEventListener("click", (e) => { if (e.target === dlg || e.target.closest("[data-close]")) closeSheet(dlg); });
   }
@@ -368,63 +486,72 @@
   }
 
   function openDetail(id) {
-    const l = state.lieux.find((x) => x.id === id);
+    const l = state.byId.get(id);
     if (!l) return;
     const sub = [l.specialite, l.type === "chaine" ? "Chaîne" : l.type === "independant" ? "Indépendant" : "", l.ville].filter(Boolean).join(" · ");
     const tags = [
       l.statut === "ferme-definitivement" && `<span class="tag tag--closed">Fermé définitivement</span>`,
-      l.tendance && `<span class="tag tag--hot">🔥 Tendance</span>`,
-      state.cats[l.categorie] && `<span class="tag">${CAT_EMOJI[l.categorie] || ""} ${esc(state.cats[l.categorie])}</span>`,
+      l.tendance && `<span class="tag tag--hot">${icon("flame")}Tendance</span>`,
+      state.cats[l.categorie] && `<span class="tag">${CAT_ICON[l.categorie] ? icon(CAT_ICON[l.categorie]) : ""}${esc(state.cats[l.categorie])}</span>`,
       `<span class="tag">${plural(l.visites.length, "visite")}</span>`,
       ...l.nets.map((n) => `<span class="tag">${NETS[n]}</span>`),
     ].filter(Boolean).join("");
     const pros = (l.points_forts || []).length || (l.points_faibles || []).length
       ? `<div class="box"><div class="proscons">
-          <div><h3>Points forts</h3><ul class="plus">${(l.points_forts || []).map((p) => `<li><i><svg><use href="#i-plus"/></svg></i>${esc(p)}</li>`).join("") || "<li>—</li>"}</ul></div>
-          <div><h3>Points faibles</h3><ul class="minus">${(l.points_faibles || []).map((p) => `<li><i><svg><use href="#i-minus"/></svg></i>${esc(p)}</li>`).join("") || "<li>—</li>"}</ul></div>
+          <div><h3>Points forts</h3><ul class="plus">${(l.points_forts || []).map((p) => `<li><i>${icon("plus")}</i>${esc(p)}</li>`).join("") || "<li>—</li>"}</ul></div>
+          <div><h3>Points faibles</h3><ul class="minus">${(l.points_faibles || []).map((p) => `<li><i>${icon("minus")}</i>${esc(p)}</li>`).join("") || "<li>—</li>"}</ul></div>
         </div></div>`
       : "";
     const route = itineraire(l);
     const addr = l.adresse || (l.type === "independant" && l.ville)
-      ? `<div class="box"><div class="addr"><span class="addr__ico"><svg><use href="#i-pin"/></svg></span><p>${esc(l.adresse || l.ville)}</p>${route ? `<a class="btn btn--sm" href="${route}" target="_blank" rel="noopener">Y aller</a>` : ""}</div></div>`
+      ? `<div class="box"><div class="addr"><span class="addr__ico">${icon("pin")}</span><p>${esc(l.adresse || l.ville)}</p>${route ? `<a class="btn btn--sm" href="${route}" target="_blank" rel="noopener">Y aller</a>` : ""}</div></div>`
       : "";
     const visits = l.visites.map((v) => {
       const vroute = l.type === "chaine" ? itineraire(l, v) : "";
       return `<div class="visit">
         <span class="visit__title">${esc(v.titre || "Visite")}</span>
-        <span class="visit__date">${fmtDate(v.date)}${v.partenariat ? ` · <span class="tag tag--gift"><svg><use href="#i-gift"/></svg>${esc(PARTNER[v.partenariat] || "Offert")}</span>` : ""}</span>
-        ${v.adresse ? `<span class="visit__where"><svg><use href="#i-pin"/></svg>${esc(v.adresse)}</span>` : ""}
-        ${(v.plats || []).length ? `<ul class="plats">${v.plats.map((p) => `<li><span class="p-name">${esc(p.nom)}</span><span class="p-price">${fmtPrix(p.prix)}</span>${pillNote(typeof p.note === "number" ? p.note : null)}</li>`).join("")}</ul>` : ""}
+        <span class="visit__date">${fmtDate(v.date)}${v.partenariat ? `<span class="tag tag--gift">${icon("gift")}${esc(PARTNER[v.partenariat] || "Offert")}</span>` : ""}</span>
+        ${v.adresse ? `<span class="visit__where">${icon("pin")}${esc(v.adresse)}</span>` : ""}
+        ${(v.plats || []).length ? `<ul class="plats">${v.plats.map((p) => `<li><span class="p-name">${esc(p.nom)}</span><span class="p-price">${fmtPrix(p.prix)}</span>${stampHTML(typeof p.note === "number" ? p.note : null, "stamp--sm")}</li>`).join("")}</ul>` : ""}
         ${v.avis ? `<p class="visit__avis">${esc(v.avis)}</p>` : ""}
-        <div class="visit__videos">${(v.videos || []).filter((x) => NETS[x.platform]).map((x) => `<a class="btn btn--net btn--${x.platform}" href="${esc(x.url)}" target="_blank" rel="noopener"><svg><use href="#i-play"/></svg>${NETS[x.platform]}</a>`).join("")}${vroute ? `<a class="btn btn--net btn--soft" href="${vroute}" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Itinéraire</a>` : ""}</div>
+        <div class="visit__videos">${(v.videos || []).filter((x) => NETS[x.platform]).map((x) => `<a class="btn btn--net btn--${x.platform}" href="${esc(x.url)}" target="_blank" rel="noopener">${icon("play")}${NETS[x.platform]}</a>`).join("")}${vroute ? `<a class="btn btn--net btn--soft" href="${vroute}" target="_blank" rel="noopener">${icon("route")}Itinéraire</a>` : ""}</div>
       </div>`;
     }).join("");
 
     $("#sheet-body").innerHTML = `
-      <div class="detail__hero">${thumbHTML(l)}<button class="icon-btn detail__close" data-close aria-label="Fermer"><svg><use href="#i-close"/></svg></button></div>
+      <div class="detail__hero" data-drag>${tileHTML(l)}<span class="flash" aria-hidden="true"></span><button class="round-btn detail__close" data-close aria-label="Fermer">${icon("close")}</button></div>
       <div class="detail__head">
         <div><h2 id="sheet-title">${esc(l.nom)}</h2>${sub ? `<p class="detail__sub">${esc(sub)}</p>` : ""}</div>
-        ${ringHTML(l.note, "ring--lg")}
+        ${stampHTML(l.note, "stamp--xl", true)}
       </div>
       <div class="detail__tags">${tags}</div>
       <div class="detail__pad">
         ${l.note != null ? `<p class="note-small">${l.rated.length ? `Note = moyenne de ${plural(l.rated.length, "plat")} noté${l.rated.length > 1 ? "s" : ""}.` : "Note globale donnée dans la vidéo."}</p>` : ""}
-        ${l.tendance ? `<div class="box box--hot"><h3>🔥 Pourquoi c'est tendance</h3><p class="avis">${esc(l.tendance)}</p></div>` : ""}
-        ${l.avis ? `<div class="box"><h3>Mon avis</h3><p class="quote">${esc(l.avis)}</p></div>` : ""}
+        ${l.tendance ? `<div class="box box--hot"><h3>Pourquoi c'est tendance</h3><p>${esc(l.tendance)}</p></div>` : ""}
+        ${l.avis ? `<div class="box"><p class="quote">« ${esc(l.avis)} »</p></div>` : ""}
         ${pros}
         ${addr}
-        <div class="box"><h3>${l.visites.length > 1 ? `Mes ${l.visites.length} visites` : "Ce que j'ai goûté"}</h3><div class="timeline">${visits}</div></div>
+        <div class="box"><h3>${l.visites.length > 1 ? `Mes ${l.visites.length} visites` : "Ce que j'ai goûté"}</h3><div class="visits">${visits}</div></div>
       </div>
       <div class="detail__actions">
-        <button class="btn btn--soft" data-share><svg><use href="#i-share"/></svg>Partager</button>
-        ${route ? `<a class="btn" href="${route}" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Itinéraire</a>` : ""}
+        <button class="btn btn--soft" data-share>${icon("share")}Partager</button>
+        ${route ? `<a class="btn" href="${route}" target="_blank" rel="noopener">${icon("route")}Itinéraire</a>` : ""}
       </div>`;
     const dlg = $("#sheet");
     $(".sheet__body", dlg).scrollTop = 0;
     openSheet(dlg);
-    setTimeout(() => $$(".ring", dlg).forEach((r) => r.classList.add("is-in")), 250);
     history.replaceState(null, "", "#lieu=" + encodeURIComponent(l.id));
     $("[data-share]", dlg).addEventListener("click", (e) => share(`${l.nom}${l.note != null ? " : " + fmtNote(l.note) + "/10" : ""} selon Amed 🧢`, location.href, e.currentTarget));
+  }
+
+  // The logo tile in the sheet leans toward the pointer.
+  if (!reduceMotion && finePointer) {
+    $("#sheet").addEventListener("pointermove", (e) => {
+      const hero = e.target.closest(".detail__hero");
+      const tile = hero && $(".tile", hero);
+      if (tile) tilt(tile, e, 22);
+    }, { passive: true });
+    $("#sheet").addEventListener("pointerleave", () => { const t = $("#sheet .detail__hero .tile"); if (t) untilt(t); });
   }
 
   async function share(text, url, btn) {
@@ -438,6 +565,8 @@
     const m = location.hash.match(/lieu=([^&]+)/);
     if (m) setTimeout(() => openDetail(decodeURIComponent(m[1])), 50);
   }
+  // A shared link opened while the guide is already on screen only changes the hash.
+  window.addEventListener("hashchange", () => { if (!$("#sheet").open) readHash(); });
 
   // ───────── install banner ─────────
   function setupInstall() {
@@ -454,7 +583,10 @@
 
   // ───────── events ─────────
   let qTimer;
-  $("#q").addEventListener("input", (e) => { clearTimeout(qTimer); qTimer = setTimeout(() => { state.q = e.target.value; state.shown = PAGE; render(); }, 140); });
+  $("#q").addEventListener("input", (e) => {
+    clearTimeout(qTimer);
+    qTimer = setTimeout(() => { state.q = e.target.value; state.shown = PAGE; scheduleRender(); }, 90);
+  });
   $("#cats").addEventListener("click", (e) => {
     const b = e.target.closest(".pill");
     if (!b) return;
@@ -465,7 +597,7 @@
     const b = e.target.closest("[data-cat-link]");
     if (!b) return;
     state.cat = b.dataset.catLink; state.shown = PAGE; render();
-    $("#list-title").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    $("#sec-all").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
   });
   $("#sort").addEventListener("click", (e) => { const b = e.target.closest("[data-sort]"); if (b) { state.sort = b.dataset.sort; render(); } });
   $("#more").addEventListener("click", () => { state.shown += PAGE; render(); });
@@ -474,14 +606,14 @@
     const b = e.target.closest("[data-id]");
     if (b) openDetail(b.dataset.id);
   });
-  $("#share-site").addEventListener("click", (e) => share("Toutes les adresses testées par Amed 🧢", location.origin + location.pathname, null));
+  $("#share-site").addEventListener("click", () => share("Toutes les adresses testées par Amed 🧢", location.origin + location.pathname, null));
 
   // Filters
   $("#open-filters").addEventListener("click", () => openSheet($("#filters")));
-  $("#f-ville").addEventListener("click", (e) => { const b = e.target.closest(".chip-btn"); if (!b) return; state.ville = b.dataset.v; $$("#f-ville .chip-btn").forEach((x) => x.classList.toggle("is-on", x === b)); render(); });
-  $("#f-type").addEventListener("click", (e) => { const b = e.target.closest(".chip-btn"); if (!b) return; state.type = b.dataset.v; $$("#f-type .chip-btn").forEach((x) => x.classList.toggle("is-on", x === b)); render(); });
-  $("#f-note").addEventListener("input", (e) => { state.note = Number(e.target.value); $("#f-note-out").textContent = state.note ? `${state.note} et plus` : "toutes"; render(); });
-  $("#f-rated").addEventListener("change", (e) => { state.rated = e.target.checked; render(); });
+  $("#f-ville").addEventListener("click", (e) => { const b = e.target.closest(".chip-btn"); if (!b) return; state.ville = b.dataset.v; $$("#f-ville .chip-btn").forEach((x) => x.classList.toggle("is-on", x === b)); scheduleRender(); });
+  $("#f-type").addEventListener("click", (e) => { const b = e.target.closest(".chip-btn"); if (!b) return; state.type = b.dataset.v; $$("#f-type .chip-btn").forEach((x) => x.classList.toggle("is-on", x === b)); scheduleRender(); });
+  $("#f-note").addEventListener("input", (e) => { state.note = Number(e.target.value); $("#f-note-out").textContent = state.note ? `${state.note} et plus` : "toutes"; scheduleRender(); });
+  $("#f-rated").addEventListener("change", (e) => { state.rated = e.target.checked; scheduleRender(); });
   const resetFilters = () => {
     Object.assign(state, { ville: "", type: "", note: 0, rated: false, q: "", cat: "", shown: PAGE });
     $("#q").value = ""; $("#f-note").value = 0; $("#f-note-out").textContent = "toutes"; $("#f-rated").checked = false;
@@ -493,13 +625,19 @@
 
   enableDrag($("#sheet"));
   enableDrag($("#filters"));
-  $("#sheet").addEventListener("close", () => history.replaceState(null, "", location.pathname + location.search));
+  $("#sheet").addEventListener("close", () => { app.classList.remove("is-behind"); history.replaceState(null, "", location.pathname + location.search); });
+  $("#filters").addEventListener("close", () => app.classList.remove("is-behind"));
 
-  const appbar = $("#appbar");
-  window.addEventListener("scroll", () => appbar.classList.toggle("is-scrolled", window.scrollY > 8), { passive: true });
+  // The search bar gets a shadow once it is stuck under the status bar.
+  const bar = $("#searchbar");
+  let stuckAt = 0;
+  const measure = () => { stuckAt = $("#view-home .band").offsetHeight - 4; };
+  addEventListener("resize", measure, { passive: true });
+  addEventListener("scroll", () => { if (state.view === "home") bar.classList.toggle("is-stuck", scrollY > stuckAt); }, { passive: true });
 
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
 
+  measure();
   setupInstall();
   load();
 })();

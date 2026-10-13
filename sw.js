@@ -1,6 +1,6 @@
 // Network first so a new guide.json shows up at once; the cache only serves when offline.
-const CACHE = "adresses-amed-v5";
-const SHELL = ["./", "index.html", "assets/style.css", "assets/app.js", "data/guide.json", "manifest.webmanifest", "assets/icons/icon-192.png"];
+const CACHE = "adresses-amed-v11";
+const SHELL = ["./", "index.html", "assets/style.css", "assets/app.js", "assets/fonts/nunito-sans-latin.woff2", "data/guide.json", "manifest.webmanifest", "assets/icons/icon-192.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));

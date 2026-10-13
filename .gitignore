@@ -11,3 +11,8 @@ __pycache__/
 data/a-verifier.json
 data/verif/
 promo/
+
+# Impeccable (design de travail, pas publié)
+.impeccable/
+PRODUCT.md
+DESIGN.md
